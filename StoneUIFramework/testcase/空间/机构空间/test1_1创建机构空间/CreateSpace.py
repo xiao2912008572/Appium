@@ -1,7 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
-import logging
 from StoneUIFramework.config.globalparam import GlobalParam
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.public.common.datainfo import DataInfo
@@ -90,8 +89,8 @@ class CreateSpace:
             handle.Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(self.soverbank)#开户银行
             self.log.info('填写开户银行：%s'%self.soverbank)
             handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_click()#所在地区
-            # handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.province)#北京
-            # handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.city)#东城
+            handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.province)#北京
+            handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.city)#东城
             driver.find_element_by_name(self.province).click()#北京
             self.log.info('选择%s省'%self.province)
             driver.find_element_by_name(self.city).click()#东城
