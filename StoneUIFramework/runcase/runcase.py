@@ -59,12 +59,12 @@ if __name__ == '__main__':
         #----------------------------------【空间-测试用例】----------------------------------
         # @机构空间
         suite.addTest(space_Create("test_spacecreate"))                     #test1_1 创建机构空间
-        # suite.addTest(space_Product("test_spaceproduct"))                   #test2_1 上下架产品
-        # suite.addTest(team_Assign("test_teamassign"))                       #test3_1 团队认识任免
+        suite.addTest(space_Product("test_spaceproduct"))                   #test2_1 上下架产品
+        suite.addTest(team_Assign("test_teamassign"))                       #test3_1 团队认识任免
 
-        # suite.addTest(space_Archivies("test_archivies"))                    #test4_1 资讯发布
+        suite.addTest(space_Archivies("test_archivies"))                    #test4_1 资讯发布
 
-        # suite.addTest(space_BusinessCard("test_businesscard"))              #test5_1 编辑企业名片
+        suite.addTest(space_BusinessCard("test_businesscard"))              #test5_1 编辑企业名片
 
         # @私人空间
         # suite.addTest(perspace_Create("test_perspacecreate"))               #test1_1 创建私人空间
