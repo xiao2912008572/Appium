@@ -4,921 +4,575 @@ from StoneUIFramework.public.pages.space.SPACEPAGE2 import _SPACEPAGE2
 
 class _SPACEPAGE3(_SPACEPAGE2):
 #***************************************【PAGE2】产品Kjlb_browseorgspace_menu_product***************************************
-#  空间列表-浏览企业空间-菜单栏-产品-返回
-    def Kjlb_browseorgspace_menu_product_back(self):
-        self.Kjlb_browseorgspace_menu_product_backP = self.p.get_element("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览企业空间-菜单栏-产品-返回")
-        return self.Kjlb_browseorgspace_menu_product_backP
+    #  空间列表-浏览企业空间-菜单栏-产品-返回
+    Kjlb_browseorgspace_menu_product_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览企业空间-菜单栏-产品-返回")
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建
-    def Kjlb_browseorgspace_menu_product_new(self):
-        self.Kjlb_browseorgspace_menu_product_newP = self.p.get_element("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览企业空间-菜单栏-产品-新建")
-        return self.Kjlb_browseorgspace_menu_product_newP
+    Kjlb_browseorgspace_menu_product_new = ("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览企业空间-菜单栏-产品-新建")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表
-    def Kjlb_browseorgspace_menu_product_unlock_list(self):
-        self.Kjlb_browseorgspace_menu_product_unlock_list = self.p.get_elements("id->com.yunlu6.stone:id/tv_productr_name","空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表")
-        return self.Kjlb_browseorgspace_menu_product_unlock_list
+    Kjlb_browseorgspace_menu_product_unlock_list = ("id->com.yunlu6.stone:id/tv_productr_name","空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品名查找
     def Kjlb_browseorgspace_menu_product_unlock_list_byname(self,name):
-        self.Kjlb_browseorgspace_menu_product_unlock_list_bynameP = self.p.get_elements("name->%s"%name,"空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品名查找")
-        return self.Kjlb_browseorgspace_menu_product_unlock_list_bynameP
+        return ("name->%s"%name,"空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品名查找")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布
-    def Kjlb_browseorgspace_menu_product_unlock(self):
-        self.Kjlb_browseorgspace_menu_product_unlockP = self.p.get_element("id->com.yunlu6.stone:id/tv_unlock", "空间列表-浏览企业空间-菜单栏-产品-未发布")
-        return self.Kjlb_browseorgspace_menu_product_unlockP
+    Kjlb_browseorgspace_menu_product_unlock = ("id->com.yunlu6.stone:id/tv_unlock", "空间列表-浏览企业空间-菜单栏-产品-未发布")
 
-     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找
+    #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找
     def Kjlb_browseorgspace_menu_product_lock_list_byname(self,name):
-        self.Kjlb_browseorgspace_menu_product_lock_list_bynameP = self.p.get_elements("name->%s"%name,"空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找")
-        return self.Kjlb_browseorgspace_menu_product_lock_list_bynameP
+        return ("name->%s"%name,"空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表
-    def Kjlb_browseorgspace_menu_product_lock_list(self):
-        self.Kjlb_browseorgspace_menu_product_lock_listP = self.p.get_elements("id->com.yunlu6.stone:id/iv_productr","空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表")
-        return self.Kjlb_browseorgspace_menu_product_lock_listP
+    Kjlb_browseorgspace_menu_product_lock_list = ("id->com.yunlu6.stone:id/iv_productr","空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布
-    def Kjlb_browseorgspace_menu_product_lock(self):
-        self.Kjlb_browseorgspace_menu_product_lockP = self.p.get_element("id->com.yunlu6.stone:id/tv_lock","空间列表-浏览企业空间-菜单栏-产品-已发布")
-        return self.Kjlb_browseorgspace_menu_product_lockP
+    Kjlb_browseorgspace_menu_product_lock = ("id->com.yunlu6.stone:id/tv_lock","空间列表-浏览企业空间-菜单栏-产品-已发布")
 
-     # 空间列表-浏览企业空间-菜单栏-产品-收款账号
-    def Kjlb_browseorgspace_menu_product_account(self):
-        self.Kjlb_browseorgspace_menu_product_accountP = self.p.get_element("name->%s"%"为保障交易安全顺畅，需验证贵司收款银行账户","空间列表-浏览企业空间-菜单栏-产品-收款账号")
-        return self.Kjlb_browseorgspace_menu_product_accountP
+    # 空间列表-浏览企业空间-菜单栏-产品-收款账号
+    Kjlb_browseorgspace_menu_product_account = ("name->%s"%"为保障交易安全顺畅，需验证贵司收款银行账户","空间列表-浏览企业空间-菜单栏-产品-收款账号")
 
     # 空间列表-浏览企业空间-菜单栏-产品-搜索
-    def Kjlb_browseorgspace_menu_product_seek(self):
-        self.Kjlb_browseorgspace_menu_product_seekP = self.p.get_element("id->com.yunlu6.stone:id/et_seek","空间列表-浏览企业空间-菜单栏-产品-搜索")
-        return self.Kjlb_browseorgspace_menu_product_seekP
+    Kjlb_browseorgspace_menu_product_seek = ("id->com.yunlu6.stone:id/et_seek","空间列表-浏览企业空间-菜单栏-产品-搜索")
 
 #***************************************【PAGE2】团队Kjlb_browseorgspace_menu_team***************************************
-# 空间列表-浏览企业空间-菜单栏-团队-返回
-    def Kjlb_browseorgspace_menu_team_back(self):
-        self.Kjlb_browseorgspace_menu_team_back = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-团队-返回")
-        return self.Kjlb_browseorgspace_menu_team_back
+    # 空间列表-浏览企业空间-菜单栏-团队-返回
+    Kjlb_browseorgspace_menu_team_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-团队-返回")
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏
-    def Kjlb_browseorgspace_menu_team_menu(self):
-        self.Kjlb_browseorgspace_menu_team_menuT = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-团队-菜单栏")
-        return self.Kjlb_browseorgspace_menu_team_menuT
+    Kjlb_browseorgspace_menu_team_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-团队-菜单栏")
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免
-    def Kjlb_browseorgspace_menu_team_menu_assignjob(self):
-        self.Kjlb_browseorgspace_menu_team_menu_assignjobT = self.p.get_element("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免")
-        return self.Kjlb_browseorgspace_menu_team_menu_assignjobT
+    Kjlb_browseorgspace_menu_team_menu_assignjob = ("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免")
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门
-    def Kjlb_browseorgspace_menu_team_menu_mydepartment(self):
-        self.Kjlb_browseorgspace_menu_team_menu_mydepartmentT = self.p.get_element("id->com.yunlu6.stone:id/pop_teamedit_mydepartment","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门")
-        return self.Kjlb_browseorgspace_menu_team_menu_mydepartmentT
+    Kjlb_browseorgspace_menu_team_menu_mydepartment = ("id->com.yunlu6.stone:id/pop_teamedit_mydepartment","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门")
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-返回
-    def Kjlb_browseorgspace_menu_team_menu_mydepartment_back(self):
-        self.Kjlb_browseorgspace_menu_team_menu_mydepartment_back = self.p.get_element("id->com.yunlu6.stone:id/title_main_more_back","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-返回")
-        return self.Kjlb_browseorgspace_menu_team_menu_mydepartment_back
+    Kjlb_browseorgspace_menu_team_menu_mydepartment_back = ("id->com.yunlu6.stone:id/title_main_more_back","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-返回")
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-搜索
-    def Kjlb_browseorgspace_menu_team_menu_mydepartment_seek(self):
-        self.Kjlb_browseorgspace_menu_team_menu_mydepartment_seek = self.p.get_element("id->com.yunlu6.stone:id/et_seek","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-搜索")
-        return self.Kjlb_browseorgspace_menu_team_menu_mydepartment_seek
+    Kjlb_browseorgspace_menu_team_menu_mydepartment_seek = ("id->com.yunlu6.stone:id/et_seek","空间列表-浏览企业空间-菜单栏-团队-菜单栏-我的部门-搜索")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑
-    def Kjlb_browseorgspace_menu_team_teamedit(self):
-        self.Kjlb_browseorgspace_menu_team_teameditT = self.p.get_element("id->com.yunlu6.stone:id/companyteam_btn_edit","空间列表-浏览企业空间-菜单栏-团队-团队编辑")
-        return self.Kjlb_browseorgspace_menu_team_teameditT
+    Kjlb_browseorgspace_menu_team_teamedit = ("id->com.yunlu6.stone:id/companyteam_btn_edit","空间列表-浏览企业空间-菜单栏-团队-团队编辑")
 
      # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮列表
-    def Kjlb_browseorgspace_menu_team_teamedit_numeidtL(self):
-        self.Kjlb_browseorgspace_menu_team_teamedit_numeidtT = self.p.get_elements("id->com.yunlu6.stone:id/companyteam_item_edit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮列表")
-        return self.Kjlb_browseorgspace_menu_team_teamedit_numeidtT
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt = ("id->com.yunlu6.stone:id/companyteam_item_edit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮列表")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-职位人数
-    def Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit(self):
-        self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumeditT = self.p.get_element("id->com.yunlu6.stone:id/teamedit_jobs_editnum","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
-        return self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumeditT
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit = ("id->com.yunlu6.stone:id/teamedit_jobs_editnum","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-否
-    def Kjlb_browseorgspace_menu_team_teamedit_numeidt_cancel(self):
-        self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_cancelT = self.p.get_element("id->com.yunlu6.stone:id/teamedit_cancleedit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮-否")
-        return self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_cancelT
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt_cancel = ("id->com.yunlu6.stone:id/teamedit_cancleedit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮-否")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-是
-    def Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirm(self):
-        self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirmT = self.p.get_element("id->com.yunlu6.stone:id/teamedit_commitedit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
-        return self.Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirmT
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirm = ("id->com.yunlu6.stone:id/teamedit_commitedit","空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
 
 #***************************************【PAGE2】资讯Kjlb_browseorgspace_menu_archivies***************************************
     # 空间列表-浏览企业空间-菜单栏-资讯-返回
-    def Kjlb_browseorgspace_menu_archivies_back(self):
-        self.Kjlb_browseorgspace_menu_archivies_backT = self.p.get_element("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览企业空间-菜单栏-资讯-返回")
-        return self.Kjlb_browseorgspace_menu_archivies_backT
+    Kjlb_browseorgspace_menu_archivies_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览企业空间-菜单栏-资讯-返回")
 
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮
-    def Kjlb_browseorgspace_menu_archivies_new(self):
-        self.Kjlb_browseorgspace_menu_archivies_newT = self.p.get_element("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览企业空间-菜单栏-资讯-新增按钮")
-        return self.Kjlb_browseorgspace_menu_archivies_newT
+    Kjlb_browseorgspace_menu_archivies_new = ("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览企业空间-菜单栏-资讯-新增按钮")
 
     # 空间列表-浏览企业空间-菜单栏-资讯-图片新增
-    def Kjlb_browseorgspace_menu_archivies_picadd(self):
-        self.Kjlb_browseorgspace_menu_archivies_picaddA = self.p.get_element("id->com.yunlu6.stone:id/rl_add","空间列表-浏览企业空间-菜单栏-资讯-图片新增")
-        return self.Kjlb_browseorgspace_menu_archivies_picaddA
+    Kjlb_browseorgspace_menu_archivies_picadd = ("id->com.yunlu6.stone:id/rl_add","空间列表-浏览企业空间-菜单栏-资讯-图片新增")
 
-     # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
-    def Kjlb_browseorgspace_menu_archivies_pic(self):
-        self.Kjlb_browseorgspace_menu_archivies_picA = self.p.get_elements("id->com.yunlu6.stone:id/iv_profile","空间列表-浏览企业空间-菜单栏-资讯-图片列表")
-        return self.Kjlb_browseorgspace_menu_archivies_picA
+    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
+    Kjlb_browseorgspace_menu_archivies_pic = ("id->com.yunlu6.stone:id/iv_profile","空间列表-浏览企业空间-菜单栏-资讯-图片列表")
 
-     # 空间列表-浏览企业空间-菜单栏-资讯-图片-标题
-    def Kjlb_browseorgspace_menu_archivies_pic_title(self):
-        self.Kjlb_browseorgspace_menu_archivies_pic_titleT = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_title","空间列表-浏览企业空间-菜单栏-资讯-图片-标题")
-        return self.Kjlb_browseorgspace_menu_archivies_pic_titleT
+    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
+    def Kjlb_browseorgspace_menu_archivies_pic_element(self):
+        return self.p.get_elements(self.Kjlb_browseorgspace_menu_archivies_pic[0])
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
+    # def Kjlb_browseorgspace_menu_archivies_pics(self):
+    #     self.Kjlb_browseorgspace_menu_archivies_picA = self.p.get_elements("id->com.yunlu6.stone:id/iv_profile",
+    #                                                                            "空间列表-浏览企业空间-菜单栏-资讯-图片列表")
+    #     return self.Kjlb_browseorgspace_menu_archivies_picA
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-图片-标题
+    Kjlb_browseorgspace_menu_archivies_pic_title = ("id->com.yunlu6.stone:id/title_main_tv_more_title","空间列表-浏览企业空间-菜单栏-资讯-图片-标题")
 
     # 空间列表-浏览企业空间-菜单栏-资讯-图片-类型
-    def Kjlb_browseorgspace_menu_archivies_pic_type(self):
-        self.Kjlb_browseorgspace_menu_archivies_pic_typeT = self.p.get_element("id->com.yunlu6.stone:id/tv_profile","空间列表-浏览企业空间-菜单栏-资讯-图片-类型")
-        return self.Kjlb_browseorgspace_menu_archivies_pic_typeT
+    Kjlb_browseorgspace_menu_archivies_pic_type = ("id->com.yunlu6.stone:id/tv_profile","空间列表-浏览企业空间-菜单栏-资讯-图片-类型")
 
 #***************************************【PAGE2】企业名片Kjlb_browseorgspace_menu_bcard***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-返回
-    def Kjlb_browseorgspace_menu_bcard_back(self):
-        self.Kjlb_browseorgspace_menu_bcard_back = self.p.get_element("id->com.yunlu6.stone:id/title_main_more_back","空间列表-浏览企业空间-菜单栏-企业名片-返回")
-        return self.Kjlb_browseorgspace_menu_bcard_back
+    Kjlb_browseorgspace_menu_bcard_back = ("id->com.yunlu6.stone:id/title_main_more_back","空间列表-浏览企业空间-菜单栏-企业名片-返回")
 
      # 空间列表-浏览企业空间-菜单栏-企业名片-企业资信
-    def Kjlb_browseorgspace_menu_bcard_credit(self):
-        self.Kjlb_browseorgspace_menu_bcard_credit = self.p.get_element("id->com.yunlu6.stone:id/companycard_level","空间列表-浏览企业空间-菜单栏-企业名片-企业资信")
-        return self.Kjlb_browseorgspace_menu_bcard_credit
+    Kjlb_browseorgspace_menu_bcard_credit = ("id->com.yunlu6.stone:id/companycard_level","空间列表-浏览企业空间-菜单栏-企业名片-企业资信")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏
-    def Kjlb_browseorgspace_menu_bcard_menu(self):
-        self.Kjlb_browseorgspace_menu_bcard_menuB = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏")
-        return self.Kjlb_browseorgspace_menu_bcard_menuB
+    Kjlb_browseorgspace_menu_bcard_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏")
 
      # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_quitteam = self.p.get_element("id->com.yunlu6.stone:id/bt_teamquit","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_quitteam
+    Kjlb_browseorgspace_menu_bcard_menu_quitteam = ("id->com.yunlu6.stone:id/bt_teamquit","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-否
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancel(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancell = self.p.get_element("id->com.yunlu6.stone:id/bt_cancel","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-否")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancell
+    Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancell = ("id->com.yunlu6.stone:id/bt_cancel","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-否")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-是
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm = self.p.get_element("id->com.yunlu6.stone:id/bt_affirm","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-是")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm
+    Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm = ("id->com.yunlu6.stone:id/bt_affirm","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-是")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家
-    def Kjlb_browseorgspace_menu_bcard_menu_nearby(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_nearby = self.p.get_element("id->com.yunlu6.stone:id/bt_nearby","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_nearby
+    Kjlb_browseorgspace_menu_bcard_menu_nearby = ("id->com.yunlu6.stone:id/bt_nearby","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家")
 
      # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑
-    def Kjlb_browseorgspace_menu_bcard_menu_edit(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_editB = self.p.get_element("id->com.yunlu6.stone:id/bt_edit","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_editB
+    Kjlb_browseorgspace_menu_bcard_menu_edit = ("id->com.yunlu6.stone:id/bt_edit","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置
-    def Kjlb_browseorgspace_menu_bcard_menu_setting(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_setting = self.p.get_element("id->com.yunlu6.stone:id/bt_setup","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_setting
+    Kjlb_browseorgspace_menu_bcard_menu_setting = ("id->com.yunlu6.stone:id/bt_setup","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭
-    def Kjlb_browseorgspace_menu_bcard_menu_close(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_close = self.p.get_element("id->com.yunlu6.stone:id/bt_close","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_close
+    Kjlb_browseorgspace_menu_bcard_menu_close = ("id->com.yunlu6.stone:id/bt_close","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享
-    def Kjlb_browseorgspace_menu_bcard_menu_share(self):
-        self.Kjlb_browseorgspace_menu_bcard_menu_share = self.p.get_element("id->com.yunlu6.stone:id/bt_share","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享")
-        return self.Kjlb_browseorgspace_menu_bcard_menu_share
+    Kjlb_browseorgspace_menu_bcard_menu_share = ("id->com.yunlu6.stone:id/bt_share","空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-联系方式列表
-    def Kjlb_browseorgspace_menu_bcard_contactlist(self):
-        self.Kjlb_browseorgspace_menu_bcard_contactB = self.p.get_elements("id->com.yunlu6.stone:id/contact_icon","空间列表-浏览企业空间-菜单栏-企业名片-联系方式列表")
-        return self.Kjlb_browseorgspace_menu_bcard_contactB
+    Kjlb_browseorgspace_menu_bcard_contact = ("id->com.yunlu6.stone:id/contact_icon","空间列表-浏览企业空间-菜单栏-企业名片-联系方式列表")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-资讯
-    def Kjlb_browseorgspace_menu_bcard_archivies(self):
-        self.Kjlb_browseorgspace_menu_bcard_archivies = self.p.get_element("id->com.yunlu6.stone:id/btn_archivie","空间列表-浏览企业空间-菜单栏-企业名片-资讯")
-        return self.Kjlb_browseorgspace_menu_bcard_archivies
+    Kjlb_browseorgspace_menu_bcard_archivies = ("id->com.yunlu6.stone:id/btn_archivie","空间列表-浏览企业空间-菜单栏-企业名片-资讯")
 
     # 空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品
-    def Kjlb_browseorgspace_menu_bcard_newpro(self):
-        self.Kjlb_browseorgspace_menu_bcard_newpro = self.p.get_element("id->com.yunlu6.stone:id/iv_crad_build_prod","空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品")
-        return self.Kjlb_browseorgspace_menu_bcard_newpro
+    Kjlb_browseorgspace_menu_bcard_newpro = ("id->com.yunlu6.stone:id/iv_crad_build_prod","空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品")
 
 #***************************************【PAGE2】访客Kjlb_browseorgspace_menu_visitor***************************************
  # 空间列表-浏览企业空间-菜单栏-访客-访客列表
-    def Kjlb_browseorgspace_menu_visitor_list(self):
-        self.Kjlb_browseorgspace_menu_visitor_list = self.p.get_element("id->com.yunlu6.stone:id/visitor_name","空间列表-浏览企业空间-菜单栏-访客-访客列表")
-        return self.Kjlb_browseorgspace_menu_visitor_list
+    Kjlb_browseorgspace_menu_visitor_list = ("id->com.yunlu6.stone:id/visitor_name","空间列表-浏览企业空间-菜单栏-访客-访客列表")
 
     # 空间列表-浏览企业空间-菜单栏-访客-访客列表-返回
-    def Kjlb_browseorgspace_menu_visitor_list_back(self):
-        self.Kjlb_browseorgspace_menu_visitor_list_back = self.p.get_element("id->com.yunlu6.stone:id/iv_back","空间列表-浏览企业空间-菜单栏-访客-访客列表")
-        return self.Kjlb_browseorgspace_menu_visitor_list_back
+    Kjlb_browseorgspace_menu_visitor_list_back = ("id->com.yunlu6.stone:id/iv_back","空间列表-浏览企业空间-菜单栏-访客-访客列表")
 
 #***************************************【PAGE2】客户Kjlb_browseorgspace_menu_customer***************************************
     # 空间列表-浏览企业空间-菜单栏-客户-返回
-    def Kjlb_browseorgspace_menu_customer_back(self):
-        self.Kjlb_browseorgspace_menu_customer_back = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-客户-返回")
-        return self.Kjlb_browseorgspace_menu_customer_back
+    Kjlb_browseorgspace_menu_customer_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-客户-返回")
 
     # 空间列表-浏览企业空间-菜单栏-客户-搜索框
-    def Kjlb_browseorgspace_menu_customer_search(self):
-        self.Kjlb_browseorgspace_menu_customer_search = self.p.get_element("id->com.yunlu6.stone:id/et_search","空间列表-浏览企业空间-菜单栏-客户-搜索框")
-        return self.Kjlb_browseorgspace_menu_customer_search
+    Kjlb_browseorgspace_menu_customer_search = ("id->com.yunlu6.stone:id/et_search","空间列表-浏览企业空间-菜单栏-客户-搜索框")
 
     # 空间列表-浏览企业空间-菜单栏-客户-搜索
-    def Kjlb_browseorgspace_menu_customer_seek(self):
-        self.Kjlb_browseorgspace_menu_customer_seek = self.p.get_element("id->com.yunlu6.stone:id/iv_search","空间列表-浏览企业空间-菜单栏-客户-搜索")
-        return self.Kjlb_browseorgspace_menu_customer_seek
+    Kjlb_browseorgspace_menu_customer_seek = ("id->com.yunlu6.stone:id/iv_search","空间列表-浏览企业空间-菜单栏-客户-搜索")
 
     # 空间列表-浏览企业空间-菜单栏-客户-菜单栏
-    def Kjlb_browseorgspace_menu_customer_menu(self):
-        self.Kjlb_browseorgspace_menu_customer_menu = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-客户-菜单栏")
-        return self.Kjlb_browseorgspace_menu_customer_menu
+    Kjlb_browseorgspace_menu_customer_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-客户-菜单栏")
 
     # 空间列表-浏览企业空间-菜单栏-客户-客户列表
-    def Kjlb_browseorgspace_menu_customer_list(self):
-        self.Kjlb_browseorgspace_menu_customer_clist = self.p.get_elements("id->com.yunlu6.stone:id/rl_out","空间列表-浏览企业空间-菜单栏-客户-客户列表")
-        return self.Kjlb_browseorgspace_menu_customer_clist
+    Kjlb_browseorgspace_menu_customer_clist = ("id->com.yunlu6.stone:id/rl_out","空间列表-浏览企业空间-菜单栏-客户-客户列表")
 
     # 空间列表-浏览企业空间-菜单栏-客户-菜单栏+客户
-    def Kjlb_browseorgspace_menu_customer_menu_add(self):
-        self.Kjlb_browseorgspace_menu_customer_menu_add = self.p.get_element("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览企业空间-菜单栏-客户-菜单栏+客户")
-        return self.Kjlb_browseorgspace_menu_customer_menu_add
+    Kjlb_browseorgspace_menu_customer_menu_add = ("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览企业空间-菜单栏-客户-菜单栏+客户")
 
      # 空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作
-    def Kjlb_browseorgspace_menu_customer_menu_batch(self):
-        self.Kjlb_browseorgspace_menu_customer_menu_batch = self.p.get_elements("id->com.yunlu6.stone:id/btn_share_space","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作")
-        return self.Kjlb_browseorgspace_menu_customer_menu_batch
+    Kjlb_browseorgspace_menu_customer_menu_batch = ("id->com.yunlu6.stone:id/btn_share_space","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作")
 
     # 空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-返回
-    def Kjlb_browseorgspace_menu_customer_menu_batch_back(self):
-        self.Kjlb_browseorgspace_menu_customer_menu_batch_back = self.p.get_elements("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-返回")
-        return self.Kjlb_browseorgspace_menu_customer_menu_batch_back
+    Kjlb_browseorgspace_menu_customer_menu_batch_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-返回")
 
     # 空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-全选
-    def Kjlb_browseorgspace_menu_customer_menu_batch_all(self):
-        self.Kjlb_browseorgspace_menu_customer_menu_batch_all = self.p.get_elements("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-全选")
-        return self.Kjlb_browseorgspace_menu_customer_menu_batch_all
+    Kjlb_browseorgspace_menu_customer_menu_batch_all = ("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-全选")
 
      # 空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-圆圈勾选
-    def Kjlb_browseorgspace_menu_customer_menu_batch_choose(self):
-        self.Kjlb_browseorgspace_menu_customer_menu_batch_choose = self.p.get_elements("id->com.yunlu6.stone:id/iv_select","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-全选")
-        return self.Kjlb_browseorgspace_menu_customer_menu_batch_choose
+    Kjlb_browseorgspace_menu_customer_menu_batch_choose = ("id->com.yunlu6.stone:id/iv_select","空间列表-浏览企业空间-菜单栏-客户-菜单栏-批量操作-全选")
 
 #***************************************【PAGE2】业务升级Kjlb_browseorgspace_menu_upgrade***************************************
      # 空间列表-浏览企业空间-菜单栏-业务升级-开启
-    def Kjlb_browseorgspace_menu_upgrade_open(self):
-        self.Kjlb_browseorgspace_menu_upgrade_open = self.p.get_elements("id->com.yunlu6.stone:id/upgrade_open","空间列表-浏览企业空间-菜单栏-业务升级-开启")
-        return self.Kjlb_browseorgspace_menu_upgrade_open
+    Kjlb_browseorgspace_menu_upgrade_open = ("id->com.yunlu6.stone:id/upgrade_open","空间列表-浏览企业空间-菜单栏-业务升级-开启")
 
     # 空间列表-浏览企业空间-菜单栏-业务升级-返回
-    def Kjlb_browseorgspace_menu_upgrade_back(self):
-        self.Kjlb_browseorgspace_menu_upgrade_back = self.p.get_element("id->com.yunlu6.stone:id/companyupgrade_backe","空间列表-浏览企业空间-菜单栏-业务升级-返回")
-        return self.Kjlb_browseorgspace_menu_upgrade_back
+    Kjlb_browseorgspace_menu_upgrade_back = ("id->com.yunlu6.stone:id/companyupgrade_backe","空间列表-浏览企业空间-菜单栏-业务升级-返回")
 
 #***************************************【PAGE2】照片列表(包括点击照片加数据)Kjlb_browseperspace_piclist***************************************
     # 空间列表-浏览私人空间-照片列表-菜单栏
-    def Kjlb_browseperspace_piclist_menu(self):
-        self.Kjlb_browseperspace_piclist_menuP = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-照片列表-菜单栏")
-        return self.Kjlb_browseperspace_piclist_menuP
+    Kjlb_browseperspace_piclist_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-照片列表-菜单栏")
 
     # 空间列表-浏览私人空间-照片列表-分类到
-    def Kjlb_browseperspace_piclist_classify(self):
-        self.Kjlb_browseperspace_piclist_classifyP = self.p.get_element("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览私人空间-照片列表-分类到")
-        return self.Kjlb_browseperspace_piclist_classifyP
+    Kjlb_browseperspace_piclist_classify = ("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览私人空间-照片列表-分类到")
 
     # 空间列表-浏览私人空间-照片列表-编辑
-    def Kjlb_browseperspace_piclist_edit(self):
-        self.Kjlb_browseperspace_piclist_editP = self.p.get_element("id->com.yunlu6.stone:id/btn_share_space","空间列表-浏览私人空间-照片列表-编辑")
-        return self.Kjlb_browseperspace_piclist_editP
+    Kjlb_browseperspace_piclist_edit = ("id->com.yunlu6.stone:id/btn_share_space","空间列表-浏览私人空间-照片列表-编辑")
 
     # 空间列表-浏览私人空间-照片列表-返回
-    def Kjlb_browseperspace_piclist_back(self):
-        self.Kjlb_browseperspace_piclist_backP = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-照片列表-返回")
-        return self.Kjlb_browseperspace_piclist_backP
+    Kjlb_browseperspace_piclist_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-照片列表-返回")
 
     #空间列表-浏览私人空间-照片列表-照片本身
-    def Kjlb_browseperspace_piclist_itself(self):
-        self.Kjlb_browseperspace_piclist_itselfP = self.p.get_element("id->com.yunlu6.stone:id/image","空间列表-浏览私人空间-照片列表-照片本身")
-        return self.Kjlb_browseperspace_piclist_itselfP
+    Kjlb_browseperspace_piclist_itself = ("id->com.yunlu6.stone:id/image","空间列表-浏览私人空间-照片列表-照片本身")
 
     # 空间列表-浏览私人空间-文件夹名称列表
-    def Kjlb_browseperspace_foldername(self):
-        self.Kjlb_browseperspace_foldernameP = self.p.get_elements("id->com.yunlu6.stone:id/personzone_item_foldername","空间列表-浏览私人空间-文件夹名称列表")
-        return self.Kjlb_browseperspace_foldernameP
+    Kjlb_browseperspace_foldername = ("id->com.yunlu6.stone:id/personzone_item_foldername","空间列表-浏览私人空间-文件夹名称列表")
 
     # 空间列表-浏览私人空间-加数据-相册
-    def Kjlb_browseperspace_addData_ByAlbum(self):
-        self.Kjlb_browseperspace_addData_ByAlbumP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间--加数据-相册")
-        return self.Kjlb_browseperspace_addData_ByAlbumP
+    Kjlb_browseperspace_addData_ByAlbum = ("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间--加数据-相册")
 
 #***************************************【PAGE2】菜单栏-名片Kjlb_browseperspace_menu_card***************************************
     # 空间列表-浏览私人空间-菜单栏-名片-返回
-    def Kjlb_browseperspace_menu_card_back(self):
-        self.Kjlb_browseperspace_menu_card_backP = self.p.get_element("id->com.yunlu6.stone:id/title_back_edit_icon","空间列表-浏览私人空间-菜单栏-名片-返回")
-        return self.Kjlb_browseperspace_menu_card_backP
+    Kjlb_browseperspace_menu_card_back = ("id->com.yunlu6.stone:id/title_back_edit_icon","空间列表-浏览私人空间-菜单栏-名片-返回")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享
-    def Kjlb_browseperspace_menu_card_share(self):
-        self.Kjlb_browseperspace_menu_card_shareP = self.p.get_element("id->com.yunlu6.stone:id/title_tv_edit_menu_tv","空间列表-浏览私人空间-菜单栏-名片-分享")
-        return self.Kjlb_browseperspace_menu_card_shareP
+    Kjlb_browseperspace_menu_card_share = ("id->com.yunlu6.stone:id/title_tv_edit_menu_tv","空间列表-浏览私人空间-菜单栏-名片-分享")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-微信
-    def Kjlb_browseperspace_menu_card_share_wechat(self):
-        self.Kjlb_browseperspace_menu_card_share_wechatP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-菜单栏-名片-分享-微信")
-        return self.Kjlb_browseperspace_menu_card_share_wechatP
+    Kjlb_browseperspace_menu_card_share_wechat = ("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-菜单栏-名片-分享-微信")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-微信朋友圈
-    def Kjlb_browseperspace_menu_card_share_circle(self):
-        self.Kjlb_browseperspace_menu_card_share_circleP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_cameras","空间列表-浏览私人空间-菜单栏-名片-分享-微信朋友圈")
-        return self.Kjlb_browseperspace_menu_card_share_circleP
+    Kjlb_browseperspace_menu_card_share_circle = ("id->com.yunlu6.stone:id/iv_cloundlibrary_cameras","空间列表-浏览私人空间-菜单栏-名片-分享-微信朋友圈")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-QQ空间
-    def Kjlb_browseperspace_menu_card_share_qqzone(self):
-        self.Kjlb_browseperspace_menu_card_share_qqzoneP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_wifi_sync","空间列表-浏览私人空间-菜单栏-名片-分享-QQ空间")
-        return self.Kjlb_browseperspace_menu_card_share_qqzoneP
+    Kjlb_browseperspace_menu_card_share_qqzone = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_wifi_sync","空间列表-浏览私人空间-菜单栏-名片-分享-QQ空间")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-QQ
-    def Kjlb_browseperspace_menu_card_share_qq(self):
-        self.Kjlb_browseperspace_menu_card_share_qqP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_qq","空间列表-浏览私人空间-菜单栏-名片-分享-QQ")
-        return self.Kjlb_browseperspace_menu_card_share_qqP
+    Kjlb_browseperspace_menu_card_share_qq = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_qq","空间列表-浏览私人空间-菜单栏-名片-分享-QQ")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-新浪微博
-    def Kjlb_browseperspace_menu_card_share_sina(self):
-        self.Kjlb_browseperspace_menu_card_share_sinaP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_weibo","空间列表-浏览私人空间-菜单栏-名片-分享-微博")
-        return self.Kjlb_browseperspace_menu_card_share_sinaP
+    Kjlb_browseperspace_menu_card_share_sina = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_weibo","空间列表-浏览私人空间-菜单栏-名片-分享-微博")
 
     # 空间列表-浏览私人空间-菜单栏-名片-分享-取消
-    def Kjlb_browseperspace_menu_card_share_cancel(self):
-        self.Kjlb_browseperspace_menu_card_share_cancelP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-菜单栏-名片-分享-取消")
-        return self.Kjlb_browseperspace_menu_card_share_cancelP
+    Kjlb_browseperspace_menu_card_share_cancel = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-菜单栏-名片-分享-取消")
 
     # 空间列表-浏览私人空间-菜单栏-名片-手机
-    def Kjlb_browseperspace_menu_card_phone(self):
-        self.Kjlb_browseperspace_menu_card_phoneP = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_phone_cb","空间列表-浏览私人空间-菜单栏-名片-手机")
-        return self.Kjlb_browseperspace_menu_card_phoneP
+    Kjlb_browseperspace_menu_card_phone = ("id->com.yunlu6.stone:id/user_card_team_phone_cb","空间列表-浏览私人空间-菜单栏-名片-手机")
 
     # 空间列表-浏览私人空间-菜单栏-名片-邮箱
-    def Kjlb_browseperspace_menu_card_email(self):
-        self.Kjlb_browseperspace_menu_card_emailP = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_email_cb","空间列表-浏览私人空间-菜单栏-名片-邮箱")
-        return self.Kjlb_browseperspace_menu_card_emailP
+    Kjlb_browseperspace_menu_card_email = ("id->com.yunlu6.stone:id/user_card_team_email_cb","空间列表-浏览私人空间-菜单栏-名片-邮箱")
 
     # 空间列表-浏览私人空间-菜单栏-名片-地址
-    def Kjlb_browseperspace_menu_card_address(self):
-        self.Kjlb_browseperspace_menu_card_addressP = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_address_cb","空间列表-浏览私人空间-菜单栏-名片-地址")
-        return self.Kjlb_browseperspace_menu_card_addressP
+    Kjlb_browseperspace_menu_card_address = ("id->com.yunlu6.stone:id/user_card_team_address_cb","空间列表-浏览私人空间-菜单栏-名片-地址")
 
     # 空间列表-浏览私人空间-菜单栏-名片-QQ
-    def Kjlb_browseperspace_menu_card_QQ(self):
-        self.Kjlb_browseperspace_menu_card_QQP = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_qq_cb","空间列表-浏览私人空间-菜单栏-名片-QQ")
-        return self.Kjlb_browseperspace_menu_card_QQP
+    Kjlb_browseperspace_menu_card_QQ = ("id->com.yunlu6.stone:id/user_card_team_qq_cb","空间列表-浏览私人空间-菜单栏-名片-QQ")
 
     # 空间列表-浏览私人空间-菜单栏-名片-有效期
-    def Kjlb_browseperspace_menu_card_limit(self):
-        self.Kjlb_browseperspace_menu_card_limitP = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_userlife_tv","空间列表-浏览私人空间-菜单栏-名片-有效期")
-        return self.Kjlb_browseperspace_menu_card_limitP
+    Kjlb_browseperspace_menu_card_limit = ("id->com.yunlu6.stone:id/user_card_team_userlife_tv","空间列表-浏览私人空间-菜单栏-名片-有效期")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-删除文件夹列表
-    def Kjlb_browseperspace_menu_edit_deletefolder(self):
-        self.Kjlb_browseperspace_menu_edit_deletefolderP = self.p.get_elements("id->com.yunlu6.stone:id/editlayout_folder_dele","空间列表-浏览私人空间-菜单栏-编辑-删除文件夹名称")
-        return self.Kjlb_browseperspace_menu_edit_deletefolderP
+    Kjlb_browseperspace_menu_edit_deletefolder = ("id->com.yunlu6.stone:id/editlayout_folder_dele","空间列表-浏览私人空间-菜单栏-编辑-删除文件夹名称")
 
-     # 空间列表-浏览私人空间-菜单栏-编辑-修改文件夹图标
-    def Kjlb_browseperspace_menu_edit_editfolder(self):
-        self.Kjlb_browseperspace_menu_edit_editfolderP = self.p.get_elements("id->com.yunlu6.stone:id/editlayout_folder_edite","空间列表-浏览私人空间-菜单栏-编辑-修改文件夹名称")
-        return self.Kjlb_browseperspace_menu_edit_editfolderP
+    # 空间列表-浏览私人空间-菜单栏-编辑-修改文件夹图标
+    Kjlb_browseperspace_menu_edit_editfolder = ("id->com.yunlu6.stone:id/editlayout_folder_edite","空间列表-浏览私人空间-菜单栏-编辑-修改文件夹名称")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称
-    def Kjlb_browseperspace_menu_edit_editfolder_fname(self):
-        self.Kjlb_browseperspace_menu_edit_editfolder_fnameP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_name","空间列表-浏览私人空间-菜单栏-编辑-修改文件夹名称-名称列表")
-        return self.Kjlb_browseperspace_menu_edit_editfolder_fnameP
+    Kjlb_browseperspace_menu_edit_editfolder_fname = ("id->com.yunlu6.stone:id/edit_folder_name","空间列表-浏览私人空间-菜单栏-编辑-修改文件夹名称-名称列表")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-是
-    def Kjlb_browseperspace_menu_edit_editfolder_fname_OK(self):
-        self.Kjlb_browseperspace_menu_edit_spacename_spaceEditOKP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-是")
-        return self.Kjlb_browseperspace_menu_edit_spacename_spaceEditOKP
+    Kjlb_browseperspace_menu_edit_editfolder_spaceEdit_OK = ("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-是")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-否
-    def Kjlb_browseperspace_menu_edit_editfolder_fname_NO(self):
-        self.Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NOP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-否")
-        return self.Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NOP
+    Kjlb_browseperspace_menu_edit_editfolder_spaceEdit_NO = ("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-否")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-+数据
-    def Kjlb_browseperspace_menu_edit_adddata(self):
-        self.Kjlb_browseperspace_menu_edit_adddataP = self.p.get_elements("name->＋ 数据","空间列表-浏览私人空间-菜单栏-编辑-+数据")
-        return self.Kjlb_browseperspace_menu_edit_adddataP
+    Kjlb_browseperspace_menu_edit_adddata = ("name->＋ 数据","空间列表-浏览私人空间-菜单栏-编辑-+数据")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-空间类型
-    def Kjlb_browseperspace_menu_edit_spacetype(self):
-        self.Kjlb_browseperspace_menu_edit_spacetypeP = self.p.get_element("id->com.yunlu6.stone:id/create_img_type","空间列表-浏览私人空间-菜单栏-编辑-空间类型")
-        return self.Kjlb_browseperspace_menu_edit_spacetypeP
+    Kjlb_browseperspace_menu_edit_spacetype = ("id->com.yunlu6.stone:id/create_img_type","空间列表-浏览私人空间-菜单栏-编辑-空间类型")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-删除空间
-    def Kjlb_browseperspace_menu_edit_deletespace(self):
-        self.Kjlb_browseperspace_menu_edit_deletespaceP = self.p.get_element("id->com.yunlu6.stone:id/space_dele_icon","空间列表-浏览私人空间-菜单栏-编辑-删除空间")
-        return self.Kjlb_browseperspace_menu_edit_deletespaceP
+    Kjlb_browseperspace_menu_edit_deletespace = ("id->com.yunlu6.stone:id/space_dele_icon","空间列表-浏览私人空间-菜单栏-编辑-删除空间")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-删除空间-是
-    def Kjlb_browseperspace_menu_edit_deletespace_OK(self):
-        self.Kjlb_browseperspace_menu_edit_deletespace_OKP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-删除空间-是")
-        return self.Kjlb_browseperspace_menu_edit_deletespace_OKP
+    Kjlb_browseperspace_menu_edit_deletespace_OK = ("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-删除空间-是")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-删除空间-否
-    def Kjlb_browseperspace_menu_edit_deletespace_NO(self):
-        self.Kjlb_browseperspace_menu_edit_deletespace_NOP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-删除空间-否")
-        return self.Kjlb_browseperspace_menu_edit_deletespaceP
+    Kjlb_browseperspace_menu_edit_deletespace_NO = ("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-删除空间-否")
 
 
      # 空间列表-浏览私人空间-菜单栏-编辑-返回
-    def Kjlb_browseperspace_menu_edit_back(self):
-        self.Kjlb_browseperspace_menu_edit_backP = self.p.get_element("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览私人空间-菜单栏-编辑-返回")
-        return self.Kjlb_browseperspace_menu_edit_backP
+    Kjlb_browseperspace_menu_edit_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览私人空间-菜单栏-编辑-返回")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-空间名
-    def Kjlb_browseperspace_menu_edit_spacename(self):
-        self.Kjlb_browseperspace_menu_edit_spacenameP = self.p.get_element("id->com.yunlu6.stone:id/space_name_edit","空间列表-浏览私人空间-菜单栏-编辑-空间名")
-        return self.Kjlb_browseperspace_menu_edit_spacenameP
+    Kjlb_browseperspace_menu_edit_spacename = ("id->com.yunlu6.stone:id/space_name_edit","空间列表-浏览私人空间-菜单栏-编辑-空间名")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称列表(0)
-    def Kjlb_browseperspace_menu_edit_spacename_spaceEdit(self):
-        self.Kjlb_browseperspace_menu_edit_spacename_spaceEditP = self.p.get_elements("id->com.yunlu6.stone:id/edit_folder_name","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称")
-        return self.Kjlb_browseperspace_menu_edit_spacename_spaceEditP
+    Kjlb_browseperspace_menu_edit_spacename_spaceEdit = ("id->com.yunlu6.stone:id/edit_folder_name","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称")
 
     # 空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-是
-    def Kjlb_browseperspace_menu_edit_spacename_spaceEdit_OK(self):
-        self.Kjlb_browseperspace_menu_edit_spacename_spaceEditOKP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-是")
-        return self.Kjlb_browseperspace_menu_edit_spacename_spaceEditOKP
+    Kjlb_browseperspace_menu_edit_spacename_spaceEdit_OK = ("id->com.yunlu6.stone:id/edit_folder_ok","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-是")
 
      # 空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-否
-    def Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NO(self):
-        self.Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NOP = self.p.get_element("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-否")
-        return self.Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NOP
+    Kjlb_browseperspace_menu_edit_spacename_spaceEdit_NO = ("id->com.yunlu6.stone:id/edit_folder_no","空间列表-浏览私人空间-菜单栏-编辑-空间名-空间名称-否")
 
 #***************************************【PAGE2】菜单栏-客户Kjlb_browseperspace_menu_customer***************************************
     # 空间列表-浏览私人空间-菜单栏-客户-返回
-    def Kjlb_browseperspace_menu_customer_back(self):
-        self.Kjlb_browseperspace_menu_customer_backP = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-菜单栏-客户-返回")
-        return self.Kjlb_browseperspace_menu_customer_backP
+    Kjlb_browseperspace_menu_customer_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-菜单栏-客户-返回")
 
     # 空间列表-浏览私人空间-菜单栏-客户-搜索栏
-    def Kjlb_browseperspace_menu_customer_search(self):
-        self.Kjlb_browseperspace_menu_customer_searchP = self.p.get_element("id->com.yunlu6.stone:id/et_search","空间列表-浏览私人空间-菜单栏-客户-搜索栏")
-        return self.Kjlb_browseperspace_menu_customer_searchP
+    Kjlb_browseperspace_menu_customer_search = ("id->com.yunlu6.stone:id/et_search","空间列表-浏览私人空间-菜单栏-客户-搜索栏")
 
     # 空间列表-浏览私人空间-菜单栏-客户-搜索按钮
-    def Kjlb_browseperspace_menu_customer_searchbtn(self):
-        self.Kjlb_browseperspace_menu_customer_searchbtnP = self.p.get_element("id->com.yunlu6.stone:id/iv_search","空间列表-浏览私人空间-菜单栏-客户-搜索栏")
-        return self.Kjlb_browseperspace_menu_customer_searchbtnP
+    Kjlb_browseperspace_menu_customer_searchbtn = ("id->com.yunlu6.stone:id/iv_search","空间列表-浏览私人空间-菜单栏-客户-搜索栏")
 
     # 空间列表-浏览私人空间-菜单栏-客户-菜单
-    def Kjlb_browseperspace_menu_customer_menu(self):
-        self.Kjlb_browseperspace_menu_customer_menuP = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-菜单栏-客户-菜单")
-        return self.Kjlb_browseperspace_menu_customer_menuP
+    Kjlb_browseperspace_menu_customer_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-菜单栏-客户-菜单")
 
     # 空间列表-浏览私人空间-菜单栏-客户-菜单-+客户
-    def Kjlb_browseperspace_menu_customer_menu_addcus(self):
-        self.Kjlb_browseperspace_menu_customer_menu_addcusP = self.p.get_element("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览私人空间-菜单栏-客户-菜单-+客户")
-        return self.Kjlb_browseperspace_menu_customer_menu_addcusP
+    Kjlb_browseperspace_menu_customer_menu_addcus = ("id->com.yunlu6.stone:id/btn_new_space","空间列表-浏览私人空间-菜单栏-客户-菜单-+客户")
 
     # 空间列表-浏览私人空间-菜单栏-客户-客户列表
-    def Kjlb_browseperspace_menu_customer_clist(self):
-        self.Kjlb_browseperspace_menu_customer_clistP = self.p.get_elements("id->com.yunlu6.stone:id/rl_out","空间列表-浏览私人空间-菜单栏-客户-客户列表")
-        return self.Kjlb_browseperspace_menu_customer_clistP
+    Kjlb_browseperspace_menu_customer_clist = ("id->com.yunlu6.stone:id/rl_out","空间列表-浏览私人空间-菜单栏-客户-客户列表")
 
     # 空间列表-浏览私人空间-菜单栏-客户-群聊
-    def Kjlb_browseperspace_menu_customer_gchat(self):
-        self.Kjlb_browseperspace_menu_customer_gchatP = self.p.get_element("id->com.yunlu6.stone:id/rl_bottom","空间列表-浏览私人空间-菜单栏-客户-群聊")
-        return self.Kjlb_browseperspace_menu_customer_gchatP
+    Kjlb_browseperspace_menu_customer_gchat = ("id->com.yunlu6.stone:id/rl_bottom","空间列表-浏览私人空间-菜单栏-客户-群聊")
 
     # 空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称-确定
-    def Kjlb_browseperspace_menu_addfolder_confirm(self):
-        self.Kjlb_browseperspace_menu_addfolder_confirmP = self.p.get_element("id->com.yunlu6.stone:id/zone_add_commit","空间列表-浏览私人空间-菜单栏-+文件夹-确定")
-        return self.Kjlb_browseperspace_menu_addfolder_confirmP
+    Kjlb_browseperspace_menu_addfolder_confirm = ("id->com.yunlu6.stone:id/zone_add_commit","空间列表-浏览私人空间-菜单栏-+文件夹-确定")
 
      # 空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称
-    def Kjlb_browseperspace_menu_addfolder_foldername(self):
-        self.Kjlb_browseperspace_menu_addfolder_foldernameP = self.p.get_element("id->com.yunlu6.stone:id/zone_add_gallery_et","空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称")
-        return self.Kjlb_browseperspace_menu_addfolder_foldernameP
+    Kjlb_browseperspace_menu_addfolder_foldername = ("id->com.yunlu6.stone:id/zone_add_gallery_et","空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称")
 
     # 空间列表-浏览私人空间-菜单栏-+文件夹-返回
-    def Kjlb_browseperspace_menu_addfolder_back(self):
-        self.Kjlb_browseperspace_menu_addfolder_backP = self.p.get_element("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览私人空间-菜单栏-+文件夹-返回")
-        return self.Kjlb_browseperspace_menu_addfolder_backP
+    Kjlb_browseperspace_menu_addfolder_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览私人空间-菜单栏-+文件夹-返回")
 
 #***************************************【PAGE2】+数据Kjlb_browseperspace_adata***************************************
     # 空间列表-浏览私人空间-加数据-相册
-    def Kjlb_browseperspace_adata_ByAlbum(self):
-        self.Kjlb_browseperspace_adata_ByAlbumP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-加数据-相册")
-        return self.Kjlb_browseperspace_adata_ByAlbumP
+    Kjlb_browseperspace_adata_ByAlbum = ("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-加数据-相册")
 
     # 空间列表-浏览私人空间-加数据-拍照
-    def Kjlb_browseperspace_adata_ByTakepic(self):
-        self.Kjlb_browseperspace_adata_ByTakepicP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_camera","空间列表-浏览私人空间-加数据-拍照")
-        return self.Kjlb_browseperspace_adata_ByTakepicP
+    Kjlb_browseperspace_adata_ByTakepic = ("id->com.yunlu6.stone:id/iv_cloundlibrary_camera","空间列表-浏览私人空间-加数据-拍照")
 
     # 空间列表-浏览私人空间-加数据-取消
-    def Kjlb_browseperspace_adata_cancel(self):
-        self.Kjlb_browseperspace_adata_cancelP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-加数据-取消")
-        return self.Kjlb_browseperspace_adata_cancelP
+    Kjlb_browseperspace_adata_cancel = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-加数据-取消")
 
 #***************************************【PAGE2】更多Kjlb_browseperspace_more***************************************
      # 空间列表-浏览私人空间-更多-照片列表
-    def Kjlb_browseperspace_more_piclist(self):
-        self.Kjlb_browseperspace_more_piclistP = self.p.get_elements("id->com.yunlu6.stone:id/presonzone_gridview_iv","空间列表-浏览私人空间-更多-照片列表")
-        return self.Kjlb_browseperspace_more_piclistP
+    Kjlb_browseperspace_more_piclist = ("id->com.yunlu6.stone:id/presonzone_gridview_iv","空间列表-浏览私人空间-更多-照片列表")
 
     # 空间列表-浏览私人空间-更多-返回
-    def Kjlb_browseperspace_more_back(self):
-        self.Kjlb_browseperspace_more_backP = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-更多-照片列表-照片本身")
-        return self.Kjlb_browseperspace_more_backP
+    Kjlb_browseperspace_more_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览私人空间-更多-照片列表-照片本身")
 
     # 空间列表-浏览私人空间-更多-菜单栏
-    def Kjlb_browseperspace_more_menu(self):
-        self.Kjlb_browseperspace_more_menuP = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-更多-菜单栏")
-        return self.Kjlb_browseperspace_more_menuP
+    Kjlb_browseperspace_more_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览私人空间-更多-菜单栏")
 
     # 空间列表-浏览私人空间-更多-菜单栏-上传
-    def Kjlb_browseperspace_more_menu_upload(self):
-        self.Kjlb_browseperspace_more_menu_uploadP = self.p.get_element("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_uploade","空间列表-浏览私人空间-更多-菜单栏-上传")
-        return self.Kjlb_browseperspace_more_menu_uploadP
+    Kjlb_browseperspace_more_menu_upload = ("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_uploade","空间列表-浏览私人空间-更多-菜单栏-上传")
 
     # 空间列表-浏览私人空间-更多-菜单栏-上传-相册
-    def Kjlb_browseperspace_more_menu_upload_ByAlbum(self):
-        self.Kjlb_browseperspace_more_menu_upload_ByAlbumP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-更多-菜单栏-上传-相册")
-        return self.Kjlb_browseperspace_more_menu_upload_ByAlbumP
+    Kjlb_browseperspace_more_menu_upload_ByAlbum = ("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm","空间列表-浏览私人空间-更多-菜单栏-上传-相册")
 
     # 空间列表-浏览私人空间-更多-菜单栏-上传-拍照
-    def Kjlb_browseperspace_more_menu_upload_ByTakepic(self):
-        self.Kjlb_browseperspace_more_menu_upload_ByTakepicP = self.p.get_element("id->com.yunlu6.stone:id/iv_cloundlibrary_cameras","空间列表-浏览私人空间-更多-菜单栏-上传-拍照")
-        return self.Kjlb_browseperspace_more_menu_upload_ByTakepicP
+    Kjlb_browseperspace_more_menu_upload_ByTakepic = ("id->com.yunlu6.stone:id/iv_cloundlibrary_cameras","空间列表-浏览私人空间-更多-菜单栏-上传-拍照")
 
     # 空间列表-浏览私人空间-更多-菜单栏-上传-取消
-    def Kjlb_browseperspace_more_menu_upload_cancel(self):
-        self.Kjlb_browseperspace_more_menu_upload_cancelP = self.p.get_element("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-更多-菜单栏-上传-取消")
-        return self.Kjlb_browseperspace_more_menu_upload_cancelP
+    Kjlb_browseperspace_more_menu_upload_cancel = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel","空间列表-浏览私人空间-更多-菜单栏-上传-取消")
 
      # 空间列表-浏览私人空间-更多-菜单栏-编辑
-    def Kjlb_browseperspace_more_menu_edit(self):
-        self.Kjlb_browseperspace_more_menu_editP = self.p.get_element("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_edit","空间列表-浏览私人空间-更多-菜单栏-编辑")
-        return self.Kjlb_browseperspace_more_menu_editP
+    Kjlb_browseperspace_more_menu_edit = ("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_edit","空间列表-浏览私人空间-更多-菜单栏-编辑")
 
     # 空间列表-浏览私人空间-更多-菜单栏-排序
-    def Kjlb_browseperspace_more_menu_sort(self):
-        self.Kjlb_browseperspace_more_menu_sortP = self.p.get_element("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_sort","空间列表-浏览私人空间-更多-菜单栏-排序")
-        return self.Kjlb_browseperspace_more_menu_sortP
+    Kjlb_browseperspace_more_menu_sort = ("id->com.yunlu6.stone:id/pop_gallery_photoes_btn_sort","空间列表-浏览私人空间-更多-菜单栏-排序")
 
 #***************************************【PAGE2】企业会员Kjlb_browseascspace_ovip***************************************
     # 空间列表-协会空间-企业会员-返回
-    def Kjlb_browseascspace_ovip_back(self):
-        self.Kjlb_browseascspace_ovip_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_more_back","空间列表-协会空间-企业会员-返回")
-        return self.Kjlb_browseascspace_ovip_backA
+    Kjlb_browseascspace_ovip_back = ("id->com.yunlu6.stone:id/title_main_more_back","空间列表-协会空间-企业会员-返回")
 
     # 空间列表-协会空间-企业会员-搜索栏
-    def Kjlb_browseascspace_ovip_search(self):
-        self.Kjlb_browseascspace_ovip_searchA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-协会空间-企业会员-搜索栏")
-        return self.Kjlb_browseascspace_ovip_searchA
+    Kjlb_browseascspace_ovip_search = ("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-协会空间-企业会员-搜索栏")
 
     # 空间列表-协会空间-企业会员-搜索按钮
-    def Kjlb_browseascspace_ovip_searchbtn(self):
-        self.Kjlb_browseascspace_ovip_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-协会空间-企业会员-搜索按钮")
-        return self.Kjlb_browseascspace_ovip_searchbtnA
+    Kjlb_browseascspace_ovip_searchbtn = ("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-协会空间-企业会员-搜索按钮")
 
     # 空间列表-协会空间-企业会员-企业列表
-    def Kjlb_browseascspace_ovip_olist(self):
-        self.Kjlb_browseascspace_ovip_olistA = self.p.get_elements("id->com.yunlu6.stone:id/ass_company_name","空间列表-协会空间-企业会员-企业列表")
-        return self.Kjlb_browseascspace_ovip_olistA
+    Kjlb_browseascspace_ovip_olist = ("id->com.yunlu6.stone:id/ass_company_name","空间列表-协会空间-企业会员-企业列表")
 
 #***************************************【PAGE2】个人会员Kjlb_browseascspace_ovip***************************************
      # 空间列表-协会空间-个人会员-返回
-    def Kjlb_browseascspace_pvip_back(self):
-        self.Kjlb_browseascspace_pvip_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-协会空间-个人会员-返回")
-        return self.Kjlb_browseascspace_pvip_backA
+    Kjlb_browseascspace_pvip_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-协会空间-个人会员-返回")
 
     # 空间列表-协会空间-个人会员-搜索栏
-    def Kjlb_browseascspace_pvip_search(self):
-        self.Kjlb_browseascspace_pvip_searchA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-协会空间-个人会员-搜索栏")
-        return self.Kjlb_browseascspace_pvip_searchA
+    Kjlb_browseascspace_pvip_search = ("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-协会空间-个人会员-搜索栏")
 
     # 空间列表-协会空间-个人会员-搜索按钮
-    def Kjlb_browseascspace_pvip_searchbtn(self):
-        self.Kjlb_browseascspace_pvip_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-协会空间-个人会员-搜索按钮")
-        return self.Kjlb_browseascspace_pvip_searchbtnA
+    Kjlb_browseascspace_pvip_searchbtn = ("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-协会空间-个人会员-搜索按钮")
 
     # 空间列表-协会空间-个人会员-人脉列表
-    def Kjlb_browseascspace_pvip_plist(self):
-        self.Kjlb_browseascspace_pvip_olistA = self.p.get_elements("id->com.yunlu6.stone:id/vip_name","空间列表-协会空间-个人会员-人脉列表")
-        return self.Kjlb_browseascspace_pvip_olistA
+    Kjlb_browseascspace_pvip_olist = ("id->com.yunlu6.stone:id/vip_name","空间列表-协会空间-个人会员-人脉列表")
 
 #***************************************【PAGE2】资讯Kjlb_browseascspace_arch***************************************
     # 空间列表-协会空间-资讯-返回
-    def Kjlb_browseascspace_arch_back(self):
-        self.Kjlb_browseascspace_arch_backA = self.p.get_element("id->com.yunlu6.stone:id/title_back_icon","空间列表-协会空间-资讯-返回")
-        return self.Kjlb_browseascspace_arch_backA
+    Kjlb_browseascspace_arch_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-协会空间-资讯-返回")
 
     # 空间列表-协会空间-资讯-资讯文件列表
-    def Kjlb_browseascspace_arch_alist(self):
-        self.Kjlb_browseascspace_arch_alistA = self.p.get_element("id->com.yunlu6.stone:id/iv_profile","空间列表-协会空间-资讯-资讯文件列表")
-        return self.Kjlb_browseascspace_arch_alistA
+    Kjlb_browseascspace_arch_alist = ("id->com.yunlu6.stone:id/iv_profile","空间列表-协会空间-资讯-资讯文件列表")
 
 #***************************************【PAGE2】协会资信信息Kjlb_browseascspace_credit***************************************
     # 空间列表-协会空间-资信-返回
-    def Kjlb_browseascspace_credit_back(self):
-        self.Kjlb_browseascspace_credit_backA = self.p.get_element("id->com.yunlu6.stone:id/title_back_icone","空间列表-协会空间-资信-返回")
-        return self.Kjlb_browseascspace_credit_backA
+    Kjlb_browseascspace_credit_back = ("id->com.yunlu6.stone:id/title_back_icone","空间列表-协会空间-资信-返回")
 
 #***************************************【PAGE2】菜单栏-编辑Kjlb_browseascspace_menu_edit***************************************
      # 空间列表-浏览协会空间-菜单栏-编辑-返回
-    def Kjlb_browseascspace_menu_edit_back(self):
-        self.Kjlb_browseascspace_menu_edit_backA = self.p.get_elements("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览协会空间-菜单栏-编辑-返回")
-        return self.Kjlb_browseascspace_menu_edit_backA
+    Kjlb_browseascspace_menu_edit_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览协会空间-菜单栏-编辑-返回")
 
      # 空间列表-浏览协会空间-菜单栏-编辑-Logo
-    def Kjlb_browseascspace_menu_edit_logo(self):
-        self.Kjlb_browseascspace_menu_edit_logoA = self.p.get_element("id->com.yunlu6.stone:id/iv_open_logo","空间列表-浏览协会空间-菜单栏-编辑-Logo")
-        return self.Kjlb_browseascspace_menu_edit_logoA
+    Kjlb_browseascspace_menu_edit_logo = ("id->com.yunlu6.stone:id/iv_open_logo","空间列表-浏览协会空间-菜单栏-编辑-Logo")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-企业全称
-    def Kjlb_browseascspace_menu_edit_fullname(self):
-        self.Kjlb_browseascspace_menu_edit_fullnameA = self.p.get_element("id->com.yunlu6.stone:id/company_name","空间列表-浏览协会空间-菜单栏-编辑-企业全称")
-        return self.Kjlb_browseascspace_menu_edit_fullnameA
+    Kjlb_browseascspace_menu_edit_fullname = ("id->com.yunlu6.stone:id/company_name","空间列表-浏览协会空间-菜单栏-编辑-企业全称")
 
      # 空间列表-浏览协会空间-菜单栏-编辑-企业简称
-    def Kjlb_browseascspace_menu_edit_simplename(self):
-        self.Kjlb_browseascspace_menu_edit_simplenameA = self.p.get_element("id->com.yunlu6.stone:id/company_introduce","空间列表-浏览协会空间-菜单栏-编辑-企业简称")
-        return self.Kjlb_browseascspace_menu_edit_simplenameA
+    Kjlb_browseascspace_menu_edit_simplename = ("id->com.yunlu6.stone:id/company_introduce","空间列表-浏览协会空间-菜单栏-编辑-企业简称")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-所在地区
-    def Kjlb_browseascspace_menu_edit_address(self):
-        self.Kjlb_browseascspace_menu_edit_addressA = self.p.get_element("id->com.yunlu6.stone:id/company_address","空间列表-浏览协会空间-菜单栏-编辑-所在地区")
-        return self.Kjlb_browseascspace_menu_edit_addressA
+    Kjlb_browseascspace_menu_edit_address = ("id->com.yunlu6.stone:id/company_address","空间列表-浏览协会空间-菜单栏-编辑-所在地区")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-所在地区-所在地区列表
-    def Kjlb_browseascspace_menu_edit_address_list(self):
-        self.Kjlb_browseascspace_menu_edit_address_listA = self.p.get_elements("id->com.yunlu6.stone:id/tv_address" ,"空间列表-浏览协会空间-菜单栏-编辑-所在地区")
-        return self.Kjlb_browseascspace_menu_edit_address_listA
+    Kjlb_browseascspace_menu_edit_address_list = ("id->com.yunlu6.stone:id/tv_address" ,"空间列表-浏览协会空间-菜单栏-编辑-所在地区")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-详细地址
-    def Kjlb_browseascspace_menu_edit_detailaddress(self):
-        self.Kjlb_browseascspace_menu_edit_detailaddressA = self.p.get_element("id->com.yunlu6.stone:id/company_address_det","空间列表-浏览协会空间-菜单栏-编辑-详细地址")
-        return self.Kjlb_browseascspace_menu_edit_detailaddressA
+    Kjlb_browseascspace_menu_edit_detailaddress = ("id->com.yunlu6.stone:id/company_address_det","空间列表-浏览协会空间-菜单栏-编辑-详细地址")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-联系人
-    def Kjlb_browseascspace_menu_edit_contact(self):
-        self.Kjlb_browseascspace_menu_edit_contactA = self.p.get_element("id->com.yunlu6.stone:id/people_name","空间列表-浏览协会空间-菜单栏-编辑-联系人")
-        return self.Kjlb_browseascspace_menu_edit_contactA
+    Kjlb_browseascspace_menu_edit_contact = ("id->com.yunlu6.stone:id/people_name","空间列表-浏览协会空间-菜单栏-编辑-联系人")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-手机号
-    def Kjlb_browseascspace_menu_edit_phone(self):
-        self.Kjlb_browseascspace_menu_edit_phoneA = self.p.get_element("id->com.yunlu6.stone:id/mobile_phone","空间列表-浏览协会空间-菜单栏-编辑-手机号")
-        return self.Kjlb_browseascspace_menu_edit_phoneA
+    Kjlb_browseascspace_menu_edit_phone = ("id->com.yunlu6.stone:id/mobile_phone","空间列表-浏览协会空间-菜单栏-编辑-手机号")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-座机号
-    def Kjlb_browseascspace_menu_edit_landline(self):
-        self.Kjlb_browseascspace_menu_edit_landlineA = self.p.get_element("id->com.yunlu6.stone:id/phone","空间列表-浏览协会空间-菜单栏-编辑-座机号")
-        return self.Kjlb_browseascspace_menu_edit_landlineA
+    Kjlb_browseascspace_menu_edit_landline = ("id->com.yunlu6.stone:id/phone","空间列表-浏览协会空间-菜单栏-编辑-座机号")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-邮箱
-    def Kjlb_browseascspace_menu_edit_email(self):
-        self.Kjlb_browseascspace_menu_edit_emailA = self.p.get_element("id->com.yunlu6.stone:id/email","空间列表-浏览协会空间-菜单栏-编辑-邮箱")
-        return self.Kjlb_browseascspace_menu_edit_emailA
+    Kjlb_browseascspace_menu_edit_email = ("id->com.yunlu6.stone:id/email","空间列表-浏览协会空间-菜单栏-编辑-邮箱")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-QQ
-    def Kjlb_browseascspace_menu_edit_QQ(self):
-        self.Kjlb_browseascspace_menu_edit_QQA = self.p.get_element("id->com.yunlu6.stone:id/qq","空间列表-浏览协会空间-菜单栏-编辑-QQ")
-        return self.Kjlb_browseascspace_menu_edit_QQA
+    Kjlb_browseascspace_menu_edit_QQ = ("id->com.yunlu6.stone:id/qq","空间列表-浏览协会空间-菜单栏-编辑-QQ")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-网站
-    def Kjlb_browseascspace_menu_edit_website(self):
-        self.Kjlb_browseascspace_menu_edit_websiteA = self.p.get_element("id->com.yunlu6.stone:id/website","空间列表-浏览协会空间-菜单栏-编辑-网站")
-        return self.Kjlb_browseascspace_menu_edit_websiteA
+    Kjlb_browseascspace_menu_edit_website = ("id->com.yunlu6.stone:id/website","空间列表-浏览协会空间-菜单栏-编辑-网站")
 
     # 空间列表-浏览协会空间-菜单栏-编辑-勾选
-    def Kjlb_browseascspace_menu_edit_confirm(self):
-        self.Kjlb_browseascspace_menu_edit_confirmA = self.p.get_element("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览协会空间-菜单栏-编辑-勾选")
-        return self.Kjlb_browseascspace_menu_edit_confirmA
+    Kjlb_browseascspace_menu_edit_confirm = ("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览协会空间-菜单栏-编辑-勾选")
 
 #***************************************【PAGE2】菜单栏-团队Kjlb_browseascspace_menu_team***************************************
     # 空间列表-浏览协会空间-菜单栏-团队-返回
-    def Kjlb_browseascspace_menu_team_back(self):
-        self.Kjlb_browseascspace_menu_team_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-团队-返回")
-        return self.Kjlb_browseascspace_menu_team_backA
+    Kjlb_browseascspace_menu_team_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-团队-返回")
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏
-    def Kjlb_browseascspace_menu_team_menu(self):
-        self.Kjlb_browseascspace_menu_team_menuA = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览协会空间-菜单栏-团队-菜单栏")
-        return self.Kjlb_browseascspace_menu_team_menuA
+    Kjlb_browseascspace_menu_team_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览协会空间-菜单栏-团队-菜单栏")
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免
-    def Kjlb_browseascspace_menu_team_menu_assignjob(self):
-        self.Kjlb_browseascspace_menu_team_menu_assignjobA = self.p.get_element("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免")
-        return self.Kjlb_browseascspace_menu_team_menu_assignjobA
+    Kjlb_browseascspace_menu_team_menu_assignjob = ("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免")
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-我的部门
-    def Kjlb_browseascspace_menu_team_menu_mydepartment(self):
-        self.Kjlb_browseascspace_menu_team_menu_mydepartmentA = self.p.get_element("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览协会空间-菜单栏-团队-菜单栏-我的部门")
-        return self.Kjlb_browseascspace_menu_team_menu_mydepartmentA
+    Kjlb_browseascspace_menu_team_menu_mydepartment = ("id->com.yunlu6.stone:id/pop_teamedit_personnel","空间列表-浏览协会空间-菜单栏-团队-菜单栏-我的部门")
 
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑
-    def Kjlb_browseascspace_menu_team_teamedit(self):
-        self.Kjlb_browseascspace_menu_team_teameditA = self.p.get_element("id->com.yunlu6.stone:id/companyteam_btn_edit","空间列表-浏览协会空间-菜单栏-团队-团队编辑")
-        return self.Kjlb_browseascspace_menu_team_teameditA
+    Kjlb_browseascspace_menu_team_teamedit = ("id->com.yunlu6.stone:id/companyteam_btn_edit","空间列表-浏览协会空间-菜单栏-团队-团队编辑")
 
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮
-    def Kjlb_browseascspace_menu_team_teamedit_numeidt(self):
-        self.Kjlb_browseascspace_menu_team_teamedit_numeidtA = self.p.get_element("id->com.yunlu6.stone:id/companyteam_item_edit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮")
-        return self.Kjlb_browseascspace_menu_team_teamedit_numeidtA
+    Kjlb_browseascspace_menu_team_teamedit_numeidt = ("id->com.yunlu6.stone:id/companyteam_item_edit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮")
 
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-职位人数
-    def Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit(self):
-        self.Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumeditA = self.p.get_element("id->com.yunlu6.stone:id/teamedit_jobs_editnum","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
-        return self.Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumeditA
+    Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit = ("id->com.yunlu6.stone:id/teamedit_jobs_editnum","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
 
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-否
-    def Kjlb_browseascspace_menu_team_teamedit_numeidt_cancel(self):
-        self.Kjlb_browseascspace_menu_team_teamedit_numeidt_cancelA = self.p.get_element("id->com.yunlu6.stone:id/teamedit_cancleedit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮-否")
-        return self.Kjlb_browseascspace_menu_team_teamedit_numeidt_cancelA
+    Kjlb_browseascspace_menu_team_teamedit_numeidt_cancel = ("id->com.yunlu6.stone:id/teamedit_cancleedit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮-否")
 
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-是
-    def Kjlb_browseascspace_menu_team_teamedit_numeidt_confirm(self):
-        self.Kjlb_browseascspace_menu_team_teamedit_numeidt_confirmA = self.p.get_element("id->com.yunlu6.stone:id/teamedit_commitedit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
-        return self.Kjlb_browseascspace_menu_team_teamedit_numeidt_confirmA
+    Kjlb_browseascspace_menu_team_teamedit_numeidt_confirm = ("id->com.yunlu6.stone:id/teamedit_commitedit","空间列表-浏览协会空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
 
 # ***************************************【PAGE2】菜单栏-会员Kjlb_browseascspace_menu_vip***************************************
      # 空间列表-浏览协会空间-菜单栏-会员-企业名录
-    def Kjlb_browseascspace_menu_vip_companylist(self):
-        self.Kjlb_browseascspace_menu_vip_companylistA = self.p.get_element("id->com.yunlu6.stone:id/ass_select_companylist","空间列表-浏览协会空间-菜单栏-会员-企业名录")
-        return self.Kjlb_browseascspace_menu_vip_companylistA
+    Kjlb_browseascspace_menu_vip_companylist = ("id->com.yunlu6.stone:id/ass_select_companylist","空间列表-浏览协会空间-菜单栏-会员-企业名录")
 
     # 空间列表-浏览协会空间-菜单栏-会员-企业名录-企业名列表
-    def Kjlb_browseascspace_menu_vip_companylist_companyname(self):
-        self.Kjlb_browseascspace_menu_vip_companylist_companynameA = self.p.get_elements("id->com.yunlu6.stone:id/ass_company_name","空间列表-浏览协会空间-菜单栏-会员-企业名录-企业名列表")
-        return self.Kjlb_browseascspace_menu_vip_companylist_companynameA
+    Kjlb_browseascspace_menu_vip_companylist_companyname = ("id->com.yunlu6.stone:id/ass_company_name","空间列表-浏览协会空间-菜单栏-会员-企业名录-企业名列表")
 
     # 空间列表-浏览协会空间-菜单栏-会员-搜索按钮
-    def Kjlb_browseascspace_menu_vip_searchbtn(self):
-        self.Kjlb_browseascspace_menu_vip_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-浏览协会空间-菜单栏-会员-搜索按钮")
-        return self.Kjlb_browseascspace_menu_vip_searchbtnA
+    Kjlb_browseascspace_menu_vip_searchbtn = ("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-浏览协会空间-菜单栏-会员-搜索按钮")
 
      # 空间列表-浏览协会空间-菜单栏-会员-个人名录
-    def Kjlb_browseascspace_menu_vip_personlist(self):
-        self.Kjlb_browseascspace_menu_vip_personlistA = self.p.get_element("id->com.yunlu6.stone:id/ass_select_personlist","空间列表-浏览协会空间-菜单栏-会员-个人名录")
-        return self.Kjlb_browseascspace_menu_vip_personlistA
+    Kjlb_browseascspace_menu_vip_personlist = ("id->com.yunlu6.stone:id/ass_select_personlist","空间列表-浏览协会空间-菜单栏-会员-个人名录")
 
     # 空间列表-浏览协会空间-菜单栏-会员-个人名录-个人名列表
-    def Kjlb_browseascspace_menu_vip_personlist_personname(self):
-        self.Kjlb_browseascspace_menu_vip_personlist_personnameA = self.p.get_elements("id->com.yunlu6.stone:id/vip_name","空间列表-浏览协会空间-菜单栏-会员-个人名录-个人名列表")
-        return self.Kjlb_browseascspace_menu_vip_personlist_personnameA
+    Kjlb_browseascspace_menu_vip_personlist_personname = ("id->com.yunlu6.stone:id/vip_name","空间列表-浏览协会空间-菜单栏-会员-个人名录-个人名列表")
 
      # 空间列表-浏览协会空间-菜单栏-会员-搜索栏
-    def Kjlb_browseascspace_menu_vip_search(self):
-        self.Kjlb_browseascspace_menu_vip_searchA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-浏览协会空间-菜单栏-会员-搜索栏")
-        return self.Kjlb_browseascspace_menu_vip_searchA
+    Kjlb_browseascspace_menu_vip_search = ("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-浏览协会空间-菜单栏-会员-搜索栏")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏
-    def Kjlb_browseascspace_menu_vip_menu(self):
-        self.Kjlb_browseascspace_menu_vip_menuA = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览协会空间-菜单栏-会员-菜单栏")
-        return self.Kjlb_browseascspace_menu_vip_menuA
+    Kjlb_browseascspace_menu_vip_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu","空间列表-浏览协会空间-菜单栏-会员-菜单栏")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-加会员
-    def Kjlb_browseascspace_menu_vip_menu_addvip(self):
-        self.Kjlb_browseascspace_menu_vip_menu_addvipA = self.p.get_element("id->com.yunlu6.stone:id/btn_add_vip","空间列表-浏览协会空间-菜单栏-会员-菜单栏-加会员")
-        return self.Kjlb_browseascspace_menu_vip_menu_addvipA
+    Kjlb_browseascspace_menu_vip_menu_addvip = ("id->com.yunlu6.stone:id/btn_add_vip","空间列表-浏览协会空间-菜单栏-会员-菜单栏-加会员")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理
-    def Kjlb_browseascspace_menu_vip_menu_manage(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manageA = self.p.get_element("id->com.yunlu6.stone:id/btn_add_manage","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理")
-        return self.Kjlb_browseascspace_menu_vip_menu_manageA
+    Kjlb_browseascspace_menu_vip_menu_manage = ("id->com.yunlu6.stone:id/btn_add_manage","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-返回
-    def Kjlb_browseascspace_menu_vip_menu_manage_back(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-返回")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_backA
+    Kjlb_browseascspace_menu_vip_menu_manage_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-返回")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索栏
-    def Kjlb_browseascspace_menu_vip_menu_manage_search(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_searcA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索栏")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_searcA
+    Kjlb_browseascspace_menu_vip_menu_manage_search = ("id->com.yunlu6.stone:id/companyclient_search_keyword","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索栏")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索按钮
-    def Kjlb_browseascspace_menu_vip_menu_manage_searchbtn(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索按钮")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_searchbtnA
+    Kjlb_browseascspace_menu_vip_menu_manage_searchbtn = ("id->com.yunlu6.stone:id/companyclient_search_search","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-搜索按钮")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑
-    def Kjlb_browseascspace_menu_vip_menu_manage_edit(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_editA = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_editA
+    Kjlb_browseascspace_menu_vip_menu_manage_edit = ("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业
-    def Kjlb_browseascspace_menu_vip_menu_manage_companyname(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_companynameA = self.p.get_elements("id->com.yunlu6.stone:id/ass_company_name","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_companynameA
+    Kjlb_browseascspace_menu_vip_menu_manage_companyname = ("id->com.yunlu6.stone:id/ass_company_name","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业-返回
-    def Kjlb_browseascspace_menu_vip_menu_manage_companyname_back(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_companyname_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业-返回")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_companyname_backA
+    Kjlb_browseascspace_menu_vip_menu_manage_companyname_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&企业-返回")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人
-    def Kjlb_browseascspace_menu_vip_menu_manage_personname(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_personnameA = self.p.get_elements("id->com.yunlu6.stone:id/vip_name","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_personnameA
+    Kjlb_browseascspace_menu_vip_menu_manage_personname = ("id->com.yunlu6.stone:id/vip_name","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人")
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人-返回
-    def Kjlb_browseascspace_menu_vip_menu_manage_personname_back(self):
-        self.Kjlb_browseascspace_menu_vip_menu_manage_personname_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人-返回")
-        return self.Kjlb_browseascspace_menu_vip_menu_manage_personname_backA
+    Kjlb_browseascspace_menu_vip_menu_manage_personname_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-名录列表&个人-返回")
 
      # 空间列表-浏览协会空间-菜单栏-会员-返回
-    def Kjlb_browseascspace_menu_vip_back(self):
-        self.Kjlb_browseascspace_menu_vip_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-返回")
-        return self.Kjlb_browseascspace_menu_vip_backA
+    Kjlb_browseascspace_menu_vip_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-返回")
 
 # ***************************************【PAGE2】菜单栏-+会员-个人会员Kjlb_browseascspace_menu_addvip_addperson***************************************
      #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-添加
-    def Kjlb_browseascspace_menu_addvip_addperson_confirm(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_confirmA = self.p.get_element("id->com.yunlu6.stone:id/btn_pop_client_operate","空间列表-浏览协会空间-菜单栏-会员-个人会员-添加失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_confirmA
+    Kjlb_browseascspace_menu_addvip_addperson_confirm = ("id->com.yunlu6.stone:id/btn_pop_client_operate","空间列表-浏览协会空间-菜单栏-会员-个人会员-添加失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-圆圈勾选列表
-    def Kjlb_browseascspace_menu_addvip_addperson_choose(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_chooseA = self.p.get_elements("id->com.yunlu6.stone:id/item_client_tv_checked","空间列表-浏览协会空间-菜单栏-会员-个人会员-圆圈勾选失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_chooseA
+    Kjlb_browseascspace_menu_addvip_addperson_choose = ("id->com.yunlu6.stone:id/item_client_tv_checked","空间列表-浏览协会空间-菜单栏-会员-个人会员-圆圈勾选失败")
 
      #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-全选
-    def Kjlb_browseascspace_menu_addvip_addperson_all(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_allA = self.p.get_element("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览协会空间-菜单栏-会员-个人会员-全选失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_allA
+    Kjlb_browseascspace_menu_addvip_addperson_all = ("id->com.yunlu6.stone:id/title_main_tv_more_tv","空间列表-浏览协会空间-菜单栏-会员-个人会员-全选失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-搜索按钮
-    def Kjlb_browseascspace_menu_addvip_addperson_searchbtn(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/iv_search","空间列表-浏览协会空间-菜单栏-会员-个人会员-搜索按钮失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_searchbtnA
+    Kjlb_browseascspace_menu_addvip_addperson_searchbtn = ("id->com.yunlu6.stone:id/iv_search","空间列表-浏览协会空间-菜单栏-会员-个人会员-搜索按钮失败")
 
      #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-搜索栏
-    def Kjlb_browseascspace_menu_addvip_addperson_search(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_searchA = self.p.get_element("id->com.yunlu6.stone:id/et_search","空间列表-浏览协会空间-菜单栏-会员-个人会员-搜索栏失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_searchA
+    Kjlb_browseascspace_menu_addvip_addperson_search = ("id->com.yunlu6.stone:id/et_search","空间列表-浏览协会空间-菜单栏-会员-个人会员-搜索栏失败")
 
      #定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-返回
-    def Kjlb_browseascspace_menu_addvip_addperson_back(self):
-        self.Kjlb_browseascspace_menu_addvip_addperson_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-个人会员-返回失败")
-        return self.Kjlb_browseascspace_menu_addvip_addperson_backA
+    Kjlb_browseascspace_menu_addvip_addperson_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-个人会员-返回失败")
 
 # ***************************************【PAGE2】菜单栏-+会员-企业会员Kjlb_browseascspace_menu_addvip_addcompany***************************************
      #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-返回
-    def Kjlb_browseascspace_menu_addvip_addcompany_back(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_backA = self.p.get_element("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-企业会员-返回失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_backA
+    Kjlb_browseascspace_menu_addvip_addcompany_back = ("id->com.yunlu6.stone:id/title_main_back_more_icon","空间列表-浏览协会空间-菜单栏-会员-企业会员-返回失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏
-    def Kjlb_browseascspace_menu_addvip_addcompany_search(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_searchA = self.p.get_element("id->com.yunlu6.stone:id/buildstone_search_key","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_searchA
+    Kjlb_browseascspace_menu_addvip_addcompany_search = ("id->com.yunlu6.stone:id/buildstone_search_key","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-搜索栏
-    def Kjlb_browseascspace_menu_addvip_addcompany_search_search(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_search_searchA = self.p.get_element("id->com.yunlu6.stone:id/et_search_key","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏-搜索栏失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_search_searchA
+    Kjlb_browseascspace_menu_addvip_addcompany_search_search = ("id->com.yunlu6.stone:id/et_search_key","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏-搜索栏失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索按钮
-    def Kjlb_browseascspace_menu_addvip_addcompany_searchbtn(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_searchbtnA = self.p.get_element("id->com.yunlu6.stone:id/iv_search","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索按钮失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_searchbtnA
+    Kjlb_browseascspace_menu_addvip_addcompany_searchbtn = ("id->com.yunlu6.stone:id/iv_search","空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索按钮失败")
 
      #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-菜单栏
-    def Kjlb_browseascspace_menu_addvip_addcompany_menu(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_menuA = self.p.get_element("id->com.yunlu6.stone:id/iv_more","空间列表-浏览协会空间-菜单栏-会员-企业会员-菜单栏失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_menuA
+    Kjlb_browseascspace_menu_addvip_addcompany_menu = ("id->com.yunlu6.stone:id/iv_more","空间列表-浏览协会空间-菜单栏-会员-企业会员-菜单栏失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近
-    def Kjlb_browseascspace_menu_addvip_addcompany_nearby(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_nearbyA = self.p.get_element("id->com.yunlu6.stone:id/ll_recover","空间列表-浏览协会空间-菜单栏-会员-企业会员-我的附近失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_nearbyA
+    Kjlb_browseascspace_menu_addvip_addcompany_nearby = ("id->com.yunlu6.stone:id/ll_recover","空间列表-浏览协会空间-菜单栏-会员-企业会员-我的附近失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-浏览记录
-    def Kjlb_browseascspace_menu_history(self):
-        self.Kjlb_browseascspace_menu_historyA = self.p.get_element("id->com.yunlu6.stone:id/anti","空间列表-浏览协会空间-菜单栏-浏览记录")
-        return self.Kjlb_browseascspace_menu_historyA
+    Kjlb_browseascspace_menu_history = ("id->com.yunlu6.stone:id/anti","空间列表-浏览协会空间-菜单栏-浏览记录")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-圆圈勾选列表
-    def Kjlb_browseascspace_menu_addvip_addcompany_choose(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_chooseA = self.p.get_elements("id->com.yunlu6.stone:id/assadd_select_icon","空间列表-浏览协会空间-菜单栏-会员-企业会员-圆圈勾选失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_chooseA
+    Kjlb_browseascspace_menu_addvip_addcompany_choose = ("id->com.yunlu6.stone:id/assadd_select_icon","空间列表-浏览协会空间-菜单栏-会员-企业会员-圆圈勾选失败")
 
     #定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-确定
-    def Kjlb_browseascspace_menu_addvip_addcompany_confirm(self):
-        self.Kjlb_browseascspace_menu_addvip_addcompany_confirmA = self.p.get_element("id->com.yunlu6.stone:id/company_search_assadd","空间列表-浏览协会空间-菜单栏-会员-企业会员-确定失败")
-        return self.Kjlb_browseascspace_menu_addvip_addcompany_confirmA
+    Kjlb_browseascspace_menu_addvip_addcompany_confirm = ("id->com.yunlu6.stone:id/company_search_assadd","空间列表-浏览协会空间-菜单栏-会员-企业会员-确定失败")
 
 # ***************************************【PAGE2】菜单栏-搜附近Kjlb_browseascspace_menu_nearby***************************************
 # 【PAGE3】路线Kjlb_browseascspace_menu_addvip_addcompany_nearby_route
@@ -927,60 +581,3 @@ class _SPACEPAGE3(_SPACEPAGE2):
 # 【PAGE3】搜索栏Kjlb_browseascspace_menu_addvip_addcompany_nearby_search
 # 【PAGE3】搜索按钮Kjlb_browseascspace_menu_addvip_addcompany_nearby_searchbtn
 # 【PAGE3】返回Kjlb_browseascspace_menu_addvip_addcompany_nearby_back
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

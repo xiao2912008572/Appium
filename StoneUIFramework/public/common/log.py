@@ -3,12 +3,15 @@
 import logging
 import time
 import os
-from config import globalparam
+# from config import globalparam
+from StoneUIFramework.config.globalparam import GlobalParam
 
-log_path = globalparam.log_path
+# log_path = globalparam.log_path
 class Log:
-    def __init__(self):
-        self.logname = os.path.join(log_path, '{0}.log'.format(time.strftime('%Y-%m-%d')))
+    def __init__(self,filename):
+        self.logname = filename
+        # self.logfile = cf.getParam('space',"logfile")#日志文件名
+        # self.logname = os.path.join(log_path, '{0}.log'.format(time.strftime('%Y-%m-%d')))
 
     def __printconsole(self, level, message):
         # 创建一个logger
@@ -22,8 +25,9 @@ class Log:
         ch.setLevel(logging.DEBUG)
         # 定义handler的输出格式
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        fh.setFormatter(formatter)
-        ch.setFormatter(formatter)
+        formatter1 = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter1)
+        ch.setFormatter(formatter1)
         # 给logger添加handler
         logger.addHandler(fh)
         logger.addHandler(ch)
@@ -52,3 +56,10 @@ class Log:
 
     def error(self,message):
         self.__printconsole('error', message)
+
+
+# cf = GlobalParam('config','path_file.conf')
+# filename = cf.getParam('space',"logfile")#日志文件名
+# log1 = Log(filename)
+# log1.info('你好')
+

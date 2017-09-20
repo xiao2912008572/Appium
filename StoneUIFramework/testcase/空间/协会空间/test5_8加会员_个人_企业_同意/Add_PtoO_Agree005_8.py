@@ -15,8 +15,8 @@ from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
 from StoneUIFramework.testcase.登录.test2_1退出登录.LoginoutA import LoginoutA
 from StoneUIFramework.public.common.datainfo import DataInfo
 
-#加会员_管理员_企业_拒绝
-class AddAtoORefuse(unittest.TestCase):
+#加会员_个人_企业_同意
+class AddPtoOAgree(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息
@@ -50,7 +50,7 @@ class AddAtoORefuse(unittest.TestCase):
         self.loginout = LoginoutA()
         self.addvip = AddOrgVip()
         self.delete = DeleteOrgVip()
-    def test_addAtoORefuse(self):
+    def test_addAtoOAgree(self):
         '''+企业会员:【管理员邀请：受邀企业对象拒绝】'''
         try:
             self.tools.getLog(self.logfile)#打印日志

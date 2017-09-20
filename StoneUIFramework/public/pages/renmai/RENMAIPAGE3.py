@@ -4,331 +4,213 @@ from StoneUIFramework.public.pages.renmai.RENMAIPAGE2 import _RENMAIPAGE2
 class _RENMAIPAGE3(_RENMAIPAGE2):
 #*********************************【PAGE2】搜索按钮：RMSY_search_searchbtn*********************************
     #定位：人脉首页-搜索-搜索按钮-返回按钮
-    def RMSY_search_searchbtn_back(self):
-        self.RMSY_search_searchbtn_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-搜索按钮-返回按钮")
-        return self.RMSY_search_searchbtn_backC
+        RMSY_search_searchbtn_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-搜索按钮-返回按钮")
 
     #定位：人脉首页-搜索-搜索按钮-搜索输入框
-    def RMSY_search_searchbtn_searchinput(self):
-        self.RMSY_search_searchbtn_searchinputC = self.p.get_element("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-搜索按钮-搜索输入框")
-        return self.RMSY_search_searchbtn_searchinputC
+        RMSY_search_searchbtn_searchinput = ("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-搜索按钮-搜索输入框")
 
     #定位：人脉首页-搜索-搜索按钮-搜索按钮
-    def RMSY_search_searchbtn_searchbtn(self):
-        self.RMSY_search_searchbtn_searchbtnC = self.p.get_element("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-搜索按钮-搜索按钮")
-        return self.RMSY_search_searchbtn_searchbtnC
+        RMSY_search_searchbtn_searchbtn = ("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-搜索按钮-搜索按钮")
 
-    #定位：人脉首页-搜索-搜索按钮-主菜单
-    def RMSY_search_searchbtn_menu(self):
-        self.RMSY_search_searchbtn_menuC = self.p.get_element("id->com.yunlu6.stone:id/rl_more", "人脉首页-搜索-搜索按钮-主菜单")
-        return self.RMSY_search_searchbtn_menuC
+    #定位：人脉首页-搜索-搜索按钮
+        RMSY_search_searchbtn_menu = ("id->com.yunlu6.stone:id/rl_more", "人脉首页-搜索-搜索按钮")
 
-    #定位：人脉首页-搜索-搜索按钮-主菜单-批量操作
-    def RMSY_search_searchbtn_menu_batchoperate(self):
-        self.RMSY_search_searchbtn_menu_batchoperateC = self.p.get_element("id->com.yunlu6.stone:id/batch_operate", "人脉首页-搜索-搜索按钮-主菜单-批量操作")
-        return self.RMSY_search_searchbtn_menu_batchoperateC
+    #定位：人脉首页-搜索-搜索按钮-批量操作
+        RMSY_search_searchbtn_menu_batchoperate = ("id->com.yunlu6.stone:id/batch_operate", "人脉首页-搜索-搜索按钮-批量操作")
 
 #*********************************【PAGE2】标签列表：RMSY_search_label*********************************
     #定位：人脉首页-搜索-标签列表-返回
-    def RMSY_search_label_back(self):
-        self.RMSY_search_label_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-标签列表-返回")
-        return self.RMSY_search_label_backC
+        RMSY_search_label_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-标签列表-返回")
 
     #定位：人脉首页-搜索-标签列表-搜索框
-    def RMSY_search_label_searchinput(self):
-        self.RMSY_search_label_searchinputC = self.p.get_element("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-标签列表-搜索框")
-        return self.RMSY_search_label_searchinputC
+        RMSY_search_label_searchinput = ("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-标签列表-搜索框")
 
     #定位：人脉首页-搜索-标签列表-搜索按钮
-    def RMSY_search_label_searchbtn(self):
-        self.RMSY_search_label_searchbtnC = self.p.get_element("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-标签列表-搜索按钮")
-        return self.RMSY_search_label_searchbtnC
+        RMSY_search_label_searchbtn = ("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-标签列表-搜索按钮")
 
-    #------------------------------人脉首页-搜索-标签列表-主菜单---------------------------
-    #定位：人脉首页-搜索-标签列表-主菜单
-    def RMSY_search_label_menu(self):
-        self.RMSY_search_label_menuC = self.p.get_element("id->com.yunlu6.stone:id/iv_more", "人脉首页-搜索-标签列表-主菜单")
-        return self.RMSY_search_label_menuC
+    #------------------------------人脉首页-搜索-标签列表---------------------------
+    #定位：人脉首页-搜索-标签列表
+        RMSY_search_label_menu = ("id->com.yunlu6.stone:id/iv_more", "人脉首页-搜索-标签列表")
 
     #------------------------------批量操作---------------------------
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作
-    def RMSY_search_label_menu_bcp(self):
-        self.RMSY_search_label_menu_bcpC = self.p.get_element("id->com.yunlu6.stone:id/batch_operate", "人脉首页-搜索-标签列表-主菜单-批量操作")
-        return self.RMSY_search_label_menu_bcpC
+    #定位：人脉首页-搜索-标签列表-批量操作
+        RMSY_search_label_menu_bcp = ("id->com.yunlu6.stone:id/batch_operate", "人脉首页-搜索-标签列表-批量操作")
 
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-返回
-    def RMSY_search_label_menu_bcp_back(self):
-        self.RMSY_search_label_menu_bcp_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_batch_back", "人脉首页-搜索-标签列表-主菜单-批量操作-返回")
-        return self.RMSY_search_label_menu_bcp_backC
+    #定位：人脉首页-搜索-标签列表-批量操作-返回
+        RMSY_search_label_menu_bcp_back = ("id->com.yunlu6.stone:id/iv_batch_back", "人脉首页-搜索-标签列表-批量操作-返回")
 
     #---------------------全选-----------------------
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-全选
-    def RMSY_search_label_menu_bcp_all(self):
-        self.RMSY_search_label_menu_bcp_allC = self.p.get_element("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-标签列表-主菜单-批量操作-全选")
-        return self.RMSY_search_label_menu_bcp_allC
+    #定位：人脉首页-搜索-标签列表-批量操作-全选
+        RMSY_search_label_menu_bcp_all = ("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-标签列表-批量操作-全选")
 
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-全选-取消
-    def RMSY_search_label_menu_bcp_all_all(self):
-        self.RMSY_search_label_menu_bcp_all_allC = self.p.get_element("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-标签列表-主菜单-批量操作-全选-取消")
-        return self.RMSY_search_label_menu_bcp_all_allC
+    #定位：人脉首页-搜索-标签列表-批量操作-全选-取消
+        RMSY_search_label_menu_bcp_all_all = ("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-标签列表-批量操作-全选-取消")
 
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-全选-打标签
+    #定位：人脉首页-搜索-标签列表-批量操作-全选-打标签
 
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-全选-黑名单
+    #定位：人脉首页-搜索-标签列表-批量操作-全选-黑名单
 
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-全选-换名片
+    #定位：人脉首页-搜索-标签列表-批量操作-全选-换名片
 
     #---------------------------选择联系人---------------------------
-    #定位：人脉首页-搜索-标签列表-主菜单-批量操作-选择联系人
-    def RMSY_search_label_menu_bcp_selectcontact(self):
-        self.RMSY_search_label_menu_bcp_selectcontactC = self.p.get_elements("id->com.yunlu6.stone:id/iv_select", "人脉首页-搜索-标签列表-主菜单-批量操作-选择联系人")
-        return self.RMSY_search_label_menu_bcp_selectcontactC
+    #定位：人脉首页-搜索-标签列表-批量操作-选择联系人
+        RMSY_search_label_menu_bcp_selectcontact = ("id->com.yunlu6.stone:id/iv_select", "人脉首页-搜索-标签列表-批量操作-选择联系人")
 
     #------------------------------人脉首页-搜索-标签列表-标签成员列表---------------------------
     #定位：人脉首页-搜索-标签列表-标签成员列表
-    def RMSY_search_label_memberlist(self):
-        self.RMSY_search_label_memberlistC = self.p.get_elements("id->com.yunlu6.stone:id/item_name", "人脉首页-搜索-标签列表-标签成员列表")
-        return self.RMSY_search_label_memberlistC
+        RMSY_search_label_memberlist = ("id->com.yunlu6.stone:id/item_name", "人脉首页-搜索-标签列表-标签成员列表")
 
     #------------------------------人脉首页-搜索-标签列表-点击进入群聊---------------------------
     #定位：人脉首页-搜索-标签列表-点击进入群聊
-    def RMSY_search_label_groupchat(self):
-        row_x = self.driver.get_window_size()["width"]
-        row_y = self.driver.get_window_size()["height"]
-        scale_x = 720/ 1080
-        scale_y = 1825 / 1920
-        adjust_x = row_x * scale_x
-        adjust_y = row_y * scale_y
-        return self.driver.tap([(adjust_x, adjust_y)], 2)
+        def RMSY_search_label_groupchat(self):
+            row_x = self.driver.get_window_size()["width"]
+            row_y = self.driver.get_window_size()["height"]
+            scale_x = 720/ 1080
+            scale_y = 1825 / 1920
+            adjust_x = row_x * scale_x
+            adjust_y = row_y * scale_y
+            return self.driver.tap([(adjust_x, adjust_y)], 2)
 
 #*********************************【PAGE2】集合列表：RMSY_search_list*********************************
     #定位：人脉首页-搜索-集合列表-返回
-    def RMSY_search_list_back(self):
-        self.RMSY_search_list_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-集合列表-返回")
-        return self.RMSY_search_list_backC
+        RMSY_search_list_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-集合列表-返回")
 
     #定位：人脉首页-搜索-集合列表-搜索输入框
-    def RMSY_search_list_searchinput(self):
-        self.RMSY_search_list_searchinputC = self.p.get_element("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-集合列表-搜索输入框")
-        return self.RMSY_search_list_searchinputC
+        RMSY_search_list_searchinput = ("id->com.yunlu6.stone:id/edit_text", "人脉首页-搜索-集合列表-搜索输入框")
 
     #定位：人脉首页-搜索-集合列表-搜索按钮
-    def RMSY_search_list_searchbtn(self):
-        self.RMSY_search_list_searchbtnC = self.p.get_element("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-集合列表-搜索按钮")
-        return self.RMSY_search_list_searchbtnC
+        RMSY_search_list_searchbtn = ("id->com.yunlu6.stone:id/iv_search", "人脉首页-搜索-集合列表-搜索按钮")
 
     #定位：人脉首页-搜索-集合列表-搜索按钮-搜索匹配成员列表
-    def RMSY_search_list_searchbtn_matchlist(self):
-        self.RMSY_search_list_searchbtn_matchlistC = self.p.get_elements("id->com.yunlu6.stone:id/iv_arrow", "人脉首页-搜索-集合列表-搜索按钮-搜索匹配成员列表")
-        return self.RMSY_search_list_searchbtn_matchlistC
+        RMSY_search_list_searchbtn_matchlist = ("id->com.yunlu6.stone:id/iv_arrow", "人脉首页-搜索-集合列表-搜索按钮-搜索匹配成员列表")
 
     #---------------------------------------------------编辑所有元素定位------------------------------------------------------
     #定位：人脉首页-搜索-集合列表-编辑
-    def RMSY_search_list_edit(self):
-        self.RMSY_search_list_editC = self.p.get_element("id->com.yunlu6.stone:id/tv_edit", "人脉首页-搜索-集合列表-编辑")
-        return self.RMSY_search_list_editC
+        RMSY_search_list_edit = ("id->com.yunlu6.stone:id/tv_edit", "人脉首页-搜索-集合列表-编辑")
 
     #定位：人脉首页-搜索-集合列表-编辑-返回
-    def RMSY_search_list_edit_back(self):
-        self.RMSY_search_list_edit_back = self.p.get_element("id->com.yunlu6.stone:id/iv_batch_back", "人脉首页-搜索-集合列表-编辑-返回")
-        return self.RMSY_search_list_edit_back
+        RMSY_search_list_edit_back = ("id->com.yunlu6.stone:id/iv_batch_back", "人脉首页-搜索-集合列表-编辑-返回")
 
     #定位：人脉首页-搜索-集合列表-编辑-全选
-    def RMSY_search_list_edit_all(self):
-        self.RMSY_search_list_edit_allC = self.p.get_element("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-集合列表-编辑-全选")
-        return self.RMSY_search_list_edit_allC
+        RMSY_search_list_edit_all = ("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-集合列表-编辑-全选")
 
     #定位：人脉首页-搜索-集合列表-编辑-全选-取消
-    def RMSY_search_list_edit_all_cancel(self):
-        self.RMSY_search_list_edit_all_cancelC = self.p.get_element("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-集合列表-编辑-全选-取消")
-        return self.RMSY_search_list_edit_all_cancelC
+        RMSY_search_list_edit_all_cancel = ("id->com.yunlu6.stone:id/tv_all", "人脉首页-搜索-集合列表-编辑-全选-取消")
 
     #定位：人脉首页-搜索-集合列表-编辑-选择成员
-    def RMSY_search_list_edit_selectmember(self):
-        self.RMSY_search_list_edit_selectmemberC = self.p.get_elements("id->com.yunlu6.stone:id/iv_select", "人脉首页-搜索-集合列表-编辑-选择成员")
-        return self.RMSY_search_list_edit_selectmemberC
+        RMSY_search_list_edit_selectmember = ("id->com.yunlu6.stone:id/iv_select", "人脉首页-搜索-集合列表-编辑-选择成员")
 
     #定位：人脉首页-搜索-集合列表-编辑-删除和还原
 
     #---------------------------------------------------成员列表所有元素定位------------------------------------------------------
     #定位：人脉首页-搜索-集合列表-成员列表
-    def RMSY_search_list_memberlist(self):
-        self.RMSY_search_list_memberlistC = self.p.get_elements("id->com.yunlu6.stone:id/iv_arrow", "人脉首页-搜索-集合列表-成员列表")
-        return self.RMSY_search_list_memberlistC
+        RMSY_search_list_memberlist = ("id->com.yunlu6.stone:id/iv_arrow", "人脉首页-搜索-集合列表-成员列表")
 
 #*********************************【PAGE2】名片设置：RMSY_contacts_menu_cardsetting*********************************
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-返回
-    def RMSY_contacts_menu_cardsetting_back(self):
-        self.RMSY_contacts_menu_cardsetting_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-名片设置-返回")
-        return self.RMSY_contacts_menu_cardsetting_backC
+        RMSY_contacts_menu_cardsetting_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-名片设置-返回")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-全部屏蔽
-    def RMSY_contacts_menu_cardsetting_sheildall(self):
-        self.RMSY_contacts_menu_cardsetting_sheildallC = self.p.get_element("id->com.yunlu6.stone:id/vsb_link", "人脉首页-点击联系人-打开主菜单-名片设置-全部屏蔽")
-        return self.RMSY_contacts_menu_cardsetting_sheildallC
+        RMSY_contacts_menu_cardsetting_sheildall = ("id->com.yunlu6.stone:id/vsb_link", "人脉首页-点击联系人-打开主菜单-名片设置-全部屏蔽")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-一对一会话
-    def RMSY_contacts_menu_cardsetting_o2o(self):
-        self.RMSY_contacts_menu_cardsetting_o2oC = self.p.get_element("id->com.yunlu6.stone:id/vsb_one_one", "人脉首页-点击联系人-打开主菜单-名片设置-一对一会话")
-        return self.RMSY_contacts_menu_cardsetting_o2oC
+        RMSY_contacts_menu_cardsetting_o2o = ("id->com.yunlu6.stone:id/vsb_one_one", "人脉首页-点击联系人-打开主菜单-名片设置-一对一会话")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-姓名
-    def RMSY_contacts_menu_cardsetting_name(self):
-        self.RMSY_contacts_menu_cardsetting_nameC = self.p.get_element("id->com.yunlu6.stone:id/sb_name_bt", "人脉首页-点击联系人-打开主菜单-名片设置-姓名")
-        return self.RMSY_contacts_menu_cardsetting_nameC
+        RMSY_contacts_menu_cardsetting_name = ("id->com.yunlu6.stone:id/sb_name_bt", "人脉首页-点击联系人-打开主菜单-名片设置-姓名")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-手机
-    def RMSY_contacts_menu_cardsetting_tel(self):
-        self.RMSY_contacts_menu_cardsetting_telC = self.p.get_element("id->com.yunlu6.stone:id/sb_nub_bt", "人脉首页-点击联系人-打开主菜单-名片设置-手机")
-        return self.RMSY_contacts_menu_cardsetting_telC
+        RMSY_contacts_menu_cardsetting_tel = ("id->com.yunlu6.stone:id/sb_nub_bt", "人脉首页-点击联系人-打开主菜单-名片设置-手机")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-邮箱
-    def RMSY_contacts_menu_cardsetting_mail(self):
-        self.RMSY_contacts_menu_cardsetting_mail = self.p.get_element("id->com.yunlu6.stone:id/sb_em_bt", "人脉首页-点击联系人-打开主菜单-名片设置-邮箱")
-        return self.RMSY_contacts_menu_cardsetting_mail
+        RMSY_contacts_menu_cardsetting_mail = ("id->com.yunlu6.stone:id/sb_em_bt", "人脉首页-点击联系人-打开主菜单-名片设置-邮箱")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-QQ
-    def RMSY_contacts_menu_cardsetting_qq(self):
-        self.RMSY_contacts_menu_cardsetting_qqC = self.p.get_element("id->com.yunlu6.stone:id/sb_qq_bt", "人脉首页-点击联系人-打开主菜单-名片设置-QQ")
-        return self.RMSY_contacts_menu_cardsetting_qqC
+        RMSY_contacts_menu_cardsetting_qq = ("id->com.yunlu6.stone:id/sb_qq_bt", "人脉首页-点击联系人-打开主菜单-名片设置-QQ")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-开放名片列表
-    def RMSY_contacts_menu_cardsetting_cardlist(self):
-        self.RMSY_contacts_menu_cardsetting_cardlistC = self.p.get_elements("id->com.yunlu6.stone:id/toggle_button", "人脉首页-点击联系人-打开主菜单-名片设置-开放名片列表")
-        return self.RMSY_contacts_menu_cardsetting_cardlistC
+        RMSY_contacts_menu_cardsetting_cardlist = ("id->com.yunlu6.stone:id/toggle_button", "人脉首页-点击联系人-打开主菜单-名片设置-开放名片列表")
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-预览
-    def RMSY_contacts_menu_cardsetting_preview(self):
-        self.RMSY_contacts_menu_cardsetting_previewC = self.p.get_element("id->com.yunlu6.stone:id/btn_exchange", "人脉首页-点击联系人-打开主菜单-名片设置-预览")
-        return self.RMSY_contacts_menu_cardsetting_previewC
+        RMSY_contacts_menu_cardsetting_preview = ("id->com.yunlu6.stone:id/btn_exchange", "人脉首页-点击联系人-打开主菜单-名片设置-预览")
 
 #*********************************【PAGE2】热度设置：RMSY_contacts_menu_heatsetting*********************************
     #定位：人脉首页-点击联系人-打开主菜单-热度设置-返回按钮
-    def RMSY_contacts_menu_heatsetting_back(self):
-        self.RMSY_contacts_menu_heatsetting_backC = self.p.get_element("id->com.yunlu6.stone:id/title_back", "人脉首页-点击联系人-打开主菜单-热度设置-返回按钮")
-        return self.RMSY_contacts_menu_heatsetting_backC
+        RMSY_contacts_menu_heatsetting_back = ("id->com.yunlu6.stone:id/title_back", "人脉首页-点击联系人-打开主菜单-热度设置-返回按钮")
 
     #定位：人脉首页-点击联系人-打开主菜单-热度设置-全部打开
-    def RMSY_contacts_menu_heatsetting_openall(self):
-        self.RMSY_contacts_menu_heatsetting_openallC = self.p.get_element("id->com.yunlu6.stone:id/sb_all", "人脉首页-点击联系人-打开主菜单-热度设置-全部打开")
-        return self.RMSY_contacts_menu_heatsetting_openallC
+        RMSY_contacts_menu_heatsetting_openall = ("id->com.yunlu6.stone:id/sb_all", "人脉首页-点击联系人-打开主菜单-热度设置-全部打开")
 
     #定位：人脉首页-点击联系人-打开主菜单-热度设置-响铃图形
-    def RMSY_contacts_menu_heatsetting_bellgraph(self):
-        self.RMSY_contacts_menu_heatsetting_bellgraphC = self.p.get_element("id->com.yunlu6.stone:id/sb_conversation", "人脉首页-点击联系人-打开主菜单-热度设置-响铃图形")
-        return self.RMSY_contacts_menu_heatsetting_bellgraphC
+        RMSY_contacts_menu_heatsetting_bellgraph = ("id->com.yunlu6.stone:id/sb_conversation", "人脉首页-点击联系人-打开主菜单-热度设置-响铃图形")
 
     #定位：人脉首页-点击联系人-打开主菜单-热度设置-一对一会话
-    def RMSY_contacts_menu_heatsetting_p2pconversation(self):
-        self.RMSY_contacts_menu_heatsetting_p2pconversationC = self.p.get_element("id->com.yunlu6.stone:id/rl_conversation", "人脉首页-点击联系人-打开主菜单-热度设置-一对一会话")
-        return self.RMSY_contacts_menu_heatsetting_p2pconversationC
+        RMSY_contacts_menu_heatsetting_p2pconversation = ("id->com.yunlu6.stone:id/rl_conversation", "人脉首页-点击联系人-打开主菜单-热度设置-一对一会话")
 
 #*********************************【PAGE2】标签：RMSY_contacts_menu_tag*********************************
     #定位：人脉首页-点击联系人-打开主菜单-标签-返回
-    def RMSY_contacts_menu_tag_back(self):
-        self.RMSY_contacts_menu_tag_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-标签-返回")
-        return self.RMSY_contacts_menu_tag_backC
+        RMSY_contacts_menu_tag_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-标签-返回")
 
     #定位：人脉首页-点击联系人-打开主菜单-标签-保存
-    def RMSY_contacts_menu_tag_save(self):
-        self.RMSY_contacts_menu_tag_saveC = self.p.get_element("id->com.yunlu6.stone:id/iv_confirm", "人脉首页-点击联系人-打开主菜单-标签-返回")
-        return self.RMSY_contacts_menu_tag_saveC
+        RMSY_contacts_menu_tag_save = ("id->com.yunlu6.stone:id/iv_confirm", "人脉首页-点击联系人-打开主菜单-标签-返回")
 
     #定位：人脉首页-点击联系人-打开主菜单-标签-选择标签类型
-    def RMSY_contacts_menu_tag_tagtype(self):
-        self.RMSY_contacts_menu_tag_tagtypeC = self.p.get_elements("id->com.yunlu6.stone:id/tv_name", "人脉首页-点击联系人-打开主菜单-标签-选择标签类型")
-        return self.RMSY_contacts_menu_tag_tagtypeC
+        RMSY_contacts_menu_tag_tagtype = ("id->com.yunlu6.stone:id/tv_name", "人脉首页-点击联系人-打开主菜单-标签-选择标签类型")
 
     #定位：人脉首页-点击联系人-打开主菜单-标签-选择标签
-    def RMSY_contacts_menu_tag_tags(self):
-        self.RMSY_contacts_menu_tag_tagsC = self.p.get_elements("id->com.yunlu6.stone:id/tag_id", "人脉首页-点击联系人-打开主菜单-标签-选择标签")
-        return self.RMSY_contacts_menu_tag_tagsC
+        RMSY_contacts_menu_tag_tags = ("id->com.yunlu6.stone:id/tag_id", "人脉首页-点击联系人-打开主菜单-标签-选择标签")
 
     #定位：人脉首页-点击联系人-打开主菜单-标签-自定义标签
-    def RMSY_contacts_menu_tag_customtag(self):
-        self.RMSY_contacts_menu_tag_customtagC = self.p.get_element("id->com.yunlu6.stone:id/iv_add", "人脉首页-点击联系人-打开主菜单-标签-自定义标签")
-        return self.RMSY_contacts_menu_tag_customtagC
+        RMSY_contacts_menu_tag_customtag = ("id->com.yunlu6.stone:id/iv_add", "人脉首页-点击联系人-打开主菜单-标签-自定义标签")
 
 #*********************************【PAGE2】备忘：RMSY_contacts_menu_memo*********************************
     #定位：人脉首页-点击联系人-打开主菜单-备忘-返回
-    def RMSY_contacts_menu_memo_back(self):
-        self.RMSY_contacts_menu_memo_backC = self.p.get_element("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-备忘-返回")
-        return self.RMSY_contacts_menu_memo_backC
+        RMSY_contacts_menu_memo_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-点击联系人-打开主菜单-备忘-返回")
 
     #定位：人脉首页-点击联系人-打开主菜单-备忘-修改备注
-    def RMSY_contacts_menu_memo_changenotename(self):
-        self.RMSY_contacts_menu_memo_changenotenameC = self.p.get_element("id->com.yunlu6.stone:id/bt_edit", "人脉首页-点击联系人-打开主菜单-备忘-修改备注")
-        return self.RMSY_contacts_menu_memo_changenotenameC
+        RMSY_contacts_menu_memo_changenotename = ("id->com.yunlu6.stone:id/bt_edit", "人脉首页-点击联系人-打开主菜单-备忘-修改备注")
 
     #定位：人脉首页-点击联系人-打开主菜单-备忘-备忘内容
-    def RMSY_contacts_menu_memo_memocontent(self):
-        self.RMSY_contacts_menu_memo_memocontentC = self.p.get_element("id->com.yunlu6.stone:id/et_memo_info", "人脉首页-点击联系人-打开主菜单-备忘-备忘内容")
-        return self.RMSY_contacts_menu_memo_memocontentC
+        RMSY_contacts_menu_memo_memocontent = ("id->com.yunlu6.stone:id/et_memo_info", "人脉首页-点击联系人-打开主菜单-备忘-备忘内容")
 
     #定位：人脉首页-点击联系人-打开主菜单-备忘-备忘内容-确定
-    def RMSY_contacts_menu_memo_memocontent_confirm(self):
-        self.RMSY_contacts_menu_memo_memocontent_confirmC = self.p.get_element("id->com.yunlu6.stone:id/bt_confirm", "人脉首页-点击联系人-打开主菜单-备忘-备忘内容-确定")
-        return self.RMSY_contacts_menu_memo_memocontent_confirmC
+        RMSY_contacts_menu_memo_memocontent_confirm = ("id->com.yunlu6.stone:id/bt_confirm", "人脉首页-点击联系人-打开主菜单-备忘-备忘内容-确定")
 
 #*********************************【PAGE2】消息输入框：RMSY_contacts_message*********************************
     #定位：人脉首页-点击联系人-消息-返回
-    def RMSY_contacts_msg_back(self):
-        self.RMSY_contacts_msg_backC = self.p.get_element("id->com.yunlu6.stone:id/title_main_more_back", "人脉首页-点击联系人-消息-返回")
-        return self.RMSY_contacts_msg_backC
+        RMSY_contacts_msg_back = ("id->com.yunlu6.stone:id/title_main_more_back", "人脉首页-点击联系人-消息-返回")
 
-    #定位：人脉首页-点击联系人-消息-主菜单
-    def RMSY_contacts_msg_menu(self):
-        self.RMSY_contacts_msg_menuC = self.p.get_element("id->com.yunlu6.stone:id/title_main_fl_more_menu", "人脉首页-点击联系人-消息-主菜单")
-        return self.RMSY_contacts_msg_menuC
+    #定位：人脉首页-点击联系人-消息
+        RMSY_contacts_msg_menu = ("id->com.yunlu6.stone:id/title_main_fl_more_menu", "人脉首页-点击联系人-消息")
 
-    #---------------------------主菜单所有元素定位--------------------
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置
-    def RMSY_contacts_msg_menu_heatsetting(self):
-        self.RMSY_contacts_msg_menu_heatsettingC = self.p.get_element("id->com.yunlu6.stone:id/rl_msgsetting", "人脉首页-点击联系人-消息-主菜单-热度设置")
-        return self.RMSY_contacts_msg_menu_heatsettingC
+    #--------------------------所有元素定位--------------------
+    #定位：人脉首页-点击联系人-消息-热度设置
+        RMSY_contacts_msg_menu_heatsetting = ("id->com.yunlu6.stone:id/rl_msgsetting", "人脉首页-点击联系人-消息-热度设置")
 
     #定位：人脉首页-点击联系人-消息-人形按钮
-    def RMSY_contacts_msg_humanbtn(self):
-        self.RMSY_contacts_msg_humanbtnC = self.p.get_element("id->com.yunlu6.stone:id/iv_to_message", "人脉首页-点击联系人-消息-人形按钮")
-        return self.RMSY_contacts_msg_humanbtnC
+        RMSY_contacts_msg_humanbtn = ("id->com.yunlu6.stone:id/iv_to_message", "人脉首页-点击联系人-消息-人形按钮")
 
     #定位：人脉首页-点击联系人-消息-消息输入框
-    def RMSY_contacts_msg_msginput(self):
-        self.RMSY_contacts_msg_msginputC = self.p.get_element("id->com.yunlu6.stone:id/message_content_msgcontent", "人脉首页-点击联系人-消息-消息输入框")
-        return self.RMSY_contacts_msg_msginputC
+        RMSY_contacts_msg_msginput = ("id->com.yunlu6.stone:id/message_content_msgcontent", "人脉首页-点击联系人-消息-消息输入框")
 
     #定位：人脉首页-点击联系人-消息-发送消息
-    def RMSY_contacts_msg_msgsend(self):
-        self.RMSY_contacts_msg_msgsendC = self.p.get_element("id->com.yunlu6.stone:id/message_content_send", "人脉首页-点击联系人-消息-发送消息")
-        return self.RMSY_contacts_msg_msgsendC
+        RMSY_contacts_msg_msgsend = ("id->com.yunlu6.stone:id/message_content_send", "人脉首页-点击联系人-消息-发送消息")
 
     #定位：人脉首页-点击联系人-消息-表情按钮
-    def RMSY_contacts_msg_emoji(self):
-        self.RMSY_contacts_msg_emojiC = self.p.get_element("id->com.yunlu6.stone:id/iv_emoji", "人脉首页-点击联系人-消息-表情按钮")
-        return self.RMSY_contacts_msg_emojiC
+        RMSY_contacts_msg_emoji = ("id->com.yunlu6.stone:id/iv_emoji", "人脉首页-点击联系人-消息-表情按钮")
 
     #定位：人脉首页-点击联系人-消息-表情按钮-表情列表
-    def RMSY_contacts_msg_emoji_emojilist(self):
-        self.RMSY_contacts_msg_emoji_emojilistC = self.p.get_elements("id->com.yunlu6.stone:id/item_iv_face", "人脉首页-点击联系人-消息-表情按钮-表情列表")
-        return self.RMSY_contacts_msg_emoji_emojilistC
+        RMSY_contacts_msg_emoji_emojilist = ("id->com.yunlu6.stone:id/item_iv_face", "人脉首页-点击联系人-消息-表情按钮-表情列表")
 
     #定位：人脉首页-点击联系人-消息-功能按钮
-    def RMSY_contacts_msg_func(self):
-        self.RMSY_contacts_msg_funcC = self.p.get_element("id->com.yunlu6.stone:id/iv_send", "人脉首页-点击联系人-消息-功能按钮")
-        return self.RMSY_contacts_msg_funcC
+        RMSY_contacts_msg_func = ("id->com.yunlu6.stone:id/iv_send", "人脉首页-点击联系人-消息-功能按钮")
 
     #定位：人脉首页-点击联系人-消息-功能按钮-功能列表
-    def RMSY_contacts_msg_func_funclist(self):
-        self.RMSY_contacts_msg_func_funclistC = self.p.get_elements("id->com.yunlu6.stone:id/iv", "人脉首页-点击联系人-消息-功能按钮-功能列表")
-        return self.RMSY_contacts_msg_func_funclistC
+        RMSY_contacts_msg_func_funclist = ("id->com.yunlu6.stone:id/iv", "人脉首页-点击联系人-消息-功能按钮-功能列表")
 
 #*********************************【PAGE2】删除：RMSY_Contacts_delete*********************************
     #定位：人脉首页-点击联系人-删除-取消
-    def RMSY_Contacts_delete_cancel(self):
-        self.RMSY_Contacts_delete_cancelC = self.p.get_element("id->com.yunlu6.stone:id/bt_cancel", "人脉首页-点击联系人-删除-取消")
-        return self.RMSY_Contacts_delete_cancelC
+        RMSY_Contacts_delete_cancel = ("id->com.yunlu6.stone:id/bt_cancel", "人脉首页-点击联系人-删除-取消")
 
     #定位：人脉首页-点击联系人-删除-确认
-    def RMSY_Contacts_delete_confirm(self):
-        self.RMSY_Contacts_delete_confirmC = self.p.get_element("id->com.yunlu6.stone:id/bt_affirm", "人脉首页-点击联系人-删除-确认")
-        return self.RMSY_Contacts_delete_confirmC
+        RMSY_Contacts_delete_confirm = ("id->com.yunlu6.stone:id/bt_affirm", "人脉首页-点击联系人-删除-确认")

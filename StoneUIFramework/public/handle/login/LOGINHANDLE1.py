@@ -5,5 +5,4 @@ class _LOGINHANDLE1(_LOGINPAGE2):
 #******************************************************【HANDLE1】******************************************************
     # 登录：点击
     def Login_click(self):
-        return self.p.click(self.Login())
-
+        return self.p.click(self.LoginL)

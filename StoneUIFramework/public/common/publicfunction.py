@@ -78,13 +78,20 @@ class Tools:
         os.mkdir(screen_path)
 
 #-----------------------------不带时间戳日志打印功能---------------------------
+    # def getLog(self,filename):
+    #     timeA = self.getTime()
+    #     # self.filename = filename + '%s.txt'%timeA
+    #     logging.basicConfig(level=logging.INFO,filename=filename,encoding = "UTF-8",
+    #                 format='%(asctime)s - ''levelname:%(levelname)s filename: %(filename)s '
+    #                        'outputNumber: [%(lineno)d]  thread: %(threadName)s output msg:  %(message)s'
+    #                        , datefmt='[%d/%b/%Y %H:%M:%S]',
+    #                 )
+
     def getLog(self,filename):
         timeA = self.getTime()
         # self.filename = filename + '%s.txt'%timeA
-        logging.basicConfig(level=logging.DEBUG,filename=filename,encoding = "UTF-8",
-                    format='%(asctime)s - ''levelname:%(levelname)s filename: %(filename)s '
-                           'outputNumber: [%(lineno)d]  thread: %(threadName)s output msg:  %(message)s'
-                           , datefmt='[%d/%b/%Y %H:%M:%S]',
+        logging.basicConfig(level=logging.INFO,filename=filename,encoding = "UTF-8",
+                    format='[%(asctime)s-%(filename)s]-%(levelname)s:%(message)s',
                     )
 
 #-----------------------------解析读取日志中的字段---------------------------

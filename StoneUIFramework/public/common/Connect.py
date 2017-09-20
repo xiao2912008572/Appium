@@ -3,7 +3,18 @@ from time import sleep
 from appium import webdriver
 import os
 import configparser
-from StoneUIFramework.public.common.publicfunction import Tools
+'''
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.config.globalparam import GlobalParam
+cf = GlobalParam('config','path_file.conf')
+logfile = cf.getParam('space',"logfile")#日志文件名
+logger = Log(logfile)
+'''
+from StoneUIFramework.public.common.pyappium import PyAppium
+from StoneUIFramework.public.handle.space.SPACEHANDLE1 import _SPACEHANDLE1
 
 class Connect:
     def __init__(self):
@@ -23,8 +34,48 @@ class Connect:
         sleep(2)
         return driver
 
+
 # cnn = Connect()
 # driver = cnn.connect()
+# driver.find_element_by_id("aaa ").send_keys()
+# sleep(2)
+# h = _SPACEHANDLE1(driver)
+# h.Kjlb_click()
+# h.Kjlb_browseorgspaceByID_click(0)
+
+
+# p = PyAppium(driver)
+# css = ("id->com.yunlu6.stone:id/navi_item_zone1")
+# p.get_element(css,'空间列表').click()
+
+
+'''
+class Buyu(object):
+    def __init__(self):
+        self.driver = driver
+
+    def find_element(self,locator,text = '',timeout=5):
+        try:
+            element = WebDriverWait(self.driver,timeout,1).until(EC.presence_of_element_located(locator))
+        except Exception:
+            logger.error("定位元素：%s超时"%locator[1])
+            assert False,"定位元素:%s超时"%text
+        return element
+
+    def click(self,locator):
+        try:
+            element = self.find_element(locator)
+            element.click()
+        except Exception:
+            logger.error('元素：%s无法点击'%locator[1])
+
+a = Buyu()
+locator = ("id","com.yunlu6.stone:id/navi_item_zone1")
+# a.find_element(locator,'空间列表').click()
+a.find_element(locator).click()
+'''
+
+'''
 # row_x = driver.get_window_size()['width']
 # row_y = driver.get_window_size()['height']
 # print(row_x)
@@ -47,4 +98,4 @@ class Connect:
 # print(adjust_y)
 # #3. 点击
 # driver.tap([(adjust_x,adjust_y)],duration=500)
-
+'''

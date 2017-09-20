@@ -8,6 +8,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import TimeoutException
 import logging
 
+from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.config.globalparam import GlobalParam
+
+#获取一些全局变量
+cf = GlobalParam('config','path_file.conf')
+logfile = cf.getParam('log',"logfile")#日志文件名
+# logfile = cf.getParam('space',"logfile")#日志文件名
+logger = Log(logfile)
+
 success = "SUCCESS   "
 fail = "FAIL   "
 
@@ -26,7 +35,6 @@ class PyAppium():#继承page类
     def element_wait(self, css, secs=5):
         """
         Waiting for an element to display.
-
         Usage:
         driver.element_wait("id->kw",10)
         """
@@ -35,24 +43,27 @@ class PyAppium():#继承page类
 
         by = css.split("->")[0].strip()
         value = css.split("->")[1].strip()
-        messages = 'Element: {0} not found in {1} seconds.'.format(css, secs)
+        messages = '元素: {0} 在{1}秒内未定位到'.format(value, secs)
 
-        if by == "id":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.ID, value)), messages)
-        elif by == "name":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.NAME, value)), messages)
-        elif by == "class":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.CLASS_NAME, value)), messages)
-        elif by == "link_text":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.LINK_TEXT, value)), messages)
-        elif by == "xpath":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)), messages)
-        elif by == "css":
-            WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, value)),messages)
-        else:
-            raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
+        try:
+            if by == "id":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.ID, value)), messages)
+            elif by == "name":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.NAME, value)), messages)
+            elif by == "class":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.CLASS_NAME, value)), messages)
+            elif by == "link_text":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.LINK_TEXT, value)), messages)
+            elif by == "xpath":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.XPATH, value)), messages)
+            elif by == "css":
+                WebDriverWait(self.driver, secs, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, value)),messages)
+            else:
+                raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
+        except Exception :
+            logger.error(messages)
 
-    def get_element(self, css, text):#改写
+    def get_element(self, css, text = ''):#改写
         """
         Judge element positioning way, and returns the element.
 
@@ -67,25 +78,31 @@ class PyAppium():#继承page类
             value = css.split("->")[1].strip()
 
             if by == "id":
+                self.element_wait(css)
                 element = self.driver.find_element_by_id(value)
             elif by == "name":
+                self.element_wait(css)
                 element = self.driver.find_element_by_name(value)
             elif by == "class":
+                self.element_wait(css)
                 element = self.driver.find_element_by_class_name(value)
             elif by == "link_text":
+                self.element_wait(css)
                 element = self.driver.find_element_by_link_text(value)
             elif by == "xpath":
+                self.element_wait(css)
                 element = self.driver.find_element_by_xpath(value)
             elif by == "css":
+                self.element_wait(css)
                 element = self.driver.find_element_by_css_selector(value)
             else:
                 raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
         except Exception :
-            logging.info(u"%s : Location_Element_Error@@!!!!!!!"%css)
-            assert False,"定位元素:%s-失败"%text
+            logger.error('元素：%s 请求超时,定位失败'%value)
+            assert False,"{0} 定位元素：{1}-失败".format(time.asctime(),text)
         return element
 
-    def get_elements(self, css, text):#改写
+    def get_elements(self, css, text = ''):#改写
         """
         Judge element positioning way, and returns the element.
 
@@ -100,22 +117,28 @@ class PyAppium():#继承page类
             value = css.split("->")[1].strip()
 
             if by == "id":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_id(value)
             elif by == "name":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_name(value)
             elif by == "class":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_class_name(value)
             elif by == "link_text":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_link_text(value)
             elif by == "xpath":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_xpath(value)
             elif by == "css":
+                self.element_wait(css)
                 element = self.driver.find_elements_by_css_selector(value)
             else:
                 raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
         except Exception :
-            logging.info(u"%s : Location_Element_Error@@!!!!!!!"%css)
-            assert False,"LOCATE ELEMENT : %s - FAILED"%text
+            logger.error('元素：%s 请求超时,定位失败'%value)
+            assert False,"{0} 定位元素：{1}-失败".format(time.asctime(),text)
         return element
 
     def open(self, url):
@@ -213,7 +236,7 @@ class PyAppium():#继承page类
     #         self.my_print("{0} Unable to click element: <{1}>, Spend {2} seconds".format(fail, css, time.time() - t1))
     #         raise
 
-    def click(self,element):
+    def click(self,css):
         """
         It can click any text / image can be clicked
         Connection, check box, radio buttons, and even drop-down box etc..
@@ -222,14 +245,17 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            element = self.get_element(css[0],css[1])   #元素获取
             element.click()
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logging.info(u"%s : Click_Element_Error@@!!!!!!!"%element)
-            assert False,"CLICK : %s ELEMENT - FAILED"%element
+            logger.error('元素：%s 无法点击,点击失败'%value)
+            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),text)
 
-    def clear(self,element):
+    def clicks(self,css,n):
         """
         It can click any text / image can be clicked
         Connection, check box, radio buttons, and even drop-down box etc..
@@ -238,17 +264,104 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            element.clear()
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            elements = self.get_elements(css[0],css[1]) #元素获取
+            elements[n].click()
+            self.driver.implicitly_wait(1)#智能等待1秒
+            # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logging.info(u"%s : Clear_Element_Error@@!!!!!!!"%element)
-            assert False,"CLEAR : %s ELEMENT - FAILED"%element
+            logger.error('元素：%s 无法点击,点击失败'%value)
+            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),text)
 
-    def send_keys(self,element,text):
+    # def clear(self,element):
+    #     """
+    #     It can click any text / image can be clicked
+    #     Connection, check box, radio buttons, and even drop-down box etc..
+    #
+    #     Usage:
+    #     driver.click("id->kw")
+    #     """
+    #     try :
+    #         element.clear()
+    #     except Exception as err:
+    #         logging.info(u"%s : Clear_Element_Error@@!!!!!!!"%element)
+    #         assert False,"CLEAR : %s ELEMENT - FAILED"%element
+    def clear(self,css):
+        """
+        It can click any text / image can be clicked
+        Connection, check box, radio buttons, and even drop-down box etc..
+
+        Usage:
+        driver.click("id->kw")
+        """
         try :
-            element.send_keys(text)
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            element = self.get_element(css[0],css[1])   #元素获取
+            element.clear()
+            self.driver.implicitly_wait(1)#智能等待1秒
+            # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logging.info(u"%s : SendKeys_Element_Error@@!!!!!!!"%element)
-            assert False,"SENDKEYS : ELEMENT %s SENDKEYS %s - FAILED"%(element,text)
+            logger.error('元素：%s 无法清空,清空失败'%value)
+            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),text)
+
+
+    def clears(self,css,n):
+        """
+        It can click any text / image can be clicked
+        Connection, check box, radio buttons, and even drop-down box etc..
+
+        Usage:
+        driver.click("id->kw")
+        """
+        try :
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            elements = self.get_elements(css[0],css[1]) #元素获取
+            elements[n].clear()
+            self.driver.implicitly_wait(1)#智能等待1秒
+            # time.sleep(1)#点击事件自动等待1秒
+        except Exception as err:
+            logger.error('元素：%s 无法清空,清空失败'%value)
+            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),text)
+
+
+    def send_keys(self,css,text):
+        # try :
+        #
+        #     element.send_keys(text)
+        # except Exception as err:
+        #     logging.info(u"%s : SendKeys_Element_Error@@!!!!!!!"%element)
+        #     assert False,"SENDKEYS : ELEMENT %s SENDKEYS %s - FAILED"%(element,text)
+        try :
+            value = css[0].split("->")[1].strip()       #元素id
+            text1 = css[1]                               #元素text描述
+            element = self.get_element(css[0],css[1])   #元素获取
+            element.send_keys(text)
+            self.driver.implicitly_wait(1)#智能等待1秒
+            # time.sleep(1)#点击事件自动等待1秒
+        except Exception as err:
+            logger.error('元素：%s 无法聚焦,发送文本失败'%value)
+            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),text1)
+
+    def sends_keys(self,css,n,text):
+        # try :
+        #
+        #     element.send_keys(text)
+        # except Exception as err:
+        #     logging.info(u"%s : SendKeys_Element_Error@@!!!!!!!"%element)
+        #     assert False,"SENDKEYS : ELEMENT %s SENDKEYS %s - FAILED"%(element,text)
+        try :
+            value = css[0].split("->")[1].strip()        #元素"id->com.yunlu6.xxxxx"中的com.yunlu6.xxxx
+            text1 = css[1]                               #元素text描述
+            element = self.get_elements(css[0],css[1])   #元素获取
+            element[n].send_keys(text)
+            self.driver.implicitly_wait(1)#智能等待1秒
+            # time.sleep(1)#点击事件自动等待1秒
+        except Exception as err:
+            logger.error('元素：%s 无法聚焦,发送文本失败'%value)
+            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),text1)
 
     def right_click(self, css):
         """
@@ -423,22 +536,60 @@ class PyAppium():#继承page类
                 css, attribute,time.time() - t1))
             raise
 
-    def get_text(self, css):
+    # def get_text(self, css):
+    #     """
+    #     Get element text information.
+    #
+    #     Usage:
+    #     driver.get_text("id->kw")
+    #     """
+    #     t1 = time.time()
+    #     try:
+    #         self.element_wait(css)
+    #         text = self.get_element(css).text
+    #         self.my_print("{0} Get element text element: <{1}>, Spend {2} seconds".format(success,css,time.time()-t1))
+    #         return text
+    #     except Exception:
+    #         self.my_print("{0} Unable to get element text element: <{1}>, Spend {2} seconds".format(fail, css, time.time() - t1))
+    #         raise
+
+    def get_text(self,css):
         """
-        Get element text information.
+        It can click any text / image can be text
+        Connection, check box, radio buttons, and even drop-down box etc..
 
         Usage:
-        driver.get_text("id->kw")
+        driver.click("id->kw")
         """
-        t1 = time.time()
-        try:
-            self.element_wait(css)
-            text = self.get_element(css).text
-            self.my_print("{0} Get element text element: <{1}>, Spend {2} seconds".format(success,css,time.time()-t1))
-            return text
-        except Exception:
-            self.my_print("{0} Unable to get element text element: <{1}>, Spend {2} seconds".format(fail, css, time.time() - t1))
-            raise
+        try :
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            element = self.get_element(css[0],css[1])   #元素获取
+            # element.click()
+            self.driver.implicitly_wait(1)#智能等待1秒
+            return element.text
+        except Exception as err:
+            logger.error('元素：%s 无法获取,获取失败'%value)
+            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),text)
+
+    def get_texts(self,css,n):
+        """
+        It can click any text / image can be text
+        Connection, check box, radio buttons, and even drop-down box etc..
+
+        Usage:
+        driver.click("id->kw")
+        """
+        try :
+            value = css[0].split("->")[1].strip()       #元素id
+            text = css[1]                               #元素text描述
+            elements = self.get_elements(css[0],css[1])   #元素获取
+            # element.click()
+            self.driver.implicitly_wait(1)#智能等待1秒
+            return elements[n].text
+        except Exception as err:
+            logger.error('元素：%s 无法获取,获取失败'%value)
+            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),text)
 
     def get_title(self):
         """

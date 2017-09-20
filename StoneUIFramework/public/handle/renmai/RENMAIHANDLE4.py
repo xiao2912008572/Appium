@@ -21,7 +21,7 @@ class _RENMAIHANDLE4(_RENMAIHANDLE3):
 
     #定位：人脉首页-搜索-标签列表-点击进入群聊-表情-表情列表：点击
     def RMSY_search_label_groupchat_emoji_emojilist_click(self, n):
-        return self.p.click(self.RMSY_search_label_groupchat_emoji_emojilist()[n])
+        return self.p.clicks(self.RMSY_search_label_groupchat_emoji_emojilist(),n)
 
     #定位：人脉首页-搜索-标签列表-点击进入群聊-功能按钮：点击
     def RMSY_search_label_groupchat_func_click(self):
@@ -29,18 +29,18 @@ class _RENMAIHANDLE4(_RENMAIHANDLE3):
 
     #定位：人脉首页-搜索-标签列表-点击进入群聊-功能按钮-功能列表：点击
     def RMSY_search_label_groupchat_func_funclist_click(self, n):
-        return self.p.click(self.RMSY_search_label_groupchat_func_funclist()[n])
+        return self.p.clicks(self.RMSY_search_label_groupchat_func_funclist(),n)
 
     #----------------------------设置所有元素定位------------------------
-    #定位：人脉首页-搜索-标签列表-点击进入群聊-主菜单：点击
+    #定位：人脉首页-搜索-标签列表-点击进入群聊：点击
     def RMSY_search_label_groupchat_menu_click(self):
         return self.p.click(self.RMSY_search_label_groupchat_menu())
 
-    #定位：人脉首页-搜索-标签列表-点击进入群聊-主菜单-设置：点击
+    #定位：人脉首页-搜索-标签列表-点击进入群聊-设置：点击
     def RMSY_search_label_groupchat_menu_setting_click(self):
         return self.p.click(self.RMSY_search_label_groupchat_menu_setting())
 
-    #定位：人脉首页-搜索-标签列表-点击进入群聊-主菜单-热度设置：点击
+    #定位：人脉首页-搜索-标签列表-点击进入群聊-热度设置：点击
     def RMSY_search_label_groupchat_menu_heatsetting_click(self):
         return self.p.click(self.RMSY_search_label_groupchat_menu_heatsetting())
 
@@ -59,7 +59,7 @@ class _RENMAIHANDLE4(_RENMAIHANDLE3):
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-预览-联系方式列表
     def RMSY_contacts_menu_cardsetting_preview_contacttypes_click(self, n):
-        return self.p.click(self.RMSY_contacts_menu_cardsetting_preview_contacttypes()[n])
+        return self.p.clicks(self.RMSY_contacts_menu_cardsetting_preview_contacttypes(),n)
 
     #定位：人脉首页-点击联系人-打开主菜单-名片设置-预览-发送名片：点击
     def RMSY_contacts_menu_cardsetting_preview_sendcard_click(self):
@@ -125,34 +125,34 @@ class _RENMAIHANDLE4(_RENMAIHANDLE3):
         return self.p.click(self.RMSY_contacts_menu_memo_changenotename_cancel())
 
 #*********************************【PAGE3】热度设置：RMSY_contacts_menu_memo_changenotename*********************************
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-返回：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-返回：点击
     def RMSY_contacts_msg_menu_heatsetting_back_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_back())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-消息：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-消息：点击
     def RMSY_contacts_msg_menu_heatsetting_msg_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_msg())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-飘泡：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-飘泡：点击
     def RMSY_contacts_msg_menu_heatsetting_bubble_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_bubble())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-震动：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-震动：点击
     def RMSY_contacts_msg_menu_heatsetting_shock_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_shock())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-铃声：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-铃声：点击
     def RMSY_contacts_msg_menu_heatsetting_bell_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_bell())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-确定：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-确定：点击
     def RMSY_contacts_msg_menu_heatsetting_confirm_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_confirm())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-周期：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-周期：点击
     def RMSY_contacts_msg_menu_heatsetting_period_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_period())
 
-    #定位：人脉首页-点击联系人-消息-主菜单-热度设置-时段：点击
+    #定位：人脉首页-点击联系人-消息-热度设置-时段：点击
     def RMSY_contacts_msg_menu_heatsetting_time_click(self):
         return self.p.click(self.RMSY_contacts_msg_menu_heatsetting_time())
