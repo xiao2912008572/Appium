@@ -12,7 +12,7 @@ from StoneUIFramework.testcase.空间.协会空间.test6_1_资讯.NewArchivies i
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #资讯发布
-class space_Archivies(unittest.TestCase):
+class space_ArchiviesA(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

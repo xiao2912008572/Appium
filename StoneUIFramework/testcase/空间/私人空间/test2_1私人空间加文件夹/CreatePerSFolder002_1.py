@@ -16,7 +16,7 @@ from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件�
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #加文件夹
-class perspace_NewFloder(unittest.TestCase):
+class perspace_NewFloderP(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #1.建立连接信息

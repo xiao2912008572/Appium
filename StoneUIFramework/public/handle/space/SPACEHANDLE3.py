@@ -124,7 +124,7 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
 
     # 空间列表-浏览企业空间-菜单栏-资讯-图片列表-标题:文本获取
     def Kjlb_browseorgspace_menu_archivies_pic_title_text(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_archivies_pic)
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_archivies_pic_title)
 
 #***************************************【PAGE2】企业名片Kjlb_browseorgspace_menu_bcard***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-返回:点击

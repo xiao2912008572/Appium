@@ -16,7 +16,7 @@ from StoneUIFramework.testcase.登录.test2_1退出登录.LoginoutA import Login
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #加会员_个人_个人_同意
-class AddPtoPAgree(unittest.TestCase):
+class AddPtoPAgreeA(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

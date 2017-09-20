@@ -1,4 +1,3 @@
-from StoneUIFramework.testcase.空间.私人空间.test1_1创建私人空间 import ClosePersonSpace, CreatePersonSpace
 
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
@@ -15,7 +14,7 @@ from StoneUIFramework.testcase.空间.私人空间.test1_1创建私人空间.Cre
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #创建私人空间
-class perspace_Create(unittest.TestCase):
+class perspace_CreateP(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #1.建立连接信息

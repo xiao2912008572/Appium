@@ -12,7 +12,7 @@ from StoneUIFramework.testcase.空间.协会空间.test3_1团队人事任免.Tea
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 # 团队人事任免
-class team_Assign(unittest.TestCase):
+class team_AssignA(unittest.TestCase):
     @classmethod  #装饰器，类方法
     def setUpClass(self):  #最开始执行
         #建立连接信息

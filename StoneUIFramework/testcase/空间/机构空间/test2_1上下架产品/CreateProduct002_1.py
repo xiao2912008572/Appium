@@ -13,7 +13,7 @@ from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 
 #上下架产品
-class space_Product(unittest.TestCase):
+class space_ProductO(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

@@ -12,7 +12,7 @@ from StoneUIFramework.testcase.空间.协会空间.test2_1编辑.Edit import Edi
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #编辑
-class space_Edit(unittest.TestCase):
+class space_EditA(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

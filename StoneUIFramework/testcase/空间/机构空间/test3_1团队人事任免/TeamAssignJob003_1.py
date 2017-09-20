@@ -13,7 +13,7 @@ from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 
 #团队人事任免
-class team_Assign(unittest.TestCase):
+class team_AssignO(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

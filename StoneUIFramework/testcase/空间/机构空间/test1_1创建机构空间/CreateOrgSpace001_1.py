@@ -13,7 +13,7 @@ from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 
 #创建机构空间
-class space_Create(unittest.TestCase):
+class space_CreateO(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息

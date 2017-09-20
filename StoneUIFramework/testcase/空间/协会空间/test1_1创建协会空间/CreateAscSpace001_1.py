@@ -1,4 +1,3 @@
-from StoneUIFramework.testcase.空间.协会空间.test1_1创建协会空间 import CloseAscSpace, CreateAscSpace
 
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
@@ -15,7 +14,7 @@ from StoneUIFramework.testcase.空间.协会空间.test1_1创建协会空间.Clo
 from StoneUIFramework.public.common.datainfo import DataInfo
 
 #创建机构空间
-class ascspace_Create(unittest.TestCase):
+class ascspace_CreateA(unittest.TestCase):
     @classmethod#装饰器，类方法
     def setUpClass(self):#最开始执行
         #建立连接信息
