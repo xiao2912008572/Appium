@@ -89,8 +89,7 @@ class CreateSpace:
             handle.Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(self.soverbank)#开户银行
             self.log.info('填写开户银行：%s'%self.soverbank)
             handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_click()#所在地区
-            handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.province)#北京
-            handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self.city)#东城
+            self.log.info('点击所在地区')
             driver.find_element_by_name(self.province).click()#北京
             self.log.info('选择%s省'%self.province)
             driver.find_element_by_name(self.city).click()#东城

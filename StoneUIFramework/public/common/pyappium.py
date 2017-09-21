@@ -75,30 +75,30 @@ class PyAppium():#继承page类
                 raise NameError("Positioning syntax errors, lack of '->'.")
 
             by = css.split("->")[0].strip()
-            value = css.split("->")[1].strip()
+            self.value_element = css.split("->")[1].strip()
 
             if by == "id":
                 self.element_wait(css)
-                element = self.driver.find_element_by_id(value)
+                element = self.driver.find_element_by_id(self.value_element)
             elif by == "name":
                 self.element_wait(css)
-                element = self.driver.find_element_by_name(value)
+                element = self.driver.find_element_by_name(self.value_element)
             elif by == "class":
                 self.element_wait(css)
-                element = self.driver.find_element_by_class_name(value)
+                element = self.driver.find_element_by_class_name(self.value_element)
             elif by == "link_text":
                 self.element_wait(css)
-                element = self.driver.find_element_by_link_text(value)
+                element = self.driver.find_element_by_link_text(self.value_element)
             elif by == "xpath":
                 self.element_wait(css)
-                element = self.driver.find_element_by_xpath(value)
+                element = self.driver.find_element_by_xpath(self.value_element)
             elif by == "css":
                 self.element_wait(css)
-                element = self.driver.find_element_by_css_selector(value)
+                element = self.driver.find_element_by_css_selector(self.value_element)
             else:
                 raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
         except Exception :
-            logger.error('元素：%s 请求超时,定位失败'%value)
+            logger.error('元素：%s 请求超时,定位失败'%self.value_element)
             assert False,"{0} 定位元素：{1}-失败".format(time.asctime(),text)
         return element
 
@@ -114,30 +114,30 @@ class PyAppium():#继承page类
                 raise NameError("Positioning syntax errors, lack of '->'.")
 
             by = css.split("->")[0].strip()
-            value = css.split("->")[1].strip()
+            self.value_elements = css.split("->")[1].strip()
 
             if by == "id":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_id(value)
+                element = self.driver.find_elements_by_id(self.value_elements)
             elif by == "name":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_name(value)
+                element = self.driver.find_elements_by_name(self.value_elements)
             elif by == "class":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_class_name(value)
+                element = self.driver.find_elements_by_class_name(self.value_elements)
             elif by == "link_text":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_link_text(value)
+                element = self.driver.find_elements_by_link_text(self.value_elements)
             elif by == "xpath":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_xpath(value)
+                element = self.driver.find_elements_by_xpath(self.value_elements)
             elif by == "css":
                 self.element_wait(css)
-                element = self.driver.find_elements_by_css_selector(value)
+                element = self.driver.find_elements_by_css_selector(self.value_elements)
             else:
                 raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
         except Exception :
-            logger.error('元素：%s 请求超时,定位失败'%value)
+            logger.error('元素：%s 请求超时,定位失败'%self.value_elements)
             assert False,"{0} 定位元素：{1}-失败".format(time.asctime(),text)
         return element
 
@@ -245,15 +245,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
+            self.value_click = css[0].split("->")[1].strip()       #元素id
+            self.text_click  = css[1]                               #元素text描述
             element = self.get_element(css[0],css[1])   #元素获取
             element.click()
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法点击,点击失败'%value)
-            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法点击,点击失败'%self.value_click)
+            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),self.text_click)
 
     def clicks(self,css,n):
         """
@@ -264,15 +264,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
+            self.value_clicks = css[0].split("->")[1].strip()       #元素id
+            self.text_clicks  = css[1]                               #元素text描述
             elements = self.get_elements(css[0],css[1]) #元素获取
             elements[n].click()
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法点击,点击失败'%value)
-            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法点击,点击失败'%self.value_clicks)
+            assert False,"{0} 点击元素：{1}-失败".format(time.asctime(),self.text_clicks)
 
     # def clear(self,element):
     #     """
@@ -296,15 +296,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
+            self.value_clear = css[0].split("->")[1].strip()       #元素id
+            self.text_clear  = css[1]                               #元素text描述
             element = self.get_element(css[0],css[1])   #元素获取
             element.clear()
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法清空,清空失败'%value)
-            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法清空,清空失败'%self.value_clear)
+            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),self.value_clear)
 
 
     def clears(self,css,n):
@@ -316,15 +316,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
+            self.value_clears = css[0].split("->")[1].strip()       #元素id
+            self.text_clears = css[1]                               #元素text描述
             elements = self.get_elements(css[0],css[1]) #元素获取
             elements[n].clear()
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法清空,清空失败'%value)
-            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法清空,清空失败'%self.value_clears)
+            assert False,"{0} 清空元素：{1}-失败".format(time.asctime(),self.text_clears)
 
 
     def send_keys(self,css,text):
@@ -335,15 +335,15 @@ class PyAppium():#继承page类
         #     logging.info(u"%s : SendKeys_Element_Error@@!!!!!!!"%element)
         #     assert False,"SENDKEYS : ELEMENT %s SENDKEYS %s - FAILED"%(element,text)
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text1 = css[1]                               #元素text描述
-            element = self.get_element(css[0],css[1])   #元素获取
+            self.value_send = css[0].split("->")[1].strip()       #元素id
+            self.text_send  = css[1]                              #元素text描述
+            element = self.get_element(css[0],css[1])             #元素获取
             element.send_keys(text)
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法聚焦,发送文本失败'%value)
-            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),text1)
+            logger.error('元素：%s 无法聚焦,发送文本失败'%self.value_send)
+            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),self.text_send)
 
     def sends_keys(self,css,n,text):
         # try :
@@ -353,15 +353,15 @@ class PyAppium():#继承page类
         #     logging.info(u"%s : SendKeys_Element_Error@@!!!!!!!"%element)
         #     assert False,"SENDKEYS : ELEMENT %s SENDKEYS %s - FAILED"%(element,text)
         try :
-            value = css[0].split("->")[1].strip()        #元素"id->com.yunlu6.xxxxx"中的com.yunlu6.xxxx
-            text1 = css[1]                               #元素text描述
-            element = self.get_elements(css[0],css[1])   #元素获取
+            self.value_sends = css[0].split("->")[1].strip()        #元素"id->com.yunlu6.xxxxx"中的com.yunlu6.xxxx
+            self.text_sends  = css[1]                               #元素text描述
+            element = self.get_elements(css[0],css[1])              #元素获取
             element[n].send_keys(text)
             self.driver.implicitly_wait(1)#智能等待1秒
             # time.sleep(1)#点击事件自动等待1秒
         except Exception as err:
-            logger.error('元素：%s 无法聚焦,发送文本失败'%value)
-            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),text1)
+            logger.error('元素：%s 无法聚焦,发送文本失败'%self.value_sends)
+            assert False,"{0} 元素：{1}-发送文本失败".format(time.asctime(),self.text_sends)
 
     def right_click(self, css):
         """
@@ -562,15 +562,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
-            element = self.get_element(css[0],css[1])   #元素获取
+            self.value_get = css[0].split("->")[1].strip()        #元素id
+            self.text_get  = css[1]                               #元素text描述
+            element = self.get_element(css[0],css[1])             #元素获取
             # element.click()
             self.driver.implicitly_wait(1)#智能等待1秒
             return element.text
         except Exception as err:
-            logger.error('元素：%s 无法获取,获取失败'%value)
-            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法获取,获取失败'%self.value_get)
+            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),self.text_get)
 
     def get_texts(self,css,n):
         """
@@ -581,15 +581,15 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            value = css[0].split("->")[1].strip()       #元素id
-            text = css[1]                               #元素text描述
+            self.value_gets = css[0].split("->")[1].strip()       #元素id
+            self.text_gets  = css[1]                               #元素text描述
             elements = self.get_elements(css[0],css[1])   #元素获取
             # element.click()
             self.driver.implicitly_wait(1)#智能等待1秒
             return elements[n].text
         except Exception as err:
-            logger.error('元素：%s 无法获取,获取失败'%value)
-            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),text)
+            logger.error('元素：%s 无法获取,获取失败'%self.value_gets)
+            assert False,"{0} 获取文本：{1}-失败".format(time.asctime(),self.text_gets)
 
     def get_title(self):
         """
