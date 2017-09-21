@@ -4,7 +4,7 @@ import time
 
 import sys
 # sys.path.append("C:\\Users\\xiaoj\PycharmProjects\Appium")
-sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\StoneUIFramework")
+sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\")
 
 # sys.path.append('/usr/local/StoneUIFramework')
 # sys.path.append("/usr/local/Appium")
