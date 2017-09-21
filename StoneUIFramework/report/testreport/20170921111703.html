@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试结果</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">测试结果</h1>
+<p class='attribute'><strong>测试人员 : </strong> xiaojingyuan</p>
+<p class='attribute'><strong>开始时间 : </strong> 2017-09-21 11:17:03</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:05:19.617448</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 2，通过率= 100.00%</p>
+
+<p class='description'>测试报告</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>StoneUIFramework.testcase.空间.机构空间.test1_1创建机构空间.CreateOrgSpace001_1.space_CreateO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_spacecreate: 创建机构空间</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre>
+    
+pt1_1: 2017-09-21 11:17:20,672 - INFO - ------------START:test1_1创建机构空间.CreateOrgSpace001_1.py------------
+2017-09-21 11:17:23,382 - INFO - 进入空间列表
+2017-09-21 11:17:26,233 - INFO - ------START:test1_1创建机构空间.CreateSpace.py------
+2017-09-21 11:17:29,624 - INFO - 点击进入空间首页
+2017-09-21 11:17:30,849 - INFO - 点击+按钮
+2017-09-21 11:17:31,900 - INFO - 选择+机构空间
+2017-09-21 11:17:39,474 - INFO - 输入企业全称：appium测试空间
+2017-09-21 11:17:52,330 - INFO - 输入企业简称：appium测试空间
+2017-09-21 11:17:56,625 - INFO - 点击标题
+2017-09-21 11:17:57,307 - INFO - 点击机构类型
+2017-09-21 11:18:01,073 - INFO - 选择机构类型：企业
+2017-09-21 11:18:02,735 - INFO - 点击产业角色
+2017-09-21 11:18:03,802 - INFO - 产业角色选择：1
+2017-09-21 11:18:04,988 - INFO - 点击客户类型
+2017-09-21 11:18:06,314 - INFO - 点击客户类型标签
+2017-09-21 11:18:07,434 - INFO - 点击确定按钮
+2017-09-21 11:18:08,303 - INFO - 点击所在地区
+2017-09-21 11:18:09,259 - INFO - 选择北京省
+2017-09-21 11:18:10,484 - INFO - 选择东城市
+2017-09-21 11:18:12,739 - INFO - 确定提交
+2017-09-21 11:18:13,973 - INFO - 点击去验证对公账号
+2017-09-21 11:18:19,791 - INFO - 填写开户银行：AAA
+2017-09-21 11:18:20,942 - INFO - 点击所在地区
+2017-09-21 11:18:21,957 - INFO - 选择北京省
+2017-09-21 11:18:23,135 - INFO - 选择东城市
+2017-09-21 11:18:29,850 - INFO - 填写支行：BBB
+2017-09-21 11:18:35,772 - INFO - 填写银行账户：123456
+2017-09-21 11:18:39,640 - INFO - 确定提交
+2017-09-21 11:18:43,916 - INFO - 点击返回
+2017-09-21 11:18:48,197 - INFO - 点击取消按钮
+2017-09-21 11:18:48,206 - INFO - ------END:test1_1创建机构空间.CreateSpace.py------
+2017-09-21 11:18:49,245 - INFO - ------START:test1_1创建机构空间.CloseSpace.py-----
+2017-09-21 11:18:49,965 - INFO - 点击进入该空间
+2017-09-21 11:18:51,450 - INFO - 点击空间菜单栏
+2017-09-21 11:18:52,762 - INFO - 点击企业名片
+2017-09-21 11:18:53,707 - INFO - 点击菜单栏
+2017-09-21 11:18:54,878 - INFO - 点击关闭按钮
+2017-09-21 11:18:56,631 - INFO - 点击确认关闭
+2017-09-21 11:18:56,633 - INFO - ------END:test1_1创建机构空间.CloseSpace.pyy-----
+2017-09-21 11:18:56,635 - INFO - ------------END:test1_1创建机构空间.CreateOrgSpace001_1.py------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>StoneUIFramework.testcase.空间.机构空间.test2_1上下架产品.CreateProduct002_1.space_ProductO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_spaceproduct</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre>
+    
+pt2_1: 2017-09-21 11:19:15,951 - INFO - ------------START:test2_1上下架产品.CreateProduct002_1.py------------
+2017-09-21 11:19:20,229 - INFO - 点击进入空间列表
+2017-09-21 11:19:22,051 - INFO - 点击进入测试空间123
+2017-09-21 11:19:23,351 - INFO - 点击菜单栏
+2017-09-21 11:19:24,535 - INFO - 点击产品
+2017-09-21 11:19:24,537 - INFO - ------START:test2_1上下架产品.CreateProduct.py------
+2017-09-21 11:19:26,076 - INFO - 点击新建按钮
+2017-09-21 11:19:27,022 - INFO - 点击添加照片按钮
+2017-09-21 11:19:28,015 - INFO - 选择相册添加
+2017-09-21 11:19:29,905 - INFO - 选择第0张照片
+2017-09-21 11:19:30,883 - INFO - 点击完成
+2017-09-21 11:19:35,516 - INFO - 点击商品名称
+2017-09-21 11:19:42,240 - INFO - 输入商品名称：appium
+2017-09-21 11:19:46,349 - INFO - 点击顶部标题
+2017-09-21 11:19:46,966 - INFO - 点击商品分类
+2017-09-21 11:19:48,527 - INFO - 选择0级标签
+2017-09-21 11:19:50,295 - INFO - 选择1级标签
+2017-09-21 11:19:51,334 - INFO - 确定按钮
+2017-09-21 11:19:52,257 - INFO - 点击勾选按钮
+2017-09-21 11:19:53,463 - INFO - 点击石种属性
+2017-09-21 11:20:00,303 - INFO - 选择种类名：西班牙米黄
+2017-09-21 11:20:01,536 - INFO - 点击匹配出的石种名
+2017-09-21 11:20:05,608 - INFO - 点击勾选按钮
+2017-09-21 11:20:06,192 - INFO - 点击制品与表面
+2017-09-21 11:20:07,081 - INFO - 点击制品
+2017-09-21 11:20:08,039 - INFO - 选择0
+2017-09-21 11:20:08,924 - INFO - 点击表面
+2017-09-21 11:20:10,049 - INFO - 选择0
+2017-09-21 11:20:13,888 - INFO - 点击勾选按钮
+2017-09-21 11:20:14,391 - INFO - 点击产品参数
+2017-09-21 11:20:30,792 - INFO - 清空参数名
+2017-09-21 11:20:37,259 - INFO - 输入参数名：key
+2017-09-21 11:20:44,124 - INFO - 输入参数值：value
+2017-09-21 11:20:48,031 - INFO - 点击勾选
+2017-09-21 11:20:49,085 - INFO - 点击价格
+2017-09-21 11:20:54,925 - INFO - 单价：0
+2017-09-21 11:21:01,549 - INFO - 库存：0
+2017-09-21 11:21:02,283 - INFO - 点击保存
+2017-09-21 11:21:03,236 - INFO - 点击+新价
+2017-09-21 11:21:10,315 - INFO - 单价：123
+2017-09-21 11:21:16,321 - INFO - 库存：
+2017-09-21 11:21:16,603 - INFO - 点击保存
+2017-09-21 11:21:17,546 - INFO - 点击+新价
+2017-09-21 11:21:24,569 - INFO - 库存：123
+2017-09-21 11:21:29,919 - INFO - 单价：0
+2017-09-21 11:21:30,396 - INFO - 点击保存
+2017-09-21 11:21:31,307 - INFO - 点击+新价
+2017-09-21 11:21:38,452 - INFO - 单价：999
+2017-09-21 11:21:45,194 - INFO - 库存：999
+2017-09-21 11:21:46,076 - INFO - 点击保存
+2017-09-21 11:21:50,128 - INFO - 点击返回
+2017-09-21 11:21:51,275 - INFO - 点击保存
+2017-09-21 11:21:51,277 - INFO - ------END:test2_1上下架产品.CreateProduct.py------
+2017-09-21 11:21:52,487 - INFO - 点击未发布列表
+2017-09-21 11:21:54,122 - INFO - 点击最后一个产品-刚上架
+2017-09-21 11:21:55,641 - INFO - 点击菜单栏
+2017-09-21 11:21:56,973 - INFO - 点击发布
+2017-09-21 11:21:58,090 - INFO - 点击确认
+2017-09-21 11:21:59,096 - INFO - 点击已发布列表
+2017-09-21 11:22:01,485 - INFO - 点击最后一个产品-刚发布
+2017-09-21 11:22:02,528 - INFO - 商品名检查
+2017-09-21 11:22:04,790 - INFO - 价格检查
+2017-09-21 11:22:05,090 - INFO - 点击第一个价格
+2017-09-21 11:22:06,118 - INFO - 点击产品参数
+2017-09-21 11:22:06,857 - INFO - 石种属性检查
+2017-09-21 11:22:07,075 - INFO - 制品与表面检查
+2017-09-21 11:22:12,593 - INFO - 参数名/参数值检查
+2017-09-21 11:22:13,033 - INFO - 点击下架
+2017-09-21 11:22:14,291 - INFO - 确定下架
+2017-09-21 11:22:15,256 - INFO - 点击未发布列表
+2017-09-21 11:22:16,593 - INFO - 点击最后一个产品-刚下架
+2017-09-21 11:22:16,595 - INFO - ------START:test2_1上下架产品.DeleteProduct.py------
+2017-09-21 11:22:18,187 - INFO - 点击菜单栏
+2017-09-21 11:22:19,423 - INFO - 点击删除
+2017-09-21 11:22:19,425 - INFO - ------End:test2_1上下架产品.DeleteProduct.py------
+2017-09-21 11:22:19,426 - INFO - ------------END:test2_1上下架产品.CreateProduct002_1.py------------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
