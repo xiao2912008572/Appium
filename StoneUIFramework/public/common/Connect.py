@@ -13,8 +13,8 @@ cf = GlobalParam('config','path_file.conf')
 logfile = cf.getParam('space',"logfile")#日志文件名
 logger = Log(logfile)
 '''
-from StoneUIFramework.public.common.pyappium import PyAppium
-from StoneUIFramework.public.handle.space.SPACEHANDLE1 import _SPACEHANDLE1
+# from StoneUIFramework.public.common.pyappium import PyAppium
+# from StoneUIFramework.public.handle.space.SPACEHANDLE1 import _SPACEHANDLE1
 
 class Connect:
     def __init__(self):

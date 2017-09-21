@@ -442,7 +442,7 @@ class _TestResult(TestResult):
 
 
     def startTest(self, test):
-        print("Start Test:",str(test))
+        print("{0} - Start Test:{1}".format(time.asctime(),str(test)))
         TestResult.startTest(self, test)
         # just one buffer for both stdout and stderr
         self.outputBuffer = io.StringIO()
