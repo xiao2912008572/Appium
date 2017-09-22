@@ -16,7 +16,7 @@ reportPath = cf.getParam("report","path")#报告存储路径
 # logger = Log()
 # 配置收发件人
 # recvaddress = ['13027104206@163.com','291008572@qq.com']
-recvaddress = ['291008572@qq.com']
+recvaddress = ['291008572@qq.com','2462583295@qq.com']
 # 163的用户名和密码
 sendaddr_name = '13027104206@163.com'
 sendaddr_pswd = 'xjy199288'
