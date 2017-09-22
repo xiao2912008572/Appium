@@ -22,7 +22,7 @@ from StoneUIFramework.testcase.空间.机构空间.test4_1资讯.Archivies004_1 
 from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片.BusinessCard005_1 import space_BusinessCardO
 
 #@私人空间用例
-from StoneUIFramework.testcase.空间.私人空间.test1_1创建私人空间.CreatePersongSpace001_1 import perspace_CreateP
+from StoneUIFramework.testcase.空间.私人空间.test1_1创建私人空间.CreatePersonSpace001_1 import perspace_CreateP
 from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件夹.CreatePerSFolder002_1 import perspace_NewFloderP
 
 #@协会空间用例
