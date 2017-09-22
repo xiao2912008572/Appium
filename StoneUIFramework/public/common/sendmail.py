@@ -5,7 +5,6 @@ import smtplib
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from StoneUIFramework.config.globalparam import GlobalParam
 
 # from public.common.log import Log
 from StoneUIFramework.config.globalparam import GlobalParam
