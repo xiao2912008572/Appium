@@ -1,10 +1,7 @@
-
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
 from time import sleep
-import logging
-
 from StoneUIFramework.public.common.Connect import Connect
 from StoneUIFramework.public.common.publicfunction import Tools
 from StoneUIFramework.config.globalparam import GlobalParam
@@ -59,7 +56,7 @@ class perspace_CreateP(unittest.TestCase):
             else:
                 self.cr.createPersonSpace(self.driver,self.spacename)#创建
                 self.cl.closePersonSpace(self.driver,self.spacename)#关闭
-            self.log.info("------------:test1_1创建私人空间CreatePersonSpace001_1.py------------")
+            self.log.info("------------END:test1_1创建私人空间CreatePersonSpace001_1.py------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path,"ExceptionShot")
             self.log.error("Outside : %s"%err)
