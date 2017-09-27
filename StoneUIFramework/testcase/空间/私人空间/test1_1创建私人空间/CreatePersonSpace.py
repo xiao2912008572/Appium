@@ -60,15 +60,14 @@ class CreatePersonSpace:
             AllLabel = []#把各标签下的推荐列表，存到AllLabel列表里面
             for a in range(12):#循环12次
                 space.Kjlb_mainmenu_newpersonspace_choosespacetype_click(a)#选择列表中第a个标签
-                self.log.info('选择列表中的第{0}个标签'.format(a))
+                self.log.info('选择列表中的第{0}个标签'.format(a+1))
                 # sleep(1)
                 #把该标签下的推荐空间名存到一个列表中
                 EveryLabel = []
-                for i in space.Kjlb_mainmenu_newpersonspace_suggestspacenametag():
+                for i in space.Kjlb_mainmenu_newpersonspace_suggestspacenametag_get():
                     text = i.text
                     EveryLabel.append(text)
                 AllLabel.append(EveryLabel)
-                # print("A",A)
                 space.Kjlb_mainmenu_newpersonspace_changespacetype_click()#切换类型
             # print("AllLabel",AllLabel)
             #4.1衣

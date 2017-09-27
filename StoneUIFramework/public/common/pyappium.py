@@ -245,7 +245,7 @@ class PyAppium():#继承page类
         driver.click("id->kw")
         """
         try :
-            self.value_click = css[0].split("->")[1].strip()       #元素id
+            self.value_click = css[0].split("->")[1].strip()        #元素id
             self.text_click  = css[1]                               #元素text描述
             element = self.get_element(css[0],css[1])   #元素获取
             element.click()

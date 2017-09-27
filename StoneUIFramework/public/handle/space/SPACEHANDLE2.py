@@ -146,6 +146,10 @@ class _SPACEHANDLE2(_SPACEHANDLE1):
     def Kjlb_mainmenu_newpersonspace_suggestspacenametag_click(self):
         return self.p.click(self.Kjlb_mainmenu_newpersonspace_suggestspacenametag)
 
+    # 空间列- 主菜单-'+私人空间'-推荐空间名标签列表:获取
+    def Kjlb_mainmenu_newpersonspace_suggestspacenametag_get(self):
+        return self.p.get_elements(self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[0],self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[1])
+
     # 空间列表-主菜单-'+私人空间'-保存:点击
     def Kjlb_mainmenu_newpersonspace_save_click(self):
         return self.p.click(self.Kjlb_mainmenu_newpersonspace_save)
