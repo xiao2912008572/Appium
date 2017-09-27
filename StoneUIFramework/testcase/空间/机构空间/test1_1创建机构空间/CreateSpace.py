@@ -104,10 +104,6 @@ class CreateSpace:
             handle.Kjlb_mainmenu_newspace_verifynow_soversave_back_click()#点击返回
             self.log.info('点击返回')
             sleep(1)
-
-            #bug没改之前这么处理，手动点击取消按钮
-            driver.find_element_by_id("com.yunlu6.stone:id/cloundviewbottom_cancle").click()
-            self.log.info('点击取消按钮')
             self.log.info('------END:test1_1创建机构空间.CreateSpace.py------')
         except Exception as err:
             self.log.error("CreateSpace Inside : %s"%err)

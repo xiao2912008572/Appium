@@ -1,7 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
-import logging
 from StoneUIFramework.public.common.publicfunction import Tools
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.public.common.datainfo import DataInfo
@@ -62,6 +61,7 @@ class BusinessCard:
                 # handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone().clear()
                 handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_clear()
             handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_sendkeys(self.phone)
+            self.log.info('输入手机号：%s' % self.phone)
             #5.3 座机号
             # if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline().text is not None:
             if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_text() is not None:
