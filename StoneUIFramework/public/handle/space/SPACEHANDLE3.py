@@ -271,6 +271,10 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseperspace_foldername_click(self,n):
         return self.p.clicks(self.Kjlb_browseperspace_foldername,n)
 
+    # 空间列表-浏览私人空间-文件夹名称列表-获取元素
+    def Kjlb_browseperspace_foldername_get(self):
+        return self.p.get_elements(self.Kjlb_browseperspace_foldername[0],self.Kjlb_browseperspace_foldername[1])
+
     # 空间列表-浏览私人空间-加数据-相册
     def Kjlb_browseperspace_addData_ByAlbum_click(self):
         return self.p.click(self.Kjlb_browseperspace_addData_ByAlbum)

@@ -234,6 +234,10 @@ class _SPACEHANDLE2(_SPACEHANDLE1):
     def Kjlb_browseperspace_piclist_click(self,n):
         return self.p.clicks(self.Kjlb_browseperspace_piclist,n)
 
+    # 空间列表-浏览私人空间-照片列表-获取元素
+    def Kjlb_browseperspace_piclist_get(self):
+        return self.p.get_elements(self.Kjlb_browseperspace_piclist[0],self.Kjlb_browseperspace_piclist[1])
+
     # 空间列表-浏览私人空间-菜单栏
     def Kjlb_browseperspace_menu_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu)

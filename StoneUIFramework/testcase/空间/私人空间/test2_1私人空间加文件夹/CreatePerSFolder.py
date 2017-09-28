@@ -40,7 +40,7 @@ class CreatePerSFolder:
             handle.Kjlb_browseperspace_menu_addfolder_confirm_click()
             self.log.info('点击确定')
         #4.检查文件夹是否成功新建
-            foldername = handle.Kjlb_browseperspace_foldername()[0].text
+            foldername = handle.Kjlb_browseperspace_foldername_get()[0].text
             self.log.info('检查文件夹是否创建成功')
             assert self.foldername1 == foldername,"Error : Floder Name Is Wrong"
         #5.+数据:相册-照片列表-完成
@@ -61,7 +61,7 @@ class CreatePerSFolder:
             handle.Kjlb_browseperspace_addData_ByAlbum_confirm_back_click()
             self.log.info('点击返回空间主页')
         #6.检查上传是否成功
-            picLen = len(handle.Kjlb_browseperspace_piclist())#照片列表长度应该为2
+            picLen = len(handle.Kjlb_browseperspace_piclist_get())#照片列表长度应该为2
             self.log.info('检查上传是否成功')
             assert picLen == 2,'Error : Picture Upload Failed'
         #7.返回

@@ -2,7 +2,6 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
 from time import sleep
-import logging
 
 from StoneUIFramework.public.common.Connect import Connect
 from StoneUIFramework.public.common.publicfunction import Tools
