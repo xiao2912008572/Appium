@@ -48,6 +48,7 @@ class CreatePersonSpace:
         space = _SPACEHANDLE5(driver)
         sleep(1)
         try:
+            self.log.info("------START:test1_1创建私人空间CreatePersonSpace.py------")
         # #1.空间首页
         #     space.Kjlb_click()
         #2.右上角主菜单

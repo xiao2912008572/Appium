@@ -2,7 +2,6 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 
 from time import sleep
-import logging
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.public.common.datainfo import DataInfo
 

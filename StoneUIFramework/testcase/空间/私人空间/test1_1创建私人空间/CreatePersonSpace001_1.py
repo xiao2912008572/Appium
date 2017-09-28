@@ -25,7 +25,7 @@ class perspace_CreateP(unittest.TestCase):
         #4.创建读取配置信息对象
         cf = GlobalParam('config','path_file.conf')
         #5. 获取截图路径、日志路径、日志名
-        self.screen_path = cf.getParam('space', "org_path_001_1")  # 通过配置文件获取截图的路径
+        self.screen_path = cf.getParam('space', "per_path_001_1")  # 通过配置文件获取截图的路径
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
         # 创建日志记录模块
         self.log = Log(self.logfile)

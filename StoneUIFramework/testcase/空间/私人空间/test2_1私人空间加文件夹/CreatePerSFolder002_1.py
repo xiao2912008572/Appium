@@ -14,6 +14,7 @@ from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件�
 from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件夹.CreatePerSFolder import CreatePerSFolder
 from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件夹.DeletePerSFolder import DeletePerSFloder
 from StoneUIFramework.public.common.datainfo import DataInfo
+from StoneUIFramework.public.common.log import Log
 
 #加文件夹
 class perspace_NewFloderP(unittest.TestCase):
@@ -28,10 +29,11 @@ class perspace_NewFloderP(unittest.TestCase):
         self.handle = _SPACEHANDLE5(self.driver)
         #4.创建读取配置信息对象
         cf = GlobalParam('config','path_file.conf')
-        #5.获取截图路径、日志路径、日志名
-        self.screen_path = cf.getParam('space',"per_path_002_1")#通过配置文件获取截图的路径
-        self.log_path = cf.getParam('space',"log")#通过配置文件获取日志的路径
-        self.logfile = cf.getParam('space',"logfile")#日志文件名
+        # 5. 获取截图路径、日志路径、日志名
+        self.screen_path = cf.getParam('space', "per_path_001_1")  # 通过配置文件获取截图的路径
+        self.logfile = cf.getParam('log', "logfile")  # 日志文件名
+        # 创建日志记录模块
+        self.log = Log(self.logfile)
         #6.创建Createspace、Closespace、CreatePerSFolder对象
         self.cr = CreatePersonSpace()
         self.cl = ClosePersonSpace()
@@ -45,9 +47,10 @@ class perspace_NewFloderP(unittest.TestCase):
         # self.foldername1 = d.cell("test006",2,14)#文件夹1名:appium文件夹
     def test_pernewfolder(self):
         try:
-            self.tools.getLog(self.logfile)#打印日志
+            self.log.info("------------START:test2_1私人空间加文件夹CreatePerFolder002_1.py------------")
             #1.进入空间列表
             self.handle.Kjlb_click()
+            self.log.info('点击进入空间列表')
             # #2.点击主菜单
             # self.handle.Kjlb_mainmenu_click()
             # #3.点击+私人空间
@@ -99,10 +102,10 @@ class perspace_NewFloderP(unittest.TestCase):
                 self.cpl.deletePerSFloder(self.driver,self.spacename)
                 #4.6再关闭空间
                 self.cl.closePersonSpace(self.driver,self.spacename)
-            logging.info("success@@!!!!!!!")#宣布成功
+            self.log.info('------------END:test2_1私人空间加文件夹CreatePerFolder002_1.py------------')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path,"ExceptionShot")
-            logging.error("Error Information outside : %s"%err)
+            self.log.error("Outside : %s"%err)
             raise err
         finally:
             self.driver.quit()

@@ -1,8 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-
 from time import sleep
-import logging
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.public.common.log import Log
 from StoneUIFramework.config.globalparam import GlobalParam
@@ -21,6 +19,7 @@ class ClosePersonSpace:
         handle = _SPACEHANDLE5(driver)
         sleep(1)
         try:
+            self.log.info('------START:test1_1创建机构空间.ClosePersonSpace.py------')
             #1.点击该空间
             handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击{0}空间'.format(spacename))
