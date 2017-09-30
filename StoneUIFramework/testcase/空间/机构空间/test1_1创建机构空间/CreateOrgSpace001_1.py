@@ -47,8 +47,18 @@ class space_CreateO(unittest.TestCase):
             sleep(1)
             self.handle.Kjlb_click()#进入空间列表
             self.log.info('进入空间列表')
-            name = self.handle.Kjlb_browseorgspaceByID_text(0)#获取第一家空间
-            if name == self.easyname:#检查当前的机构简称，如果已经有了，就关闭
+            #遍历空间列表，查找是否存在该空间
+            self.flag = 0
+            for element in self.handle.Kjlb_browseorgspace_getElements():
+                spacename = element.text
+                if spacename == self.easyname:
+                    self.flag =1
+                    self.log.info('已存在该空间')
+                    break
+                else:
+                    pass
+            #如果机构存在
+            if self.flag == 1:
                 self.cl.closeSpace(self.driver)#关闭
                 self.cr.createSpace(self.driver,self.fullname,self.easyname)#关闭之后,重新创建机构空间
                 self.cl.closeSpace(self.driver)

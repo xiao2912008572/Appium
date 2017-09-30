@@ -1,4 +1,3 @@
-
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
@@ -47,19 +46,23 @@ class ascspace_CreateA(unittest.TestCase):
             #先进行判断，空间是否存在，如果不存在，创建；如果存在，先删除后创建
             sleep(1)
             self.handle.Kjlb_click()#进入空间列表
-            #1.遍历空间列表，查找是否存在easyname的空间名
-            for element in self.handle.Kjlb_browseorgspaceByID():
-                spacename = element.text#获取空间名
-            # name = self.handle.Kjlb_browseorgspaceByName(self.easyname)#获取第一家空间
-                if spacename == self.easyname:#检查当前的机构简称，如果已经有了，就关闭
-                    self.cl.closeAsscSpace(self.driver,self.easyname)#关闭
-                    self.cr.createAscSpace(self.driver,self.fullname,self.easyname)#关闭之后,重新创建机构空间
-                    self.cl.closeAsscSpace(self.driver,self.easyname)
-                    pass
+            # 遍历空间列表，查找是否存在该空间
+            self.flag = 0
+            for element in self.handle.Kjlb_browseorgspace_getElements():
+                spacename = element.text
+                if spacename == self.easyname:
+                    self.flag = 1
+                    break
                 else:
-                    self.cr.createAscSpace(self.driver,self.fullname,self.easyname)#创建机构空间
-                    self.cl.closeAsscSpace(self.driver,self.easyname)
                     pass
+            # 如果机构存在
+            if self.flag == 1:
+                self.cl.closeAsscSpace(self.driver, self.easyname)  # 关闭
+                self.cr.createAscSpace(self.driver, self.fullname, self.easyname)  # 关闭之后,重新创建机构空间
+                self.cl.closeAsscSpace(self.driver, self.easyname)
+            else:
+                self.cr.createAscSpace(self.driver, self.fullname, self.easyname)  # 创建机构空间
+                self.cl.closeAsscSpace(self.driver, self.easyname)
             logging.info("success@@!!!!!!!")#宣布成功
         except Exception as err:
             self.tools.getScreenShot(self.screen_path,"ExceptionShot")
