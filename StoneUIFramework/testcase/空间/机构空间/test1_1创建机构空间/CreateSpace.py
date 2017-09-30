@@ -29,8 +29,8 @@ class CreateSpace:
         handle = _SPACEHANDLE5(driver)
         sleep(1)
         try:
-        #1.空间首页
             self.log.info('------START:test1_1创建机构空间.CreateSpace.py------')
+        #1.空间首页
             handle.Kjlb_click()
             self.log.info('点击进入空间首页')
         #2.点击+按钮
@@ -74,8 +74,6 @@ class CreateSpace:
             self.log.info('选择%s省'%self.province)
             driver.find_element_by_name(self.city).click()
             self.log.info('选择%s市'%self.city)
-            # handle.Kjlb_mainmenu_newspace_area_address_click(self.province)#北京
-            # handle.Kjlb_mainmenu_newspace_area_address_click(self.city)#东城
             handle.Kjlb_mainmenu_newspace_affirm_click()#点击提交
             self.log.info('确定提交')
 
