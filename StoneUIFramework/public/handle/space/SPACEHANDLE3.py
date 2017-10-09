@@ -9,8 +9,7 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_product_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_back)
 
-        #  空间列表-浏览企业空间-菜单栏-产品-新建:点击
-
+    #  空间列表-浏览企业空间-菜单栏-产品-新建:点击
     def Kjlb_browseorgspace_menu_product_new_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new)
 
@@ -27,13 +26,11 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_product_unlock_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock)
 
-        #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品名查找:点击
-
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品名查找:点击
     def Kjlb_browseorgspace_menu_product_unlock_list_byname_click(self, name):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_byname(name)[0])
 
-        #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找:点击
-
+    #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品名查找:点击
     def Kjlb_browseorgspace_menu_product_lock_list_byname_click(self, name):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_byname(name)[0])
 
@@ -66,8 +63,7 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_team_menu_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu)
 
-        # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免:点击
-
+    # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免:点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob)
 
@@ -584,28 +580,75 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseascspace_menu_edit_contact_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_contact, text)
 
+    # 空间列表-浏览协会空间-菜单栏-编辑-联系人:获取文本
+    def Kjlb_browseascspace_menu_edit_contact_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_contact)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-联系人:清空文本
+    def Kjlb_browseascspace_menu_edit_contact_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_contact)
+
     # 空间列表-浏览协会空间-菜单栏-编辑-手机号:发送文本
     def Kjlb_browseascspace_menu_edit_phone_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_phone, text)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-手机号:获取文本
+    def Kjlb_browseascspace_menu_edit_phone_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_phone)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-手机号:清空文本
+    def Kjlb_browseascspace_menu_edit_phone_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_phone)
 
     # 空间列表-浏览协会空间-菜单栏-编辑-座机号:发送文本
     def Kjlb_browseascspace_menu_edit_landline_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_landline, text)
 
+    # 空间列表-浏览协会空间-菜单栏-编辑-座机号:获取文本
+    def Kjlb_browseascspace_menu_edit_landline_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_landline)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-座机号:清空文本
+    def Kjlb_browseascspace_menu_edit_landline_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_landline)
+
     # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:发送文本
     def Kjlb_browseascspace_menu_edit_email_sendkeys(self, text):
-        return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_email, text)
+        return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_email, text)\
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:获取文本
+    def Kjlb_browseascspace_menu_edit_email_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_email)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:清空文本
+    def Kjlb_browseascspace_menu_edit_email_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_email)
 
     # 空间列表-浏览协会空间-菜单栏-编辑-QQ:发送文本
     def Kjlb_browseascspace_menu_edit_QQ_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_QQ, text)
 
+    # 空间列表-浏览协会空间-菜单栏-编辑-QQ:获取文本
+    def Kjlb_browseascspace_menu_edit_QQ_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_QQ)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-QQ:清空文本
+    def Kjlb_browseascspace_menu_edit_QQ_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_QQ)
+
     # 空间列表-浏览协会空间-菜单栏-编辑-网站:发送文本
     def Kjlb_browseascspace_menu_edit_website_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_website, text)
 
-        # 空间列表-浏览协会空间-菜单栏-编辑-勾选:点击
+    # 空间列表-浏览协会空间-菜单栏-编辑-网站:获取文本
+    def Kjlb_browseascspace_menu_edit_website_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_edit_website)
 
+    # 空间列表-浏览协会空间-菜单栏-编辑-网站:清空文本
+    def Kjlb_browseascspace_menu_edit_website_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_edit_website)
+
+    # 空间列表-浏览协会空间-菜单栏-编辑-勾选:点击
     def Kjlb_browseascspace_menu_edit_confirm_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_edit_confirm)
 

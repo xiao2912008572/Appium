@@ -41,7 +41,7 @@ class ascspace_CreateA(unittest.TestCase):
     def test_ascspacecreate(self):
         '''创建机构空间'''
         try:
-            self.log.info("------------START:test1_1创建机构空间.CreateASCSpace001_1.py------------")
+            self.log.info("------------START:test1_1创建协会空间.CreateASCSpace001_1.py------------")
             #-------------创建机构空间------------
             #先进行判断，空间是否存在，如果不存在，创建；如果存在，先删除后创建
             sleep(1)
