@@ -127,8 +127,7 @@ class TeamAssignJob:
             if driver.find_elements_by_id("com.yunlu6.stone:id/removaljobs_name") != []:  # 列表是否为空
                 listT = handle.Kjlb_browseascspace_menu_team_menu_assignjob_contact()
                 for i in range(len(listT)):  # 遍历列表
-                    if handle.Kjlb_browseascspace_menu_team_menu_assignjob_contact()[
-                        i].text == self.Name:  # 再判断是否该人已被任免
+                    if handle.Kjlb_browseascspace_menu_team_menu_assignjob_contact()[i].text == self.Name:  # 再判断是否该人已被任免
                         handle.Kjlb_browseascspace_menu_team_menu_assignjob_contact_click(0)  # 待任免联系人
                         self.log.info('判断该人是否已被任免')
                         self.log.info('点击待任免联系人')
