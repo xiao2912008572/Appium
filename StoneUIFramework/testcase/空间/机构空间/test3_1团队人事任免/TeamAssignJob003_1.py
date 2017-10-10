@@ -1,8 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
-from time import sleep
-import logging
 
 from StoneUIFramework.public.common.Connect import Connect
 from StoneUIFramework.public.common.publicfunction import Tools
@@ -30,7 +28,6 @@ class team_AssignO(unittest.TestCase):
         self.logfile = cf.getParam('log',"logfile")#日志文件名
         #创建TeamAssignJob对象
         self.SpaceTa = TeamAssignJob()
-        sleep(1)
         #测试数据
         d = DataInfo("space.xls")#创建DataInfo()对象
         self.spacename = d.cell("test003-团队",2,1)#测试空间123
@@ -40,7 +37,6 @@ class team_AssignO(unittest.TestCase):
         """团队人事任免"""
         try:
             self.log.info("------------Start:test3_1团队人事任免.TeamAssignJob003_1.py------------")
-            # self.tools.coverUpdate(self.log_path,self.screen_path)#覆盖更新日志,覆盖更新截图
         #1.空间首页
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')

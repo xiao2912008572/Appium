@@ -70,7 +70,7 @@ class space_CreateO(unittest.TestCase):
             self.log.info("------------END:test1_1创建机构空间.CreateOrgSpace001_1.py------------")  # 宣布成功
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Outside : %s" % err)
+            self.log.error("CreateOrgSpace Outside : %s" % err)
             raise err
         finally:
             self.driver.quit()

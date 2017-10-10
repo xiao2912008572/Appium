@@ -53,7 +53,7 @@ class space_EditA(unittest.TestCase):
             self.log.info("------------END:test1_2协会编辑.Edit002_1.py------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Outside : %s" % err)
+            self.log.error("Edit Outside : %s" % err)
             raise err
         finally:
             self.driver.quit()

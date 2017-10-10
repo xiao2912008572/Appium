@@ -681,6 +681,14 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit, text)
 
+    # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-职位人数:清空文本
+    def Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit_clear(self):
+        return self.p.clear(self.Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit)
+
+    # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-职位人数:获取文本
+    def Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit_text(self):
+        return self.p.get_text(self.Kjlb_browseascspace_menu_team_teamedit_numeidt_jobsnumedit)
+
     # 空间列表-浏览协会空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-否:点击
     def Kjlb_browseascspace_menu_team_teamedit_numeidt_cancel_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_team_teamedit_numeidt_cancel)
