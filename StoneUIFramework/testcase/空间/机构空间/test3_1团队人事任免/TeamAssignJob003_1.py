@@ -60,25 +60,25 @@ class team_AssignO(unittest.TestCase):
         self.driver.quit()
 
     # 4.测试用例
-    @ddt.data([spacename_1,AdministratorLoc_1,SalespersonLoc_1,AssistantLoc_1,
-               AdmNum_1,SalNum_1,AssNum_1,Name_1,
-               Director_1,Marketing_1,HR_1])
+    @ddt.data([spacename_1, AdministratorLoc_1, SalespersonLoc_1, AssistantLoc_1,
+               AdmNum_1, SalNum_1, AssNum_1, Name_1,
+               Director_1, Marketing_1, HR_1])
     @ddt.unpack
-    def test_teamassign(self,spacename,AdminstratorLoc,SalespersonLoc,AssistanLoc,
-                        AdmNum,SalNum,AssNum,Name,
-                        Director,Marketing,Hr):
+    def test_teamassign(self, spacename, AdminstratorLoc, SalespersonLoc, AssistanLoc,
+                        AdmNum, SalNum, AssNum, Name,
+                        Director, Marketing, Hr):
         """团队人事任免"""
         try:
             # 1.空间首页
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:测试空间123
-            self.handle.Kjlb_browseorgspaceByName_click(self.spacename)
-            self.log.info('选择空间：%s' % self.spacename)
+            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            self.log.info('选择空间：%s' % spacename)
             # 3.任免+移除
-            self.SpaceTa.teamAssignJob(self.driver, spacename, AdminstratorLoc,
-                      SalespersonLoc, AssistanLoc, AdmNum, SalNum,
-                      AssNum, Name, Director, Marketing, Hr)
+            self.SpaceTa.teamAssignJob(self.driver, AdminstratorLoc,
+                                       SalespersonLoc, AssistanLoc, AdmNum, SalNum,
+                                       AssNum, Name, Director, Marketing, Hr)
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("TeamAssignJob Outside : %s" % err)

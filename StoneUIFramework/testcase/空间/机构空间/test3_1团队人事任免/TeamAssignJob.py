@@ -8,7 +8,7 @@ from StoneUIFramework.config.globalparam import GlobalParam
 
 # 团队人事任免
 class TeamAssignJob:
-    #1. 初始化
+    # 1. 初始化
     def __init__(self):
         # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
@@ -17,6 +17,7 @@ class TeamAssignJob:
         # 3.创建日志模块
         self.log = Log(self.logfile)
 
+    # 2.团队人事任免-公用方法
     def teamAssignJob(self, driver, AdminstratorLoc,
                       SalespersonLoc, AssistanLoc, AdmNum, SalNum,
                       AssNum, Name, Director, Marketing, Hr):
