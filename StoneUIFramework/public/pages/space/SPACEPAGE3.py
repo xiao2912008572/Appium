@@ -77,6 +77,12 @@ class _SPACEPAGE3(_SPACEPAGE2):
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮
     Kjlb_browseorgspace_menu_archivies_new = ("id->com.yunlu6.stone:id/title_tv_menu","空间列表-浏览企业空间-菜单栏-资讯-新增按钮")
 
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯
+    Kjlb_browseorgspace_menu_archivies_new_archivies = ("id->com.yunlu6.stone:id/add_zixun","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程
+    Kjlb_browseorgspace_menu_archivies_new_constitution = ("id->com.yunlu6.stone:id/to_rule","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程")
+
     # 空间列表-浏览企业空间-菜单栏-资讯-图片新增
     Kjlb_browseorgspace_menu_archivies_picadd = ("id->com.yunlu6.stone:id/rl_add","空间列表-浏览企业空间-菜单栏-资讯-图片新增")
 

@@ -1,7 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
-from StoneUIFramework.public.common.publicfunction import Tools
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.public.common.log import Log
 from StoneUIFramework.config.globalparam import GlobalParam
@@ -11,17 +10,15 @@ from StoneUIFramework.config.globalparam import GlobalParam
 class DeleteArchivies:
     # 1.初始化
     def __init__(self):  # 初始化测试数据
-        # 创建读取配置信息对象
+        # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
-        # 获取截图路径、日志路径、日志名
+        # 2.获取截图路径、日志路径、日志名
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
-        # 创建日志模块
+        # 3.创建日志模块
         self.log = Log(self.logfile)
 
     # 2.删除资讯-公用方法
     def deletearchivies(self, driver, spacename):
-        # 创建工具类
-        tools = Tools(driver)  # tools工具
         # 创建_SPACEHANDLE5公有定位控件对象
         handle = _SPACEHANDLE5(driver)
         sleep(1)

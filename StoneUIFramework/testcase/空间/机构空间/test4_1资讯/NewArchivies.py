@@ -84,10 +84,8 @@ class NewArchivies:
             driver.implicitly_wait(1)  # 只能等待2秒
             # sleep(2)
             handle.Kjlb_browseorgspace_menu_archivies_pic_click(0)  # 点击第一张资讯
-            driver.implicitly_wait(1)
             self.log.info('点击第一张资讯')
             handle.Kjlb_browseorgspace_menu_archivies_pic_click(0)  # 点击第一张资讯
-            driver.implicitly_wait(1)
             self.log.info('点击第一张资讯')
             titlee = handle.Kjlb_browseorgspace_menu_archivies_pic_title_text()  # 获取资讯标题
             assert titlee == title, "资讯标题未保存成功"

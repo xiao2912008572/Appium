@@ -29,7 +29,7 @@ class AddOrgVip:
         handle = _SPACEHANDLE5(driver)
         sleep(1)
         try:
-            self.log.info('------START:test5_5加会员_管理员_企业_同意.AddPerVip.py------')
+            self.log.info('------START:test5_5加会员_管理员_企业_拒绝.AddPerVip.py------')
             # 1.空间首页
             # handle.Kjlb_click()
             # tools.getScreenShot(screen_path,"空间首页")
@@ -58,7 +58,7 @@ class AddOrgVip:
             # 7.返回到空间主界面
             handle.Kjlb_browseascspace_back_click()
             self.log.info('点击返回，返回至空间主界面')
-            self.log.info('------END:test5_5加会员_管理员_企业_同意.AddPerVip.py------')
+            self.log.info('------END:test5_5加会员_管理员_企业_拒绝.AddPerVip.py------')
         except Exception as err:
             self.log.error("AddOrgVip Inside : %s" % err)
             raise err

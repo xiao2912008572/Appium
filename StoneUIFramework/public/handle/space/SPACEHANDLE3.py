@@ -116,6 +116,14 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_archivies_new_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new)
 
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯:点击
+    def Kjlb_browseorgspace_menu_archivies_new_archivies_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_archivies)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程:点击
+    def Kjlb_browseorgspace_menu_archivies_new_constitution_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_constitution)
+
     # 空间列表-浏览企业空间-菜单栏-资讯-图片新增:点击
     def Kjlb_browseorgspace_menu_archivies_picadd_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies_picadd)
@@ -614,9 +622,10 @@ class _SPACEHANDLE3(_SPACEHANDLE2):
 
     # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:发送文本
     def Kjlb_browseascspace_menu_edit_email_sendkeys(self, text):
-        return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_email, text)\
+        return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_email, text) \
+ \
+            # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:获取文本
 
-    # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:获取文本
     def Kjlb_browseascspace_menu_edit_email_text(self):
         return self.p.get_text(self.Kjlb_browseascspace_menu_edit_email)
 

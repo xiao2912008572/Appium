@@ -56,12 +56,12 @@ class AddPtoPAgreeA(unittest.TestCase):
         self.deleteVip = DeletePerVip()
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
-        self.log.info("------------START:test5_4加会员_个人_个人_同意.Add_AtoP_Refuse005_3.py------------")
+        self.log.info("------------START:test5_4加会员_个人_个人_拒绝.Add_PtoP_Refuse005_4.py------------")
 
     # 3.释放资源
     def tearDown(self):
         # 1.打印日志
-        self.log.info("------------END:test5_4加会员_个人_个人_同意.Add_AtoP_Refuse005_3.py------------")
+        self.log.info("------------END:test5_4加会员_个人_个人_拒绝.Add_PtoP_Refuse005_4.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
         self.driver.quit()

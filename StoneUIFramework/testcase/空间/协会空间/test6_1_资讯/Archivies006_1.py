@@ -2,54 +2,76 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
 from time import sleep
-import logging
 
 from StoneUIFramework.public.common.Connect import Connect
 from StoneUIFramework.public.common.publicfunction import Tools
 from StoneUIFramework.config.globalparam import GlobalParam
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
 from StoneUIFramework.testcase.空间.协会空间.test6_1_资讯.NewArchivies import NewArchivies
+from StoneUIFramework.testcase.空间.协会空间.test6_1_资讯.DeleteArchivies import DeleteArchivies
 from StoneUIFramework.public.common.datainfo import DataInfo
+from StoneUIFramework.public.common.log import Log
+import ddt
 
-#资讯发布
+
+# 资讯发布
+@ddt.ddt
 class space_ArchiviesA(unittest.TestCase):
-    @classmethod#装饰器，类方法
-    def setUpClass(self):#最开始执行
-        #建立连接信息
+    # 1.全局测试数据
+    d = DataInfo("space.xls")  # 创建DataInfo()对象
+    spacename_1 = d.cell("test008-协会资讯", 2, 3)  # 协会测试123
+    title_1 = d.cell("test008-协会资讯", 2, 1)  # 协会测试123
+    typelist_1 = int(d.cell("test008-协会资讯", 2, 2))  # 类型列表:经典作品
+
+    # 2.初始化
+    def setUp(self):
+        # 1.建立连接信息
         cnn = Connect()
         self.driver = cnn.connect()
-        #创建工具类
-        self.tools = Tools(self.driver)#tools工具
-        #创建 _SPACEHANDLE5公有定位控件对象
+        # 2.创建工具类
+        self.tools = Tools(self.driver)  # tools工具
+        # 3.创建 _SPACEHANDLE5公有定位控件对象
         self.handle = _SPACEHANDLE5(self.driver)
-        #创建读取配置信息对象
-        cf = GlobalParam('config','path_file.conf')
-        #获取截图路径、日志路径、日志名
-        self.screen_path = cf.getParam('space',"ass_path_006_1")#通过配置文件获取截图的路径
-        self.log_path = cf.getParam('space',"log")#通过配置文件获取日志的路径
-        self.logfile = cf.getParam('space',"logfile")#日志文件名
-        #创建Archiviese对象
+        # 4.创建读取配置信息对象
+        cf = GlobalParam('config', 'path_file.conf')
+        # 5.获取截图路径、日志路径、日志名
+        self.screen_path = cf.getParam('space', "ass_path_006_1")  # 通过配置文件获取截图的路径
+        self.logfile = cf.getParam('log', "logfile")  # 日志文件名
+        # 6.创建日志记录模块
+        self.log = Log(self.logfile)
+        # 7.创建Archiviese对象
         self.spaceAr = NewArchivies()
+        self.spaceDe = DeleteArchivies()
         sleep(1)
-        #测试数据
-        d = DataInfo("space.xls")#创建DataInfo()对象
-        self.spacename = d.cell("test008-协会资讯",2,3)#协会测试123
-    def test_archivies(self):
+        # 8.打印日志
+        self.log.info('****************************************用例开始！****************************************')
+        self.log.info("------------START:test5_8资讯Archivies006_1.py------------")
+
+    # 3.释放资源
+    def tearDown(self):
+        # 1.打印日志
+        self.log.info("------------END:test5_8资讯Archivies006_1.py------------")
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        # 2.关闭driver
+        self.driver.quit()
+
+    # 4.测试用例
+    @ddt.data([spacename_1, title_1, typelist_1])
+    @ddt.unpack
+    def test_archivies(self, spacename, title, typelist):
         """资讯发布"""
         try:
-            # self.tools.coverUpdate(self.log_path,self.screen_path)#覆盖更新日志,覆盖更新截图
-            self.tools.getLog(self.logfile)#打印日志
-        #1.空间首页
+            # 1.空间首页
             self.handle.Kjlb_click()
-            self.tools.getScreenShot(self.screen_path,"空间首页")
-        #2.选择空间:协会测试123
-            self.handle.Kjlb_browseorgspaceByName_click(self.spacename)
-        #3.资讯发布
-            self.spaceAr.newarchivies(self.driver)
-            logging.info("success@@!!!!!!!")#宣布成功
+            self.log.info('进入空间首页')
+            # 2.选择空间:协会测试123
+            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            self.log.info('进入空间：%s' % spacename)
+            # 3.资讯发布
+            self.spaceAr.newarchivies(self.driver, title, typelist)
+            # 4.删除资讯，还原测试场景
+            self.spaceDe.deletearchivies(self.driver, spacename)
         except Exception as err:
-            self.tools.getScreenShot(self.screen_path,"ExceptionShot")
-            logging.error("Error_006_1 Information Archivies Outside : %s"%err)
+            self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+            self.log.error("Archivies Outside : %s" % err)
             raise err
-        finally:
-            self.driver.quit()
