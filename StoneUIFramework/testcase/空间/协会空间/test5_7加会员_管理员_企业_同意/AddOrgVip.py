@@ -10,9 +10,6 @@ from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
 # +企业会员
 class AddOrgVip:
     def __init__(self):  
-        #初始化测试数据
-        d = DataInfo("space.xls")  #创建DataInfo()对象
-        self.vipname = d.cell("test007-会员",3,2)             #企业全称:明月俱乐部
         #创建Loginout和Login对象
         self.loginout = Loginout()
         self.login = LoginA()

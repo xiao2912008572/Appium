@@ -2,7 +2,6 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 import unittest
 from time import sleep
-import logging
 
 from StoneUIFramework.public.common.Connect import Connect
 from StoneUIFramework.public.common.publicfunction import Tools
@@ -53,8 +52,23 @@ class AddAtoOAgreeA(unittest.TestCase):
         self.loginout = LoginoutA()
         self.addvip = AddOrgVip()
         self.delete = DeleteOrgVip()
+        # 8.打印日志
+        self.log.info('****************************************用例开始！****************************************')
+        self.log.info("------------START:test5_7加会员_管理员_企业_同意.Add_AtoO_Agreee005_7.py------------")
 
-    def test_addAtoORefuse(self):
+    # 3.释放资源
+    def tearDown(self):
+        # 1.打印日志
+        self.log.info("------------END:test5_7加会员_管理员_企业_同意.Add_AtoO_Agreee005_7.py------------")
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        # 2.关闭driver
+        self.driver.quit()
+
+    # 4.测试用例
+    @ddt.data([spacename_1, orgname_1, phone1_1, password1_1,
+               phone2_1, password2_1])
+    @ddt.unpack
+    def test_addAtoORefuse(self,spacename,orgname,phone1,password1,phone2,password2):
         '''+企业会员:【管理员邀请：受邀企业对象拒绝】'''
         try:
             self.tools.getLog(self.logfile)  # 打印日志
@@ -62,14 +76,14 @@ class AddAtoOAgreeA(unittest.TestCase):
             # 1.空间首页
             self.handleS.Kjlb_click()
             # 2.选择空间:测试空间123
-            self.handleS.Kjlb_browseorgspaceByName_click(self.spacename)
+            self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             # 3.+会员
-            self.addvip.addOrgVip(self.driver, self.orgname)
+            self.addvip.addOrgVip(self.driver, orgname)
             # 4.退出账号,登录受邀账号处理消息
             # 4.1调用loginout模块:退出当前账号
             self.loginout.loginout(self.driver, 4)  # 空间页设置
             # 4.2调用loginA模块:登录受邀账号
-            self.login.login(self.driver, self.phone1, self.password1)
+            self.login.login(self.driver, self.phone1, password1)
             sleep(1)
             '''
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
@@ -87,7 +101,7 @@ class AddAtoOAgreeA(unittest.TestCase):
             self.loginout.loginout(self.driver, 1)
             # 8.登录邀请账号-检查各处消息
             # 8.1登录
-            self.login.login(self.driver, self.phone2, self.password2)
+            self.login.login(self.driver, phone2, password2)
             sleep(1)
             '''
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
@@ -96,7 +110,7 @@ class AddAtoOAgreeA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
             # 8.3查看消息第一条
             message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
-            assert message == self.orgname + ' 机构已加入 贵公司的企业会员邀请', "Error Message Handled"
+            assert message == orgname + ' 机构已加入 贵公司的企业会员邀请', "Error Message Handled"
             # 8.4返回-空间主界面
             self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
             # 9.还原测试场景
@@ -106,12 +120,11 @@ class AddAtoOAgreeA(unittest.TestCase):
             # 9.1空间列表
             self.handleS.Kjlb_click()
             # 9.2进入空间
-            self.handleS.Kjlb_browseorgspaceByName_click(self.spacename)
+            self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             # 9.3会员中移除企业
             self.delete.deletOrgVip(self.driver, 1)
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            logging.error("Error_005_7 Information Add_AtoO_Agree Outside : %s" % err)
+            self.log.error("Add_AtoO_Agree Outside : %s" % err)
             raise err
-        finally:
-            self.driver.quit()
+

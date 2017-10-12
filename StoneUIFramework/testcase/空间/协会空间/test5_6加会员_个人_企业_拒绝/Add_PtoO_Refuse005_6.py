@@ -57,19 +57,19 @@ class AddPtoORefuseA(unittest.TestCase):
         self.delete = DeleteOrgVip()
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
-        self.log.info("------------START:test5_6加会员_个人_企业_拒绝.Add_AtoO_Refuse005_5.py------------")
+        self.log.info("------------START:test5_6加会员_个人_企业_拒绝.Add_PtoO_Refuse005_6.py------------")
 
     # 3.释放资源
     def tearDown(self):
         # 1.打印日志
-        self.log.info("------------END:test5_6加会员_个人_企业_拒绝.Add_AtoO_Refuse005_5.py------------")
+        self.log.info("------------END:test5_6加会员_个人_企业_拒绝.Add_PtoO_Refuse005_6.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
         self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, orgname_1, phone1_1, password1_1,
-               phone2_1, password2_1], phone3_1, password3_1)
+               phone2_1, password2_1, phone3_1, password3_1])
     @ddt.unpack
     def test_addPtoORefuse(self, spacename, orgname, phone1, password1,
                            phone2, password2, phone3, password3):

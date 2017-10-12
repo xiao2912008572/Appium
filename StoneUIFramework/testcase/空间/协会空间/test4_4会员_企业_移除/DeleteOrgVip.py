@@ -2,7 +2,6 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 from StoneUIFramework.config.globalparam import GlobalParam
 
@@ -11,9 +10,6 @@ from StoneUIFramework.config.globalparam import GlobalParam
 class DeleteOrgVip:
     #1.初始化
     def __init__(self):
-        # 初始化测试数据
-        d = DataInfo("space.xls")  # 创建DataInfo()对象
-        self.vipname = d.cell("test007-会员", 2, 2)  # 人脉姓名
         # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 2.获取截图路径、日志路径、日志名
