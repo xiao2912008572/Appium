@@ -2,7 +2,6 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.testcase.登录.test2_1退出登录.Loginout002_1 import Loginout
 from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
 from StoneUIFramework.public.common.log import Log
@@ -11,21 +10,20 @@ from StoneUIFramework.config.globalparam import GlobalParam
 
 # +个人会员
 class AddPerVip:
+    # 1.初始化
     def __init__(self):
-        # 初始化测试数据
-        d = DataInfo("space.xls")  # 创建DataInfo()对象
-        self.vipname = d.cell("test007-会员", 2, 2)  # 人脉姓名
         # 创建Loginout和Login对象
         self.loginout = Loginout()
         self.login = LoginA()
-        # 创建读取配置信息对象
+        # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
-        # 获取截图路径、日志路径、日志名
+        # 2.获取截图路径、日志路径、日志名
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
-        # 创建日志模块
+        # 3.创建日志模块
         self.log = Log(self.logfile)
 
-    def addPerVip(self, driver):
+    # 2.协会加个人会员-公用方法
+    def addPerVip(self, driver, vipname):
         '''+个人会员'''
         # 创建_OrgSpaceTeamHandle公有定位控件对象
         handle = _SPACEHANDLE5(driver)
@@ -46,8 +44,8 @@ class AddPerVip:
             handle.Kjlb_browseascspace_menu_addvip_addperson_click()
             self.log.info('点击个人会员')
             # 5.搜索栏搜索姓名添加
-            handle.Kjlb_browseascspace_menu_addvip_addperson_search_sendkeys(self.vipname)
-            self.log.info('搜索栏搜索姓名：{0}'.format(self.vipname))
+            handle.Kjlb_browseascspace_menu_addvip_addperson_search_sendkeys(vipname)
+            self.log.info('搜索栏搜索姓名：{0}'.format(vipname))
             handle.Kjlb_browseascspace_menu_addvip_addperson_searchbtn_click()
             self.log.info('点击搜索')
             # 6.选择搜索结果，添加

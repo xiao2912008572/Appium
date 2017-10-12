@@ -9,17 +9,18 @@ from StoneUIFramework.config.globalparam import GlobalParam
 
 # 移除个人会员
 class DeletePerVip:
+    # 1.初始化
     def __init__(self):
-        # 初始化测试数据
         d = DataInfo("space.xls")  # 创建DataInfo()对象
         self.vipname = d.cell("test007-会员", 2, 2)  # 人脉姓名
-        # 创建读取配置信息对象
+        # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
-        # 获取截图路径、日志路径、日志名
+        # 2.获取截图路径、日志路径、日志名
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
-        # 创建日志模块
+        # 3.创建日志模块
         self.log = Log(self.logfile)
 
+    # 2.会员_个人_移除-公用方法
     def deletePerVip(self, driver):
         '''移除个人会员'''
         # 创建_SPACEHANDLE5公有定位控件对象

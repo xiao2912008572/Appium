@@ -19,15 +19,15 @@ import ddt
 class space_CreateO(unittest.TestCase):
     # 1.全局测试数据
     d = DataInfo("space.xls")  # 创建DataInfo()对象
-    fullname1 = d.cell("test001-创建", 2, 1)  # fullname
-    easyname1 = d.cell("test001-创建", 2, 2, )  # easyname
-    province1 = (d.cell("test001-创建", 2, 4))  # 北京
-    city1 = (d.cell("test001-创建", 2, 5))  # 东城
-    soverbank1 = d.cell("test001-创建", 2, 7)  # 开户行
-    sovermybank1 = d.cell("test001-创建", 2, 8)  # 支行
-    soverbanknub1 = int(d.cell("test001-创建", 2, 9))  # 银行账号
-    customertype1 = int(d.cell("test001-创建", 2, 3))  # 客户类型
-    industry1 = int(d.cell("test001-创建", 2, 10))  # 产业角色
+    fullname_1 = d.cell("test001-创建", 2, 1)  # fullname
+    easyname_1 = d.cell("test001-创建", 2, 2, )  # easyname
+    province_1 = (d.cell("test001-创建", 2, 4))  # 北京
+    city_1 = (d.cell("test001-创建", 2, 5))  # 东城
+    soverbank_1 = d.cell("test001-创建", 2, 7)  # 开户行
+    sovermybank_1 = d.cell("test001-创建", 2, 8)  # 支行
+    soverbanknub_1 = int(d.cell("test001-创建", 2, 9))  # 银行账号
+    customertype_1 = int(d.cell("test001-创建", 2, 3))  # 客户类型
+    industry_1 = int(d.cell("test001-创建", 2, 10))  # 产业角色
 
     # 2.初始化
     def setUp(self):
@@ -62,9 +62,9 @@ class space_CreateO(unittest.TestCase):
         self.driver.quit()
 
     # 4.测试用例
-    @ddt.data([fullname1, easyname1, province1, city1,
-               soverbank1, sovermybank1, soverbanknub1,
-               customertype1, industry1])
+    @ddt.data([fullname_1, easyname_1, province_1, city_1,
+               soverbank_1, sovermybank_1, soverbanknub_1,
+               customertype_1, industry_1])
     @ddt.unpack
     def test_spacecreate(self, fullname, easyname, province,
                          city, soverbank, sovermybank, soverbanknub,

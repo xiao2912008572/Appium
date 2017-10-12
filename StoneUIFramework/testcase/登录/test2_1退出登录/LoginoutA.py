@@ -9,6 +9,7 @@ from StoneUIFramework.config.globalparam import GlobalParam
 
 # 团队人事任免
 class LoginoutA:
+    # 1.初始化
     def __init__(self):
         # 创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
@@ -17,6 +18,7 @@ class LoginoutA:
         # 创建日志模块
         self.log = Log(self.logfile)
 
+    # 2.登出-公用方法
     def loginout(self, driver, settingN):
         # 创建工具类
         tools = Tools(driver)  # tools工具

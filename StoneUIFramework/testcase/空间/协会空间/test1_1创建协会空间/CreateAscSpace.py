@@ -2,31 +2,25 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from time import sleep
 from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 from StoneUIFramework.config.globalparam import GlobalParam
 
 
 # 创建机构空间
 class CreateAscSpace:
+    # 1.初始化
     def __init__(self):
-        # 初始化测试数据
-        d = DataInfo("space.xls")  # 创建DataInfo()对象
-        self.province = (d.cell("test001-创建", 2, 4))  # 北京
-        self.city = (d.cell("test001-创建", 2, 5))  # 东城
-        self.soverbank = d.cell("test001-创建", 2, 7)  # 开户行
-        self.sovermybank = d.cell("test001-创建", 2, 8)  # 支行
-        self.soverbanknub = int(d.cell("test001-创建", 2, 9))  # 银行账号
-        self.customertype = int(d.cell("test001-创建", 2, 3))  # 客户类型
-        self.industry = int(d.cell("test001-创建", 2, 10))  # 产业角色
-        # 创建读取配置信息对象
+        # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
-        # 获取截图路径、日志路径、日志名
+        # 2.获取截图路径、日志路径、日志名
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
-        # 创建日志模块
+        # 3.创建日志模块
         self.log = Log(self.logfile)
 
-    def createAscSpace(self, driver, fullname, easyname):
+    # 2.创建协会空间-公用方法
+    def createAscSpace(self, driver, fullname, easyname,
+                       province, city, soverbank, sovermybank,
+                       soverbanknub, customertype, industry):
         # 创建_SPACEHANDLE5公有定位控件对象
         handle = _SPACEHANDLE5(driver)
         sleep(1)
@@ -62,16 +56,16 @@ class CreateAscSpace:
             sleep(1)
             handle.Kjlb_mainmenu_newspace_customertype_click()  # 客户类型
             self.log.info('点击客户类型')
-            handle.Kjlb_mainmenu_newspace_customertype_tag_click(self.customertype)  # 客户类型标签
+            handle.Kjlb_mainmenu_newspace_customertype_tag_click(customertype)  # 客户类型标签
             self.log.info('点击客户类型标签')
             handle.Kjlb_mainmenu_newspace_customertype_confirm_click()  # 点击确定
             self.log.info('点击确定按钮')
             handle.Kjlb_mainmenu_newspace_area_click()  # 所在地区
             self.log.info('点击所在地区')
-            driver.find_element_by_name(self.province).click()
-            self.log.info('选择%s省' % self.province)
-            driver.find_element_by_name(self.city).click()
-            self.log.info('选择%s市' % self.city)
+            driver.find_element_by_name(province).click()
+            self.log.info('选择%s省' % province)
+            driver.find_element_by_name(city).click()
+            self.log.info('选择%s市' % city)
             handle.Kjlb_mainmenu_newspace_affirm_click()  # 点击提交
             self.log.info('确定提交')
 
@@ -82,18 +76,18 @@ class CreateAscSpace:
             # 所在地区:北京-东城
             # 支行:BBB
             # 银行账号:123456
-            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(self.soverbank)  # 开户银行
-            self.log.info('填写开户银行：%s' % self.soverbank)
+            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(soverbank)  # 开户银行
+            self.log.info('填写开户银行：%s' % soverbank)
             handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_click()  # 所在地区
             self.log.info('点击所在地区')
-            driver.find_element_by_name(self.province).click()  # 北京
-            self.log.info('选择%s省' % self.province)
-            driver.find_element_by_name(self.city).click()  # 东城
-            self.log.info('选择%s市' % self.city)
-            handle.Kjlb_mainmenu_newspace_verifynow_sovermybank_sendkeys(self.sovermybank)  # 支行
-            self.log.info('填写支行：%s' % self.sovermybank)
-            handle.Kjlb_mainmenu_newspace_verifynow_soverbanknub_sendkeys(self.soverbanknub)  # 银行账户
-            self.log.info('填写银行账户：%s' % self.soverbanknub)
+            driver.find_element_by_name(province).click()  # 北京
+            self.log.info('选择%s省' % province)
+            driver.find_element_by_name(city).click()  # 东城
+            self.log.info('选择%s市' % city)
+            handle.Kjlb_mainmenu_newspace_verifynow_sovermybank_sendkeys(sovermybank)  # 支行
+            self.log.info('填写支行：%s' % sovermybank)
+            handle.Kjlb_mainmenu_newspace_verifynow_soverbanknub_sendkeys(soverbanknub)  # 银行账户
+            self.log.info('填写银行账户：%s' % soverbanknub)
             handle.Kjlb_mainmenu_newspace_verifynow_soversave_click()  # 确定提交
             self.log.info('确定提交')
             sleep(1)
