@@ -1,44 +1,52 @@
 __author__ = 'xiaoj'
-# 空间首页
 from StoneUIFramework.public.pages.yunku.YUNKUPAGE2 import _YUNKUPAGE2
 
 
 class _YUNKUPAGE3(_YUNKUPAGE2):
-    # 云库-添加-相册
-    pass
+    # *********************************【PAGE2】云库-照片列表-菜单栏-分类Yk_piclist_menu_classify*********************************
+    # 云库-照片列表-菜单栏-分类-返回
+    Yk_piclist_menu_classify_back = ('id->com.yunlu6.stone:id/title_back', '云库-照片列表-菜单栏-分类-返回')
 
-    # 云库-添加-拍照
+    # 云库-照片列表-菜单栏-分类-确认
+    Yk_piclist_menu_classify_confirm = ('id->com.yunlu6.stone:id/title_tv_menu', '云库-照片列表-菜单栏-分类-确认')
 
+    # 云库-照片列表-菜单栏-分类-空间列表
+    Yk_piclist_menu_classify_spacelist = ('id->com.yunlu6.stone:id/item_companyqzone_tv', '云库-照片列表-菜单栏-分类-空间列表')
 
-    # 云库-添加-wifi同步
+    # 云库-照片列表-菜单栏-分类-空间列表-文件夹列表
+    Yk_piclist_menu_classify_spacelist_folder = ('id->com.yunlu6.stone:id/tv_name', '云库-照片列表-菜单栏-分类-空间列表-文件夹列表')
 
+    # 云库-照片列表-菜单栏-分类-空间列表-产品
+    Yk_piclist_menu_classify_spacelist_product = ('id->com.yunlu6.stone:id/tv_name', '云库-照片列表-菜单栏-分类-空间列表-产品')
 
-    # 云库-添加-取消
+    # 云库-照片列表-菜单栏-分类-空间列表-资讯
+    Yk_piclist_menu_classify_spacelist_archivies = ('id->com.yunlu6.stone:id/tv_name', '云库-照片列表-菜单栏-分类-空间列表-资讯')
 
+    # *********************************【PAGE2】云库-照片列表-菜单栏-编辑Yk_piclist_menu_edit*********************************
+    # 云库-照片列表-菜单栏-编辑-返回
+    Yk_piclist_menu_edit_back = ('id->com.yunlu6.stone:id/title_edit_back', '云库-照片列表-菜单栏-编辑')
 
-    # 云库-搜索栏
+    # 云库-照片列表-菜单栏-编辑-删除
+    Yk_piclist_menu_edit_delete = ('id->com.yunlu6.stone:id/title_tv_edit_menu_delete', '云库-照片列表-菜单栏-编辑-删除')
 
+    # 云库-照片列表-菜单栏-编辑-删除-是
+    Yk_piclist_menu_edit_delete_yes = ('id->com.yunlu6.stone:id/bt_affirm', '云库-照片列表-菜单栏-编辑-删除-是')
 
-    # 云库-搜索按钮
+    # 云库-照片列表-菜单栏-编辑-删除-否
+    Yk_piclist_menu_edit_delete_no = ('id->com.yunlu6.stone:id/bt_cancel', '云库-照片列表-菜单栏-编辑-删除-否')
 
+    # 云库-照片列表-菜单栏-编辑-名称
+    Yk_piclist_menu_edit_name = ('id->com.yunlu6.stone:id/image_edit_et_name', '云库-照片列表-菜单栏-编辑-名称')
 
-    # 云库-菜单
+    # 云库-照片列表-菜单栏-编辑-备注
+    Yk_piclist_menu_edit_remark = ('id->com.yunlu6.stone:id/image_edit_et_remark', '云库-照片列表-菜单栏-编辑-备注')
 
+    # 云库-照片列表-菜单栏-编辑-保存
+    Yk_piclist_menu_edit_save = ('id->com.yunlu6.stone:id/btn_image_edit_save', '云库-照片列表-菜单栏-编辑-保存')
 
-    # 云库-菜单-返回
+    # *********************************【PAGE2】云库-搜索栏-搜索按钮Yk_search_searchbtn*********************************
+    # 云库-搜索栏-搜索按钮-返回
+    Yk_search_searchbtn_back = ('id->com.yunlu6.stone:id/title_search_back', '云库-搜索栏-搜索按钮-返回')
 
-
-    # 云库-菜单-选照片列表
-
-
-    # 云库-菜单-选照片列表-分类到
-
-
-    # 云库-菜单-选照片列表-删除
-
-
-    # 云库-全选
-
-
-    # 云库-取消
-
+    # 云库-搜索栏-搜索按钮-照片列表
+    Yk_search_searchbtn_piclist = ('id->com.yunlu6.stone:id/cloudlibrary_image_item', '云库-搜索栏-搜索按钮-照片列表')
