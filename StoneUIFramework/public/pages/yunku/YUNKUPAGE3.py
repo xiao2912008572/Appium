@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
 # 空间首页
-from StoneUIFramework.public.pages.yunku.YUNKUPAGE1 import _YUNKUPAGE1
+from StoneUIFramework.public.pages.yunku.YUNKUPAGE2 import _YUNKUPAGE2
 
 
-class _YUNKUPAGE2(_YUNKUPAGE1):
+class _YUNKUPAGE3(_YUNKUPAGE2):
     # 云库-添加-相册
     pass
 

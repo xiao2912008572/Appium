@@ -3,7 +3,7 @@ __author__ = 'xiaoj'
 from StoneUIFramework.public.pages.yunku.YUNKUPAGE3 import _YUNKUPAGE3
 
 
-class _SPACEHANDLE2(_YUNKUPAGE3):
+class _SPACEHANDLE3(_YUNKUPAGE3):
     # ******************************************************【HANDLE1】******************************************************
     # 云库：点击
     def Yk_click(self):

@@ -3,6 +3,7 @@ from time import sleep
 from appium import webdriver
 import os
 import configparser
+
 '''
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -13,38 +14,50 @@ cf = GlobalParam('config','path_file.conf')
 logfile = cf.getParam('space',"logfile")#日志文件名
 logger = Log(logfile)
 '''
+
 # from StoneUIFramework.public.common.pyappium import PyAppium
-# from StoneUIFramework.public.handle.space.SPACEHANDLE1 import _SPACEHANDLE1
+from StoneUIFramework.public.handle.yunku.YUNKUHANDLE1 import _YUNKUHANDLE1
+
 
 class Connect:
     def __init__(self):
         pass
+
     def connect(self):
         cf = configparser.ConfigParser()
-        #获取当前文件夹的父目录的父目录的绝对路径
+        # 获取当前文件夹的父目录的父目录的绝对路径
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-        file_path = os.path.join(BASE_DIR,"config","connect.conf")
-        cf.read(file_path)#读取配置文件
+        file_path = os.path.join(BASE_DIR, "config", "connect.conf")
+        cf.read(file_path)  # 读取配置文件
         # desired_caps1 = eval(cf.get("APP","desired_caps1"))
-        desired_caps = eval(cf.get("APP","desired_caps"))
-        #初始化appium连接
+        desired_caps = eval(cf.get("APP", "desired_caps"))
+        # 初始化appium连接
         try:
             # driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps1)
-            driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps)
+            driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
         except:
-            assert False ,"初始化appium连接失败,程序已退出!!!"
+            assert False, "初始化appium连接失败,程序已退出!!!"
         sleep(2)
         return driver
 
 
 # cnn = Connect()
 # driver = cnn.connect()
+# sleep(2)
+'''
+云库删除坐标测试
+h = _YUNKUHANDLE1(driver)
+h.Yk_click()#点击云库
+h.Yk_menu_click()#点击菜单栏
+h.Yk_piclist_click(0)#点击第一张照片
+h.Yk_menu_piclist_delete_click()#点击删除
+'''
+
 # driver.find_element_by_id("aaa ").send_keys()
 # sleep(2)
 # h = _SPACEHANDLE1(driver)
 # h.Kjlb_click()
 # h.Kjlb_browseorgspaceByID_click(0)
-
 
 # p = PyAppium(driver)
 # css = ("id->com.yunlu6.stone:id/navi_item_zone1")
