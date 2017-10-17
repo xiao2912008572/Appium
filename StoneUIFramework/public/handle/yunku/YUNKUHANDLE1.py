@@ -12,21 +12,25 @@ class _YUNKUHANDLE1(_YUNKUPAGE3):
     # 云库-照片列表：点击
     def Yk_piclist_click(self, n):
         return self.p.clicks(self.Yk_piclist, n)
+        # 云库-照片列表：点击
+
+    def Yk_piclist_getElements(self):
+        return self.p.get_elements(self.Yk_piclist[0],self.Yk_piclist[1])
 
     # 云库-添加：点击
     def Yk_add_click(self):
         return self.p.click(self.Yk_add)
 
     # 云库-添加-相册：点击
-    def Yk_add_byAlbum_click(self):
+    def Yk_add_ByAlbum_click(self):
         return self.p.click(self.YK_add_byAlbum)
 
     # 云库-添加-拍照：点击
-    def Yk_add_byCamera_click(self):
+    def Yk_add_ByCamera_click(self):
         return self.p.click(self.YK_add_byCamera)
 
     # 云库-添加-拍照：点击
-    def Yk_add_byWifi_click(self):
+    def Yk_add_ByWifi_click(self):
         return self.p.click(self.YK_add_byWifi)
 
     # 云库-添加-取消：点击

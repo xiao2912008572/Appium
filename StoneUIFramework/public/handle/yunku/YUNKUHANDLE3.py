@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.yunku.YUNKUPAGE3 import _YUNKUPAGE3
+from StoneUIFramework.public.handle.yunku.YUNKUHANDLE2 import _YUNKUHANDLE2
 
 
-class _SPACEHANDLE3(_YUNKUPAGE3):
+class _YUNKUHANDLE3(_YUNKUHANDLE2):
     # *********************************【HANDLE2】云库-照片列表-菜单栏-分类Yk_piclist_menu_classify*********************************
     # 云库-照片列表-菜单栏-分类-返回：点击
     def Yk_piclist_back_click(self):

@@ -33,10 +33,10 @@ class CreateSpace:
             self.log.info('点击进入空间首页')
             # 2.点击+按钮
             handle.Kjlb_mainmenu_click()
-            self.log.info('点击+按钮')
+            self.log.info('点击：+按钮')
             # 3.+机构空间
             handle.Kjlb_mainmenu_newspace_click()
-            self.log.info('选择+机构空间')
+            self.log.info('选择：+机构空间')
             # --------------------------新建机构空间-------------------------
             # 机构名称:(fullname):appium测试空间
             # 机构简称:(easyname):appium测试空间

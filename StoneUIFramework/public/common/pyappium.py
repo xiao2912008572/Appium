@@ -14,7 +14,6 @@ from StoneUIFramework.config.globalparam import GlobalParam
 #获取一些全局变量
 cf = GlobalParam('config','path_file.conf')
 logfile = cf.getParam('log',"logfile")#日志文件名
-# logfile = cf.getParam('space',"logfile")#日志文件名
 logger = Log(logfile)
 
 success = "SUCCESS   "
@@ -32,11 +31,44 @@ class PyAppium():#继承page类
     def my_print(self,msg,text=None):
         logging.info(msg)
 
+    def element_isvisible(self,css,secs=10):
+        """
+        Waiting for an element to display.
+        Usage:
+        driver.element_wait("id->kw",10)
+        visibility_of_element_located: 判断某个元素是否可见.可见代表元素非隐藏，并且元素的宽和高都不等于0
+        """
+        if "->" not in css:
+            raise NameError("Positioning syntax errors, lack of '->'.")
+
+        by = css.split("->")[0].strip()
+        value = css.split("->")[1].strip()
+        messages = '元素: {0} 在{1}秒内未可见'.format(value, secs)
+
+        try:
+            if by == "id":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.ID, value)), messages)
+            elif by == "name":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.NAME, value)), messages)
+            elif by == "class":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.CLASS_NAME, value)), messages)
+            elif by == "link_text":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.LINK_TEXT, value)), messages)
+            elif by == "xpath":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.XPATH, value)), messages)
+            elif by == "css":
+                WebDriverWait(self.driver, secs).until(EC.visibility_of_element_located((By.CSS_SELECTOR, value)), messages)
+            else:
+                raise NameError("Please enter the correct targeting elements,'id','name','class','link_text','xpaht','css'.")
+        except Exception:
+            logger.error(messages)
+
     def element_wait(self, css, secs=5):
         """
         Waiting for an element to display.
         Usage:
         driver.element_wait("id->kw",10)
+        presence_of_element_located: 判断某个元素是否被加到了dom树里，并不代表该元素一定可见
         """
         if "->" not in css:
             raise NameError("Positioning syntax errors, lack of '->'.")

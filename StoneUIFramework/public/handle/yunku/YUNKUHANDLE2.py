@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.yunku.YUNKUPAGE3 import _YUNKUPAGE3
+from StoneUIFramework.public.handle.yunku.YUNKUHANDLE1 import _YUNKUHANDLE1
 
 
-class _SPACEHANDLE2(_YUNKUPAGE3):
+class _YUNKUHANDLE2(_YUNKUHANDLE1):
     # *********************************【HADNLE1】云库-照片列表：YK_piclist_click*********************************
     # 云库-照片列表-返回：点击
     def Yk_piclist_back_click(self):
@@ -48,7 +48,11 @@ class _SPACEHANDLE2(_YUNKUPAGE3):
 
     # 云库-添加-相册-完成：点击
     def Yk_add_ByAlbum_confirm_click(self):
-        return self.p.click(self.Yk_add_ByAlbum_piclist)
+        return self.p.click(self.Yk_add_ByAlbum_confirm)
+
+    # 云库-添加-相册-完成-页面：可见
+    def Yk_add_ByAlbum_confirm_pageisvisible(self):
+        return self.p.element_isvisible(self.Yk_add_ByAlbum_confirm_pagewait)
 
     # *********************************【HANDLE1】云库-搜索栏发送文本Yk_search_sendkeys*********************************
     # 云库-搜索栏-搜索按钮：点击

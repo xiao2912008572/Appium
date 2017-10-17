@@ -33,10 +33,14 @@ class _YUNKUPAGE2(_YUNKUPAGE1):
     Yk_add_ByAlbum_back = ("id->com.yunlu6.stone:id/title_edit_back", "云库-添加-相册-返回")
 
     # 云库-添加-相册-照片列表
-    Yk_add_ByAlbum_piclist = ("id->com.yunlu6.stone:id/item_cloudlibrary_ll_checked", "云库-添加-相册-照片列表")
+    # Yk_add_ByAlbum_piclist = ("id->com.yunlu6.stone:id/item_cloudlibrary_ll_checked", "云库-添加-相册-照片列表")
+    Yk_add_ByAlbum_piclist = ("id->com.yunlu6.stone:id/item_clientlibrary_tv_checked", "云库-添加-相册-照片列表")
 
     # 云库-添加-相册-完成
     Yk_add_ByAlbum_confirm = ("id->com.yunlu6.stone:id/title_tv_edit_menu_tv", "云库-添加-相册-完成")
+
+    # 云库-添加-相册-完成-页面等待
+    Yk_add_ByAlbum_confirm_pagewait = "id->com.yunlu6.stone:id/gridview"
 
     # *********************************【PAGE1】云库-搜索栏Yk_search*********************************
     # 云库-搜索栏-搜索按钮
