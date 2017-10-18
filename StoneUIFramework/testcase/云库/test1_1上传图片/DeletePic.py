@@ -41,6 +41,7 @@ class DeletePic:
             self.log.info('点击删除')
             handle.Yk_piclist_menu_edit_delete_yes_click()
             self.log.info('确定删除')
+            self.log.info('------END:test1_1删除图片.DeletePic.py------')
         except Exception as err:
             self.log.error("DeletePic Inside : %s" % err)
             raise err

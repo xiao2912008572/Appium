@@ -16,6 +16,9 @@ class _YUNKUPAGE2(_YUNKUPAGE1):
     # 云库-照片列表-照片本身-备注名
     Yk_piclist_picself_reamark = ("id->com.yunlu6.stone:id/tv_remark", "云库-照片列表-照片本身-备注名")
 
+    # 云库-照片列表-照片本身-备注名-可见
+    Yk_piclist_picself_reamark_wait = "com.yunlu6.stone:id/tv_remark"
+
     # 云库-照片列表-照片本身-照片总数
     Yk_piclist_picself_pictotal = ("id->com.yunlu6.stone:id/indicator", "云库-照片列表-照片本身-照片总数")
 

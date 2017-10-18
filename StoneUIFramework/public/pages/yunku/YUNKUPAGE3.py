@@ -24,7 +24,7 @@ class _YUNKUPAGE3(_YUNKUPAGE2):
 
     # *********************************【PAGE2】云库-照片列表-菜单栏-编辑Yk_piclist_menu_edit*********************************
     # 云库-照片列表-菜单栏-编辑-返回
-    Yk_piclist_menu_edit_back = ('id->com.yunlu6.stone:id/title_edit_back', '云库-照片列表-菜单栏-编辑')
+    Yk_piclist_menu_edit_back = ('id->com.yunlu6.stone:id/title_main_back_more_icon', '云库-照片列表-菜单栏-编辑-返回')
 
     # 云库-照片列表-菜单栏-编辑-删除
     Yk_piclist_menu_edit_delete = ('id->com.yunlu6.stone:id/title_tv_edit_menu_delete', '云库-照片列表-菜单栏-编辑-删除')

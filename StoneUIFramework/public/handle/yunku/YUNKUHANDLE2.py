@@ -20,6 +20,10 @@ class _YUNKUHANDLE2(_YUNKUHANDLE1):
     def Yk_piclist_picself_reamark_text(self):
         return self.p.get_text(self.Yk_piclist_picself_reamark)
 
+    # 云库-照片列表-照片本身-备注名：可见
+    def Yk_piclist_picself_reamark_pageisvisible(self):
+        return self.driver.find_elements_by_id(self.Yk_piclist_picself_reamark_wait)
+
     # 云库-照片列表-照片本身-照片总数：获取文本
     def Yk_piclist_picself_total_text(self):
         return self.p.get_text(self.Yk_piclist_picself_pictotal)

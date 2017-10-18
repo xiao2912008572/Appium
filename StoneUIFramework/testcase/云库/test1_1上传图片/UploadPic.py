@@ -40,6 +40,7 @@ class UploadPic:
             #5.点击完成
             handle.Yk_add_ByAlbum_confirm_click()
             self.log.info('点击完成')
+            self.log.info('------END:test1_1上传图片.UploadPic.py------')
         except Exception as err:
             self.log.error("UploadPic Inside : %s" % err)
             raise err
