@@ -13,7 +13,18 @@ from StoneUIFramework.public.common.datainfo import DataInfo
 from StoneUIFramework.public.common.log import Log
 import ddt
 
-
+'''
+用ddt数据驱动去准备username和password（ddt不会别说）
+1.主流程：正确的username和password 验证登录，然后验证页面跳转是否登录成功
+2.辅流程1：错误的username和正确的passwrod，验证登录，然后验证页面不跳转，提示错误
+3.辅流程2：正确的usrname和错误的pasword，验证登录，然后验证页面不跳转，提示错误
+4.辅流程3：空usernaem或者空password，验证登录，然后验证页面不跳转，提示为空信息
+思路：
+1.登录后，截图，并且验证页面和提示信息，然后登出，用下一组（辅助流程）数据再登录，登出，依次循环
+2.三个模块：登录模块。登出模块。控制登录和登出的控制+验证模块
+3.每个模块有日志记录、异常截图等验证。
+4.
+'''
 # 登录
 @ddt.ddt
 class Login(unittest.TestCase):

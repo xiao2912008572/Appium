@@ -66,7 +66,7 @@ class space_ArchiviesO(unittest.TestCase):
             self.log.info('进入空间首页')
             # 2.选择空间:测试空间123
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
-            self.log.info('进入空间：%s' % self.spacename)
+            self.log.info('进入空间：%s' % spacename)
             # 3.资讯发布
             self.spaceAr.newarchivies(self.driver, title, typelist)
             # 4.删除资讯，还原测试场景
