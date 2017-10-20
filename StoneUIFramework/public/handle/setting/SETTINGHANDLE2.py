@@ -81,9 +81,6 @@ class SETTINGHANDLE2(SETTINGHANDLE1):
     def Setting_system_cleandata_click(self):
         return self.p.click(self.Setting_system_editpsw)
 
-    #设置:设置-系统设置-退出
-    def Setting_system_loginout_click(self):
-        return self.p.click(self.Setting_system_loginout)
 
 # ******************************************************【PAGE1】关于我Setting_aboutus******************************************************
     #设置:设置-关于我们-返回
@@ -105,3 +102,7 @@ class SETTINGHANDLE2(SETTINGHANDLE1):
     #设置:设置-关于我们-使用条款和隐私政策
     def Setting_aboutus_law_click(self):
         return self.p.click(self.Setting_aboutus_law)
+
+    # 设置:设置-关于我们-退出
+    def Setting_about_loginout_click(self):
+        return self.p.click(self.Setting_aboutus_loginout)

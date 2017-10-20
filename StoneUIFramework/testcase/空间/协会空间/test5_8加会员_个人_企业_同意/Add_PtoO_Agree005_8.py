@@ -82,7 +82,7 @@ class AddPtoOAgreeA(unittest.TestCase):
             # 7.5点击消息第一条
             self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
             # 7.6点击同意 (拒绝com.yunlu6.stone:id/ass_invite_cancle)
-            self.driver.find_element_by_id("com.yunlu6.stone:id/ass_invite_commit").click()
+            self.driver.find_element_by_id("com.yunlu6.stone:id/agree_btn").click()
             # 7.7返回到云视
             self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()
             self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()

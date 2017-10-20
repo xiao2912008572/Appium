@@ -14,6 +14,8 @@ from StoneUIFramework.testcase.登录.test1_1登录 import *
 3.每个模块有日志记录、异常截图等验证。
 4.
 '''
+
+
 # 登录
 @ddt.ddt
 class Login(unittest.TestCase):
@@ -62,7 +64,6 @@ class Login(unittest.TestCase):
     def test_login(self, phone, password):
         '''登录'''
         try:
-            # self.log.info("------------START:test1_1登录.Login001_1.py------------")
             sleep(1)
             # 1.登录
             self.login.login(self.driver, phone, password)
@@ -71,7 +72,6 @@ class Login(unittest.TestCase):
             self.log.info('检查是否登录成功')
             # 3.登出
             self.loginout.loginout(self.driver, 1)  # 云视页设置
-            # self.log.info("------------END:test1_1登录.Login001_1.py------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("Login Outside : %s" % err)

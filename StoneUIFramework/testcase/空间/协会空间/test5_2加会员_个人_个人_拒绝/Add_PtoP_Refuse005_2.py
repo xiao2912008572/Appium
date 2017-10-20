@@ -84,7 +84,7 @@ class AddPtoPRefuseA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击拒绝
-            self.driver.find_element_by_id("com.yunlu6.stone:id/invite_cancle").click()
+            self.driver.find_element_by_id("com.yunlu6.stone:id/refuse_btn").click()
             self.log.info('点击拒绝')
             # 7.7返回到云视
             self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()

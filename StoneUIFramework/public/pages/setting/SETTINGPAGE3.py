@@ -119,12 +119,12 @@ class SETTINGPAGE3(SETTINGPAGE2):
     #设置:设置-系统设置-清理缓存-取消
         Setting_system_cleandata_cancel = ("id->android:id/button2","设置-系统设置-清理缓存-取消")
 
-# ******************************************************【PAGE2】退出Setting_system_loginout******************************************************
-    #设置:设置-系统设置-退出-确定
-        Setting_system_loginout_confirm = ("id->android:id/button1","设置-系统设置-退出-确定")
+# ******************************************************【PAGE2】退出Setting_about_loginout******************************************************
+    #设置:设置-关于我们-退出-确定
+        Setting_aboutus_loginout_confirm = ("id->android:id/button1","设置-关于我们-退出-确定")
 
-    #设置:设置-系统设置-退出-取消
-        Setting_system_loginout_cancel = ("id->android:id/button2","设置-系统设置-退出-取消")
+    #设置:设置-关于我们-退出-取消
+        Setting_aboutus_loginout_confirm_loginout_cancel = ("id->android:id/button2","设置-关于我们-退出-取消")
 
 # ******************************************************【PAGE2】帮助中心Setting_aboutus_help******************************************************
     #设置:设置-关于我们-帮助中心-返回

@@ -149,6 +149,7 @@ class SPACEPAGE2(SPACEPAGE1):
 
     # 空间列表-浏览企业空间-菜单栏
     Kjlb_browseorgspace_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu", "空间列表-浏览企业空间-菜单栏")
+    # Kjlb_browseorgspace_menu = ("id->com.yunlu6.stone:id/title_main_fl_more_menu", "空间列表-浏览企业空间-菜单栏")
 
     # 空间列表-浏览企业空间-菜单栏-业务升级
     Kjlb_browseorgspace_menu_upgrade = ("id->com.yunlu6.stone:id/btn_pop_company_upgrade", "空间列表-浏览企业空间-菜单栏-业务升级")

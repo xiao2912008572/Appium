@@ -3,7 +3,7 @@ __author__ = 'Administrator'
 from StoneUIFramework.testcase.登录.test2_1退出登录 import *
 
 
-# 团队人事任免
+# 登出
 class LoginoutA:
     # 1.初始化
     def __init__(self):
@@ -26,14 +26,14 @@ class LoginoutA:
             # 1.点击设置按钮
             handle.Setting_click1(settingN)
             self.log.info('点击设置按钮')
-            # 2.点击系统设置
-            handle.Setting_system_click()
-            self.log.info('点击系统设置')
+            # 2.点击关于我们
+            handle.Setting_aboutus_click()
+            self.log.info('点击关于我们')
             # 3.点击退出
-            handle.Setting_system_loginout_click()
+            handle.Setting_about_loginout_click()
             self.log.info('点击退出')
             # 4.点击确定
-            handle.Setting_system_loginout_confirm_click()
+            handle.Setting_aboutus_loginout_confirm_click()
             self.log.info('点击确定')
             self.log.info('------END:test2_1退出登录.LoginoutA.py------')
         except Exception as err:

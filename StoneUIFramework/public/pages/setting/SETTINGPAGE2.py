@@ -62,9 +62,6 @@ class SETTINGPAGE2(SETTINGPAGE1):
     #设置:设置-系统设置-清理缓存 
         Setting_system_cleandata = ("id->com.yunlu6.stone:id/aboutus_cleandata","设置-系统设置-清理缓存")
 
-    #设置:设置-系统设置-退出 
-        Setting_system_loginout = ("id->com.yunlu6.stone:id/aboutus_loginout","设置-系统设置-退出")
-
 # ******************************************************【PAGE1】关于我Setting_aboutus******************************************************
     #设置:设置-关于我们-返回 
         Setting_aboutus_back = ("id->com.yunlu6.stone:id/title_back_icon","设置-关于我们-返回")
@@ -80,3 +77,6 @@ class SETTINGPAGE2(SETTINGPAGE1):
 
     #设置:设置-关于我们-使用条款和隐私政策 
         Setting_aboutus_law = ("id-> com.yunlu6.stone:id/abouts_yunlu_law","设置-关于我们-使用条款和隐私政策")
+
+    #设置:设置-关于我们-退出
+        Setting_aboutus_loginout = ("id->com.yunlu6.stone:id/aboutus_loginout","设置-关于我们-退出")

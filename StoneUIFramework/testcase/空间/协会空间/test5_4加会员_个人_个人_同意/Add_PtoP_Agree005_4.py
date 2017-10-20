@@ -85,7 +85,7 @@ class AddPtoPAgreeA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击同意
-            self.driver.find_element_by_id("com.yunlu6.stone:id/invite_commit").click()
+            self.driver.find_element_by_id("com.yunlu6.stone:id/agree_btn").click()
             self.log.info('点击同意')
             # 7.7返回到云视
             self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()

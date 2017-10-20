@@ -9,7 +9,6 @@ class AddOrgVip:
     # 1.初始化
     def __init__(self):
         # 创建Loginout和Login对象
-        self.loginout = Loginout()
         self.login = LoginA()
         # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')

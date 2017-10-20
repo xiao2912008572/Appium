@@ -156,14 +156,14 @@ class SETTINGHANDLE3(SETTINGHANDLE2):
     def Setting_system_cleandata_cancel_click(self):
         return self.p.click(self.Setting_system_cleandata_cancel)
 
-# ******************************************************【PAGE2】退出Setting_system_loginout******************************************************
+# ******************************************************【PAGE2】退出Setting_about_loginout******************************************************
     #设置:设置-系统设置-退出-确定
-    def Setting_system_loginout_confirm_click(self):
-        return self.p.click(self.Setting_system_loginout_confirm)
+    def Setting_aboutus_loginout_confirm_click(self):
+        return self.p.click(self.Setting_aboutus_loginout_confirm)
 
     #设置:设置-系统设置-退出-取消
-    def Setting_system_loginout_cancel_click(self):
-        return self.p.click(self.Setting_system_loginout_cancel)
+    def Setting_aboutus_loginout_cancel_click(self):
+        return self.p.click(self.Setting_aboutus_loginout_confirm_loginout_cancel)
 
 # ******************************************************【PAGE2】帮助中心Setting_aboutus_help******************************************************
     #设置:设置-关于我们-帮助中心-返回

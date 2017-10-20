@@ -1,6 +1,5 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-
 from StoneUIFramework.testcase.空间.协会空间.test5_1加会员_管理员_个人_拒绝 import *
 
 
@@ -8,8 +7,7 @@ from StoneUIFramework.testcase.空间.协会空间.test5_1加会员_管理员_�
 class AddPerVip:
     # 1.初始化
     def __init__(self):
-        # 创建Loginout和Login对象
-        self.loginout = Loginout()
+        # 创建Login对象
         self.login = LoginA()
         # 1.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
@@ -31,14 +29,12 @@ class AddPerVip:
             # tools.getScreenShot(screen_path,"空间首页")
             # 2.选择空间:测试空间123
             # handle.Kjlb_browseascspaceByName_click(self.spacename)
-            # 3.右上角:菜单栏选择+会员
-            handle.Kjlb_browseascspace_menu_click()  # 右上角菜单
-            self.log.info('点击右上角菜单')
-            handle.Kjlb_browseascspace_menu_addvip_click()  # 点击+会员
-            self.log.info('点击：+会员')
+            # 3.点击+按钮
+            handle.Kjlb_browseascspace_addbtn_click()  # 点击+按钮
+            self.log.info('点击：+按钮')
             # 4.个人会员
-            handle.Kjlb_browseascspace_menu_addvip_addperson_click()
-            self.log.info('点击个人会员')
+            handle.Kjlb_browseascspace_addbtn_pVip_click()  # 点击个人会员
+            self.log.info('点击：个人会员')
             # 5.搜索栏搜索姓名添加
             handle.Kjlb_browseascspace_menu_addvip_addperson_search_sendkeys(vipname)
             self.log.info('搜索栏搜索姓名：{0}'.format(vipname))

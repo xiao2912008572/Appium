@@ -83,8 +83,8 @@ class AddAtoOAgreeA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击拒绝 (同意com.yunlu6.stone:id/ass_invite_commit)
-            self.driver.find_element_by_id("com.yunlu6.stone:id/ass_invite_commit").click()
-            self.log.info('点击拒绝')
+            self.driver.find_element_by_id("com.yunlu6.stone:id/agree_btn").click()
+            self.log.info('点击同意')
             # 7.7返回到云视
             self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()
             self.log.info('点击返回')
@@ -105,7 +105,7 @@ class AddAtoOAgreeA(unittest.TestCase):
             message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
             self.log.info('查看第1条消息')
             assert message == orgname + ' 机构已加入 贵公司的企业会员邀请', "Error Message Handled"
-            self.log.info('检查是否收到拒绝消息')
+            self.log.info('检查是否收到同意消息')
             # 8.4返回-空间主界面
             self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
             self.log.info('点击返回，返回至空间主界面')
