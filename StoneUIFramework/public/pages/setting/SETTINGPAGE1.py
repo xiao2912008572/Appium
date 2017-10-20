@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
 from StoneUIFramework.public.common.basepage import Page
 
-class _SETTINGPAGE1(Page):
+class SETTINGPAGE1(Page):
     #设置:云视页面-设置
          Setting1 =  ("id->com.yunlu6.stone:id/iv_left","云视页设置")
 

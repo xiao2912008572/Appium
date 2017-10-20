@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
 # 空间首页
-from StoneUIFramework.public.handle.space.SPACEHANDLE1 import _SPACEHANDLE1
+from StoneUIFramework.public.handle.space.SPACEHANDLE1 import SPACEHANDLE1
 
 
-class _SPACEHANDLE2(_SPACEHANDLE1):
+class SPACEHANDLE2(SPACEHANDLE1):
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称:发送文本
     def Kjlb_mainmenu_newspace_orgname_sendkeys(self, text):

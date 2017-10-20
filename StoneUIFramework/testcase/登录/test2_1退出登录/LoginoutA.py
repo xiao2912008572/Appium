@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.public.handle.setting.SETTINGHANDLE4 import _SETTINGHANDLE4
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.登录.test2_1退出登录 import *
 
 
 # 团队人事任免
@@ -23,7 +19,7 @@ class LoginoutA:
         # 创建工具类
         tools = Tools(driver)  # tools工具
         # 创建_OrgSpaceTeamHandle公有定位控件对象
-        handle = _SETTINGHANDLE4(driver)
+        handle = SETTINGHANDLE4(driver)
         sleep(1)
         try:
             self.log.info('------START:test2_1退出登录.LoginoutA.py------')

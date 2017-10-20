@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
 from StoneUIFramework.public.common.basepage import Page
 
-class _SPACEPAGE1(Page):
+class SPACEPAGE1(Page):
     #定位:空间列表
     Kjlb = ('id->com.yunlu6.stone:id/navi_item_zone','空间列表')
 

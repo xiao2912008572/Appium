@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # coding=utf-8
-from time import sleep
-
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.空间.机构空间.test2_1上下架产品 import *
 
 
 # 上架产品
@@ -23,7 +19,7 @@ class DeleteProduct:
         try:
             self.log.info('------START:test2_1上下架产品.DeleteProduct.py------')
             # 创建_SPACEHANDLE5公有定位控件对象
-            self.handle = _SPACEHANDLE5(driver)
+            self.handle = SPACEHANDLE5(driver)
             sleep(1)
             # -----------------删除产品-----------------
             # 1.点击菜单栏

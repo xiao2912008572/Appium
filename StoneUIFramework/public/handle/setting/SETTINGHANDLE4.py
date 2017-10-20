@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.handle.setting.SETTINGHANDLE3 import _SETTINGHANDLE3
+from StoneUIFramework.public.handle.setting.SETTINGHANDLE3 import SETTINGHANDLE3
 
-class _SETTINGHANDLE4(_SETTINGHANDLE3):
+class SETTINGHANDLE4(SETTINGHANDLE3):
 # ******************************************************【PAGE3】意向地区 Setting_userinfo_menu_shopping_address******************************************************
     #设置:设置-基本资料-主菜单-导购机会-意向地区-返回
     def Setting_userinfo_menu_shopping_address_back_click(self):

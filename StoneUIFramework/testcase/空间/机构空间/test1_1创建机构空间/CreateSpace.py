@@ -1,14 +1,9 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
-import ddt
+from StoneUIFramework.testcase.空间.机构空间.test1_1创建机构空间 import *
 
 
 # 创建机构空间
-@ddt.ddt
 class CreateSpace:
     # 1.初始化
     def __init__(self):
@@ -24,7 +19,7 @@ class CreateSpace:
                     province, city, soverbank, sovermybank,
                     soverbanknub, customertype, industry):
         # 创建_SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info('------START:test1_1创建机构空间.CreateSpace.py------')

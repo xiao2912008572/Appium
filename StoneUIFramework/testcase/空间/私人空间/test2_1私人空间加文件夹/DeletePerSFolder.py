@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件夹 import *
 
 
 # 关闭私人空间
@@ -22,7 +18,7 @@ class DeletePerSFloder:
     # 2.删除私人空间文件夹-公用方法
     def deletePerSFloder(self, driver, spacename):
         # 创建 _SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         try:
             self.log.info('------START:test2_1私人空间加文件夹.DeletePerSFolder.py------')
             # 1.点击该空间

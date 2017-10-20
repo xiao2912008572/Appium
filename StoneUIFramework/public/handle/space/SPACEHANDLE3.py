@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
 # 空间首页
-from StoneUIFramework.public.handle.space.SPACEHANDLE2 import _SPACEHANDLE2
+from StoneUIFramework.public.handle.space.SPACEHANDLE2 import SPACEHANDLE2
 
 
-class _SPACEHANDLE3(_SPACEHANDLE2):
+class SPACEHANDLE3(SPACEHANDLE2):
     # ***************************************【PAGE2】产品Kjlb_browseorgspace_menu_product***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-返回:点击
     def Kjlb_browseorgspace_menu_product_back_click(self):

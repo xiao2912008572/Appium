@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.pages.renmai.RENMAIPAGE2 import _RENMAIPAGE2
+from StoneUIFramework.public.pages.renmai.RENMAIPAGE2 import RENMAIPAGE2
 
-class _RENMAIPAGE3(_RENMAIPAGE2):
+class RENMAIPAGE3(RENMAIPAGE2):
 #*********************************【PAGE2】搜索按钮：RMSY_search_searchbtn*********************************
     #定位：人脉首页-搜索-搜索按钮-返回按钮
         RMSY_search_searchbtn_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-搜索-搜索按钮-返回按钮")

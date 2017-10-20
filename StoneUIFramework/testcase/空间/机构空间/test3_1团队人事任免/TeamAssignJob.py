@@ -1,9 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.机构空间.test3_1团队人事任免 import *
 
 
 # 团队人事任免
@@ -22,7 +19,7 @@ class TeamAssignJob:
                       SalespersonLoc, AssistanLoc, AdmNum, SalNum,
                       AssNum, Name, Director, Marketing, Hr):
         # 创建_OrgSpaceTeamHandle公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             # 1.空间首页

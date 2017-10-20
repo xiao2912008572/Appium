@@ -1,11 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.协会空间.test2_1编辑 import *
 
 
 # 企业名片编辑
@@ -24,7 +19,7 @@ class Edit:
         # 创建工具类
         tools = Tools(driver)  # tools工具
         # 创建 _SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(2)
         try:
             self.log.info('------START:test1_1创建协会空间.CreateAscSpace.py------')

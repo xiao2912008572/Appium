@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.public.handle.login.LOGINHANDLE2 import _LOGINHANDLE2
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.登录.test1_1登录 import *
 
 
 # 登录
@@ -23,7 +19,7 @@ class LoginA:
         # 创建工具类
         tools = Tools(driver)  # tools工具
         # 创建_OrgSpaceTeamHandle公有定位控件对象
-        handle = _LOGINHANDLE2(driver)
+        handle = LOGINHANDLE2(driver)
         sleep(1)
         try:
             self.log.info('------START:test1_1登录.LoginA.py------')

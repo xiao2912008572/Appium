@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.handle.renmai.RENMAIHANDLE2 import _RENMAIHANDLE2
+from StoneUIFramework.public.handle.renmai.RENMAIHANDLE2 import RENMAIHANDLE2
 
-class _RENMAIHANDLE3(_RENMAIHANDLE2):
+class RENMAIHANDLE3(RENMAIHANDLE2):
 #******************************************************【HANDLE3】******************************************************
 #*********************************【PAGE2】搜索按钮：RMSY_search_searchbtn*********************************
     #定位：人脉首页-搜索-搜索按钮-返回按钮：点击

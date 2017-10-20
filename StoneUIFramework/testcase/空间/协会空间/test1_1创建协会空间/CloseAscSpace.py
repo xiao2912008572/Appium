@@ -1,9 +1,7 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
+
+from StoneUIFramework.testcase.空间.协会空间.test1_1创建协会空间 import *
 
 
 # 关闭机构空间
@@ -21,7 +19,7 @@ class CloseAscSpace:
     # 2.关闭协会空间-公用方法
     def closeAsscSpace(self, driver, name):
         # 创建_SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
 
         try:
             self.log.info('------START:test1_1创建协会空间.CloseAscSpace.py------')

@@ -1,16 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片.BusinessCard import BusinessCard
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-import ddt
+from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片 import *
 
 
 # 企业名片
@@ -34,7 +24,7 @@ class space_BusinessCardO(unittest.TestCase):
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建_SPACEHANDLE5公有定位控件对象
-        self.handle = _SPACEHANDLE5(self.driver)
+        self.handle = SPACEHANDLE5(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名
@@ -58,9 +48,9 @@ class space_BusinessCardO(unittest.TestCase):
         self.driver.quit()
 
     # 4.测试用例
-    @ddt.data([spacename_1, contact_1, phone_1,tel_1,email_1,QQ_1,website_1])
+    @ddt.data([spacename_1, contact_1, phone_1, tel_1, email_1, QQ_1, website_1])
     @ddt.unpack
-    def test_businesscard(self,spacename,contact,phone,tel,email,QQ,website):
+    def test_businesscard(self, spacename, contact, phone, tel, email, QQ, website):
         """企业名片编辑"""
         try:
             # 1.空间首页
@@ -70,7 +60,7 @@ class space_BusinessCardO(unittest.TestCase):
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入空间：%s' % spacename)
             # 3.企业名片
-            self.spaceBu.businesscard(self.driver,contact,phone,tel,email,QQ,website)
+            self.spaceBu.businesscard(self.driver, contact, phone, tel, email, QQ, website)
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error('BusinessCard Outside : %s' % err)

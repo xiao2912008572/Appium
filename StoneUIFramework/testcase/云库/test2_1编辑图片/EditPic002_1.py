@@ -1,17 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-from StoneUIFramework.testcase.云库.test2_1编辑图片.EditPic import EditPic
-from StoneUIFramework.testcase.云库.test2_1编辑图片.RecoveryPic import RecoveryPic
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE3 import _YUNKUHANDLE3
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-import ddt
-import random
+from StoneUIFramework.testcase.云库.test2_1编辑图片 import *
 
 
 # 云库图片编辑
@@ -33,7 +22,7 @@ class yunku_EditPic(unittest.TestCase):
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建_YUNKUHANDLE3公有定位控件对象
-        self.handle = _YUNKUHANDLE3(self.driver)
+        self.handle = YUNKUHANDLE3(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名
@@ -72,7 +61,7 @@ class yunku_EditPic(unittest.TestCase):
             self.log.info('选择第{0}张照片'.format(picno))
             # 2.1检查图片是否存在备注名
             if self.handle.Yk_piclist_picself_reamark_pageisvisible():
-            # if self.driver.find_elements_by_id("com.yunlu6.stone:id/tv_remark"):
+                # if self.driver.find_elements_by_id("com.yunlu6.stone:id/tv_remark"):
                 self.log.info('图片备注名可见')
                 # 3.查看当前图片的标题和备注
                 pic_title_begin = self.handle.Yk_piclist_picanme_text()

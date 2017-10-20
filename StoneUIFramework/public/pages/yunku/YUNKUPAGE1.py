@@ -2,7 +2,7 @@ __author__ = 'xiaoj'
 from StoneUIFramework.public.common.basepage import Page
 
 
-class _YUNKUPAGE1(Page):
+class YUNKUPAGE1(Page):
     # 定位:云库
     Yk = ('id->com.yunlu6.stone:id/navi_item_work_cloundlibrary', '云库')
 

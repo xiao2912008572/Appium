@@ -1,9 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE3 import _YUNKUHANDLE3
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.云库.test1_1上传图片 import *
 
 
 # 上传图片
@@ -20,7 +17,7 @@ class UploadPic:
     # 2.上传图片-公用方法
     def uploadPic(self, driver, picno):
         # 创建_YUNKUHANDLE3公有定位控件对象
-        handle = _YUNKUHANDLE3(driver)
+        handle = YUNKUHANDLE3(driver)
         sleep(1)
         try:
             self.log.info('------START:test1_1上传图片.UploadPic.py------')
@@ -36,8 +33,8 @@ class UploadPic:
             sleep(1)
             # 4.选择第1张图片
             handle.Yk_add_ByAlbum_piclist_click(picno)
-            self.log.info('选择第{0}张照片'.format(picno+1))
-            #5.点击完成
+            self.log.info('选择第{0}张照片'.format(picno + 1))
+            # 5.点击完成
             handle.Yk_add_ByAlbum_confirm_click()
             self.log.info('点击完成')
             self.log.info('------END:test1_1上传图片.UploadPic.py------')

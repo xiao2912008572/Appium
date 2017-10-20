@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.pages.renmai.RENMAIPAGE7 import _RENMAIPAGE7
+from StoneUIFramework.public.pages.renmai.RENMAIPAGE7 import RENMAIPAGE7
 
-class _RENMAIHANDLE1(_RENMAIPAGE7):
+class RENMAIHANDLE1(RENMAIPAGE7):
 #******************************************************【HANDLE1】******************************************************
     #定位：人脉首页：点击
     def RMSY_click(self):

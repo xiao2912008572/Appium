@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.pages.renmai.RENMAIPAGE1 import _RENMAIPAGE1
+from StoneUIFramework.public.pages.renmai.RENMAIPAGE1 import RENMAIPAGE1
 
-class _RENMAIPAGE2(_RENMAIPAGE1):
+class RENMAIPAGE2(RENMAIPAGE1):
 #*********************************【PAGE1】+同步通讯录：RMSY_syscontacts*********************************
     #定位：人脉首页-同步通讯录-返回
          RMSY_syscontacts_back = ("id->com.yunlu6.stone:id/iv_back", "人脉首页-同步通讯录-返回")

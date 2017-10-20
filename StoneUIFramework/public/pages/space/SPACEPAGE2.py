@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
 # 空间首页
-from StoneUIFramework.public.pages.space.SPACEPAGE1 import _SPACEPAGE1
+from StoneUIFramework.public.pages.space.SPACEPAGE1 import SPACEPAGE1
 
 
-class _SPACEPAGE2(_SPACEPAGE1):
+class SPACEPAGE2(SPACEPAGE1):
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称
     Kjlb_mainmenu_newspace_orgname = ("id->com.yunlu6.stone:id/ed_organization_name", "定位空间列表-主菜单-'+机构空间'-机构全称失败")

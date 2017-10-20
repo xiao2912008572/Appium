@@ -1,9 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE3 import _YUNKUHANDLE3
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.云库.test1_1上传图片 import *
 
 
 # 删除图片
@@ -21,7 +18,7 @@ class DeletePic:
     # 2.删除图片-公用方法
     def deletePic(self, driver, picno):
         # 创建_YUNKUHANDLE3公有定位控件对象
-        handle = _YUNKUHANDLE3(driver)
+        handle = YUNKUHANDLE3(driver)
         try:
             self.log.info('------START:test1_1删除图片.DeletePic.py------')
             # 1.点击云库首页
@@ -36,7 +33,7 @@ class DeletePic:
             # 4.点击编辑
             handle.Yk_piclist_menu_edit_click()
             self.log.info('点击编辑')
-            #5.删除-是
+            # 5.删除-是
             handle.Yk_piclist_menu_edit_delete_click()
             self.log.info('点击删除')
             handle.Yk_piclist_menu_edit_delete_yes_click()

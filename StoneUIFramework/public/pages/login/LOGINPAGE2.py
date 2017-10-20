@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.login.LOGINPAGE1 import _LOGINPAGE1
+from StoneUIFramework.public.pages.login.LOGINPAGE1 import LOGINPAGE1
 
-class _LOGINPAGE2(_LOGINPAGE1):
+class LOGINPAGE2(LOGINPAGE1):
 #******************************************************【PAGE1】登录Login******************************************************
     #定位:登录-返回
         Login_back = ("id->com.yunlu6.stone:id/title_back_icon","登录-返回")

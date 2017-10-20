@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
 from StoneUIFramework.public.common.basepage import Page
 
-class _RENMAIPAGE1(Page):
+class RENMAIPAGE1(Page):
     #定位：人脉首页
         RMSY = ("id->com.yunlu6.stone:id/navi_item_connection", "人脉首页")
 

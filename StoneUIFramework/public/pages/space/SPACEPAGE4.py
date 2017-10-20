@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
 # 空间首页
-from StoneUIFramework.public.pages.space.SPACEPAGE3 import _SPACEPAGE3
+from StoneUIFramework.public.pages.space.SPACEPAGE3 import SPACEPAGE3
 
 
-class _SPACEPAGE4(_SPACEPAGE3):
+class SPACEPAGE4(SPACEPAGE3):
     # ***************************************【PAGE3】已发布产品列表Kjlb_browseorgspace_menu_product_lock_list***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-商品名
     Kjlb_browseorgspace_menu_product_lock_list_proname = ("id->com.yunlu6.stone:id/tv_name", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-商品名")

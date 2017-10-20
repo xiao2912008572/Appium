@@ -1,7 +1,6 @@
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE3 import _YUNKUHANDLE3
-from StoneUIFramework.public.common.log import Log
+__author__ = 'Administrator'
+# -*- coding: utf-8 -*-
+from StoneUIFramework.testcase.云库.test2_1编辑图片 import *
 
 
 # 编辑图片
@@ -18,7 +17,7 @@ class EditPic:
     # 2.编辑图片-公用方法
     def editPic(self, driver, picno, pictitle, remark):
         # 创建_YUNKUHANDLE3公有定位控件对象
-        handle = _YUNKUHANDLE3(driver)
+        handle = YUNKUHANDLE3(driver)
         sleep(1)
         try:
             self.log.info('------START:test2_1编辑图片.EditPic.py------')

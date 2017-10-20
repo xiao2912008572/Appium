@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
 #空间首页
-from StoneUIFramework.public.pages.space.SPACEPAGE2 import _SPACEPAGE2
+from StoneUIFramework.public.pages.space.SPACEPAGE2 import SPACEPAGE2
 
-class _SPACEPAGE3(_SPACEPAGE2):
+class SPACEPAGE3(SPACEPAGE2):
 #***************************************【PAGE2】产品Kjlb_browseorgspace_menu_product***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-返回
     Kjlb_browseorgspace_menu_product_back = ("id->com.yunlu6.stone:id/title_back_icon","空间列表-浏览企业空间-菜单栏-产品-返回")

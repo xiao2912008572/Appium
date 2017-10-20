@@ -1,16 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.testcase.空间.协会空间.test2_1编辑.Edit import Edit
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-import ddt
+from StoneUIFramework.testcase.空间.协会空间.test2_1编辑 import *
 
 
 # 编辑
@@ -34,7 +24,7 @@ class space_EditA(unittest.TestCase):
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建_SPACEHANDLE5公有定位控件对象
-        self.handle = _SPACEHANDLE5(self.driver)
+        self.handle = SPACEHANDLE5(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名

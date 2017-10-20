@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.setting.SETTINGPAGE4 import _SETTINGPAGE4
+from StoneUIFramework.public.pages.setting.SETTINGPAGE4 import SETTINGPAGE4
 
-class _SETTINGHANDLE1(_SETTINGPAGE4):
+class SETTINGHANDLE1(SETTINGPAGE4):
 #******************************************************【HANDLE1】******************************************************
     #设置:云视页-设置
     def Setting_click1(self,n):

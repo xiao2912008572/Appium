@@ -1,11 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.testcase.登录.test2_1退出登录.Loginout002_1 import Loginout
-from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.协会空间.test5_7加会员_管理员_企业_同意 import *
 
 
 # +企业会员
@@ -26,7 +21,7 @@ class AddOrgVip:
     def addOrgVip(self, driver, orgname):
         '''+企业会员'''
         # 创建_OrgSpaceTeamHandle公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info('------START:test5_7加会员_管理员_企业_同意.AddOrgVip.py------')

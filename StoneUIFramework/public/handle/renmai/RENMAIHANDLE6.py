@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.handle.renmai.RENMAIHANDLE5 import _RENMAIHANDLE5
+from StoneUIFramework.public.handle.renmai.RENMAIHANDLE5 import RENMAIHANDLE5
 
-class _RENMAIHANDLE6(_RENMAIHANDLE5):
+class RENMAIHANDLE6(RENMAIHANDLE5):
 #*********************************【PAGE5】人脉首页-搜索-标签列表-点击进入群聊-设置-群头像：RMSY_search_label_groupchat_menu_setting_grouphead*********************************
     #定位：人脉首页-搜索-标签列表-点击进入群聊-设置-群头像-返回：点击
     def RMSY_search_label_groupchat_menu_setting_grouphead_back_click(self):

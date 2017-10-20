@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.handle.renmai.RENMAIHANDLE1 import _RENMAIHANDLE1
+from StoneUIFramework.public.handle.renmai.RENMAIHANDLE1 import RENMAIHANDLE1
 
-class _RENMAIHANDLE2(_RENMAIHANDLE1):
+class RENMAIHANDLE2(RENMAIHANDLE1):
 #******************************************************【HANDLE2】******************************************************
 #*********************************【PAGE1】+同步通讯录：RMSY_syscontacts*********************************
     #定位：人脉首页-同步通讯录-返回：点击

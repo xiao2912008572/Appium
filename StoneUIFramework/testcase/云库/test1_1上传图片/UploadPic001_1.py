@@ -1,16 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-from StoneUIFramework.testcase.云库.test1_1上传图片.UploadPic import UploadPic
-from StoneUIFramework.testcase.云库.test1_1上传图片.DeletePic import DeletePic
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE3 import _YUNKUHANDLE3
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-import ddt
+from StoneUIFramework.testcase.云库.test1_1上传图片 import *
 
 
 # 云库上传图片
@@ -28,7 +18,7 @@ class yunku_UploadPic(unittest.TestCase):
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建_YUNKUHANDLE3公有定位控件对象
-        self.handle = _YUNKUHANDLE3(self.driver)
+        self.handle = YUNKUHANDLE3(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名

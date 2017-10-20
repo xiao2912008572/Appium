@@ -1,9 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.协会空间.test6_1_资讯 import *
 
 
 # 新增资讯
@@ -20,7 +17,7 @@ class NewArchivies:
     # 2.协会创建资讯-公用方法
     def newarchivies(self, driver, title, typelist):
         # 创建_SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info('------START:test6_1资讯.NewArchivies.py------')

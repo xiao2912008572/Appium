@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.setting.SETTINGPAGE2 import _SETTINGPAGE2
+from StoneUIFramework.public.pages.setting.SETTINGPAGE2 import SETTINGPAGE2
 
-class _SETTINGPAGE3(_SETTINGPAGE2):
+class SETTINGPAGE3(SETTINGPAGE2):
 # ******************************************************【PAGE2】主菜单-编辑资料Setting_userinfo_menu_eidt******************************************************
     #设置:设置-基本资料-主菜单-编辑资料-返回
         Setting_userinfo_menu_eidt_back = ("id->com.yunlu6.stone:id/title_back_icon","设置-基本资料-主菜单-编辑资料-返回")

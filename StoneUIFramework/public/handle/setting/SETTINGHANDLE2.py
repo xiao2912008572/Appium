@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.handle.setting.SETTINGHANDLE1 import _SETTINGHANDLE1
+from StoneUIFramework.public.handle.setting.SETTINGHANDLE1 import SETTINGHANDLE1
 
-class _SETTINGHANDLE2(_SETTINGHANDLE1):
+class SETTINGHANDLE2(SETTINGHANDLE1):
 # ******************************************************【PAGE1】头像Setting_portrait******************************************************
     #设置:设置-头像-返回
     def Setting_portrait_back_click(self):

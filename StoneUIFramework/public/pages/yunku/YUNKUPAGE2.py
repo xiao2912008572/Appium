@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.yunku.YUNKUPAGE1 import _YUNKUPAGE1
+from StoneUIFramework.public.pages.yunku.YUNKUPAGE1 import YUNKUPAGE1
 
 
-class _YUNKUPAGE2(_YUNKUPAGE1):
+class YUNKUPAGE2(YUNKUPAGE1):
     # *********************************【PAGE1】云库-照片列表：YK_piclist*********************************
     # 云库-照片列表-返回
     Yk_piclist_back = ('id->com.yunlu6.stone:id/title_main_more_back', '云库-照片列表-返回')

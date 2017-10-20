@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.handle.setting.SETTINGHANDLE2 import _SETTINGHANDLE2
+from StoneUIFramework.public.handle.setting.SETTINGHANDLE2 import SETTINGHANDLE2
 
-class _SETTINGHANDLE3(_SETTINGHANDLE2):
+class SETTINGHANDLE3(SETTINGHANDLE2):
 # ******************************************************【PAGE2】主菜单-编辑资料Setting_userinfo_menu_eidt******************************************************
     #设置:设置-基本资料-主菜单-编辑资料-返回
     def Setting_userinfo_menu_eidt_back_click(self):

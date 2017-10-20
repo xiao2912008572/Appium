@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.handle.login.LOGINHANDLE1 import _LOGINHANDLE1
+from StoneUIFramework.public.handle.login.LOGINHANDLE1 import LOGINHANDLE1
 
-class _LOGINHANDLE2(_LOGINHANDLE1):
+class LOGINHANDLE2(LOGINHANDLE1):
 #******************************************************【PAGE1】登录Login******************************************************
     #定位:登录-返回
     def Login_back_click(self):

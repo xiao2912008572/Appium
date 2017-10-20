@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.setting.SETTINGPAGE1 import _SETTINGPAGE1
+from StoneUIFramework.public.pages.setting.SETTINGPAGE1 import SETTINGPAGE1
 
-class _SETTINGPAGE2(_SETTINGPAGE1):
+class SETTINGPAGE2(SETTINGPAGE1):
 # ******************************************************【PAGE1】头像Setting_portrait******************************************************
     #设置:设置-头像-返回 
         Setting_portrait_back = ("id->com.yunlu6.stone:id/title_back_icon","设置-头像-返回")

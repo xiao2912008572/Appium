@@ -1,17 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.login.LOGINHANDLE2 import _LOGINHANDLE2
-from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
-from StoneUIFramework.testcase.登录.test2_1退出登录.LoginoutA import LoginoutA
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-import ddt
+from StoneUIFramework.testcase.登录.test1_1登录 import *
 
 '''
 用ddt数据驱动去准备username和password（ddt不会别说）
@@ -43,7 +32,7 @@ class Login(unittest.TestCase):
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建_LOGINHANDLE2公有定位控件对象
-        self.handle = _LOGINHANDLE2(self.driver)
+        self.handle = LOGINHANDLE2(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名

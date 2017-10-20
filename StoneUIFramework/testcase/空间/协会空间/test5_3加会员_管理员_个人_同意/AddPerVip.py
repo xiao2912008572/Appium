@@ -1,11 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.testcase.登录.test2_1退出登录.Loginout002_1 import Loginout
-from StoneUIFramework.testcase.登录.test1_1登录.LoginA import LoginA
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.协会空间.test5_3加会员_管理员_个人_同意 import *
 
 
 # +个人会员
@@ -26,7 +21,7 @@ class AddPerVip:
     def addPerVip(self, driver, vipname):
         '''+个人会员'''
         # 创建_OrgSpaceTeamHandle公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info('------START:test5_3加会员_管理员_个人_同意.AddPerVip.py------')

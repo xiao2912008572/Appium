@@ -1,7 +1,7 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.setting.SETTINGPAGE3 import _SETTINGPAGE3
+from StoneUIFramework.public.pages.setting.SETTINGPAGE3 import SETTINGPAGE3
 
-class _SETTINGPAGE4(_SETTINGPAGE3):
+class SETTINGPAGE4(SETTINGPAGE3):
 # ******************************************************【PAGE3】意向地区 Setting_userinfo_menu_shopping_address******************************************************
     #设置:设置-基本资料-主菜单-导购机会-意向地区-返回
         Setting_userinfo_menu_shopping_address_back = ("id->com.yunlu6.stone:id/title_back_icon","设置-基本资料-主菜单-导购机会-意向地区-返回")

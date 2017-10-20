@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
-from StoneUIFramework.public.pages.renmai.RENMAIPAGE3 import _RENMAIPAGE3
+from StoneUIFramework.public.pages.renmai.RENMAIPAGE3 import RENMAIPAGE3
 
-class _RENMAIPAGE4(_RENMAIPAGE3):
+class RENMAIPAGE4(RENMAIPAGE3):
 #*********************************【PAGE3】点击进入群聊：RMSY_search_label_groupchat*********************************
     #定位：人脉首页-搜索-标签列表-点击进入群聊-返回
         RMSY_search_label_groupchat_back = ("id->com.yunlu6.stone:id/title_main_more_back", "人脉首页-搜索-标签列表-点击进入群聊-返回")

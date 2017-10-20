@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # coding=utf-8
-from time import sleep
-
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.空间.机构空间.test2_1上下架产品 import *
 
 
 # 上架产品
@@ -30,7 +26,7 @@ class CreateProduct:
         try:
             self.log.info('------START:test2_1上下架产品.CreateProduct.py------')
             # 创建_SPACEHANDLE5公有定位控件对象
-            handle = _SPACEHANDLE5(driver)
+            handle = SPACEHANDLE5(driver)
             sleep(1)
             # -----------------新建产品-----------------
             handle.Kjlb_browseorgspace_menu_product_new_click()  # 点击新建按钮

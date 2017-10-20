@@ -1,9 +1,9 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.yunku.YUNKUPAGE3 import _YUNKUPAGE3
+from StoneUIFramework.public.pages.yunku.YUNKUPAGE3 import YUNKUPAGE3
 from StoneUIFramework.public.common.publicfunction import Tools
 
 
-class _YUNKUHANDLE1(_YUNKUPAGE3):
+class YUNKUHANDLE1(YUNKUPAGE3):
     # ******************************************************【HANDLE1】******************************************************
     # 云库：点击
     def Yk_click(self):

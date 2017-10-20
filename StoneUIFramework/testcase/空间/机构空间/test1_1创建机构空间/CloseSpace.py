@@ -1,9 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.空间.机构空间.test1_1创建机构空间 import *
 
 
 # 关闭机构空间
@@ -23,7 +20,7 @@ class CloseSpace:
         try:
             self.log.info("------START:test1_1创建机构空间.CloseSpace.py-----")
             # 1.创建_SPACEHANDLE5公有定位控件对象
-            self.handle = _SPACEHANDLE5(driver)
+            self.handle = SPACEHANDLE5(driver)
             # -----------------关闭空间 - ----------------
             # 为了保证不中途退出，需要第一次进入的时候检查是否存在该机构，如果存在，先关闭
             self.handle.Kjlb_browseorgspaceByID_click(0)  # 点击进入

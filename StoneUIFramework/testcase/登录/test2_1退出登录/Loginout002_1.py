@@ -1,14 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-import unittest
-from time import sleep
-
-from StoneUIFramework.public.common.Connect import Connect
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.config.globalparam import GlobalParam
-from StoneUIFramework.public.handle.setting.SETTINGHANDLE4 import _SETTINGHANDLE4
-from StoneUIFramework.testcase.登录.test2_1退出登录.LoginoutA import LoginoutA
-from StoneUIFramework.public.common.log import Log
+from StoneUIFramework.testcase.登录.test2_1退出登录 import *
 
 
 # 退出登录
@@ -21,12 +13,12 @@ class Loginout(unittest.TestCase):
         # 创建工具类
         self.tools = Tools(self.driver)  # tools工具
         # 创建_SETTINGHANDLE4公有定位控件对象
-        self.handle = _SETTINGHANDLE4(self.driver)
+        self.handle = SETTINGHANDLE4(self.driver)
         # 创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 获取截图路径、日志路径、日志名
         self.screen_path = cf.getParam('login', "login_path_002_1")  # 通过配置文件获取截图的路径
-        self.logfile = cf.getParam('login', "logfile")  # 日志文件名
+        self.logfile = cf.getParam('log', "logfile")  # 日志文件名
         # 创建日志记录模块
         self.log = Log(self.logfile)
         # 创建LoginoutA对象

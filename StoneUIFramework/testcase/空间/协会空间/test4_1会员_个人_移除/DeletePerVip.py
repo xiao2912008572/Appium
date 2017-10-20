@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.datainfo import DataInfo
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.协会空间.test4_1会员_个人_移除 import *
 
 
 # 移除个人会员
@@ -24,7 +20,7 @@ class DeletePerVip:
     def deletePerVip(self, driver):
         '''移除个人会员'''
         # 创建_SPACEHANDLE5公有定位控件对象
-        self.handleS = _SPACEHANDLE5(driver)
+        self.handleS = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info('------START:test4_1会员_个人_移除.DeletePerVip.py------')

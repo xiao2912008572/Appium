@@ -7,7 +7,7 @@ sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\
 from StoneUIFramework.public.common.HTMLTestRunner import HTMLTestRunner
 from StoneUIFramework.config.globalparam import GlobalParam
 from StoneUIFramework.public.common.sendmail import SendMail
-from StoneUIFramework.runcase.choosecase import SuiteController
+from StoneUIFramework.public.common.choosesuite import SuiteController
 from StoneUIFramework.public.common.log import Log
 
 # 控制用例跑的次数，死循环，可人工干预退出

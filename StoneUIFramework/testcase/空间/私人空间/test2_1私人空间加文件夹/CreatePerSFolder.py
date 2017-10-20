@@ -1,10 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from time import sleep
-from StoneUIFramework.public.common.publicfunction import Tools
-from StoneUIFramework.public.handle.space.SPACEHANDLE5 import _SPACEHANDLE5
-from StoneUIFramework.public.common.log import Log
-from StoneUIFramework.config.globalparam import GlobalParam
+from StoneUIFramework.testcase.空间.私人空间.test2_1私人空间加文件夹 import *
 
 
 # 创建机构空间
@@ -23,7 +19,7 @@ class CreatePerSFolder:
         # 1.创建工具类
         tools = Tools(driver)  # tools工具
         # 2.创建_SPACEHANDLE5公有定位控件对象
-        handle = _SPACEHANDLE5(driver)
+        handle = SPACEHANDLE5(driver)
         sleep(2)
         try:
             self.log.info('------START:test2_1私人空间加文件夹.CreatePerSFolder.py------')

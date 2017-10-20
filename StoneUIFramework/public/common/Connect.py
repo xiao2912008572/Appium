@@ -16,7 +16,7 @@ logger = Log(logfile)
 '''
 
 # from StoneUIFramework.public.common.pyappium import PyAppium
-from StoneUIFramework.public.handle.yunku.YUNKUHANDLE1 import _YUNKUHANDLE1
+from StoneUIFramework.public.handle.yunku.YUNKUHANDLE1 import YUNKUHANDLE1
 
 
 class Connect:
