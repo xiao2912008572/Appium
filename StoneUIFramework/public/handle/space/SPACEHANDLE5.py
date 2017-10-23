@@ -1,23 +1,24 @@
 __author__ = 'xiaoj'
-#空间首页
+# 空间首页
 from StoneUIFramework.public.handle.space.SPACEHANDLE4 import SPACEHANDLE4
 
+
 class SPACEHANDLE5(SPACEHANDLE4):
-#***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_product_new_addphoto_album***************************************
+    # ***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_product_new_addphoto_album***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-相册-返回:点击
     def Kjlb_browseorgspace_menu_product_new_addphoto_album_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_addphoto_album_back)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-相册-照片列表:点击
-    def Kjlb_browseorgspace_menu_product_new_addphoto_album_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_addphoto_album_list,n)
+    def Kjlb_browseorgspace_menu_product_new_addphoto_album_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_addphoto_album_list, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-相册-完成:点击
     def Kjlb_browseorgspace_menu_product_new_addphoto_album_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_addphoto_album_confirm)
 
-#***************************************【PAGE4】添加照片-产品库Kjlb_browseorgspace_menu_product_new_addphoto_wifisync***************************************
-     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-产品库-返回:点击
+    # ***************************************【PAGE4】添加照片-产品库Kjlb_browseorgspace_menu_product_new_addphoto_wifisync***************************************
+    #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-产品库-返回:点击
     def Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_back)
 
@@ -26,15 +27,15 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_all)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-产品库-照片列表:点击
-    def Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_piclist_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_piclist,n)
+    def Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_piclist_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_piclist, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-添加照片-产品库-确定:点击
     def Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_addphoto_wifisync_confirm)
 
-#***************************************【PAGE4】商品名称Kjlb_browseorgspace_menu_product_new_proname***************************************
-     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-返回:点击
+    # ***************************************【PAGE4】商品名称Kjlb_browseorgspace_menu_product_new_proname***************************************
+    #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-返回:点击
     def Kjlb_browseorgspace_menu_product_new_proname_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_proname_back)
 
@@ -43,8 +44,8 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_proname_choose)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-商品名称:发送文本
-    def Kjlb_browseorgspace_menu_product_new_proname_name_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_new_proname_name,text)
+    def Kjlb_browseorgspace_menu_product_new_proname_name_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_new_proname_name, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-商品顶部标题:点击
     def Kjlb_browseorgspace_menu_product_new_proname_name_title_click(self):
@@ -63,19 +64,19 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_proname_bclassify)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-推荐一级标签（百石堂）:点击
-    def Kjlb_browseorgspace_menu_product_new_proname_bonetag_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_proname_bonetag,n)
+    def Kjlb_browseorgspace_menu_product_new_proname_bonetag_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_proname_bonetag, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-推荐二级标签（百石堂）:点击
-    def Kjlb_browseorgspace_menu_product_new_proname_btwotag_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_proname_btwotag,n)
+    def Kjlb_browseorgspace_menu_product_new_proname_btwotag_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_proname_btwotag, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-商品名称-确定（百石堂）:点击
     def Kjlb_browseorgspace_menu_product_new_proname_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_proname_confirm
-)
+                            )
 
-#***************************************【PAGE4】石种属性Kjlb_browseorgspace_menu_product_new_attribute***************************************
+    # ***************************************【PAGE4】石种属性Kjlb_browseorgspace_menu_product_new_attribute***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-返回:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_back)
@@ -85,40 +86,40 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_confirm)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-种类名:发送文本
-    def Kjlb_browseorgspace_menu_product_new_attribute_species_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_new_attribute_species,text)
+    def Kjlb_browseorgspace_menu_product_new_attribute_species_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_new_attribute_species, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-种类名-匹配列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attribute_species_match_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_species_match,n)
+    def Kjlb_browseorgspace_menu_product_new_attribute_species_match_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_species_match, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_color_click(self):
-        self.Kjlb_browseorgspace_menu_product_new_attribute_color = self.p.get_element("id->com.yunlu6.stone:id/tv_color_name","空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色")
+        self.Kjlb_browseorgspace_menu_product_new_attribute_color = self.p.get_element("id->com.yunlu6.stone:id/tv_color_name", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色")
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_color)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色-列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attribute_color_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_color_list,n)
+    def Kjlb_browseorgspace_menu_product_new_attribute_color_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_color_list, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-深浅:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_attrname_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_attrname)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-深浅-列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attribute_attrname_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_attrname_list,n)
+    def Kjlb_browseorgspace_menu_product_new_attribute_attrname_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_attrname_list, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_pattern_click(self):
-        self.Kjlb_browseorgspace_menu_product_new_attribute_pattern = self.p.get_element("id->com.yunlu6.stone:id/tv_pattern_name","空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹")
+        self.Kjlb_browseorgspace_menu_product_new_attribute_pattern = self.p.get_element("id->com.yunlu6.stone:id/tv_pattern_name", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹")
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_pattern)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹-列表:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_pattern_list_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_pattern_list)
 
-#***************************************【PAGE4】制品/表面Kjlb_browseorgspace_menu_product_new_attrstone***************************************
+    # ***************************************【PAGE4】制品/表面Kjlb_browseorgspace_menu_product_new_attrstone***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-返回:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_back)
@@ -132,18 +133,18 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_type)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-制品-列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attrstone_type_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_type_list,n)
+    def Kjlb_browseorgspace_menu_product_new_attrstone_type_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_type_list, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-表面:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_surface_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_surface)
 
     #  空浏览企业空间-菜单栏-产品-新建-制品/表面-表面-列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attrstone_surface_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_surface_list,n)
+    def Kjlb_browseorgspace_menu_product_new_attrstone_surface_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_surface_list, n)
 
-#***************************************【PAGE4】产品参数Kjlb_browseorgspace_menu_product_new_parameter***************************************
+    # ***************************************【PAGE4】产品参数Kjlb_browseorgspace_menu_product_new_parameter***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-返回:点击
     def Kjlb_browseorgspace_menu_product_new_parameter_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_parameter_back)
@@ -153,16 +154,16 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_parameter_confirm)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数名列表:发送文本
-    def Kjlb_browseorgspace_menu_product_new_parameter_key_sendkeys(self,n,text):
-        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_parameter_keylist,n,text)
+    def Kjlb_browseorgspace_menu_product_new_parameter_key_sendkeys(self, n, text):
+        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_parameter_keylist, n, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数名列表:清空文本
-    def Kjlb_browseorgspace_menu_product_new_parameter_key_clear(self,n):
-        return self.p.clears(self.Kjlb_browseorgspace_menu_product_new_parameter_keylist,n)
+    def Kjlb_browseorgspace_menu_product_new_parameter_key_clear(self, n):
+        return self.p.clears(self.Kjlb_browseorgspace_menu_product_new_parameter_keylist, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数值列表:发送文本
-    def Kjlb_browseorgspace_menu_product_new_parameter_value_sendkeys(self,n,text):
-        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_parameter_valuelist,n,text)
+    def Kjlb_browseorgspace_menu_product_new_parameter_value_sendkeys(self, n, text):
+        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_parameter_valuelist, n, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数值列表:清空文本
     def Kjlb_browseorgspace_menu_product_new_parameter_value_clear(self, n):
@@ -172,18 +173,18 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseorgspace_menu_product_new_parameter_addbtn_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_parameter_addbtn)
 
-#***************************************【PAGE4】价格Kjlb_browseorgspace_menu_product_new_price***************************************
-   #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-返回:点击
+    # ***************************************【PAGE4】价格Kjlb_browseorgspace_menu_product_new_price***************************************
+    #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-返回:点击
     def Kjlb_browseorgspace_menu_product_new_price_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_price_back)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-单价(元)列表:发送文本
-    def Kjlb_browseorgspace_menu_product_new_price_unitprice_sendkeys(self,n,text):
-        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_price_unitpriceyuan,n,text)
+    def Kjlb_browseorgspace_menu_product_new_price_unitprice_sendkeys(self, n, text):
+        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_price_unitpriceyuan, n, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-库存列表:发送文本
-    def Kjlb_browseorgspace_menu_product_new_price_stock_sendkeys(self,n,text):
-        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_price_stockkucun,n,text)
+    def Kjlb_browseorgspace_menu_product_new_price_stock_sendkeys(self, n, text):
+        return self.p.sends_keys(self.Kjlb_browseorgspace_menu_product_new_price_stockkucun, n, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-保存:点击
     def Kjlb_browseorgspace_menu_product_new_price_save_click(self):
@@ -197,7 +198,48 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseorgspace_menu_product_new_price_delete_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_price_delete)
 
-#***************************************【PAGE4】关联文件Kjlb_browseorgspace_menu_product_new_relation***************************************
+    # ***************************************【PAGE4】立即购买Kjlb_browseorgspace_menu_product_lock_list_buynow***************************************
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面:元素
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址标题:元素
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-返回：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_back)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-收货人：发送文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee_sendkeys(self,text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee,text)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-联系电话：发送文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber, text)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区-列表：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(self,n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist,n)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-详细地址：发送文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail_sendkeys(self,text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist, text)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-默认地址：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_default_sendkeys(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_default)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save)
+
+    # ***************************************【PAGE4】关联文件Kjlb_browseorgspace_menu_product_new_relation***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-关联文件-返回:点击
     def Kjlb_browseorgspace_menu_product_new_relation_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_relation_back)
@@ -210,7 +252,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseorgspace_menu_product_new_relation_related_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_relation_related)
 
-#***************************************【PAGE4】待任免联系人列表Kjlb_browseorgspace_menu_team_menu_assignjob_contact***************************************
+    # ***************************************【PAGE4】待任免联系人列表Kjlb_browseorgspace_menu_team_menu_assignjob_contact***************************************
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-联系人列表-返回:点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_back)
@@ -220,25 +262,25 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_confirm)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-联系人列表-部门名称-列表:点击
-    def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_department_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_department,n)
+    def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_department_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_department, n)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-联系人列表-职位名称-列表:点击
-    def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_jobname_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_jobname,n)
+    def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_jobname_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_jobname, n)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-联系人列表-移除:点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_contact_delete_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_delete)
 
-#***************************************【PAGE4】人事任免新增Kjlb_browseorgspace_menu_team_menu_assignjob_addperson***************************************
+    # ***************************************【PAGE4】人事任免新增Kjlb_browseorgspace_menu_team_menu_assignjob_addperson***************************************
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-返回:点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_back)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-搜索栏:发送文本
-    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_search_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_search,text)
+    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_search_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_search, text)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-搜索按钮:点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_searchbtn_click(self):
@@ -249,21 +291,21 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_all)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-圆圈勾选:点击
-    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_choose_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_choose,n)
+    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_choose_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_choose, n)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-联系人列表:点击
-    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_contact_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_contact,n)
+    def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_contact_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_contact, n)
 
     # 空间列表-浏览企业空间-菜单栏-团队-菜单栏-人事任免-新增-添加(确认):点击
     def Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team_menu_assignjob_addperson_confirm)
 
-#***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_archivies_new_addphoto_album***************************************
+    # ***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_archivies_new_addphoto_album***************************************
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-文件库-照片列表:点击
-    def Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_list,n)
+    def Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_list, n)
 
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-文件库-全选:点击
     def Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_all_click(self):
@@ -272,34 +314,34 @@ class SPACEHANDLE5(SPACEHANDLE4):
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-文件库-确定:点击
     def Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_confirm
-)
+                            )
 
-#***************************************【PAGE4】照片统计按钮Kjlb_browseorgspace_menu_archivies_new_count***************************************
+    # ***************************************【PAGE4】照片统计按钮Kjlb_browseorgspace_menu_archivies_new_count***************************************
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-文件照片列表:点击
-    def Kjlb_browseorgspace_menu_archivies_new_count_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_count_list,n)
+    def Kjlb_browseorgspace_menu_archivies_new_count_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_count_list, n)
 
-#***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_archivies_new_addphoto_album***************************************
-     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册-照片列表:点击
-    def Kjlb_browseorgspace_menu_archivies_new_addphoto_album_list_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_album_list,n)
+    # ***************************************【PAGE4】添加照片-相册Kjlb_browseorgspace_menu_archivies_new_addphoto_album***************************************
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册-照片列表:点击
+    def Kjlb_browseorgspace_menu_archivies_new_addphoto_album_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_album_list, n)
 
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册-完成:点击
     def Kjlb_browseorgspace_menu_archivies_new_addphoto_album_confirm_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addphoto_album_confirm)
 
-#***************************************【PAGE4】添加照片-文件库Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync***************************************
+    # ***************************************【PAGE4】添加照片-文件库Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync***************************************
     # 照片列表Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_list
     # 全选Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_all
     # 确定Kjlb_browseorgspace_menu_archivies_new_addphoto_wifisync_confirm
 
-#***************************************【PAGE4】分类到Kjlb_browseperspace_more_piclist_classify***************************************
+    # ***************************************【PAGE4】分类到Kjlb_browseperspace_more_piclist_classify***************************************
     # 空间列表-浏览私人空间-更多-照片列表-分类到-空间id
     def Kjlb_browseperspace_more_piclist_classify_spaceById_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_classifyspace_ById)
 
     # 空间列表-浏览私人空间-更多-照片列表-分类到-空间名
-    def Kjlb_browseperspace_more_piclist_classify_spaceByName_click(self,name):
+    def Kjlb_browseperspace_more_piclist_classify_spaceByName_click(self, name):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_classify_spaceByName(name))
 
     # 空间列表-浏览私人空间-更多-照片列表-分类到-返回
@@ -315,10 +357,10 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_classifyspace_folderByID)
 
     # 空间列表-浏览私人空间-更多-照片列表-分类到-文件夹ByName
-    def Kjlb_browseperspace_more_piclist_classify_folderByName_click(self,name):
+    def Kjlb_browseperspace_more_piclist_classify_folderByName_click(self, name):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_classify_folderByName(name))
 
-#***************************************【PAGE4】编辑Kjlb_browseperspace_more_piclist_edit***************************************
+    # ***************************************【PAGE4】编辑Kjlb_browseperspace_more_piclist_edit***************************************
     # 空间列表-浏览私人空间-更多-照片列表-编辑-返回
     def Kjlb_browseperspace_more_piclist_edit_back_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_edit_back)
@@ -336,8 +378,8 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_edit_delete_cancel)
 
     # 空间列表-浏览私人空间-更多-照片列表-编辑-名称
-    def Kjlb_browseperspace_more_piclist_edit_picname_sendkeys(self,name):
-        return self.p.send_keys(self.Kjlb_browseperspace_more_piclist_edit_picname,name)
+    def Kjlb_browseperspace_more_piclist_edit_picname_sendkeys(self, name):
+        return self.p.send_keys(self.Kjlb_browseperspace_more_piclist_edit_picname, name)
 
     # 空间列表-浏览私人空间-更多-照片列表-编辑-备注
     def Kjlb_browseperspace_more_piclist_edit_remark_click(self):
@@ -347,10 +389,10 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseperspace_more_piclist_edit_save_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_piclist_edit_save)
 
-#***************************************【PAGE4】删除文件夹Kjlb_browseperspace_more_menu_edit_deletefolder***************************************
+    # ***************************************【PAGE4】删除文件夹Kjlb_browseperspace_more_menu_edit_deletefolder***************************************
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-照片列表
-    def Kjlb_browseperspace_more_menu_edit_deletefolder_piclist_click(self,n):
-        return self.p.clicks(self.Kjlb_browseperspace_more_menu_edit_deletefolder_piclist,n)
+    def Kjlb_browseperspace_more_menu_edit_deletefolder_piclist_click(self, n):
+        return self.p.clicks(self.Kjlb_browseperspace_more_menu_edit_deletefolder_piclist, n)
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮
     def Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_click(self):
@@ -360,7 +402,8 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y)
 
-     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否
+        # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否
+
     def Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n)
 
@@ -368,7 +411,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseperspace_more_menu_edit_deletefolder_all_click(self):
         return self.p.click(self.Kjlb_browseperspace_more_menu_edit_foldername_all)
 
-#***************************************【PAGE4】资讯图片Kjlb_browseascspace_arch_alist_pic***************************************
+    # ***************************************【PAGE4】资讯图片Kjlb_browseascspace_arch_alist_pic***************************************
     # 空间列表-协会空间-资讯-资讯文件列表-资讯图片-资讯详情
     def Kjlb_browseascspace_arch_alist_pic_adetail_click(self):
         return self.p.click(self.Kjlb_browseascspace_arch_alist_pic_adetail)
@@ -377,7 +420,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
     def Kjlb_browseascspace_arch_alist_pic_back(self):
         return self.p.click(self.Kjlb_browseascspace_arch_alist_pic_back)
 
-#***************************************【PAGE4】联系人列表Kjlb_browseascspace_menu_team_menu_assignjob_contact***************************************
+    # ***************************************【PAGE4】联系人列表Kjlb_browseascspace_menu_team_menu_assignjob_contact***************************************
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-联系人列表-返回:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_contact_back_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_back)
@@ -387,25 +430,25 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_confirm)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-联系人列表-部门名称:点击
-    def Kjlb_browseascspace_menu_team_menu_assignjob_contact_department_click(self,n):
-        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_department,n)
+    def Kjlb_browseascspace_menu_team_menu_assignjob_contact_department_click(self, n):
+        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_department, n)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-联系人列表-职位名称:点击
-    def Kjlb_browseascspace_menu_team_menu_assignjob_contact_jobname_click(self,n):
-        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_jobname,n)
+    def Kjlb_browseascspace_menu_team_menu_assignjob_contact_jobname_click(self, n):
+        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_jobname, n)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-联系人列表-移除:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_contact_delete_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_contact_delete)
 
-#***************************************【PAGE4】人事任免新增Kjlb_browseascspace_menu_team_menu_assignjob_addperson***************************************
-     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-返回:点击
+    # ***************************************【PAGE4】人事任免新增Kjlb_browseascspace_menu_team_menu_assignjob_addperson***************************************
+    # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-返回:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_back_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_back)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-搜索栏:发送文本
-    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_search_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_search,text)
+    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_search_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_search, text)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-搜索按钮:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_searchbtn_click(self):
@@ -416,12 +459,12 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_all)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-圆圈勾选列表:点击
-    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_choose_click(self,n):
-        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_choose,n)
+    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_choose_click(self, n):
+        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_choose, n)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-联系人列表:点击
-    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_contact_click(self,n):
-        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_contact,n)
+    def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_contact_click(self, n):
+        return self.p.clicks(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_contact, n)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-添加(确认):点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_confirm_click(self):

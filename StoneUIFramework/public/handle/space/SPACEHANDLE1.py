@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
 #空间首页
-from StoneUIFramework.public.pages.space.SPACEPAGE5 import SPACEPAGE5
+from StoneUIFramework.public.pages.space.SPACEPAGE6 import SPACEPAGE6
 
-class SPACEHANDLE1(SPACEPAGE5):
+class SPACEHANDLE1(SPACEPAGE6):
 #******************************************************【HANDLE1】******************************************************
     # 空间列表：点击
     def Kjlb_click(self):

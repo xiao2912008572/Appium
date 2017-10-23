@@ -143,6 +143,39 @@ class SPACEPAGE5(SPACEPAGE4):
     #  空间列表-浏览企业空间-菜单栏-产品-新建-价格-删除
     Kjlb_browseorgspace_menu_product_new_price_delete = ("id->com.yunlu6.stone:id/bt_delete_offer", "空间列表-浏览企业空间-菜单栏-产品-新建-价格-删除")
 
+    # ***************************************【PAGE4】立即购买Kjlb_browseorgspace_menu_product_lock_list_buynow***************************************
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page = ("id->com.yunlu6.stone:id/activity_add_receive_address",
+                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title = ("id->com.yunlu6.stone:id/title_tv_title",
+                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址标题")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_back = ("id->com.yunlu6.stone:id/title_back",
+                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-返回")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee = ("id->com.yunlu6.stone:id/addaddress_username",
+                                                                              "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-收货人")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber = ("id->com.yunlu6.stone:id/addaddress_userphone",
+                                                                            "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-联系电话")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district = ("id->com.yunlu6.stone:id/addaddress_userzone",
+                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist = ("id->com.yunlu6.stone:id/tv_address",
+                                                                                 "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区列表")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail = ("id->com.yunlu6.stone:id/addaddress_useraddress",
+                                                                           "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-详细地址")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_default = ("id->com.yunlu6.stone:id/addaddress_isdefault",
+                                                                           "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-设为默认地址")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save = ("id->com.yunlu6.stone:id/addaddress_commit",
+                                                                            "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存")
+
+
+
     # ***************************************【PAGE4】关联文件Kjlb_browseorgspace_menu_product_new_relation***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-关联文件-返回
     Kjlb_browseorgspace_menu_product_new_relation_back = ("id->com.yunlu6.stone:id/title_back_icon", "空间列表-浏览企业空间-菜单栏-产品-新建-关联文件-返回")
