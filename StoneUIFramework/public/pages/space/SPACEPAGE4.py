@@ -74,6 +74,26 @@ class SPACEPAGE4(SPACEPAGE3):
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-返回
     Kjlb_browseorgspace_menu_product_lock_list_back = ("id->com.yunlu6.stone:id/title_back_icon", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-返回")
 
+    # ***************************************【PAGE3】确认发货：Kjlb_browseorgspace_menu_order_confirm_click***************************************
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-返回
+    Kjlb_browseorgspace_menu_order_confirm_back = ("id->com.yunlu6.stone:id/title_back", "空间列表-浏览企业空间-菜单栏-订单-确认发货-返回")
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司
+    Kjlb_browseorgspace_menu_order_confirm_logisticsorg = ("id->com.yunlu6.stone:id/tv_set_wuliu", "空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司")
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司-列表
+    Kjlb_browseorgspace_menu_order_confirm_logisticsorg_list = ("id->com.yunlu6.stone:id/tv_address", "空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司-列表")
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流单号
+    Kjlb_browseorgspace_menu_order_confirm_logisticsorgno = ("id->com.yunlu6.stone:id/et_set_wuliu_num", "空间列表-浏览企业空间-菜单栏-订单-确认发货-物流单号")
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-确定
+    Kjlb_browseorgspace_menu_order_confirm_confirmsend = ("id->com.yunlu6.stone:id/btn_ok", "空间列表-浏览企业空间-菜单栏-订单-确认发货-确定")
+
+    # ***************************************【PAGE3】查看物流Kjlb_browseorgspace_menu_order_logistics_click***************************************
+    #  空间列表-浏览企业空间-菜单栏-订单-查看物流-返回
+    Kjlb_browseorgspace_menu_order_logistics_back = ("id->com.yunlu6.stone:id/title_back", "空间列表-浏览企业空间-菜单栏-订单-查看物流-返回")
+
     # ***************************************【PAGE3】未发布产品列表Kjlb_browseorgspace_menu_product_unlock_list***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-加入购物车
     Kjlb_browseorgspace_menu_product_unlock_list_shoppingcart = ("id->com.yunlu6.stone:id/ll_shoppingcart", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-加入购物车")

@@ -144,6 +144,7 @@ class SPACEPAGE5(SPACEPAGE4):
     Kjlb_browseorgspace_menu_product_new_price_delete = ("id->com.yunlu6.stone:id/bt_delete_offer", "空间列表-浏览企业空间-菜单栏-产品-新建-价格-删除")
 
     # ***************************************【PAGE4】立即购买Kjlb_browseorgspace_menu_product_lock_list_buynow***************************************
+    #【PAGE5-1】收货地址页面
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page = ("id->com.yunlu6.stone:id/activity_add_receive_address",
                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面")
 
@@ -174,7 +175,27 @@ class SPACEPAGE5(SPACEPAGE4):
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save = ("id->com.yunlu6.stone:id/addaddress_commit",
                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存")
 
+    # 【PAGE5-1】确认订单页面
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page = ("id->com.yunlu6.stone:id/activity_comfirm_order_list",
+                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面")
 
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title = ("id->com.yunlu6.stone:id/title_tv_title",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_back = ("id->com.yunlu6.stone:id/title_back",
+                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-返回")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_address = ("id->com.yunlu6.stone:id/comfirmorder_address_layout",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-地址栏")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist = ("id->com.yunlu6.stone:id/ll_company_info",
+                                                                        "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构列表")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_prolist = ("id->com.yunlu6.stone:id/iv_product",
+                                                                        "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品列表")
+
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay = ("id->com.yunlu6.stone:id/comfirmorder_payment",
+                                                                        "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付")
 
     # ***************************************【PAGE4】关联文件Kjlb_browseorgspace_menu_product_new_relation***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-关联文件-返回

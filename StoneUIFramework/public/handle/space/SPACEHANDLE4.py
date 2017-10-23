@@ -96,6 +96,32 @@ class SPACEHANDLE4(SPACEHANDLE3):
     def Kjlb_browseorgspace_menu_product_lock_list_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_back)
 
+# ***************************************【PAGE3】确认发货：Kjlb_browseorgspace_menu_order_confirm_click***************************************
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-返回：点击
+    def Kjlb_browseorgspace_menu_order_confirm_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_confirm_back)
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司：点击
+    def Kjlb_browseorgspace_menu_order_confirm_logisticsorg_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_confirm_logisticsorg)
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流公司-列表：点击
+    def Kjlb_browseorgspace_menu_order_confirm_logisticsorg_list_click(self,n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_order_confirm_logisticsorg_list)
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-物流单号：发送文本
+    def Kjlb_browseorgspace_menu_order_confirm_logisticsorgno_sendkeys(self,text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_order_confirm_logisticsorg_list,text)
+
+    #  空间列表-浏览企业空间-菜单栏-订单-确认发货-确定：点击
+    def Kjlb_browseorgspace_menu_order_confirm_confirmsend_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_confirm_confirmsend)
+
+# ***************************************【PAGE3】查看物流Kjlb_browseorgspace_menu_order_logistics_click***************************************
+    #  空间列表-浏览企业空间-菜单栏-订单-查看物流-返回
+    def Kjlb_browseorgspace_menu_order_logistics_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_logistics_back)
+
 #***************************************【PAGE3】未发布产品列表Kjlb_browseorgspace_menu_product_unlock_list***************************************
      #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-加入购物车:点击
     def Kjlb_browseorgspace_menu_product_unlock_list_shoppingcart_click(self):

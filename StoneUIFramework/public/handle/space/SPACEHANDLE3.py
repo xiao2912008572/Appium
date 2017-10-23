@@ -201,6 +201,63 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_bcard_newpro_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_bcard_newpro)
 
+    # ***************************************【PAGE2】订单Kjlb_browseorgspace_menu_order***************************************
+    # 空间列表-浏览企业空间-菜单栏-订单-返回：点击
+    def Kjlb_browseorgspace_menu_order_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_back)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-搜索栏：发送文本
+    def Kjlb_browseorgspace_menu_order_search_sendkeys(self,text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_order_search,text)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-搜索按钮：点击
+    def Kjlb_browseorgspace_menu_order_searchbtn_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_searchbtn)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-空白页：元素
+    def Kjlb_browseorgspace_menu_order_nonepage_element(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_order_nonepage)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-全部：点击
+    def Kjlb_browseorgspace_menu_order_all_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_all)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待付款：点击
+    def Kjlb_browseorgspace_menu_order_waitforpay_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_waitforpay)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待发货：点击
+    def Kjlb_browseorgspace_menu_order_waitforsend_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_waitforsend)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-已发货：点击
+    def Kjlb_browseorgspace_menu_order_alreadysend_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_alreadysend)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-退款中：点击
+    def Kjlb_browseorgspace_menu_order_refund_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_refund)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待评价：点击
+    def Kjlb_browseorgspace_menu_order_evaluate_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_evaluate)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-商品名列表：点击
+    def Kjlb_browseorgspace_menu_order_prolist_click(self,n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_order_prolist,n)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-订单编号：文本
+    def Kjlb_browseorgspace_menu_order_no_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_order_no)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-确认发货：点击
+    def Kjlb_browseorgspace_menu_order_confirm_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_confirm)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-查看物流：点击
+    def Kjlb_browseorgspace_menu_order_logistics_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order_logistics)
+
     # ***************************************【PAGE2】访客Kjlb_browseorgspace_menu_visitor***************************************
     # 空间列表-浏览企业空间-菜单栏-访客-访客列表:点击
     def Kjlb_browseorgspace_menu_visitor_list_click(self, n):

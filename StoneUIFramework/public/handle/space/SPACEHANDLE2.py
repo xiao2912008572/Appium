@@ -213,6 +213,10 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseorgspace_menu_bcard_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_bcard)
 
+    # 空间列表-浏览企业空间-菜单栏-订单:点击
+    def Kjlb_browseorgspace_menu_order_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_order)
+
     # 空间列表-浏览企业空间-菜单栏-团队:点击
     def Kjlb_browseorgspace_menu_team_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_team)

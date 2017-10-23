@@ -199,6 +199,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_price_delete)
 
     # ***************************************【PAGE4】立即购买Kjlb_browseorgspace_menu_product_lock_list_buynow***************************************
+    #【PAGE5-1】收货地址页面
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面:元素
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page(self):
         return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page)
@@ -238,6 +239,35 @@ class SPACEHANDLE5(SPACEHANDLE4):
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存：点击
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save)
+
+    # 【PAGE5-2】确认订单页面
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面：元素
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题：元素
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-返回：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_back)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-地址栏：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_address_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_address)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构列表：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_click(self,n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist,n)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品列表：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_prolist_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_prolist, n)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付：点击
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay)
 
     # ***************************************【PAGE4】关联文件Kjlb_browseorgspace_menu_product_new_relation***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-关联文件-返回:点击

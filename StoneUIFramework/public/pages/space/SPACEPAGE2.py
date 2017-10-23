@@ -160,6 +160,9 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-浏览企业空间-菜单栏-企业名片
     Kjlb_browseorgspace_menu_bcard = ("id->com.yunlu6.stone:id/btn_pop_company_info", "空间列表-浏览企业空间-菜单栏-企业名片")
 
+    # 空间列表-浏览企业空间-菜单栏-订单
+    Kjlb_browseorgspace_menu_order = ("id->com.yunlu6.stone:id/btn_pop_company_order", "空间列表-浏览企业空间-菜单栏-订单")
+
     # 空间列表-浏览企业空间-菜单栏-团队
     Kjlb_browseorgspace_menu_team = ("id->com.yunlu6.stone:id/btn_pop_company_team", "空间列表-浏览企业空间-菜单栏-团队")
 

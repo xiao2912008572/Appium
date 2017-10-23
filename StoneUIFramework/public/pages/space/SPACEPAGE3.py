@@ -148,6 +148,49 @@ class SPACEPAGE3(SPACEPAGE2):
     # 空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品
     Kjlb_browseorgspace_menu_bcard_newpro = ("id->com.yunlu6.stone:id/iv_crad_build_prod","空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品")
 
+#***************************************【PAGE2】订单Kjlb_browseorgspace_menu_order***************************************
+    # 空间列表-浏览企业空间-菜单栏-订单-返回
+    Kjlb_browseorgspace_menu_order_back = ("id->com.yunlu6.stone:id/clondzone_title_back", "空间列表-浏览企业空间-菜单栏-订单-返回")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-搜索栏
+    Kjlb_browseorgspace_menu_order_search = ("id->com.yunlu6.stone:id/edit_text", "空间列表-浏览企业空间-菜单栏-订单-搜索栏")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-搜索按钮
+    Kjlb_browseorgspace_menu_order_searchbtn = ("id->com.yunlu6.stone:id/iv_search_zone", "空间列表-浏览企业空间-菜单栏-订单-搜索按钮")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-空白页
+    Kjlb_browseorgspace_menu_order_nonepage = ("id->com.yunlu6.stone:id/companyorder_commen_nodata", "空间列表-浏览企业空间-菜单栏-订单-空白页")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-全部
+    Kjlb_browseorgspace_menu_order_all = ("name->全部", "空间列表-浏览企业空间-菜单栏-订单-全部")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待付款
+    Kjlb_browseorgspace_menu_order_waitforpay = ("name->待付款", "空间列表-浏览企业空间-菜单栏-订单-待付款")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待发货
+    Kjlb_browseorgspace_menu_order_waitforsend = ("name->待发货", "空间列表-浏览企业空间-菜单栏-订单-待发货")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-已发货
+    Kjlb_browseorgspace_menu_order_alreadysend = ("name->已发货", "空间列表-浏览企业空间-菜单栏-订单-已发货")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-退款中
+    Kjlb_browseorgspace_menu_order_refund = ("name->退款中", "空间列表-浏览企业空间-菜单栏-订单-退款中")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-待评价
+    Kjlb_browseorgspace_menu_order_evaluate = ("name->待评价", "空间列表-浏览企业空间-菜单栏-订单-待评价")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-商品名列表
+    Kjlb_browseorgspace_menu_order_prolist = ("id->com.yunlu6.stone:id/tv_dingdan_name", "空间列表-浏览企业空间-菜单栏-订单-商品名列表")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-订单编号
+    Kjlb_browseorgspace_menu_order_no = ("id->com.yunlu6.stone:id/tv_dingdan_num", "空间列表-浏览企业空间-菜单栏-订单-订单编号")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-确认发货
+    Kjlb_browseorgspace_menu_order_confirm = ("name->确认发货", "空间列表-浏览企业空间-菜单栏-订单-确认发货")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-查看物流
+    Kjlb_browseorgspace_menu_order_logistics = ("name->查看物流", "空间列表-浏览企业空间-菜单栏-订单-查看物流")
+
 #***************************************【PAGE2】访客Kjlb_browseorgspace_menu_visitor***************************************
  # 空间列表-浏览企业空间-菜单栏-访客-访客列表
     Kjlb_browseorgspace_menu_visitor_list = ("id->com.yunlu6.stone:id/visitor_name","空间列表-浏览企业空间-菜单栏-访客-访客列表")
