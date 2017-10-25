@@ -5,6 +5,19 @@ from StoneUIFramework.public.handle.space.SPACEHANDLE1 import SPACEHANDLE1
 
 class SPACEHANDLE2(SPACEHANDLE1):
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
+    # 空间列表-产品列表-选择产品
+    def Kjlb_prolist_click(self, n):
+        return self.p.clicks(self.Kjlb_prolist, n)
+
+    # 空间列表-产品列表-选择产品-产品名
+    def Kjlb_prolist_pronameT(self, n):
+        return self.p.get_texts(self.Kjlb_prolist_proname, n)
+
+    # 空间列表-产品列表-选择产品-价格
+    def Kjlb_prolist_propriceT(self, n):
+        return self.p.get_texts(self.Kjlb_prolist_proprice, n)
+
+    # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称:发送文本
     def Kjlb_mainmenu_newspace_orgname_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_mainmenu_newspace_orgname, text)

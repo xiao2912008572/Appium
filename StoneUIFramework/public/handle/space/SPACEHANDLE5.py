@@ -201,12 +201,13 @@ class SPACEHANDLE5(SPACEHANDLE4):
     # ***************************************【PAGE4】立即购买Kjlb_browseorgspace_menu_product_lock_list_buynow***************************************
     #【PAGE5-1】收货地址页面
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面:元素
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page)
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page[0],
+                                  self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page[1])
 
-    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址标题:元素
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title)
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址标题:获取文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_gettitle(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title)
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-返回：点击
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_back_click(self):
@@ -230,7 +231,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-详细地址：发送文本
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist, text)
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail, text)
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-默认地址：点击
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_default_sendkeys(self):
@@ -242,12 +243,13 @@ class SPACEHANDLE5(SPACEHANDLE4):
 
     # 【PAGE5-2】确认订单页面
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面：元素
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page)
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pagee(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page[0],
+                                  self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page[1])
 
-    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题：元素
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title)
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题：获取文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_titlee(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title)
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-返回：点击
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_back_click(self):

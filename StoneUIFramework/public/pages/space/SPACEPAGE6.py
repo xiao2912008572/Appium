@@ -46,8 +46,8 @@ class SPACEPAGE6(SPACEPAGE5):
 
     # ***************************************【PAGE5-2】确认订单-机构名列表Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_click***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-页面
-    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page =  ("id->com.yunlu6.stone:id/ll_main",
-                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-页面")
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page =  ["id->com.yunlu6.stone:id/ll_main",
+                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-页面"]
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-页面
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_back =  ("id->com.yunlu6.stone:id/title_main_more_back",
@@ -92,8 +92,8 @@ class SPACEPAGE6(SPACEPAGE5):
                                                                                    "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付完成")
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台
-    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier = ("id->com.yunlu6.stone:id/activity_product_cashier",
-                                                                                   "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台页面")
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier = ["id->com.yunlu6.stone:id/activity_product_cashier",
+                                                                                   "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台页面"]
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台-查看订单
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier_lorder = ("id->com.yunlu6.stone:id/cashier_toorder",

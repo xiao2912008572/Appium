@@ -46,8 +46,9 @@ class SPACEHANDLE6(SPACEHANDLE5):
 
     # ***************************************【PAGE5-2】确认订单-机构名列表Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_click***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-页面
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page)
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_pagee(self):
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page[0],
+                                  self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_page[1])
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构名列表-返回
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist_back_click(self):
@@ -83,9 +84,9 @@ class SPACEHANDLE6(SPACEHANDLE5):
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password_sendkeys(self,text):
         return self.p.send_keys(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password,text)
 
-    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付成功
-    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success_page(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success)
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付成功：获取文本
+    def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success)
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付完成
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish_click(self):
@@ -93,7 +94,8 @@ class SPACEHANDLE6(SPACEHANDLE5):
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier_page(self):
-        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier)
+        return self.p.get_element(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier[0],
+                                  self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier[1])
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台-查看订单
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier_lorder_click(self):

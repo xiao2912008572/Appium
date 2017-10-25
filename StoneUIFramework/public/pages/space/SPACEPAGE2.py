@@ -5,6 +5,16 @@ from StoneUIFramework.public.pages.space.SPACEPAGE1 import SPACEPAGE1
 
 class SPACEPAGE2(SPACEPAGE1):
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
+    #空间列表-空间首页产品列表
+    Kjlb_prolist = ("id->com.yunlu6.stone:id/company_product_img",'空间列表-空间首页产品列表')
+
+    # 空间列表-空间首页产品列表-产品名称
+    Kjlb_prolist_proname = ("id->com.yunlu6.stone:id/company_product_title", '空间列表-空间首页产品列表-产品名')
+
+    # 空间列表-空间首页产品列表-产品价格
+    Kjlb_prolist_proprice = ("id->com.yunlu6.stone:id/company_product_price", '空间列表-空间首页产品列表-产品价格')
+
+    # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称
     Kjlb_mainmenu_newspace_orgname = ("id->com.yunlu6.stone:id/ed_organization_name", "定位空间列表-主菜单-'+机构空间'-机构全称失败")
 
