@@ -1,8 +1,8 @@
 __author__ = 'xiaoj'
-from StoneUIFramework.public.pages.yunshi.YUNSHIPAGE2 import YUNSHIPAGE2
+from StoneUIFramework.public.pages.yunshi.YUNSHIPAGE3 import YUNSHIPAGE3
 
 
-class YUNSHIHANDLE1(YUNSHIPAGE2):
+class YUNSHIHANDLE1(YUNSHIPAGE3):
     # ******************************************************【HANDLE1】******************************************************
     # 云视：点击
     def YS_click(self):
