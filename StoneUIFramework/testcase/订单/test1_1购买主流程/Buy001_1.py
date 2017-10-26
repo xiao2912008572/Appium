@@ -28,6 +28,7 @@ class order_OrderBuy(unittest.TestCase):
         self.tools = Tools(self.driver)  # tools工具
         # 3.创建SPACEHANDLE6公有定位控件对象
         self.handle = SPACEHANDLE6(self.driver)
+        self.yunshi = YUNSHIHANDLE3(self.driver)
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名
@@ -66,15 +67,17 @@ class order_OrderBuy(unittest.TestCase):
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入空间：{0}'.format(spacename))
             # 3.选择第一件商品
-            global proname_start
+            global proname_start, proprice_start
             proname_start = self.handle.Kjlb_prolist_pronameT(pro_no)
+            proprice_start = self.handle.Kjlb_prolist_propriceT(pro_no)[2:]
             self.log.info('选择的商品名称为：{0}'.format(proname_start))
+            self.log.info('选择的商品价格为：{0}'.format(proprice_start))
             self.handle.Kjlb_prolist_click(pro_no)
             self.log.info('点击第{0}件商品'.format(pro_no + 1))
             self.log.info("------------END:Function_Buy001-找到商品------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Buy Outside : %s" % err)
+            self.log.error("Buy001 Outside : %s" % err)
             raise err
 
     @ddt.data([title_address1, addressee_1, contact_1, province_1, city_1, detail_1])
@@ -87,10 +90,11 @@ class order_OrderBuy(unittest.TestCase):
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_click()
             self.log.info('点击立即购买')
             # 2.检查是否跳转至添加收货地址页面
-            self.log.info('检查是否跳转至添加收货地址页面')
+            self.log.info('检查是否跳转至添加收货地址页面:')
             assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element() != None, '页面跳转失败'
             self.log.info('跳转成功')
             # 3.页面标题检查
+            self.log.info('页面标题检查：')
             title_now_address = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_gettitle()
             self.log.info('当前页面标题：{0}'.format(title_now_address))
             self.log.info('预期页面标题：{0}'.format(title))
@@ -103,9 +107,9 @@ class order_OrderBuy(unittest.TestCase):
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district_click()
             self.log.info('点击所在地区')
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(province)
-            self.log.info('选择第{0}个省'.format(province + 1))
+            self.log.info('选择第{0}个省：北京'.format(province + 1))
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(city)
-            self.log.info('选择第{0}个市'.format(city + 1))
+            self.log.info('选择第{0}个市：东城'.format(city + 1))
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail_sendkeys(detail)
             self.log.info('填写详细地址：{0}'.format(detail))
             # 5.点击保存
@@ -114,47 +118,73 @@ class order_OrderBuy(unittest.TestCase):
             self.log.info("------------SEND:Function_Buy002-购买商品填写地址------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Buy Outside : %s" % err)
+            self.log.error("Buy002 Outside : %s" % err)
             raise err
 
     @ddt.data([title_order1])
     @ddt.unpack
     def test_buy003(self, title):
         '''确认订单：支付流程'''
-        self.log.info("------------START:Function_Buy003-确认订单支付流程------------")
-        # 1.页面跳转检查
-        self.log.info('检查是否跳转至确认订单页面')
-        assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pagee() != None, '页面跳转失败'
-        self.log.info('跳转成功')
-        # 2.页面标题检查
-        title_now_order = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_titlee()
-        self.log.info('当前页面标题：{0}'.format(title_now_order))
-        self.log.info('预期页面标题：{0}'.format(title))
-        assert title_now_order == title, '实际标题与预期标题不符'
-        # 3.点击支付
-        self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_click()
-        self.log.info('点击支付')
-        # 4.选择微信支付
-        self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_click()
-        self.log.info('支付方式选择：微信支付')
-        # 5.立即支付
-        self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_click()
-        self.log.info('点击立即支付')
-        # 6.输入密码
-        self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password_sendkeys('199288')
-        self.log.info('输入密码')
-        self.log.info("------------END:Function_Buy003-确认订单支付流程------------")
-        # 7.支付成功检查
-        self.log.info('支付结果检查')
-        assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success_text() == '支付成功', '支付失败！'
-        self.log.info('支付成功！')
-        # 8.点击完成
-        self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish_click()
-        self.log.info('点击完成')
+        try:
+            self.log.info("------------START:Function_Buy003-确认订单支付流程------------")
+            # 1.页面跳转检查
+            self.log.info('检查是否跳转至确认订单页面：')
+            assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pagee() != None, '页面跳转失败'
+            self.log.info('跳转成功')
+            # 2.页面各项元素检查
+            # 2.1页面标题检查
+            self.log.info('页面标题检查：')
+            title_now_order = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_titlee()
+            self.log.info('当前页面标题：{0}'.format(title_now_order))
+            self.log.info('预期页面标题：{0}'.format(title))
+            assert title_now_order == title, '实际标题与预期标题不符'
+            self.log.info('页面标题检查：OK')
+            # 2.2商品价格显示检查
+            self.log.info('商品价格显示检查：')
+            proprice_now = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_proprice_text(0)[2:]
+            self.log.info('当前商品价格：{0}'.format(proprice_now))
+            self.log.info('预期商品价格：{0}'.format(proprice_start))
+            assert proprice_now == proprice_start, '商品显示价格与预期不符'
+            self.log.info('商品价格显示检查：OK')
+            # 2.3设置购买数量
+            pro_num = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pnum_text(0)
+            self.log.info('购买数量为：{0}'.format(pro_num))
+            # 2.4合计显示检查
+            self.log.info('合计显示检查：')
+            total_now = float(self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_total_text()[1:])
+            total_start = float(pro_num) * float(proprice_start)
+            self.log.info('当前合计为：{0}'.format(total_now))
+            self.log.info('预期合计为：{0}'.format(total_start))
+            assert total_now == total_start, "合计显示与预期不符"
+            self.log.info('合计显示检查：OK')
+            # 3.点击支付
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_click()
+            self.log.info('点击支付')
+            # 4.选择微信支付
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_click()
+            self.log.info('支付方式选择：微信支付')
+            # 5.立即支付
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_click()
+            self.log.info('点击立即支付')
+            # 6.输入密码
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password_sendkeys('199288')
+            self.log.info('输入密码')
+            # 7.支付成功检查
+            self.log.info('支付结果检查')
+            assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success_text() == '支付成功', '支付失败！'
+            self.log.info('支付成功！')
+            # 8.点击完成
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish_click()
+            self.log.info('点击完成')
+            self.log.info("------------END:Function_Buy003-确认订单支付流程------------")
+        except Exception as err:
+            self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+            self.log.error("Buy003 Outside : %s" % err)
+            raise err
 
     def test_buy004(self):
+        '''云庐收银台：查看订单，获取订单编号'''
         try:
-            '''云庐收银台：查看订单，获取订单编号'''
             self.log.info("------------START:Function_Buy004-云庐收银台检查------------")
             # 1.检查页面是否跳转至云庐收银台
             self.log.info('检查是否跳转至云庐收银台')
@@ -173,12 +203,19 @@ class order_OrderBuy(unittest.TestCase):
             self.log.info('预期商品名称为：{0}'.format(proname_start))
             assert proname_now == proname_start, '购买商品名称显示无误'
 
-            self.handle.Kjlb_browseorgspace_menu_order_prolist_click(0)
-
+            self.yunshi.YS_order_proname_click(0)
             self.log.info('点击待发货列表第1件商品')
+
+            global order_code  # 全局变量，记录拍下商品的订单编号
+            order_code = self.yunshi.YS_order_plist_num_text()
+            self.log.info('当前拍下商品订单编号为:{0}'.format(order_code))
+            self.yunshi.YS_order_plist_back_click()
+            self.log.info('点击返回至待发货列表')
+            self.yunshi.YS_order_back_click()
+            self.log.info('点击返回至云视首页')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Buy Outside : %s" % err)
+            self.log.error("Buy004 Outside : %s" % err)
             raise err
 
 

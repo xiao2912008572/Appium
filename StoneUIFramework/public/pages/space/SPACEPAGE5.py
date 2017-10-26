@@ -148,52 +148,99 @@ class SPACEPAGE5(SPACEPAGE4):
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page = ["id->com.yunlu6.stone:id/activity_add_receive_address",
                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面"]
 
+    # 空间列表 - 浏览企业空间 - 菜单栏 - 产品 - 立即购买 - 收货地址标题
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_title = ("id->com.yunlu6.stone:id/title_tv_title",
                                                                           "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址标题")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-返回
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_back = ("id->com.yunlu6.stone:id/title_back",
                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-返回")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-收货人
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee = ("id->com.yunlu6.stone:id/addaddress_username",
                                                                               "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-收货人")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-联系电话
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber = ("id->com.yunlu6.stone:id/addaddress_userphone",
                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-联系电话")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district = ("id->com.yunlu6.stone:id/addaddress_userzone",
                                                                              "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区列表
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist = ("id->com.yunlu6.stone:id/tv_address",
                                                                                  "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-所在地区列表")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-详细地址
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail = ("id->com.yunlu6.stone:id/addaddress_useraddress",
                                                                            "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-详细地址")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-设为默认地址
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_default = ("id->com.yunlu6.stone:id/addaddress_isdefault",
                                                                             "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-设为默认地址")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存
     Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save = ("id->com.yunlu6.stone:id/addaddress_commit",
                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址-保存")
 
-    # 【PAGE5-1】确认订单页面
-    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page = ["id->com.yunlu6.stone:id/activity_comfirm_order_list",
-                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面"]
-
-    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title = ("id->com.yunlu6.stone:id/title_tv_title",
-                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题")
-
+    # 【PAGE5-2】确认订单页面
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-返回
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_back = ("id->com.yunlu6.stone:id/title_back",
                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-返回")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_page = ["id->com.yunlu6.stone:id/activity_comfirm_order_list",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单页面"]
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_title = ("id->com.yunlu6.stone:id/title_tv_title",
+                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单标题")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-收货人
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_receive = ("id->com.yunlu6.stone:id/comfirm_receivername",
+                                                                        "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-收货人")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-电话
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_phone = ("id->com.yunlu6.stone:id/comfirm_receiverphone",
+                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-电话")
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-收货地址（文本）
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_addressT = ("id->com.yunlu6.stone:id/comfirm_receiveraddressdesc",
+                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-收货地址")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-地址栏
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_address = ("id->com.yunlu6.stone:id/comfirmorder_address_layout",
                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-地址栏")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构列表
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_orglist = ("id->com.yunlu6.stone:id/ll_company_info",
                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-机构列表")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品列表
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_prolist = ("id->com.yunlu6.stone:id/iv_product",
                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品列表")
 
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品价格列表
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_proprice = ("id->com.yunlu6.stone:id/comfirm_productprice",
+                                                                         "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品价格列表")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量 "-按钮"列表
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_preduce = ("id->com.yunlu6.stone:id/comfirmorder_reduce",
+                                                                        "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量'-按钮'")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量 "+按钮"列表
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_padd = ("id->com.yunlu6.stone:id/comfirmorder_proadd",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量'+按钮'")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量列表
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pnum = ("id->com.yunlu6.stone:id/comfirmorder_prodecutnum",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-商品数量列表")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-合计
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_total = ("id->com.yunlu6.stone:id/comfirmorder_totlepay",
+                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-合计")
+
+    # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay = ("id->com.yunlu6.stone:id/comfirmorder_payment",
                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付")
 

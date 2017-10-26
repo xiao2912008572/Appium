@@ -3,89 +3,33 @@ from StoneUIFramework.public.pages.yunshi.YUNSHIPAGE2 import YUNSHIPAGE2
 
 
 class YUNSHIPAGE3(YUNSHIPAGE2):
-# ******************************************************【PAGE1】云视-订单YS_order_click******************************************************
-    # 云视-订单-全部
-    YS_order_all = ("name->全部", " 云视-订单-全部")
+    # ******************************************************【PAGE2】商品名称列表：YS_order_proname******************************************************
+    # 云视-订单-商品名称列表-返回
+    YS_order_plist_back = ("id->com.yunlu6.stone:id/title_back", " 视-订单-商品名称列表-返回")
 
-    # 云视-订单-全部元素
-    YS_order_allE = ["name->全部", " 云视-订单-全部元素"]
+    # 云视-订单-商品名称列表-收货人
+    YS_order_plist_receive = ("id->com.yunlu6.stone:id/comfirm_receivername", " 视-订单-商品名称列表-收货人")
 
-    # 云视-订单-待付款
-    YS_order_waitforpay = ("name->待付款", " 云视-订单-待付款")
-    
-    # 云视-订单-待付款元素
-    YS_order_waitforpayE = ["name->待付款", " 云视-订单-待付款元素"]
-    
-    #  云视-订单-待发货
-    YS_order_waitforsend = ("name->待发货", " 云视-订单-待发货")
-    
-    #  云视-订单-待发货元素
-    YS_order_waitforsendE = ["name->待发货", " 云视-订单-待发货元素"]
-    
-    #  云视-订单-已发货
-    YS_order_alreadysend = ("name->已发货", " 云视-订单-已发货")
-    
-    #  云视-订单-已发货元素
-    YS_order_alreadysendE = ["name->已发货", " 云视-订单-已发货元素"]
-    
-    #  云视-订单-退款中
-    YS_order_refund = ("name->退款中", " 云视-订单-退款中")
-    
-    #  云视-订单-退款中元素
-    YS_order_refundE = ["name->退款中", " 云视-订单-退款中元素"]
-    
-    #  云视-订单-待评价
-    YS_order_evaluate = ("name->待评价", " 云视-订单-待评价")
-    
-    #  云视-订单-待评价元素
-    YS_order_evaluateE = ["name->待评价", " 云视-订单-待评价元素"]
+    # 云视-订单-商品名称列表-电话
+    YS_order_plist_phone = ("id->com.yunlu6.stone:id/comfirmreceiver_phone", " 云视-订单-商品名称列表-电话")
 
-    #云视-订单-机构名称列表
-    YS_order_orgname = ("id->com.yunlu6.stone:id/payment_company_name","云视-订单-机构名称列表")
+    # 云视-订单-商品名称列表-地址
+    YS_order_plist_address = ("id->com.yunlu6.stone:id/comfirm_receiveraddress", "云视-订单-商品名称列表-地址")
 
-    #云视-订单-机构名称列表-返回
-    YS_order_orgname_back = ("id->com.yunlu6.stone:id/title_main_more_back","云视-订单-机构名称列表-返回")
+    # 云视-订单-商品名称列表-商品总价列表
+    YS_order_plist_price = ("id->com.yunlu6.stone:id/tv_product_price", "云视-订单-商品名称列表-商品总价")
 
-    #云视-订单-商品名称列表
-    YS_order_proname = ("id->com.yunlu6.stone:id/shop_item_name","云视-订单-商品名称列表")
+    # 云视-订单-商品名称列表-订单总价
+    YS_order_plist_amount = ("id->com.yunlu6.stone:id/order_amount", "云视-订单-商品名称列表-订单总价")
 
-    # 云视-订单-付款
-    YS_order_pay = ("id->com.yunlu6.stone:id/tv_footer_right", "云视-订单-付款")
+    # 云视-订单-商品名称列表-订单编号
+    YS_order_plist_num = ("id->com.yunlu6.stone:id/order_code", "云视-订单-商品名称列表-订单编号")
 
-    # 云视-订单-取消订单
-    YS_order_cancel = ("id->com.yunlu6.stone:id/tv_footer_middle", "云视-订单-取消订单")
+    # 云视-订单-商品名称列表-联系卖家
+    YS_order_plist_contact = ("id->com.yunlu6.stone:id/orderdesc_bottom_middlebtn", "云视-订单-商品名称列表-联系卖家")
 
-    # 云视-订单-联系卖家
-    YS_order_contact = ("id->com.yunlu6.stone:id/tv_footer_left", "云视-订单-联系卖家")
-
-    # 云视-订单-提醒发货
-    YS_order_remind = ("id->com.yunlu6.stone:id/tv_footer_right", "云视-订单-提醒发货")
-
-    # 云视-订单-确认收货
-    YS_order_confirm = ("id->com.yunlu6.stone:id/tv_footer_right", "云视-订单-确认收货")
-
-    # 云视-订单-确认收货-是
-    YS_order_confirm_y = ("id->com.yunlu6.stone:id/dialog_delete_sure", "云视-订单-确认收货-是")
-
-    # 云视-订单-确认收货-否
-    YS_order_confirm_n = ("id->com.yunlu6.stone:id/dialog_delete_no", "云视-订单-确认收货-否")
-
-    # 云视-订单-查看物流
-    YS_order_logistics = ("id->com.yunlu6.stone:id/tv_footer_right", "云视-订单-查看物流")
-
-    #云视-订单-查看物流-运单编号
-    YS_order_logistics_num = ("id->com.yunlu6.stone:id/tv_wuliu_datil_num","云视-订单-查看物流-运单编号")
-
-    #云视-订单-查看物流-返回
-    YS_order_logistics_back = ("id->com.yunlu6.stone:id/title_back","云视-订单-查看物流-返回")
-
-
-
-
-
-
-
-
+    # 云视-订单-商品名称列表-提醒发货
+    YS_order_plist_remind = ("id->com.yunlu6.stone:id/orderdesc_bottom_leftbtn", "云视-订单-商品名称列表-提醒发货")
 
 
 

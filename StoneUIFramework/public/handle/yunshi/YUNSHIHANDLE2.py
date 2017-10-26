@@ -4,6 +4,10 @@ from StoneUIFramework.public.handle.yunshi.YUNSHIHANDLE1 import YUNSHIHANDLE1
 
 class YUNSHIHANDLE2(YUNSHIHANDLE1):
     # ******************************************************【HANDLE1】******************************************************
+    # 云视-订单-返回：点击
+    def YS_order_back_click(self):
+        return self.p.click(self.YS_order_back)
+
     # 云视-订单-全部：点击
     def YS_order_all_click(self):
         return self.p.click(self.YS_order_all)
