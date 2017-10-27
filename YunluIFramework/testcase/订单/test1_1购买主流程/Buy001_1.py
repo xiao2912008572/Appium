@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.订单.test1_1购买主流程 import *
+from YunluIFramework.testcase.订单.test1_1购买主流程 import *
 
 
 # 订单购买主流程

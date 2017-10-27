@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.空间.协会空间.test5_6加会员_个人_企业_拒绝 import *
+from YunluIFramework.testcase.空间.协会空间.test5_6加会员_个人_企业_拒绝 import *
 
 
 # +企业会员

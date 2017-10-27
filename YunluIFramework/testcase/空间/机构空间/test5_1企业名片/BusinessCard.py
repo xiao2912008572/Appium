@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片 import *
+from YunluIFramework.testcase.空间.机构空间.test5_1企业名片 import *
 
 
 # 企业名片编辑

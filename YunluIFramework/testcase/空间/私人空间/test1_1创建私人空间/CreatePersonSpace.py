@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.空间.私人空间.test1_1创建私人空间 import *
+from YunluIFramework.testcase.空间.私人空间.test1_1创建私人空间 import *
 
 
 # 创建机构空间

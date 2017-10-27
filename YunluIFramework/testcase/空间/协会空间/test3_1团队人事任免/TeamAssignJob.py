@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 
-from StoneUIFramework.testcase.空间.协会空间.test3_1团队人事任免 import *
+from YunluIFramework.testcase.空间.协会空间.test3_1团队人事任免 import *
 
 
 # 团队人事任免
