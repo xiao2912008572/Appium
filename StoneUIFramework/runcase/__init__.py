@@ -29,3 +29,6 @@ from StoneUIFramework.testcase.空间.协会空间.test6_1_资讯.Archivies006_1
 # @云库-测试用例
 from StoneUIFramework.testcase.云库.test1_1上传图片.UploadPic001_1 import yunku_UploadPic
 from StoneUIFramework.testcase.云库.test2_1编辑图片.EditPic002_1 import yunku_EditPic
+
+# @订单-测试用例
+from StoneUIFramework.testcase.订单.test1_1购买主流程.Buy001_1 import order_OrderBuy

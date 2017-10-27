@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+    <title>测试结果</title> 
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+     
+<style type="text/css" media="screen"> 
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; } 
+table       { font-size: 100%; } 
+pre         { } 
+
+/* -- heading ---------------------------------------------------------------------- */ 
+h1 { 
+    font-size: 16pt; 
+    color: gray; 
+} 
+.heading { 
+    margin-top: 0ex; 
+    margin-bottom: 1ex; 
+} 
+
+.heading .attribute { 
+    margin-top: 1ex; 
+    margin-bottom: 0; 
+} 
+
+.heading .description { 
+    margin-top: 4ex; 
+    margin-bottom: 6ex; 
+} 
+
+/* -- css div popup ------------------------------------------------------------------------ */ 
+a.popup_link { 
+} 
+
+a.popup_link:hover { 
+    color: red; 
+} 
+
+.popup_window { 
+    display: none; 
+    position: relative; 
+    left: 0px; 
+    top: 0px; 
+    /*border: solid #627173 1px; */ 
+    padding: 10px; 
+    background-color: #E6E6D6; 
+    font-family: "Lucida Console", "Courier New", Courier, monospace; 
+    text-align: left; 
+    font-size: 8pt; 
+    width: 500px; 
+} 
+
+} 
+/* -- report ------------------------------------------------------------------------ */ 
+#show_detail_line { 
+    margin-top: 3ex; 
+    margin-bottom: 1ex; 
+} 
+#result_table { 
+    width: 80%; 
+    border-collapse: collapse; 
+    border: 1px solid #777; 
+} 
+#header_row { 
+    font-weight: bold; 
+    color: white; 
+    background-color: #777; 
+} 
+#result_table td { 
+    border: 1px solid #777; 
+    padding: 2px; 
+} 
+#total_row  { font-weight: bold; } 
+.passClass  { background-color: #6c6; } 
+.failClass  { background-color: #c60; } 
+.errorClass { background-color: #c00; } 
+.passCase   { color: #6c6; } 
+.failCase   { color: #c60; font-weight: bold; } 
+.errorCase  { color: #c00; font-weight: bold; } 
+.hiddenRow  { display: none; } 
+.testcase   { margin-left: 2em; } 
+
+
+/* -- ending ---------------------------------------------------------------------- */ 
+#ending { 
+} 
+
+</style> 
+ 
+</head> 
+<body> 
+<script language="javascript" type="text/javascript"><!-- 
+output_list = Array(); 
+
+/* level - 0:Summary; 1:Failed; 2:All */ 
+function showCase(level) { 
+    trs = document.getElementsByTagName("tr"); 
+    for (var i = 0; i < trs.length; i++) { 
+        tr = trs[i]; 
+        id = tr.id; 
+        if (id.substr(0,2) == 'ft') { 
+            if (level < 1) { 
+                tr.className = 'hiddenRow'; 
+            } 
+            else { 
+                tr.className = ''; 
+            } 
+        } 
+        if (id.substr(0,2) == 'pt') { 
+            if (level > 1) { 
+                tr.className = ''; 
+            } 
+            else { 
+                tr.className = 'hiddenRow'; 
+            } 
+        } 
+    } 
+} 
+
+
+function showClassDetail(cid, count) { 
+    var id_list = Array(count); 
+    var toHide = 1; 
+    for (var i = 0; i < count; i++) { 
+        tid0 = 't' + cid.substr(1) + '.' + (i+1); 
+        tid = 'f' + tid0; 
+        tr = document.getElementById(tid); 
+        if (!tr) { 
+            tid = 'p' + tid0; 
+            tr = document.getElementById(tid); 
+        } 
+        id_list[i] = tid; 
+        if (tr.className) { 
+            toHide = 0; 
+        } 
+    } 
+    for (var i = 0; i < count; i++) { 
+        tid = id_list[i]; 
+        if (toHide) { 
+            document.getElementById('div_'+tid).style.display = 'none' 
+            document.getElementById(tid).className = 'hiddenRow'; 
+        } 
+        else { 
+            document.getElementById(tid).className = ''; 
+        } 
+    } 
+} 
+
+
+function showTestDetail(div_id){ 
+    var details_div = document.getElementById(div_id) 
+    var displayState = details_div.style.display 
+    // alert(displayState) 
+    if (displayState != 'block' ) { 
+        displayState = 'block' 
+        details_div.style.display = 'block' 
+    } 
+    else { 
+        details_div.style.display = 'none' 
+    } 
+} 
+
+
+function html_escape(s) { 
+    s = s.replace(/&/g,'&'); 
+    s = s.replace(/</g,'<'); 
+    s = s.replace(/>/g,'>'); 
+    return s; 
+} 
+
+/* obsoleted by detail in <div> 
+function showOutput(id, name) { 
+    var w = window.open("", //url 
+                    name, 
+                    "resizable,scrollbars,status,width=800,height=450"); 
+    d = w.document; 
+    d.write("<pre>"); 
+    d.write(html_escape(output_list[id])); 
+    d.write("\n"); 
+    d.write("<a href='javascript:window.close()'>close</a>\n"); 
+    d.write("</pre>\n"); 
+    d.close(); 
+} 
+*/ 
+--></script> 
+
+<div class='heading'> 
+<h1>测试结果</h1> 
+<p class='attribute'><strong>Start Time:</strong> 2017-10-27 15:12:49</p> 
+<p class='attribute'><strong>Duration:</strong> 0:01:09.326344</p> 
+<p class='attribute'><strong>Status:</strong> Pass 1 Failure 3</p> 
+ 
+<p class='description'>测试报告</p> 
+</div> 
+
+ 
+ 
+<p id='show_detail_line'>Show 
+<a href='javascript:showCase(0)'>Summary</a> 
+<a href='javascript:showCase(1)'>Failed</a> 
+<a href='javascript:showCase(2)'>All</a> 
+</p> 
+<table id='result_table'> 
+<colgroup> 
+<col align='left' /> 
+<col align='right' /> 
+<col align='right' /> 
+<col align='right' /> 
+<col align='right' /> 
+<col align='right' /> 
+</colgroup> 
+<tr id='header_row'> 
+    <td>Test Group/Test case</td> 
+    <td>Count</td> 
+    <td>Pass</td> 
+    <td>Fail</td> 
+    <td>Error</td> 
+    <td>View</td> 
+    <td>Screenshot</td> 
+</tr> 
+ 
+<tr class='failClass'> 
+    <td>StoneUIFramework.testcase.订单.test1_1购买主流程.Buy001_1.order_OrderBuy</td> 
+    <td>4</td> 
+    <td>1</td> 
+    <td>3</td> 
+    <td>0</td> 
+    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td> 
+</tr> 
+ 
+<tr id='pt1.1' class='hiddenRow'> 
+    <td class='none'><div class='testcase'>test_buy001_1___测试机构___1_: 进入空间：找到商品流程</div></td> 
+    <td colspan='5' align='center'> 
+
+    <!--css div popup start--> 
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" > 
+        pass</a> 
+
+    <div id='div_pt1.1' class="popup_window"> 
+        <div style='text-align: right; color:red;cursor:pointer'> 
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " > 
+           [x]</a> 
+        </div> 
+        <pre> 
+         
+pt1.1: 2017-10-27 15:13:10,375 - INFO - ------------START:Function_Buy001-找到商品------------
+2017-10-27 15:13:12,763 - INFO - 点击空间列表
+2017-10-27 15:13:14,505 - INFO - 进入空间：测试机构
+2017-10-27 15:13:16,618 - INFO - 选择的商品名称为：测试商品002
+2017-10-27 15:13:16,619 - INFO - 选择的商品价格为：0.01
+2017-10-27 15:13:17,064 - INFO - 点击第2件商品
+2017-10-27 15:13:17,065 - INFO - ------------END:Function_Buy001-找到商品------------
+ 
+ 
+        </pre> 
+    </div> 
+    <!--css div popup end--> 
+
+    </td> 
+    <td><img src="None" width="480px" height="270px" /></td> 
+</tr> 
+ 
+<tr id='ft1.2' class='none'> 
+    <td class='failCase'><div class='testcase'>test_buy002_1___添加收货地址____肖静远___13027104206__0__0___ABCDEFGHIJKLMNOPQRSTUVWXYZ__: 购买商品：填写地址流程</div></td> 
+    <td colspan='5' align='center'> 
+
+    <!--css div popup start--> 
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" > 
+        fail</a> 
+
+    <div id='div_ft1.2' class="popup_window"> 
+        <div style='text-align: right; color:red;cursor:pointer'> 
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " > 
+           [x]</a> 
+        </div> 
+        <pre> 
+         
+ft1.2: 2017-10-27 15:13:17,066 - INFO - ------------START:Function_Buy002-购买商品填写地址------------
+2017-10-27 15:13:18,787 - INFO - 点击立即购买
+2017-10-27 15:13:18,788 - INFO - 检查是否跳转至添加收货地址页面:
+2017-10-27 15:13:26,106 - ERROR - 元素: com.yunlu6.stone:id/activity_add_receive_address 在5秒内未定位到
+2017-10-27 15:13:27,498 - ERROR - 元素：com.yunlu6.stone:id/activity_add_receive_address 请求超时,定位失败
+2017-10-27 15:13:31,451 - ERROR - Buy002 Outside : Fri Oct 27 15:13:27 2017 定位元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面-失败
+Traceback (most recent call last):
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 116, in get_element
+    element = self.driver.find_element_by_id(self.value_element)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python33\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python33\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 122, in test_buy002
+    raise err
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 94, in test_buy002
+    assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element() != None, '页面跳转失败'
+  File "E:\github\Appium\StoneUIFramework\public\handle\space\SPACEHANDLE5.py", line 206, in Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element
+    self.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page[1])
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 136, in get_element
+    assert False, "{0} 定位元素：{1}-失败".format(time.asctime(), text)
+AssertionError: Fri Oct 27 15:13:27 2017 定位元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-收货地址页面-失败
+ 
+ 
+        </pre> 
+    </div> 
+    <!--css div popup end--> 
+
+    </td> 
+    <td><img src="None" width="480px" height="270px" /></td> 
+</tr> 
+ 
+<tr id='ft1.3' class='none'> 
+    <td class='failCase'><div class='testcase'>test_buy003_1___确认订单__: 确认订单：支付流程</div></td> 
+    <td colspan='5' align='center'> 
+
+    <!--css div popup start--> 
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" > 
+        fail</a> 
+
+    <div id='div_ft1.3' class="popup_window"> 
+        <div style='text-align: right; color:red;cursor:pointer'> 
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " > 
+           [x]</a> 
+        </div> 
+        <pre> 
+         
+ft1.3: 2017-10-27 15:13:31,457 - INFO - ------------START:Function_Buy003-确认订单支付流程------------
+2017-10-27 15:13:31,458 - INFO - 检查是否跳转至确认订单页面：
+2017-10-27 15:13:31,531 - INFO - 跳转成功
+2017-10-27 15:13:31,532 - INFO - 页面标题检查：
+2017-10-27 15:13:31,648 - INFO - 当前页面标题：确认订单
+2017-10-27 15:13:31,649 - INFO - 预期页面标题：确认订单
+2017-10-27 15:13:31,650 - INFO - 页面标题检查：OK
+2017-10-27 15:13:31,651 - INFO - 商品价格显示检查：
+2017-10-27 15:13:32,088 - INFO - 当前商品价格：0.01
+2017-10-27 15:13:32,090 - INFO - 预期商品价格：0.01
+2017-10-27 15:13:32,091 - INFO - 商品价格显示检查：OK
+2017-10-27 15:13:32,314 - INFO - 购买数量为：1
+2017-10-27 15:13:32,316 - INFO - 合计显示检查：
+2017-10-27 15:13:32,428 - INFO - 当前合计为：0.01
+2017-10-27 15:13:32,429 - INFO - 预期合计为：0.01
+2017-10-27 15:13:32,430 - INFO - 合计显示检查：OK
+2017-10-27 15:13:33,299 - INFO - 点击支付
+2017-10-27 15:13:34,345 - INFO - 支付方式选择：微信支付
+2017-10-27 15:13:39,571 - ERROR - 元素: com.tencent.mm:id/cyq 在5秒内未定位到
+2017-10-27 15:13:40,613 - ERROR - 元素：com.tencent.mm:id/cyq 请求超时,定位失败
+2017-10-27 15:13:40,614 - ERROR - 元素：com.tencent.mm:id/cyq 无法点击,点击失败
+2017-10-27 15:13:44,458 - ERROR - Buy003 Outside : Fri Oct 27 15:13:40 2017 点击元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-失败
+Traceback (most recent call last):
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 116, in get_element
+    element = self.driver.find_element_by_id(self.value_element)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python33\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 284, in click
+    element = self.get_element(css[0], css[1])  # 元素获取
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 136, in get_element
+    assert False, "{0} 定位元素：{1}-失败".format(time.asctime(), text)
+AssertionError: Fri Oct 27 15:13:40 2017 定位元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python33\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 183, in test_buy003
+    raise err
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 167, in test_buy003
+    self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_click()
+  File "E:\github\Appium\StoneUIFramework\public\handle\space\SPACEHANDLE6.py", line 73, in Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_click
+    return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now)
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 290, in click
+    assert False, "{0} 点击元素：{1}-失败".format(time.asctime(), self.text_click)
+AssertionError: Fri Oct 27 15:13:40 2017 点击元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-失败
+ 
+ 
+        </pre> 
+    </div> 
+    <!--css div popup end--> 
+
+    </td> 
+    <td><img src="None" width="480px" height="270px" /></td> 
+</tr> 
+ 
+<tr id='ft1.4' class='none'> 
+    <td class='failCase'><div class='testcase'>test_buy004: 云庐收银台：查看订单，获取订单编号</div></td> 
+    <td colspan='5' align='center'> 
+
+    <!--css div popup start--> 
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" > 
+        fail</a> 
+
+    <div id='div_ft1.4' class="popup_window"> 
+        <div style='text-align: right; color:red;cursor:pointer'> 
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " > 
+           [x]</a> 
+        </div> 
+        <pre> 
+         
+ft1.4: 2017-10-27 15:13:44,461 - INFO - ------------START:Function_Buy004-云庐收银台检查------------
+2017-10-27 15:13:44,463 - INFO - 检查是否跳转至云庐收银台
+2017-10-27 15:13:50,558 - ERROR - 元素: com.yunlu6.stone:id/activity_product_cashier 在5秒内未定位到
+2017-10-27 15:13:51,924 - ERROR - 元素：com.yunlu6.stone:id/activity_product_cashier 请求超时,定位失败
+2017-10-27 15:13:55,684 - ERROR - Buy004 Outside : Fri Oct 27 15:13:51 2017 定位元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台页面-失败
+Traceback (most recent call last):
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 116, in get_element
+    element = self.driver.find_element_by_id(self.value_element)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 341, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 843, in find_element
+    'value': value})['value']
+  File "C:\Python33\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 308, in execute
+    self.error_handler.check_response(response)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 219, in test_buy004
+    raise err
+  File "E:\github\Appium\StoneUIFramework\testcase\订单\test1_1购买主流程\Buy001_1.py", line 191, in test_buy004
+    assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier_page() != None, '页面跳转失败'
+  File "E:\github\Appium\StoneUIFramework\public\handle\space\SPACEHANDLE6.py", line 98, in Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier_page
+    self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_cashier[1])
+  File "E:\github\Appium\StoneUIFramework\public\common\pyappium.py", line 136, in get_element
+    assert False, "{0} 定位元素：{1}-失败".format(time.asctime(), text)
+AssertionError: Fri Oct 27 15:13:51 2017 定位元素：空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-云庐收银台页面-失败
+ 
+ 
+        </pre> 
+    </div> 
+    <!--css div popup end--> 
+
+    </td> 
+    <td><img src="None" width="480px" height="270px" /></td> 
+</tr> 
+ 
+<tr id='total_row'> 
+    <td>Total</td> 
+    <td>4</td> 
+    <td>1</td> 
+    <td>3</td> 
+    <td>0</td> 
+    <td> </td> 
+    <td> </td> 
+</tr> 
+</table> 
+ 
+<div id='ending'> </div> 
+
+</body> 
+</html> 

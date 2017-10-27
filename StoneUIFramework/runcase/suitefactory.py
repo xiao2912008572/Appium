@@ -41,6 +41,10 @@ class SuiteFactory():
         AddPtoOAgreeA_01 = unittest.TestLoader().loadTestsFromTestCase(AddPtoOAgreeA)                       # test5_6 加会员_管理员_企业_同意
         space_ArchiviesA_01 = unittest.TestLoader().loadTestsFromTestCase(space_ArchiviesA)                 # test6_1 资讯发布
 
+        # ----------------------------------【空间-测试用例】----------------------------------
+        # @订单
+        order_OrderBuy_01 = unittest.TestLoader().loadTestsFromTestCase(order_OrderBuy)
+
         self.suite = [
             # ----------------------------------【云库-测试用例：2】----------------------------------
             yunku_uploadPic_01,                                                                             # test1_1 云库上传图片
@@ -68,5 +72,8 @@ class SuiteFactory():
             AddAtoOAgreeA_01,                                                                               # test5_6 加会员_管理员_企业_同意
             AddPtoOAgreeA_01,                                                                               # test5_6 加会员_管理员_企业_同意
             space_ArchiviesA_01,                                                                            # test6_1 资讯发布
+            # ----------------------------------【订单-测试用例：1】----------------------------------
+            order_OrderBuy_01,                                                                              #test_1 订单主流程
+
         ]
         return self.suite
