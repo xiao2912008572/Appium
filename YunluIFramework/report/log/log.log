@@ -3255,3 +3255,102 @@
 2017-10-27 16:18:19,695 - INFO - 点击返回至云视首页
 2017-10-27 16:18:19,697 - INFO - -----------------------------END:test1_1购买主流程.Buy001_1.py----------------------------
 2017-10-27 16:18:19,698 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2017-10-30 17:11:29,968 - INFO - ****************************************用例开始！****************************************
+2017-10-30 17:11:30,625 - INFO - ----------------------------START:test1_1购买主流程.Buy001_1.py---------------------------
+2017-10-30 17:11:30,629 - INFO - ------------START:Function_Buy001-找到商品------------
+2017-10-30 17:11:31,200 - INFO - 点击空间列表
+2017-10-30 17:11:38,081 - ERROR - 元素: 测试机构 在5秒内未定位到
+2017-10-30 17:11:39,320 - ERROR - 元素：测试机构 请求超时,定位失败
+2017-10-30 17:11:39,323 - ERROR - 元素：测试机构 无法点击,点击失败
+2017-10-30 17:22:57,618 - INFO - ****************************************用例开始！****************************************
+2017-10-30 17:22:57,621 - INFO - ----------------------------START:test1_1购买主流程.Buy001_1.py---------------------------
+2017-10-30 17:22:57,625 - INFO - ------------START:Function_Buy001-找到商品------------
+2017-10-30 17:22:58,482 - INFO - 点击空间列表
+2017-10-30 17:23:06,353 - ERROR - 元素: 测试机构 在5秒内未定位到
+2017-10-30 17:23:07,884 - ERROR - 元素：测试机构 请求超时,定位失败
+2017-10-30 17:23:07,888 - ERROR - 元素：测试机构 无法点击,点击失败
+2017-10-30 17:23:09,637 - ERROR - Buy001 Outside : Mon Oct 30 17:23:07 2017 点击元素：定位空间列表-浏览企业空间(通过Name查找)失败-失败
+2017-10-30 17:23:09,685 - INFO - ------------START:Function_Buy002-购买商品填写地址------------
+2017-10-30 17:23:16,460 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:23:17,802 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:23:17,806 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:23:19,516 - ERROR - Buy002 Outside : Mon Oct 30 17:23:17 2017 点击元素：空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-立即购买-失败
+2017-10-30 17:23:19,531 - INFO - ------------START:Function_Buy003-确认订单支付流程------------
+2017-10-30 17:23:19,538 - INFO - 检查是否跳转至确认订单页面：
+2017-10-30 17:23:40,641 - INFO - ****************************************用例开始！****************************************
+2017-10-30 17:23:40,645 - INFO - ----------------------------START:test1_1购买主流程.Buy001_1.py---------------------------
+2017-10-30 17:23:40,649 - INFO - ------------START:Function_Buy001-找到商品------------
+2017-10-30 17:23:46,120 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-10-30 17:23:46,201 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-10-30 17:23:46,205 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-10-30 17:23:47,999 - ERROR - Buy001 Outside : Mon Oct 30 17:23:46 2017 点击元素：空间列表-失败
+2017-10-30 17:23:48,009 - INFO - ------------START:Function_Buy002-购买商品填写地址------------
+2017-10-30 17:23:53,339 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:23:53,429 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:23:53,432 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:23:55,411 - ERROR - Buy002 Outside : Mon Oct 30 17:23:53 2017 点击元素：空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-立即购买-失败
+2017-10-30 17:23:55,423 - INFO - ------------START:Function_Buy003-确认订单支付流程------------
+2017-10-30 17:23:55,428 - INFO - 检查是否跳转至确认订单页面：
+2017-10-30 17:23:57,722 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-10-30 17:23:57,731 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败
+2017-10-30 17:23:58,748 - INFO - ------------START:Function_Buy004-云庐收银台检查------------
+2017-10-30 17:23:58,752 - INFO - 检查是否跳转至云庐收银台
+2017-10-30 17:23:58,761 - ERROR - 元素: com.yunlu6.yunlu:id/activity_product_cashier 在5秒内未定位到
+2017-10-30 17:23:58,770 - ERROR - 元素：com.yunlu6.yunlu:id/activity_product_cashier 请求超时,定位失败
+2017-10-30 17:23:59,787 - INFO - -----------------------------END:test1_1购买主流程.Buy001_1.py----------------------------
+2017-10-30 17:23:59,791 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2017-10-30 17:24:19,972 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-10-30 17:24:20,082 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-10-30 17:24:20,085 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-10-30 17:24:27,764 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:24:27,935 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:24:27,938 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:32:24,307 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-10-30 17:32:24,387 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-10-30 17:32:24,391 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-10-30 17:32:32,608 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:32:32,724 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:32:32,729 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:32:40,826 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-10-30 17:32:41,211 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败
+2017-10-30 17:33:04,391 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-10-30 17:33:04,600 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-10-30 17:33:04,603 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-10-30 17:33:12,616 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:33:12,737 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:33:12,742 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:33:13,783 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-10-30 17:33:13,793 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败
+2017-10-30 17:33:14,842 - ERROR - 元素: com.yunlu6.yunlu:id/activity_product_cashier 在5秒内未定位到
+2017-10-30 17:33:14,851 - ERROR - 元素：com.yunlu6.yunlu:id/activity_product_cashier 请求超时,定位失败
+2017-10-30 17:33:31,636 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-10-30 17:33:31,875 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-10-30 17:33:31,881 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-10-30 17:33:39,831 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-10-30 17:33:39,912 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-10-30 17:33:39,918 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-10-30 17:33:48,099 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-10-30 17:33:48,111 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败
+2017-10-30 17:34:15,025 - ERROR - 元素: com.yunlu6.yunlu:id/activity_product_cashier 在5秒内未定位到
+2017-10-30 17:34:15,038 - ERROR - 元素：com.yunlu6.yunlu:id/activity_product_cashier 请求超时,定位失败
+2017-11-01 15:32:00,445 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-11-01 15:32:00,955 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-11-01 15:32:00,960 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-11-01 15:32:47,730 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-11-01 15:32:48,293 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-11-01 15:32:48,297 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-11-01 15:32:58,748 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-11-01 15:32:58,864 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-11-01 15:32:58,869 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-11-01 15:33:09,717 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-11-01 15:33:09,826 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败
+2017-11-01 15:33:21,576 - ERROR - 元素: com.yunlu6.yunlu:id/activity_product_cashier 在5秒内未定位到
+2017-11-01 15:33:21,774 - ERROR - 元素：com.yunlu6.yunlu:id/activity_product_cashier 请求超时,定位失败
+2017-11-01 15:41:57,113 - ERROR - 元素: com.yunlu6.yunlu:id/navi_item_zone 在5秒内未定位到
+2017-11-01 15:41:57,234 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 请求超时,定位失败
+2017-11-01 15:41:57,238 - ERROR - 元素：com.yunlu6.yunlu:id/navi_item_zone 无法点击,点击失败
+2017-11-01 15:42:07,182 - ERROR - 元素: com.yunlu6.yunlu:id/iv_buynow 在5秒内未定位到
+2017-11-01 15:42:07,266 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 请求超时,定位失败
+2017-11-01 15:42:07,270 - ERROR - 元素：com.yunlu6.yunlu:id/iv_buynow 无法点击,点击失败
+2017-11-01 15:42:18,511 - ERROR - 元素: com.yunlu6.yunlu:id/activity_comfirm_order_list 在5秒内未定位到
+2017-11-01 15:42:19,186 - ERROR - 元素：com.yunlu6.yunlu:id/activity_comfirm_order_list 请求超时,定位失败

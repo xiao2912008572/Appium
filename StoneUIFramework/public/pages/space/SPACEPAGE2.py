@@ -5,8 +5,8 @@ from StoneUIFramework.public.pages.space.SPACEPAGE1 import SPACEPAGE1
 
 class SPACEPAGE2(SPACEPAGE1):
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
-    #空间列表-空间首页产品列表
-    Kjlb_prolist = ("id->com.yunlu6.stone:id/company_product_img",'空间列表-空间首页产品列表')
+    # 空间列表-空间首页产品列表
+    Kjlb_prolist = ("id->com.yunlu6.stone:id/company_product_img", '空间列表-空间首页产品列表')
 
     # 空间列表-空间首页产品列表-产品名称
     Kjlb_prolist_proname = ("id->com.yunlu6.stone:id/company_product_title", '空间列表-空间首页产品列表-产品名')
@@ -161,17 +161,14 @@ class SPACEPAGE2(SPACEPAGE1):
     Kjlb_browseorgspace_menu = ("id->com.yunlu6.stone:id/title_main_tv_more_menu", "空间列表-浏览企业空间-菜单栏")
     # Kjlb_browseorgspace_menu = ("id->com.yunlu6.stone:id/title_main_fl_more_menu", "空间列表-浏览企业空间-菜单栏")
 
-    # 空间列表-浏览企业空间-菜单栏-业务升级
-    Kjlb_browseorgspace_menu_upgrade = ("id->com.yunlu6.stone:id/btn_pop_company_upgrade", "空间列表-浏览企业空间-菜单栏-业务升级")
-
     #  空间列表-浏览企业空间-菜单栏-产品
     Kjlb_browseorgspace_menu_product = ("id->com.yunlu6.stone:id/btn_pop_company_product", "空间列表-浏览企业空间-菜单栏-产品")
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片
-    Kjlb_browseorgspace_menu_bcard = ("id->com.yunlu6.stone:id/btn_pop_company_info", "空间列表-浏览企业空间-菜单栏-企业名片")
-
     # 空间列表-浏览企业空间-菜单栏-订单
     Kjlb_browseorgspace_menu_order = ("id->com.yunlu6.stone:id/btn_pop_company_order", "空间列表-浏览企业空间-菜单栏-订单")
+
+    # 空间列表-浏览企业空间-菜单栏-资金
+    Kjlb_browseorgspace_menu_money = ("id->com.yunlu6.stone:id/btn_pop_company_bankroll", "空间列表-浏览企业空间-菜单栏-资金")
 
     # 空间列表-浏览企业空间-菜单栏-团队
     Kjlb_browseorgspace_menu_team = ("id->com.yunlu6.stone:id/btn_pop_company_team", "空间列表-浏览企业空间-菜单栏-团队")
@@ -179,11 +176,29 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-浏览企业空间-菜单栏-客户
     Kjlb_browseorgspace_menu_customer = ("id->com.yunlu6.stone:id/btn_pop_company_customer", "空间列表-浏览企业空间-菜单栏-客户")
 
+    # 空间列表-浏览企业空间-菜单栏-公司档
+    Kjlb_browseorgspace_menu_archivies = ("id->com.yunlu6.stone:id/btn_pop_company_archivies", "空间列表-浏览企业空间-菜单栏-公司档")
+
+    # 空间列表-浏览企业空间-菜单栏-业务升级
+    Kjlb_browseorgspace_menu_upgrade = ("id->com.yunlu6.stone:id/btn_pop_company_upgrade", "空间列表-浏览企业空间-菜单栏-业务升级")
+
+    # 空间列表-浏览企业空间-菜单栏-编辑
+    Kjlb_browseorgspace_menu_edit = ("id->com.yunlu6.stone:id/btn_pop_company_edit", "空间列表-浏览企业空间-菜单栏-编辑")
+
+    # 空间列表-浏览企业空间-菜单栏-设置
+    Kjlb_browseorgspace_menu_setup = ("id->com.yunlu6.stone: id/btn_pop_company_setup", "空间列表-浏览企业空间-菜单栏-设置")
+
+    # 空间列表-浏览企业空间-菜单栏-搜附近
+    Kjlb_browseorgspace_menu_near = ("id->com.yunlu6.stone:id/btn_pop_company_nearbusz", "空间列表-浏览企业空间-菜单栏-搜附近")
+
+    # 空间列表-浏览企业空间-菜单栏-关闭
+    Kjlb_browseorgspace_menu_close = ("id->com.yunlu6.stone:id/btn_pop_company_close", "空间列表-浏览企业空间-菜单栏-关闭")
+
+    # 空间列表-浏览企业空间-菜单栏-退出团队
+    Kjlb_browseorgspace_menu_quitteam = ("id->com.yunlu6.stone:id/btn_pop_company_quit", "空间列表-浏览企业空间-菜单栏-退出团队")
+
     # 空间列表-浏览企业空间-菜单栏-访客
     Kjlb_browseorgspace_menu_visitor = ("id->com.yunlu6.stone:id/btn_pop_company_fangke", "空间列表-浏览企业空间-菜单栏-访客")
-
-    # 空间列表-浏览企业空间-菜单栏-资讯
-    Kjlb_browseorgspace_menu_archivies = ("id->com.yunlu6.stone:id/btn_pop_company_archivies", "空间列表-浏览企业空间-菜单栏-资讯")
 
     # *********************************【PAGE1】【私人空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览私人空间-返回

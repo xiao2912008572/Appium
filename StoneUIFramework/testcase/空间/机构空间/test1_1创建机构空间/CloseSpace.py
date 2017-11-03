@@ -16,22 +16,23 @@ class CloseSpace:
         sleep(1)
 
     # 2.关闭空间-公用方法
-    def closeSpace(self, driver):
+    def closeSpace(self, driver, spacename):
+        # 1.创建工具类
+        t = Tools(driver)
         try:
             self.log.info("------START:test1_1创建机构空间.CloseSpace.py-----")
             # 1.创建_SPACEHANDLE5公有定位控件对象
             self.handle = SPACEHANDLE5(driver)
             # -----------------关闭空间 - ----------------
             # 为了保证不中途退出，需要第一次进入的时候检查是否存在该机构，如果存在，先关闭
-            self.handle.Kjlb_browseorgspaceByID_click(0)  # 点击进入
-            self.log.info('点击进入该空间')
+            t.swipeUp(500)
+            self.log.info('屏幕向上滑动0.5秒')
+            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            # self.handle.Kjlb_browseorgspaceByID_click(0)  # 点击进入
+            self.log.info('点击进入空间:{0}'.format(spacename))
             sleep(1)
             self.handle.Kjlb_browseorgspace_menu_click()  # 菜单栏
             self.log.info('点击空间菜单栏')
-            self.handle.Kjlb_browseorgspace_menu_bcard_click()  # 企业名片
-            self.log.info('点击企业名片')
-            self.handle.Kjlb_browseorgspace_menu_bcard_menu_click()  # 菜单栏
-            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_bcard_menu_close_click()  # 关闭
             self.log.info('点击关闭按钮')
             self.handle.Kjlb_browseorgspace_menu_bcard_menu_close_confirm_click()  # 确认关闭

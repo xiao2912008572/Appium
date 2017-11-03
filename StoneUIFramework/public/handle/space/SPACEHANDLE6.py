@@ -88,7 +88,7 @@ class SPACEHANDLE6(SPACEHANDLE5):
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success_text(self):
         return self.p.get_text(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_success)
 
-    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付完成
+    #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-返回百石堂
     def Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish)
 

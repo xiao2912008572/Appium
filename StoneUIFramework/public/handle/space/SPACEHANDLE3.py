@@ -137,69 +137,122 @@ class SPACEHANDLE3(SPACEHANDLE2):
         return self.p.get_text(self.Kjlb_browseorgspace_menu_archivies_pic_title)
 
     # ***************************************【PAGE2】企业名片Kjlb_browseorgspace_menu_bcard***************************************
-    # 空间列表-浏览企业空间-菜单栏-企业名片-返回:点击
-    def Kjlb_browseorgspace_menu_bcard_back_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_back)
+    # 空间列表-浏览企业空间-菜单栏-编辑-返回:点击
+    def Kjlb_browseorgspace_menu_edit_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_back)
 
-        # 空间列表-浏览企业空间-菜单栏-企业名片-企业资信:点击
+    # 空间列表-浏览企业空间-菜单栏-编辑-Logo:点击
+    def Kjlb_browseorgspace_menu_edit_logo_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_logo)
 
-    def Kjlb_browseorgspace_menu_bcard_credit_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_credit)
+    # 空间列表-浏览企业空间-菜单栏-编辑-Logo-相册:点击
+    def Kjlb_browseorgspace_menu_edit_logo_album_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_logo_album)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu)
+    # 空间列表-浏览企业空间-菜单栏-编辑-Logo-拍照:点击
+    def Kjlb_browseorgspace_menu_edit_logo_takepic_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_logo_takepic)
 
-        # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队:点击
+    # 空间列表-浏览企业空间-菜单栏-编辑-Logo-取消:点击
+    def Kjlb_browseorgspace_menu_edit_logo_cancel_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_logo_cancel)
 
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_quitteam)
+    # 空间列表-浏览企业空间-菜单栏-编辑-企业全称:发送文本
+    def Kjlb_browseorgspace_menu_edit_fullname_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_fullname, text)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-是:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_confirm)
+        # 空间列表-浏览企业空间-菜单栏-编辑-企业简称:发送文本
 
-        # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-退出团队-否:点击
+    def Kjlb_browseorgspace_menu_edit_simplename_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_simplename, text)
 
-    def Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancel_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_quitteam_cancell)
+    # 空间列表-浏览企业空间-菜单栏-编辑-所在地区:点击
+    def Kjlb_browseorgspace_menu_edit_address_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_address)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_nearby_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_nearby)
+    # 空间列表-浏览企业空间-菜单栏-编辑-所在地区-所在地区列表:点击
+    def Kjlb_browseorgspace_menu_edit_address_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_edit_address_list, n)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_edit_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_edit)
+    # 空间列表-浏览企业空间-菜单栏-编辑-详细地址:发送文本
+    def Kjlb_browseorgspace_menu_edit_detailaddress_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_detailaddress, text)
 
-        # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置:点击
+    # 空间列表-浏览企业空间-菜单栏-编辑-联系人:发送文本
+    def Kjlb_browseorgspace_menu_edit_contact_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_contact, text)
 
-    def Kjlb_browseorgspace_menu_bcard_menu_setting_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_setting)
+    # 空间列表-浏览企业空间-菜单栏-编辑-联系人:获取文本
+    def Kjlb_browseorgspace_menu_edit_contact_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_contact)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_close_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_close)
+    # 空间列表-浏览企业空间-菜单栏-编辑-联系人:清空文本
+    def Kjlb_browseorgspace_menu_edit_contact_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_contact)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_share_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_share)
+    # 空间列表-浏览企业空间-菜单栏-编辑-手机号:发送文本
+    def Kjlb_browseorgspace_menu_edit_phone_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_phone, text)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-联系方式列表:点击
-    def Kjlb_browseorgspace_menu_bcard_contactlist_click(self, n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_bcard_contact, n)
+    # 空间列表-浏览企业空间-菜单栏-编辑-手机号:获取文本
+    def Kjlb_browseorgspace_menu_edit_phone_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_phone)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-联系方式列表:获取元素
-    def Kjlb_browseorgspace_menu_bcard_contactlist_element(self):
-        return self.p.get_elements(self.Kjlb_browseorgspace_menu_bcard_contact[0])
+    # 空间列表-浏览企业空间-菜单栏-编辑-手机号:清空文本
+    def Kjlb_browseorgspace_menu_edit_phone_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_phone)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-资讯:点击
-    def Kjlb_browseorgspace_menu_bcard_archivies_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_archivies)
+    # 空间列表-浏览企业空间-菜单栏-编辑-座机号:发送文本
+    def Kjlb_browseorgspace_menu_edit_landline_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_landline, text)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-点击创建产品:点击
-    def Kjlb_browseorgspace_menu_bcard_newpro_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_newpro)
+    # 空间列表-浏览企业空间-菜单栏-编辑-座机号:获取文本
+    def Kjlb_browseorgspace_menu_edit_landline_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_landline)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-座机号:清空文本
+    def Kjlb_browseorgspace_menu_edit_landline_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_landline)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-邮箱:发送文本
+    def Kjlb_browseorgspace_menu_edit_email_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_email, text)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-邮箱:获取文本
+    def Kjlb_browseorgspace_menu_edit_email_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_email)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-邮箱:清空文本
+    def Kjlb_browseorgspace_menu_edit_email_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_email)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-QQ:发送文本
+    def Kjlb_browseorgspace_menu_edit_QQ_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_QQ, text)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-QQ:获取文本
+    def Kjlb_browseorgspace_menu_edit_QQ_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_QQ)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-QQ:清空文本
+    def Kjlb_browseorgspace_menu_edit_QQ_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_QQ)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-网站:发送文本
+    def Kjlb_browseorgspace_menu_edit_website_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_website, text)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-网站:获取文本
+    def Kjlb_browseorgspace_menu_edit_website_text(self):
+        return self.p.get_text(self.Kjlb_browseorgspace_menu_edit_website)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-网站:清空文本
+    def Kjlb_browseorgspace_menu_edit_website_clear(self):
+        return self.p.clear(self.Kjlb_browseorgspace_menu_edit_website)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑-勾选:点击
+    def Kjlb_browseorgspace_menu_edit_confirm_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit_confirm)
 
     # ***************************************【PAGE2】订单Kjlb_browseorgspace_menu_order***************************************
     # 空间列表-浏览企业空间-菜单栏-订单-返回：点击
@@ -207,8 +260,8 @@ class SPACEHANDLE3(SPACEHANDLE2):
         return self.p.click(self.Kjlb_browseorgspace_menu_order_back)
 
     # 空间列表-浏览企业空间-菜单栏-订单-搜索栏：发送文本
-    def Kjlb_browseorgspace_menu_order_search_sendkeys(self,text):
-        return self.p.send_keys(self.Kjlb_browseorgspace_menu_order_search,text)
+    def Kjlb_browseorgspace_menu_order_search_sendkeys(self, text):
+        return self.p.send_keys(self.Kjlb_browseorgspace_menu_order_search, text)
 
     # 空间列表-浏览企业空间-菜单栏-订单-搜索按钮：点击
     def Kjlb_browseorgspace_menu_order_searchbtn_click(self):
@@ -261,7 +314,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     # 空间列表-浏览企业空间-菜单栏-订单-退款中：元素获取
     def Kjlb_browseorgspace_menu_order_refund_element(self):
         return self.p.get_element(self.Kjlb_browseorgspace_menu_order_refundE[0],
-                            self.Kjlb_browseorgspace_menu_order_refundE[1])
+                                  self.Kjlb_browseorgspace_menu_order_refundE[1])
 
     # 空间列表-浏览企业空间-菜单栏-订单-待评价：点击
     def Kjlb_browseorgspace_menu_order_evaluate_click(self):
@@ -273,16 +326,16 @@ class SPACEHANDLE3(SPACEHANDLE2):
                                   self.Kjlb_browseorgspace_menu_order_evaluateE[1])
 
     # 空间列表-浏览企业空间-菜单栏-订单-商品名列表卖家：点击
-    def Kjlb_browseorgspace_menu_order_prolist_click(self,n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_order_prolistS,n)
+    def Kjlb_browseorgspace_menu_order_prolist_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_order_prolistS, n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-商品名列表-商品名：获取文本
-    def Kjlb_browseorgspace_menu_order_prolist_pronameT(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_order_prolist_proname)
+    def Kjlb_browseorgspace_menu_order_prolist_pronameT(self, n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_prolist_proname, n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-订单编号：文本
-    def Kjlb_browseorgspace_menu_order_no_text(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_order_no)
+    def Kjlb_browseorgspace_menu_order_no_text(self, n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_no, n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-确认发货：点击
     def Kjlb_browseorgspace_menu_order_confirm_click(self):

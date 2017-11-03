@@ -285,58 +285,6 @@ class SPACEPAGE4(SPACEPAGE3):
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家--返回
     Kjlb_browseorgspace_menu_bcard_menu_nearby_back = ("id->com.yunlu6.stone:id/title_back_icon", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-附近商家-返回")
 
-    # ***************************************【PAGE3】菜单栏-编辑Kjlb_browseorgspace_menu_bcard_menu_edit***************************************
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-返回
-    Kjlb_browseorgspace_menu_bcard_menu_edit_back = ("id->com.yunlu6.stone:id/title_back_icon", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-返回")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo
-    Kjlb_browseorgspace_menu_bcard_menu_edit_logo = ("id->com.yunlu6.stone:id/iv_open_logo", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-相册
-    Kjlb_browseorgspace_menu_bcard_menu_edit_logo_album = ("id->com.yunlu6.stone:id/iv_cloundlibrary_alumm", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-相册")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-拍照
-    Kjlb_browseorgspace_menu_bcard_menu_edit_logo_takepic = ("id->com.yunlu6.stone:id/iv_cloundlibrary_cameras", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-拍照")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-取消
-    Kjlb_browseorgspace_menu_bcard_menu_edit_logo_cancel = ("id->com.yunlu6.stone:id/pop_cloundlibrary_tv_cancel", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-Logo-取消")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-企业全称
-    Kjlb_browseorgspace_menu_bcard_menu_edit_fullname = ("id->com.yunlu6.stone:id/company_name", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-企业全称")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-企业简称
-    Kjlb_browseorgspace_menu_bcard_menu_edit_simplename = ("id->com.yunlu6.stone:id/company_introduce", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-企业简称")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-所在地区
-    Kjlb_browseorgspace_menu_bcard_menu_edit_address = ("id->com.yunlu6.stone:id/company_address", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-所在地区")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-所在地区-所在地区列表
-    Kjlb_browseorgspace_menu_bcard_menu_edit_address_list = ("id->com.yunlu6.stone:id/tv_address", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-所在地区")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-详细地址
-    Kjlb_browseorgspace_menu_bcard_menu_edit_detailaddress = ("id->com.yunlu6.stone:id/company_address_det", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-详细地址")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-联系人
-    Kjlb_browseorgspace_menu_bcard_menu_edit_contact = ("id->com.yunlu6.stone:id/people_name", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-联系人")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-手机号
-    Kjlb_browseorgspace_menu_bcard_menu_edit_phone = ("id->com.yunlu6.stone:id/mobile_phone", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-手机号")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-座机号
-    Kjlb_browseorgspace_menu_bcard_menu_edit_landline = ("id->com.yunlu6.stone:id/phone", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-座机号")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-邮箱
-    Kjlb_browseorgspace_menu_bcard_menu_edit_email = ("id->com.yunlu6.stone:id/email", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-邮箱")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-QQ
-    Kjlb_browseorgspace_menu_bcard_menu_edit_QQ = ("id->com.yunlu6.stone:id/qq", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-QQ")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-网站
-    Kjlb_browseorgspace_menu_bcard_menu_edit_website = ("id->com.yunlu6.stone:id/website", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-网站")
-
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-勾选
-    Kjlb_browseorgspace_menu_bcard_menu_edit_confirm = ("id->com.yunlu6.stone:id/title_tv_menu", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-勾选")
-
     # ***************************************【PAGE3】菜单栏-设置Kjlb_browseorgspace_menu_bcard_menu_setting***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置-返回
     Kjlb_browseorgspace_menu_bcard_menu_setting_back = ("id->com.yunlu6.stone:id/buildstione_backe", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置-返回")

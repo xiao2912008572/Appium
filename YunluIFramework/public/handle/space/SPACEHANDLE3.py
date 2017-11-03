@@ -277,12 +277,12 @@ class SPACEHANDLE3(SPACEHANDLE2):
         return self.p.clicks(self.Kjlb_browseorgspace_menu_order_prolistS,n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-商品名列表-商品名：获取文本
-    def Kjlb_browseorgspace_menu_order_prolist_pronameT(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_order_prolist_proname)
+    def Kjlb_browseorgspace_menu_order_prolist_pronameT(self,n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_prolist_proname,n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-订单编号：文本
-    def Kjlb_browseorgspace_menu_order_no_text(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_order_no)
+    def Kjlb_browseorgspace_menu_order_no_text(self,n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_no,n)
 
     # 空间列表-浏览企业空间-菜单栏-订单-确认发货：点击
     def Kjlb_browseorgspace_menu_order_confirm_click(self):

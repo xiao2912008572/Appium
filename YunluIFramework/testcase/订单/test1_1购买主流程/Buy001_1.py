@@ -17,6 +17,8 @@ class order_OrderBuy(unittest.TestCase):
     city_1 = int(d.cell('test001', 2, 7))  # 市：东城 0
     detail_1 = d.cell('test001', 2, 9)  # 详细地址：ABCDEFGHIJKLMNOPQRSTUVWXYZ
     title_order1 = d.cell('test001', 2, 10)  # 标题：确认订单
+    global order_code  # 全局变量，记录拍下商品的订单编号
+    global proname_start, proprice_start
 
     # 2.初始化
     @classmethod
@@ -67,7 +69,7 @@ class order_OrderBuy(unittest.TestCase):
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入空间：{0}'.format(spacename))
             # 3.选择第一件商品
-            global proname_start, proprice_start
+            # global proname_start, proprice_start
             proname_start = self.handle.Kjlb_prolist_pronameT(pro_no)
             proprice_start = self.handle.Kjlb_prolist_propriceT(pro_no)[2:]
             self.log.info('选择的商品名称为：{0}'.format(proname_start))
@@ -198,15 +200,13 @@ class order_OrderBuy(unittest.TestCase):
             assert self.handle.Kjlb_browseorgspace_menu_order_waitforsend_element() != None, '跳转页面失败'
             self.log.info('跳转成功')
             # 4.点击商品，查看订单
-            proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT()
+            proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
             self.log.info('当前商品名称为：{0}'.format(proname_now))
             self.log.info('预期商品名称为：{0}'.format(proname_start))
-            assert proname_now == proname_start, '购买商品名称显示无误'
-
+            assert proname_now == proname_start, '购买商品名称显示与预期不符'
             self.yunshi.YS_order_proname_click(0)
             self.log.info('点击待发货列表第1件商品')
-
-            global order_code  # 全局变量，记录拍下商品的订单编号
+            # global order_code  # 全局变量，记录拍下商品的订单编号
             order_code = self.yunshi.YS_order_plist_num_text()
             self.log.info('当前拍下商品订单编号为:{0}'.format(order_code))
             self.yunshi.YS_order_plist_back_click()
@@ -217,6 +217,48 @@ class order_OrderBuy(unittest.TestCase):
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("Buy004 Outside : %s" % err)
             raise err
+
+    # @ddt.data([spacename_1])
+    # @ddt.unpack
+    # def test_sale001(self, spacename):
+    #     '''卖家：检查订单，准备发货'''
+    #     try:
+    #         self.log.info("------------START:Function_Sale001-检查订单，准备发货------------")
+    #         # 1.空间列表
+    #         self.handle.Kjlb_click()
+    #         self.log.info('点击空间列表')
+    #         # 2.选择进入测试机构空间
+    #         self.handle.Kjlb_browseorgspaceByName_click(spacename)
+    #         self.log.info('进入空间：{0}'.format(spacename))
+    #         # 3.菜单栏-订单
+    #         self.handle.Kjlb_browseorgspace_menu()
+    #         self.log.info('点击菜单栏')
+    #         self.handle.Kjlb_browseorgspace_menu_order_click()
+    #         self.log.info('点击订单')
+    #         # 4.待发货订单编号检查
+    #         self.handle.Kjlb_browseorgspace_menu_order_waitforsend_click()
+    #         self.log.info('点击待发货栏')
+    #         self.log.info('检查待发货列表第一件商品名称、订单编号、价格等：')
+    #         proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
+    #         self.log.info('当前商品名称：{0}'.format(proname_now))
+    #         self.log.info('预期商品名称：{0}'.format(proname_start))
+    #         assert proname_now == proname_start, '商品名称显示与预期不符'
+    #         self.log.info('商品名称检查OK')
+    #
+    #         ordercode_now = self.handle.Kjlb_browseorgspace_menu_order_no_text(0)
+    #         self.log.info('当前订单编号为：{0}'.format(ordercode_now))
+    #         self.log.info('预期订单编号为：{0}'.format(order_code))
+    #         assert ordercode_now == order_code, '商品订单显示与预期不符'
+    #         self.log.info('商品订单检查OK')
+    #
+    #         proprice_now = self.handle.
+    #
+    #
+    #
+    #     except Exception as err:
+    #         self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+    #         self.log.error("Sale001 Outside : %s" % err)
+    #         raise err
 
 
 if __name__ == '__main__':

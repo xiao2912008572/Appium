@@ -175,7 +175,7 @@ class order_OrderBuy(unittest.TestCase):
             self.log.info('支付成功！')
             # 8.点击完成
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_finish_click()
-            self.log.info('点击完成')
+            self.log.info('点击返回百石堂')
             self.log.info("------------END:Function_Buy003-确认订单支付流程------------")
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
@@ -198,7 +198,7 @@ class order_OrderBuy(unittest.TestCase):
             assert self.handle.Kjlb_browseorgspace_menu_order_waitforsend_element() != None, '跳转页面失败'
             self.log.info('跳转成功')
             # 4.点击商品，查看订单
-            proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT()
+            proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
             self.log.info('当前商品名称为：{0}'.format(proname_now))
             self.log.info('预期商品名称为：{0}'.format(proname_start))
             assert proname_now == proname_start, '购买商品名称显示无误'
@@ -212,11 +212,57 @@ class order_OrderBuy(unittest.TestCase):
             self.yunshi.YS_order_plist_back_click()
             self.log.info('点击返回至待发货列表')
             self.yunshi.YS_order_back_click()
-            self.log.info('点击返回至云视首页')
+            self.log.info('点击返回商品详情页')
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_back_click()
+            self.log.info('返回到空间')
+            self.handle.Kjlb_browseorgspace_back_click()
+            self.log.info('返回到空间列表')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("Buy004 Outside : %s" % err)
             raise err
+
+            # @ddt.data([spacename_1])
+            # @ddt.unpack
+            # def test_sale001(self, spacename):
+            #     '''卖家：检查订单，准备发货'''
+            #     try:
+            #         self.log.info("------------START:Function_Sale001-检查订单，准备发货------------")
+            #         # 1.空间列表
+            #         self.handle.Kjlb_click()
+            #         self.log.info('点击空间列表')
+            #         # 2.选择进入测试机构空间
+            #         self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            #         self.log.info('进入空间：{0}'.format(spacename))
+            #         # 3.菜单栏-订单
+            #         self.handle.Kjlb_browseorgspace_menu()
+            #         self.log.info('点击菜单栏')
+            #         self.handle.Kjlb_browseorgspace_menu_order_click()
+            #         self.log.info('点击订单')
+            #         # 4.待发货订单编号检查
+            #         self.handle.Kjlb_browseorgspace_menu_order_waitforsend_click()
+            #         self.log.info('点击待发货栏')
+            #         self.log.info('检查待发货列表第一件商品名称、订单编号、价格等：')
+            #         proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
+            #         self.log.info('当前商品名称：{0}'.format(proname_now))
+            #         self.log.info('预期商品名称：{0}'.format(proname_start))
+            #         assert proname_now == proname_start, '商品名称显示与预期不符'
+            #         self.log.info('商品名称检查OK')
+            #
+            #         ordercode_now = self.handle.Kjlb_browseorgspace_menu_order_no_text(0)
+            #         self.log.info('当前订单编号为：{0}'.format(ordercode_now))
+            #         self.log.info('预期订单编号为：{0}'.format(order_code))
+            #         assert ordercode_now == order_code, '商品订单显示与预期不符'
+            #         self.log.info('商品订单检查OK')
+            #
+            #         proprice_now = self.handle.
+            #
+            #
+            #
+            #     except Exception as err:
+            #         self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+            #         self.log.error("Sale001 Outside : %s" % err)
+            #         raise err
 
 
 if __name__ == '__main__':

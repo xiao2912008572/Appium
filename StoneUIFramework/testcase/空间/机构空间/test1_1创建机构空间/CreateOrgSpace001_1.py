@@ -77,16 +77,16 @@ class space_CreateO(unittest.TestCase):
                     pass
             # 如果机构存在
             if self.flag == 1:
-                self.cl.closeSpace(self.driver)  # 关闭
+                self.cl.closeSpace(self.driver, easyname)  # 关闭
                 self.cr.createSpace(self.driver, fullname, easyname, province,
                                     city, soverbank, sovermybank, soverbanknub,
                                     customertype, industry)  # 关闭之后,重新创建机构空间
-                self.cl.closeSpace(self.driver)
+                self.cl.closeSpace(self.driver, easyname)
             else:
                 self.cr.createSpace(self.driver, fullname, easyname, province,
                                     city, soverbank, sovermybank, soverbanknub,
                                     customertype, industry)  # 创建机构空间
-                self.cl.closeSpace(self.driver)
+                self.cl.closeSpace(self.driver, easyname)
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("CreateOrgSpace Outside : %s" % err)

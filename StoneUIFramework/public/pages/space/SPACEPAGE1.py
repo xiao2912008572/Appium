@@ -6,7 +6,7 @@ class SPACEPAGE1(Page):
     Kjlb = ('id->com.yunlu6.stone:id/navi_item_zone','空间列表')
 
     # 空间列表-主菜单(加号按钮)
-    Kjlb_mainmenu = ("id->com.yunlu6.stone:id/cloundzone_bottom_more","空间列表-主菜单")
+    Kjlb_mainmenu = ("id->com.yunlu6.stone:id/main_bottom_iv_addpuls","空间列表-+按钮")
 
     # 空间列表-浏览空间列表(通过ID查找)
     Kjlb_browseorgspaceByID = ("id->com.yunlu6.stone:id/zone_company_title","空间列表-浏览企业空间(通过ID查找)")

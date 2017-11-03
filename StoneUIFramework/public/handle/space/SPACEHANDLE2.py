@@ -214,21 +214,17 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseorgspace_menu_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu)
 
-    # 空间列表-浏览企业空间-菜单栏-业务升级:点击
-    def Kjlb_browseorgspace_menu_upgrade_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_upgrade)
-
     #  空间列表-浏览企业空间-菜单栏-产品:点击
     def Kjlb_browseorgspace_menu_product_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product)
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片:点击
-    def Kjlb_browseorgspace_menu_bcard_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard)
-
     # 空间列表-浏览企业空间-菜单栏-订单:点击
     def Kjlb_browseorgspace_menu_order_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_order)
+
+    # 空间列表-浏览企业空间-菜单栏-资金:点击
+    def Kjlb_browseorgspace_menu_money_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_money)
 
     # 空间列表-浏览企业空间-菜单栏-团队:点击
     def Kjlb_browseorgspace_menu_team_click(self):
@@ -238,13 +234,33 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseorgspace_menu_customer_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_customer)
 
+     # 空间列表-浏览企业空间-菜单栏-公司档:点击
+    def Kjlb_browseorgspace_menu_archivies_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies)
+
+    # 空间列表-浏览企业空间-菜单栏-业务升级:点击
+    def Kjlb_browseorgspace_menu_upgrade_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_upgrade)
+
+    # 空间列表-浏览企业空间-菜单栏-编辑:点击
+    def Kjlb_browseorgspace_menu_bcard_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_edit)
+
+    # 空间列表-浏览企业空间-菜单栏-设置:点击
+    def Kjlb_browseorgspace_menu_setup_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_setup)
+
+    # 空间列表-浏览企业空间-菜单栏-搜附近:点击
+    def Kjlb_browseorgspace_menu_near_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_near)
+
     # 空间列表-浏览企业空间-菜单栏-访客:点击
     def Kjlb_browseorgspace_menu_visitor_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_visitor)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯:点击
-    def Kjlb_browseorgspace_menu_archivies_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_archivies)
+
+
+
 
     # *********************************【PAGE1】【私人空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览私人空间-返回-点击

@@ -80,7 +80,7 @@ class SPACEPAGE6(SPACEPAGE5):
                                                                              "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-支付方式-零钱")
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-密码框
-    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password = ("id->com.tencent.mm:id/bwl",
+    Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password = ("id->com.tencent.mm:id/c7f",
                                                                                          "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-立即支付-密码框")
 
     #  空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付-微信支付-支付成功

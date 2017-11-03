@@ -33,43 +33,43 @@ class BusinessCard:
             handle.Kjlb_browseorgspace_menu_bcard_click()  # 点击企业名片
             self.log.info('点击企业名片')
             # 4.右上角菜单栏-编辑
-            handle.Kjlb_browseorgspace_menu_bcard_menu_click()
+            handle.Kjlb_browseorgspace_menu_click()
             self.log.info('点击右上角菜单栏')
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_click()
+            handle.Kjlb_browseorgspace_menu_edit_click()
             self.log.info('点击编辑')
             # 5.编辑企业名片详情
             # 5.1 联系人
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_contact_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_contact_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_contact_sendkeys(contact)
+            if handle.Kjlb_browseorgspace_menu_edit_contact_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_contact_clear()
+            handle.Kjlb_browseorgspace_menu_edit_contact_sendkeys(contact)
             self.log.info('输入联系人：%s' % contact)
             # 5.2 手机号
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_sendkeys(phone)
+            if handle.Kjlb_browseorgspace_menu_edit_phone_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_phone_clear()
+            handle.Kjlb_browseorgspace_menu_edit_phone_sendkeys(phone)
             self.log.info('输入手机号：%s' % phone)
             # 5.3 座机号
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_sendkeys(tel)
+            if handle.Kjlb_browseorgspace_menu_edit_landline_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_landline_clear()
+            handle.Kjlb_browseorgspace_menu_edit_landline_sendkeys(tel)
             self.log.info('输入座机号：%s' % tel)
             # 5.4 邮箱
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_email_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_email_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_email_sendkeys(email)
+            if handle.Kjlb_browseorgspace_menu_edit_email_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_email_clear()
+            handle.Kjlb_browseorgspace_menu_edit_email_sendkeys(email)
             self.log.info('输入邮箱：%s' % email)
             # 5.5 QQ
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_QQ_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_QQ_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_QQ_sendkeys(QQ)
+            if handle.Kjlb_browseorgspace_menu_edit_QQ_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_QQ_clear()
+            handle.Kjlb_browseorgspace_menu_edit_QQ_sendkeys(QQ)
             self.log.info('输入QQ号：%s' % QQ)
             # 5.6 网址
-            if handle.Kjlb_browseorgspace_menu_bcard_menu_edit_website_text() is not None:
-                handle.Kjlb_browseorgspace_menu_bcard_menu_edit_website_clear()
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_website_sendkeys(website)
+            if handle.Kjlb_browseorgspace_menu_edit_website_text() is not None:
+                handle.Kjlb_browseorgspace_menu_edit_website_clear()
+            handle.Kjlb_browseorgspace_menu_edit_website_sendkeys(website)
             self.log.info('输入网址：%s' % website)
             # 6.勾选+点击检查
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_confirm_click()  # 勾选
+            handle.Kjlb_browseorgspace_menu_edit_confirm_click()  # 勾选
             self.log.info('勾选保存')
             sleep(1)
             assert len(handle.Kjlb_browseorgspace_menu_bcard_contactlist_element()) == 5, "部分联系方式未保存成功"
@@ -104,49 +104,49 @@ class BusinessCard:
             sleep(2)
             """
             # 7.检查数据
-            handle.Kjlb_browseorgspace_menu_bcard_menu_click()  # 菜单栏
+            handle.Kjlb_browseorgspace_menu_click()  # 菜单栏
             self.log.info('点击菜单栏')
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_click()  # 编辑
+            handle.Kjlb_browseorgspace_menu_edit_click()  # 编辑
             self.log.info('点击编辑')
             # 7.1 联系人
-            assert handle.Kjlb_browseorgspace_menu_bcard_menu_edit_contact_text() == contact, "Contact:Save Failed"
+            assert handle.Kjlb_browseorgspace_menu_edit_contact_text() == contact, "Contact:Save Failed"
             self.log.info('检查联系人')
             # 7.2 手机号
-            assert int(handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_text()) == phone, "Phone:Save Failed"
+            assert int(handle.Kjlb_browseorgspace_menu_edit_phone_text()) == phone, "Phone:Save Failed"
             self.log.info('检查手机号')
             # 7.3 座机号
-            assert int(handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_text()) == tel, "Tel:Save Failed"
+            assert int(handle.Kjlb_browseorgspace_menu_edit_landline_text()) == tel, "Tel:Save Failed"
             self.log.info('检查座机号')
             # 7.4 邮箱
-            assert handle.Kjlb_browseorgspace_menu_bcard_menu_edit_email_text() == email, "Email:Save Failed"
+            assert handle.Kjlb_browseorgspace_menu_edit_email_text() == email, "Email:Save Failed"
             self.log.info('检查邮箱')
             # 7.5 QQ
-            assert int(handle.Kjlb_browseorgspace_menu_bcard_menu_edit_QQ_text()) == QQ, "QQ:Save Failed"
+            assert int(handle.Kjlb_browseorgspace_menu_edit_QQ_text()) == QQ, "QQ:Save Failed"
             self.log.info('检查QQ号')
             # 7.6 网址
-            assert handle.Kjlb_browseorgspace_menu_bcard_menu_edit_website_text() == website, "Website:Save Failed"
+            assert handle.Kjlb_browseorgspace_menu_edit_website_text() == website, "Website:Save Failed"
             self.log.info('检查网址')
             # 8.清空名片数据
             # 8.1 清空联系人
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_contact_clear()
+            handle.Kjlb_browseorgspace_menu_edit_contact_clear()
             self.log.info('清空联系人')
             # 8.2 清空手机号
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_phone_clear()
+            handle.Kjlb_browseorgspace_menu_edit_phone_clear()
             self.log.info('清空手机号')
             # 8.3 清空座机号
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_landline_clear()
+            handle.Kjlb_browseorgspace_menu_edit_landline_clear()
             self.log.info('清空座机号')
             # 8.4 清空邮箱
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_email_clear()
+            handle.Kjlb_browseorgspace_menu_edit_email_clear()
             self.log.info('清空邮箱')
             # 8.5 清空QQ
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_QQ_clear()
+            handle.Kjlb_browseorgspace_menu_edit_QQ_clear()
             self.log.info('清空QQ号')
             # 8.6 清空网址
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_website_clear()
+            handle.Kjlb_browseorgspace_menu_edit_website_clear()
             self.log.info('清空网址')
             # 8.7 勾选保存
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_confirm_click()
+            handle.Kjlb_browseorgspace_menu_edit_confirm_click()
             self.log.info('勾选保存')
             self.log.info('------END:test5_1企业名片.BusinessCard.py------')
         except Exception as err:
