@@ -16,12 +16,16 @@ class ClosePersonSpace:
 
     # 2.关闭私人空间-公用方法
     def closePersonSpace(self, driver, spacename):
-        # 创建_SPACEHANDLE5公有定位控件对象
+        # 1.创建工具类
+        t = Tools(driver)
+        # 2.创建_SPACEHANDLE5公有定位控件对象
         handle = SPACEHANDLE5(driver)
         sleep(1)
         try:
             self.log.info("------START:test2_1私人空间加文件夹ClosePersonSpace.py------")
             # 1.点击该空间
+            t.swipeUp(500)
+            self.log.info('屏幕向上滑动0.5秒')
             handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击{0}空间'.format(spacename))
             # 2.菜单栏

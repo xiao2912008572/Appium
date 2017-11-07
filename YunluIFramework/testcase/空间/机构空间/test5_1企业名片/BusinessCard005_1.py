@@ -37,12 +37,12 @@ class space_BusinessCardO(unittest.TestCase):
         self.log = Log(self.logfile)
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
-        self.log.info('------------START:test5_1企业名片.BusinessCard005_1.py------------')
+        self.log.info('------------START:test5_1编辑.BusinessCard005_1.py------------')
 
     # 3.释放资源
     def tearDown(self):
         # 1.打印日志
-        self.log.info("------------END::test5_1企业名片.BusinessCard005_1.py------------")  # 宣布成功
+        self.log.info("------------END::test5_1编辑.BusinessCard005_1.py------------")  # 宣布成功
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
         self.driver.quit()

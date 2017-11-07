@@ -389,13 +389,13 @@ class SPACEHANDLE4(SPACEHANDLE3):
         return self.p.clicks(self.Kjlb_browseorgspace_menu_bcard_menu_setting_checkbox,n)
 
 # ***************************************【PAGE3】菜单栏-关闭Kjlb_browseorgspace_menu_bcard_menu_close***************************************
-      # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-是:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_close_confirm_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_close_confirm)
+      # 空间列表-浏览企业空间-菜单栏-关闭-是:点击
+    def Kjlb_browseorgspace_menu_close_confirm_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_close_confirm)
 
-     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-否:点击
-    def Kjlb_browseorgspace_menu_bcard_menu_cancel_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_bcard_menu_cancel)
+     # 空间列表-浏览企业空间-菜单栏-关闭-否:点击
+    def Kjlb_browseorgspace_menu_cancel_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_cancel)
 
 # ***************************************【PAGE3】菜单栏-分享Kjlb_browseorgspace_menu_bcard_menu_share***************************************
      # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享-资信:点击

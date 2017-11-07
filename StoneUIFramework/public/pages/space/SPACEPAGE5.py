@@ -238,7 +238,7 @@ class SPACEPAGE5(SPACEPAGE4):
 
     # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-合计
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_total = ("id->com.yunlu6.stone:id/comfirmorder_totlepay",
-                                                                     "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-合计")
+                                                                      "空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-合计")
 
     # 空间列表-浏览企业空间-菜单栏-产品-立即购买-确认订单-支付
     Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay = ("id->com.yunlu6.stone:id/comfirmorder_payment",
@@ -370,10 +370,10 @@ class SPACEPAGE5(SPACEPAGE4):
     Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn = ("id->com.yunlu6.stone:id/btn_gallery_photos_cancle", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是
-    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y = ("id->com.yunlu6.stone:id/bt_affirm", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是")
+    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y = ("id->com.yunlu6.stone:id/dialog_warm2_sure", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否
-    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n = ("id->com.yunlu6.stone:id/bt_cancel", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否")
+    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n = ("id->com.yunlu6.stone:id/dialog_warm2_cancel", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-全选
     Kjlb_browseperspace_more_menu_edit_foldername_all = ("id->com.yunlu6.stone:id/title_tv_more_tv_selected", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-全选")

@@ -63,10 +63,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_lock_list_offshelf = ("id->com.yunlu6.stone:id/title_text_menu", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-否
-    Kjlb_browseorgspace_menu_product_lock_list_offshelf_no = ("id->com.yunlu6.stone:id/dialog_delete_no", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
+    Kjlb_browseorgspace_menu_product_lock_list_offshelf_no = ("id->com.yunlu6.stone:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是
-    Kjlb_browseorgspace_menu_product_lock_list_offshelf_sure = ("id->com.yunlu6.stone:id/dialog_delete_sure", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是")
+    Kjlb_browseorgspace_menu_product_lock_list_offshelf_sure = ("id->com.yunlu6.stone:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-购物车图标
     Kjlb_browseorgspace_menu_product_lock_list_shopicon = ("id->com.yunlu6.stone:id/shop_cart", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-购物车图标")
@@ -140,8 +140,8 @@ class SPACEPAGE4(SPACEPAGE3):
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布
     Kjlb_browseorgspace_menu_product_unlock_list_menu_release = ("id->com.yunlu6.stone:id/btn_new_space", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布")
 
-    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布-确定
-    Kjlb_browseorgspace_menu_product_unlock_list_menu_release_confirm = ("id->com.yunlu6.stone:id/dialog_delete_sure", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布-确定")
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布-知道了
+    Kjlb_browseorgspace_menu_product_unlock_list_menu_release_confirm = ("id->com.yunlu6.stone:id/dialog_warm3_sure", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-发布-知道了")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-编辑
     Kjlb_browseorgspace_menu_product_unlock_list_menu_edit = ("id->com.yunlu6.stone:id/btn_share_space", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-编辑")
@@ -293,11 +293,11 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_bcard_menu_setting_checkbox = ("id->com.yunlu6.stone:id/sb_nub_bt", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-设置-勾选框列表")
 
     # ***************************************【PAGE3】菜单栏-关闭Kjlb_browseorgspace_menu_bcard_menu_close***************************************
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-是
-    Kjlb_browseorgspace_menu_bcard_menu_close_confirm = ("id->com.yunlu6.stone:id/bt_affirm", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-是")
+    # 空间列表-浏览企业空间-菜单栏-关闭-是
+    Kjlb_browseorgspace_menu_close_confirm = ("id->com.yunlu6.stone:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-关闭-是")
 
-    # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-否
-    Kjlb_browseorgspace_menu_bcard_menu_cancel = ("id->com.yunlu6.stone:id/bt_cancel", "空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-关闭-否")
+    # 空间列表-浏览企业空间-菜单栏-关闭-否
+    Kjlb_browseorgspace_menu_cancel = ("id->com.yunlu6.stone:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-关闭-否")
 
     # ***************************************【PAGE3】菜单栏-分享Kjlb_browseorgspace_menu_bcard_menu_share***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享-资信

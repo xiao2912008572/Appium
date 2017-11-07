@@ -28,14 +28,13 @@ class CloseSpace:
             t.swipeUp(500)
             self.log.info('屏幕向上滑动0.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
-            # self.handle.Kjlb_browseorgspaceByID_click(0)  # 点击进入
             self.log.info('点击进入空间:{0}'.format(spacename))
             sleep(1)
             self.handle.Kjlb_browseorgspace_menu_click()  # 菜单栏
             self.log.info('点击空间菜单栏')
-            self.handle.Kjlb_browseorgspace_menu_bcard_menu_close_click()  # 关闭
+            self.handle.Kjlb_browseorgspace_menu_close_click()  # 关闭
             self.log.info('点击关闭按钮')
-            self.handle.Kjlb_browseorgspace_menu_bcard_menu_close_confirm_click()  # 确认关闭
+            self.handle.Kjlb_browseorgspace_menu_close_confirm_click()  # 确认关闭
             self.log.info('点击确认关闭')
             self.log.info("------END:test1_1创建机构空间.CloseSpace.pyy-----")
         except Exception as err:

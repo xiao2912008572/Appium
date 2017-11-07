@@ -188,6 +188,9 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-浏览企业空间-菜单栏-设置
     Kjlb_browseorgspace_menu_setup = ("id->com.yunlu6.stone: id/btn_pop_company_setup", "空间列表-浏览企业空间-菜单栏-设置")
 
+    # 空间列表-浏览企业空间-菜单栏-分享
+    Kjlb_browseorgspace_menu_share = ("id->com.yunlu6.stone:id/btn_pop_company_share", "空间列表-浏览企业空间-菜单栏-分享")
+
     # 空间列表-浏览企业空间-菜单栏-搜附近
     Kjlb_browseorgspace_menu_near = ("id->com.yunlu6.stone:id/btn_pop_company_nearbusz", "空间列表-浏览企业空间-菜单栏-搜附近")
 
@@ -242,7 +245,7 @@ class SPACEPAGE2(SPACEPAGE1):
     Kjlb_browseascspace_addbtn_concern = ("id->com.yunlu6.stone:id/tv_add_favorites", "空间列表-浏览协会空间-添加按钮-关注")
 
     # 空间列表-浏览协会空间-添加按钮-取消关注
-    Kjlb_browseascspace_addbtn_concern = ("id->com.yunlu6.stone:id/tv_add_favorites", "空间列表-浏览协会空间-添加按钮-取消关注")
+    Kjlb_browseascspace_addbtn_concernC = ("id->com.yunlu6.stone:id/tv_add_favorites", "空间列表-浏览协会空间-添加按钮-取消关注")
 
     # 空间列表-浏览协会空间-添加按钮-申请加入
     Kjlb_browseascspace_addbtn_apply = ("id->com.yunlu6.stone:id/add_client_tv", "空间列表-浏览协会空间-添加按钮-申请加入")

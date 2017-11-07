@@ -17,14 +17,17 @@ class CreatePerSFolder:
     # 2.创建私人空间文件夹-公用方法
     def createPerSFolder(self, driver, spacename, foldername1=None, foldername2=None, foldername3=None):  # 最多三个文件夹
         # 1.创建工具类
-        tools = Tools(driver)  # tools工具
+        t = Tools(driver)  # tools工具
         # 2.创建_SPACEHANDLE5公有定位控件对象
         handle = SPACEHANDLE5(driver)
         sleep(2)
         try:
             self.log.info('------START:test2_1私人空间加文件夹.CreatePerSFolder.py------')
             # 1.空间-菜单栏
-            driver.find_element_by_name(spacename).click()
+            t.swipeUp(500)
+            self.log.info('屏幕向上滑动0.5秒')
+            # driver.find_element_by_name(spacename).click()
+            handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击{0}空间'.format(spacename))
             # handle.Kjlb_browseperspaceByName(spacename).click()
             handle.Kjlb_browseperspace_menu_click()
@@ -52,6 +55,7 @@ class CreatePerSFolder:
             handle.Kjlb_browseperspace_addData_ByAlbum_piclist_click(0)
             self.log.info('点击第一张照片')
             # 5.4完成
+            sleep(1)
             handle.Kjlb_browseperspace_addData_ByAlbum_confirm_click()
             self.log.info('点击完成')
             sleep(1)

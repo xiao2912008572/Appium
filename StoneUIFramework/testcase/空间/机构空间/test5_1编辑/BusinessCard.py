@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片 import *
+from StoneUIFramework.testcase.空间.机构空间.test5_1编辑 import *
 
 
 # 企业名片编辑
@@ -27,14 +27,10 @@ class BusinessCard:
             # tools.getScreenShot(screen_path,"空间首页")
             # 2.选择空间:测试空间123
             # handle.Kjlb_browseorgspaceByName_click("测试空间123")
-            # 3.右上角:企业名片
+            # 3.右上角:编辑
             handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
             self.log.info('点击菜单栏')
-            handle.Kjlb_browseorgspace_menu_bcard_click()  # 点击企业名片
-            self.log.info('点击企业名片')
             # 4.右上角菜单栏-编辑
-            handle.Kjlb_browseorgspace_menu_click()
-            self.log.info('点击右上角菜单栏')
             handle.Kjlb_browseorgspace_menu_edit_click()
             self.log.info('点击编辑')
             # 5.编辑企业名片详情
@@ -72,8 +68,12 @@ class BusinessCard:
             handle.Kjlb_browseorgspace_menu_edit_confirm_click()  # 勾选
             self.log.info('勾选保存')
             sleep(1)
-            assert len(handle.Kjlb_browseorgspace_menu_bcard_contactlist_element()) == 5, "部分联系方式未保存成功"
-            self.log.info('联系方式是否保存成功检查')
+            self.log.info('检查联系方式是否保存成功：')
+            self.log.info('当前需要保存联系方式数量：5')
+            camount_now = len(driver.find_elements_by_id('com.yunlu6.stone:id/contact_icon'))
+            self.log.info('实际写入保存联系方式数量：{0}'.format(camount_now))
+            assert camount_now == 5, "部分联系方式未保存成功"
+            self.log.info('联系方式保存成功!')
             """
             #6.1 手机号
             handle.Kjlb_browseorgspace_menu_bcard_contactlist_click(0)
@@ -109,23 +109,47 @@ class BusinessCard:
             handle.Kjlb_browseorgspace_menu_edit_click()  # 编辑
             self.log.info('点击编辑')
             # 7.1 联系人
-            assert handle.Kjlb_browseorgspace_menu_edit_contact_text() == contact, "Contact:Save Failed"
-            self.log.info('检查联系人')
+            self.log.info('检查联系人：')
+            contact_now = handle.Kjlb_browseorgspace_menu_edit_contact_text()
+            self.log.info('当前联系人为：{0}'.format(contact_now))
+            self.log.info('预期联系人为：{0}'.format(contact))
+            assert contact_now == contact, "Contact:Save Failed"
+            self.log.info('联系人与预期一致')
             # 7.2 手机号
-            assert int(handle.Kjlb_browseorgspace_menu_edit_phone_text()) == phone, "Phone:Save Failed"
-            self.log.info('检查手机号')
+            self.log.info('检查手机号:')
+            phone_now = handle.Kjlb_browseorgspace_menu_edit_phone_text()
+            self.log.info('当前手机号为：{0}'.format(phone_now))
+            self.log.info('预期手机号为：{0}'.format(phone))
+            assert int(phone_now) == phone, "Phone:Save Failed"
+            self.log.info('手机号与预期一致')
             # 7.3 座机号
-            assert int(handle.Kjlb_browseorgspace_menu_edit_landline_text()) == tel, "Tel:Save Failed"
-            self.log.info('检查座机号')
+            self.log.info('检查座机号：')
+            tel_now = handle.Kjlb_browseorgspace_menu_edit_landline_text()
+            self.log.info('当前座机号为：{0}'.format(tel_now))
+            self.log.info('预期座机号为：{0}'.format(tel))
+            assert int(tel_now) == tel, "Tel:Save Failed"
+            self.log.info('座机号与预期一致')
             # 7.4 邮箱
-            assert handle.Kjlb_browseorgspace_menu_edit_email_text() == email, "Email:Save Failed"
-            self.log.info('检查邮箱')
+            self.log.info('检查邮箱：')
+            email_now = handle.Kjlb_browseorgspace_menu_edit_email_text()
+            self.log.info('当前邮箱为：{0}'.format(email_now))
+            self.log.info('预期邮箱为：{0}'.format(email))
+            assert email_now == email, "Email:Save Failed"
+            self.log.info('邮箱与预期一致')
             # 7.5 QQ
-            assert int(handle.Kjlb_browseorgspace_menu_edit_QQ_text()) == QQ, "QQ:Save Failed"
-            self.log.info('检查QQ号')
+            self.log.info('检查QQ号：')
+            QQ_now = handle.Kjlb_browseorgspace_menu_edit_QQ_text()
+            self.log.info('当前QQ号为：{0}'.format(QQ_now))
+            self.log.info('预期QQ号为：{0}'.format(QQ))
+            assert int(QQ_now) == QQ, "QQ:Save Failed"
+            self.log.info('QQ与预期一致')
             # 7.6 网址
+            self.log.info('检查网址：')
+            website_now = handle.Kjlb_browseorgspace_menu_edit_website_text()
+            self.log.info('当前网址为：{0}'.format(website_now))
+            self.log.info('预期网址为：{0}'.format(website))
             assert handle.Kjlb_browseorgspace_menu_edit_website_text() == website, "Website:Save Failed"
-            self.log.info('检查网址')
+            self.log.info('网址与预期一致')
             # 8.清空名片数据
             # 8.1 清空联系人
             handle.Kjlb_browseorgspace_menu_edit_contact_clear()
@@ -148,7 +172,7 @@ class BusinessCard:
             # 8.7 勾选保存
             handle.Kjlb_browseorgspace_menu_edit_confirm_click()
             self.log.info('勾选保存')
-            self.log.info('------END:test5_1企业名片.BusinessCard.py------')
+            self.log.info('------END:test5_1编辑.BusinessCard.py------')
         except Exception as err:
             self.log.error("BusinessCard Inside : %s" % err)
             raise err

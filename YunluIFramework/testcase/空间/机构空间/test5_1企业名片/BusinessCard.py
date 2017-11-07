@@ -148,7 +148,7 @@ class BusinessCard:
             # 8.7 勾选保存
             handle.Kjlb_browseorgspace_menu_bcard_menu_edit_confirm_click()
             self.log.info('勾选保存')
-            self.log.info('------END:test5_1企业名片.BusinessCard.py------')
+            self.log.info('------END:test5_1编辑.BusinessCard.py------')
         except Exception as err:
             self.log.error("BusinessCard Inside : %s" % err)
             raise err

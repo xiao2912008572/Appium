@@ -21,8 +21,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_product_unlock_list_byname(self, name):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_byname(name))
 
-        #  空间列表-浏览企业空间-菜单栏-产品-未发布
-
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布
     def Kjlb_browseorgspace_menu_product_unlock_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock)
 

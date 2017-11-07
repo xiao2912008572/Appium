@@ -1,20 +1,20 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.空间.机构空间.test5_1企业名片 import *
+from StoneUIFramework.testcase.空间.机构空间.test5_1编辑 import *
 
 
-# 企业名片
+# 编辑
 @ddt.ddt
 class space_BusinessCardO(unittest.TestCase):
     # 1.全局测试数据
     d = DataInfo("space.xls")  # 创建DataInfo()对象
-    spacename_1 = d.cell("test005-企业名片", 2, 7)  # 测试空间123
-    contact_1 = d.cell("test005-企业名片", 2, 1)  # 联系人
-    phone_1 = int(d.cell("test005-企业名片", 2, 2))  # 手机号
-    tel_1 = int(d.cell("test005-企业名片", 2, 3))  # 座机号
-    email_1 = d.cell("test005-企业名片", 2, 4)  # 邮箱
-    QQ_1 = int(d.cell("test005-企业名片", 2, 5))  # QQ
-    website_1 = d.cell("test005-企业名片", 2, 6)  # 网址
+    spacename_1 = d.cell("test005-编辑", 2, 7)  # 测试空间123
+    contact_1 = d.cell("test005-编辑", 2, 1)  # 联系人
+    phone_1 = int(d.cell("test005-编辑", 2, 2))  # 手机号
+    tel_1 = int(d.cell("test005-编辑", 2, 3))  # 座机号
+    email_1 = d.cell("test005-编辑", 2, 4)  # 邮箱
+    QQ_1 = int(d.cell("test005-编辑", 2, 5))  # QQ
+    website_1 = d.cell("test005-编辑", 2, 6)  # 网址
 
     # 2.初始化
     def setUp(self):
@@ -37,12 +37,12 @@ class space_BusinessCardO(unittest.TestCase):
         self.log = Log(self.logfile)
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
-        self.log.info('------------START:test5_1企业名片.BusinessCard005_1.py------------')
+        self.log.info('------------START:test5_1编辑.BusinessCard005_1.py------------')
 
     # 3.释放资源
     def tearDown(self):
         # 1.打印日志
-        self.log.info("------------END::test5_1企业名片.BusinessCard005_1.py------------")  # 宣布成功
+        self.log.info("------------END::test5_1编辑.BusinessCard005_1.py------------")  # 宣布成功
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
         self.driver.quit()

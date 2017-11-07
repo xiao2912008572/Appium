@@ -234,7 +234,7 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseorgspace_menu_customer_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_customer)
 
-     # 空间列表-浏览企业空间-菜单栏-公司档:点击
+    # 空间列表-浏览企业空间-菜单栏-公司档:点击
     def Kjlb_browseorgspace_menu_archivies_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies)
 
@@ -243,24 +243,32 @@ class SPACEHANDLE2(SPACEHANDLE1):
         return self.p.click(self.Kjlb_browseorgspace_menu_upgrade)
 
     # 空间列表-浏览企业空间-菜单栏-编辑:点击
-    def Kjlb_browseorgspace_menu_bcard_click(self):
+    def Kjlb_browseorgspace_menu_edit_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_edit)
 
     # 空间列表-浏览企业空间-菜单栏-设置:点击
     def Kjlb_browseorgspace_menu_setup_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_setup)
 
+    # 空间列表-浏览企业空间-菜单栏-分享:点击
+    def Kjlb_browseorgspace_menu_share_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_share)
+
     # 空间列表-浏览企业空间-菜单栏-搜附近:点击
     def Kjlb_browseorgspace_menu_near_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_near)
 
+    # 空间列表-浏览企业空间-菜单栏-关闭:点击
+    def Kjlb_browseorgspace_menu_close_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_close)
+
+    # 空间列表-浏览企业空间-菜单栏-退出团队:点击
+    def Kjlb_browseorgspace_menu_quitteam_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_quitteam)
+
     # 空间列表-浏览企业空间-菜单栏-访客:点击
     def Kjlb_browseorgspace_menu_visitor_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_visitor)
-
-
-
-
 
     # *********************************【PAGE1】【私人空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览私人空间-返回-点击
@@ -323,7 +331,7 @@ class SPACEHANDLE2(SPACEHANDLE1):
 
     # 空间列表-浏览协会空间-添加按钮-取消关注
     def Kjlb_browseascspace_addbtn_concernC_click(self):
-        return self.p.click(self.Kjlb_browseascspace_addbtn_concern)
+        return self.p.click(self.Kjlb_browseascspace_addbtn_concernC)
 
     # 空间列表-浏览协会空间-添加按钮-申请加入
     def Kjlb_browseascspace_addbtn_apply_click(self):
