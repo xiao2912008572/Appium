@@ -213,8 +213,22 @@ class SPACEPAGE3(SPACEPAGE2):
     # 空间列表-浏览企业空间-菜单栏-订单-商品名列表-商品名
     Kjlb_browseorgspace_menu_order_prolist_proname = ("id->com.yunlu6.stone:id/shop_item_name", "空间列表-浏览企业空间-菜单栏-订单-商品名列表-商品名")
 
-    # 空间列表-浏览企业空间-菜单栏-订单-订单编号
-    Kjlb_browseorgspace_menu_order_no = ("id->com.yunlu6.stone:id/tv_dingdan_num", "空间列表-浏览企业空间-菜单栏-订单-订单编号")
+    # 空间列表-浏览企业空间-菜单栏-订单-订单编号列表
+    Kjlb_browseorgspace_menu_order_no = ("id->com.yunlu6.stone:id/tv_dingdan_num", "空间列表-浏览企业空间-菜单栏-订单-订单编号列表")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-价格列表
+    Kjlb_browseorgspace_menu_order_price = ("id->com.yunlu6.stone:id/tv_dingdan_price", "空间列表-浏览企业空间-菜单栏-订单-价格列表")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-数量列表
+    Kjlb_browseorgspace_menu_order_amount = ("id->com.yunlu6.stone:id/tv_dingdan_amount_one", "空间列表-浏览企业空间-菜单栏-订单-数量列表")
+
+    # 空间列表-浏览企业空间-菜单栏-订单-合计列表
+    Kjlb_browseorgspace_menu_order_total = ("id->com.yunlu6.stone:id/tv_dingdan_total_price", "空间列表-浏览企业空间-菜单栏-订单-合计列表")
+
+
+
+
+
 
     # 空间列表-浏览企业空间-菜单栏-订单-确认发货
     Kjlb_browseorgspace_menu_order_confirm = ("name->确认发货", "空间列表-浏览企业空间-菜单栏-订单-确认发货")

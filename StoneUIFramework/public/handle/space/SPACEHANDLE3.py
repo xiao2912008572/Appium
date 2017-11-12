@@ -332,9 +332,23 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_order_prolist_pronameT(self, n):
         return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_prolist_proname, n)
 
-    # 空间列表-浏览企业空间-菜单栏-订单-订单编号：文本
+    # 空间列表-浏览企业空间-菜单栏-订单-订单编号列表：文本
     def Kjlb_browseorgspace_menu_order_no_text(self, n):
         return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_no, n)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-价格列表：文本
+    def Kjlb_browseorgspace_menu_order_price_text(self, n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_price, n)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-数量列表：文本
+    def Kjlb_browseorgspace_menu_order_amount_text(self, n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_amount, n)
+
+    # 空间列表-浏览企业空间-菜单栏-订单-合计列表：文本
+    def Kjlb_browseorgspace_menu_order_total_text(self, n):
+        return self.p.get_texts(self.Kjlb_browseorgspace_menu_order_total, n)
+
+
 
     # 空间列表-浏览企业空间-菜单栏-订单-确认发货：点击
     def Kjlb_browseorgspace_menu_order_confirm_click(self):
