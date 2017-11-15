@@ -23,6 +23,7 @@ class SPACEHANDLE1(SPACEPAGE6):
     # 空间列表-浏览企业空间(通过name查找)
     def Kjlb_browseorgspaceByName_click(self,name):
         return self.p.click(self.Kjlb_browseorgspaceByName(name))
+        # return self.p.click(self.Kjlb_browseorgspaceByName(name))
 
     # 空间列表-获取空间元素列表
     def Kjlb_browseorgspace_getElements(self):

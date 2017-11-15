@@ -767,8 +767,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseascspace_menu_edit_email_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseascspace_menu_edit_email, text) \
  \
-            # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:获取文本
-
+    # 空间列表-浏览协会空间-菜单栏-编辑-邮箱:获取文本
     def Kjlb_browseascspace_menu_edit_email_text(self):
         return self.p.get_text(self.Kjlb_browseascspace_menu_edit_email)
 

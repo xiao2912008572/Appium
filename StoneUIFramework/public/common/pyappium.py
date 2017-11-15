@@ -372,7 +372,8 @@ class PyAppium():  # 继承page类
             element = self.get_element(css[0], css[1])  # 元素获取
             element.send_keys(text)
             self.driver.implicitly_wait(1)  # 智能等待1秒
-            # time.sleep(1)#点击事件自动等待1秒
+            # time.sleep(1)#点击ok
+            # 事件自动等待1秒
         except Exception as err:
             logger.error('元素：%s 无法聚焦,发送文本失败' % self.value_send)
             assert False, "{0} 元素：{1}-发送文本失败".format(time.asctime(), self.text_send)

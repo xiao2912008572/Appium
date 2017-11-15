@@ -8,13 +8,13 @@ from StoneUIFramework.testcase.空间.协会空间.test2_1编辑 import *
 class space_EditA(unittest.TestCase):
     # 1.全局测试数据
     d = DataInfo("space.xls")  # 创建DataInfo()对象
-    spacename_1 = d.cell("test005-企业名片", 3, 7)  # 测试空间123
-    contact_1 = d.cell("test005-企业名片", 3, 1)  # 联系人
-    phone_1 = int(d.cell("test005-企业名片", 3, 2))  # 手机号
-    tel_1 = int(d.cell("test005-企业名片", 3, 3))  # 座机号
-    email_1 = d.cell("test005-企业名片", 3, 4)  # 邮箱
-    QQ_1 = int(d.cell("test005-企业名片", 3, 5))  # QQ
-    website_1 = d.cell("test005-企业名片", 3, 6)  # 网址
+    spacename_1 = d.cell("test005-编辑", 3, 7)  # 测试空间123
+    contact_1 = d.cell("test005-编辑", 3, 1)  # 联系人
+    phone_1 = int(d.cell("test005-编辑", 3, 2))  # 手机号
+    tel_1 = int(d.cell("test005-编辑", 3, 3))  # 座机号
+    email_1 = d.cell("test005-编辑", 3, 4)  # 邮箱
+    QQ_1 = int(d.cell("test005-编辑", 3, 5))  # QQ
+    website_1 = d.cell("test005-编辑", 3, 6)  # 网址
 
     # 2.初始化
     def setUp(self):

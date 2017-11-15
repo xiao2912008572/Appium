@@ -44,6 +44,14 @@ class Connect:
 
 # cnn = Connect()
 # driver = cnn.connect()
+# sleep(1)
+# driver.find_element_by_id('com.yunlu6.stone:id/navi_item_zone').click()
+# sleep(1)
+# from StoneUIFramework.public.handle.space.SPACEHANDLE1 import SPACEHANDLE1
+# handle = SPACEHANDLE1(driver)
+# handle.Kjlb_browseorgspaceByName_click('测试空间123')
+# driver.find_element_by_name('测试空间123').click()
+
 # sleep(2)
 '''
 云库删除坐标测试

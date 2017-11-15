@@ -167,7 +167,8 @@ class order_OrderBuy(unittest.TestCase):
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_click()
             self.log.info('点击立即支付')
             # 6.输入密码
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password_sendkeys('199288')
+            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_corder_pay_weixin_now_password_sendkeys(
+                '199288')
             self.log.info('输入密码')
             # 7.支付成功检查
             self.log.info('支付结果检查')
