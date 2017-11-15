@@ -80,46 +80,46 @@ class order_OrderBuy(unittest.TestCase):
             self.log.error("Buy001 Outside : %s" % err)
             raise err
 
-    @ddt.data([title_address1, addressee_1, contact_1, province_1, city_1, detail_1])
-    @ddt.unpack
-    def test_buy002(self, title, addressee, contact, province, city, detail):
-        '''购买商品：填写地址流程'''
-        try:
-            self.log.info("------------START:Function_Buy002-购买商品填写地址------------")
-            # 1.点击立即购买
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_click()
-            self.log.info('点击立即购买')
-            # 2.检查是否跳转至添加收货地址页面
-            self.log.info('检查是否跳转至添加收货地址页面:')
-            assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element() != None, '页面跳转失败'
-            self.log.info('跳转成功')
-            # 3.页面标题检查
-            self.log.info('页面标题检查：')
-            title_now_address = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_gettitle()
-            self.log.info('当前页面标题：{0}'.format(title_now_address))
-            self.log.info('预期页面标题：{0}'.format(title))
-            assert title_now_address == title, '实际标题与预期标题不符'
-            # 4.填写收货地址相关信息
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee_sendkeys(addressee)
-            self.log.info('收货人：{0}'.format(addressee))
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber_sendkeys(contact)
-            self.log.info('联系电话：{0}'.format(contact))
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district_click()
-            self.log.info('点击所在地区')
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(province)
-            self.log.info('选择第{0}个省：北京'.format(province + 1))
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(city)
-            self.log.info('选择第{0}个市：东城'.format(city + 1))
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail_sendkeys(detail)
-            self.log.info('填写详细地址：{0}'.format(detail))
-            # 5.点击保存
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save_click()
-            self.log.info('点击保存')
-            self.log.info("------------SEND:Function_Buy002-购买商品填写地址------------")
-        except Exception as err:
-            self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            self.log.error("Buy002 Outside : %s" % err)
-            raise err
+    # @ddt.data([title_address1, addressee_1, contact_1, province_1, city_1, detail_1])
+    # @ddt.unpack
+    # def test_buy002(self, title, addressee, contact, province, city, detail):
+    #     '''购买商品：填写地址流程'''
+    #     try:
+    #         self.log.info("------------START:Function_Buy002-购买商品填写地址------------")
+    #         # 1.点击立即购买
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_click()
+    #         self.log.info('点击立即购买')
+    #         # 2.检查是否跳转至添加收货地址页面
+    #         self.log.info('检查是否跳转至添加收货地址页面:')
+    #         assert self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_page_element() != None, '页面跳转失败'
+    #         self.log.info('跳转成功')
+    #         # 3.页面标题检查
+    #         self.log.info('页面标题检查：')
+    #         title_now_address = self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_gettitle()
+    #         self.log.info('当前页面标题：{0}'.format(title_now_address))
+    #         self.log.info('预期页面标题：{0}'.format(title))
+    #         assert title_now_address == title, '实际标题与预期标题不符'
+    #         # 4.填写收货地址相关信息
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_addressee_sendkeys(addressee)
+    #         self.log.info('收货人：{0}'.format(addressee))
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_cnumber_sendkeys(contact)
+    #         self.log.info('联系电话：{0}'.format(contact))
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_district_click()
+    #         self.log.info('点击所在地区')
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(province)
+    #         self.log.info('选择第{0}个省：北京'.format(province + 1))
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_districtlist_click(city)
+    #         self.log.info('选择第{0}个市：东城'.format(city + 1))
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_detail_sendkeys(detail)
+    #         self.log.info('填写详细地址：{0}'.format(detail))
+    #         # 5.点击保存
+    #         self.handle.Kjlb_browseorgspace_menu_product_lock_list_buynow_recaddress_save_click()
+    #         self.log.info('点击保存')
+    #         self.log.info("------------SEND:Function_Buy002-购买商品填写地址------------")
+    #     except Exception as err:
+    #         self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+    #         self.log.error("Buy002 Outside : %s" % err)
+    #         raise err
 
     @ddt.data([title_order1])
     @ddt.unpack
@@ -223,47 +223,70 @@ class order_OrderBuy(unittest.TestCase):
             self.log.error("Buy004 Outside : %s" % err)
             raise err
 
-            # @ddt.data([spacename_1])
-            # @ddt.unpack
-            # def test_sale001(self, spacename):
-            #     '''卖家：检查订单，准备发货'''
-            #     try:
-            #         self.log.info("------------START:Function_Sale001-检查订单，准备发货------------")
-            #         # 1.空间列表
-            #         self.handle.Kjlb_click()
-            #         self.log.info('点击空间列表')
-            #         # 2.选择进入测试机构空间
-            #         self.handle.Kjlb_browseorgspaceByName_click(spacename)
-            #         self.log.info('进入空间：{0}'.format(spacename))
-            #         # 3.菜单栏-订单
-            #         self.handle.Kjlb_browseorgspace_menu()
-            #         self.log.info('点击菜单栏')
-            #         self.handle.Kjlb_browseorgspace_menu_order_click()
-            #         self.log.info('点击订单')
-            #         # 4.待发货订单编号检查
-            #         self.handle.Kjlb_browseorgspace_menu_order_waitforsend_click()
-            #         self.log.info('点击待发货栏')
-            #         self.log.info('检查待发货列表第一件商品名称、订单编号、价格等：')
-            #         proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
-            #         self.log.info('当前商品名称：{0}'.format(proname_now))
-            #         self.log.info('预期商品名称：{0}'.format(proname_start))
-            #         assert proname_now == proname_start, '商品名称显示与预期不符'
-            #         self.log.info('商品名称检查OK')
-            #
-            #         ordercode_now = self.handle.Kjlb_browseorgspace_menu_order_no_text(0)
-            #         self.log.info('当前订单编号为：{0}'.format(ordercode_now))
-            #         self.log.info('预期订单编号为：{0}'.format(order_code))
-            #         assert ordercode_now == order_code, '商品订单显示与预期不符'
-            #         self.log.info('商品订单检查OK')
-            #
-            #         proprice_now = self.handle.
-            #
-            #
-            #
-            #     except Exception as err:
-            #         self.tools.getScreenShot(self.screen_path, "ExceptionShot")
-            #         self.log.error("Sale001 Outside : %s" % err)
-            #         raise err
+    @ddt.data([spacename_1])
+    @ddt.unpack
+    def test_sale001(self, spacename):
+        '''卖家：检查订单，准备发货'''
+        try:
+            self.log.info("------------START:Function_Sale001-检查订单，准备发货------------")
+            # 1.空间列表
+            self.handle.Kjlb_click()
+            self.log.info('点击空间列表')
+            # 2.选择进入测试机构空间
+            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            self.log.info('进入空间：{0}'.format(spacename))
+            # 3.菜单栏-订单
+            self.handle.Kjlb_browseorgspace_menu()
+            self.log.info('点击菜单栏')
+            self.handle.Kjlb_browseorgspace_menu_order_click()
+            self.log.info('点击订单')
+            # 4.待发货订单编号检查
+            self.handle.Kjlb_browseorgspace_menu_order_waitforsend_click()
+            self.log.info('点击待发货栏')
+            self.log.info('检查待发货列表第一件商品名称、订单编号、价格等：')
+            proname_now = self.handle.Kjlb_browseorgspace_menu_order_prolist_pronameT(0)
+            # 4.1 商品名称检查
+            self.log.info('当前商品名称：{0}'.format(proname_now))
+            self.log.info('预期商品名称：{0}'.format(proname_start))
+            assert proname_now == proname_start, '商品名称显示与预期不符'
+            self.log.info('商品名称检查OK')
+
+            # 4.2订单编号检查
+            ordercode_now = self.handle.Kjlb_browseorgspace_menu_order_no_text(0)
+            self.log.info('当前订单编号为：{0}'.format(ordercode_now))
+            self.log.info('预期订单编号为：{0}'.format(order_code))
+            assert ordercode_now == order_code, '商品订单显示与预期不符'
+            self.log.info('商品订单检查OK')
+
+            # 4.3商品价格检查
+            proprice_now = self.handle.Kjlb_browseorgspace_menu_order_price_text(0)[1:]
+            self.log.info('当前商品价格为：{0}'.format(proprice_now))
+            self.log.info('预期商品价格为：{0}'.format(proprice_start))
+            assert proprice_now == proprice_start, '商品价格显示与预期不符'
+            self.log.info('商品价格检查OK')
+
+            # 4.4商品数量检查
+            proamount_now = self.handle.Kjlb_browseorgspace_menu_order_amount_text(0)
+            self.log.info('当前商品数量为：{0}'.format(proamount_now))
+            self.log.info('预期商品数量为：1.0')
+            assert proamount_now == 1.0, '商品数量与预期不符'
+            self.log.info('商品数量检查OK')
+
+            # 共计3件商品合计：￥0.03
+            self.log.info('合计金额检查')
+            prototal_now = self.handle.Kjlb_browseorgspace_menu_order_total_text(0)
+            prototal_now = prototal_now.split["￥"][1].strip()
+            self.log.info('当前合计为：{0}'.format(prototal_now))
+            global prototal  # 全局变量：预期总价
+            prototal = int(1 * proprice_start)
+            assert prototal == prototal_now, '合计与预期金额合计不符'
+            self.log.info('合计金额检查OK')
+
+
+        except Exception as err:
+            self.tools.getScreenShot(self.screen_path, "ExceptionShot")
+            self.log.error("Sale001 Outside : %s" % err)
+            raise err
 
 
 if __name__ == '__main__':
