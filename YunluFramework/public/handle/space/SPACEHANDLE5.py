@@ -122,27 +122,27 @@ class SPACEHANDLE5(SPACEHANDLE4):
     # ***************************************【PAGE4】制品/表面Kjlb_browseorgspace_menu_product_new_attrstone***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-返回:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_back_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_back)
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attryunlu_back)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-勾选:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_confirm_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_confirm)
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attryunlu_confirm)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-制品:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_type_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_type)
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attryunlu_type)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-制品-列表:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_type_list_click(self, n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_type_list, n)
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attryunlu_type_list, n)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-表面:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_surface_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attrstone_surface)
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attryunlu_surface)
 
     #  空浏览企业空间-菜单栏-产品-新建-制品/表面-表面-列表:点击
     def Kjlb_browseorgspace_menu_product_new_attrstone_surface_list_click(self, n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attrstone_surface_list, n)
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attryunlu_surface_list, n)
 
     # ***************************************【PAGE4】产品参数Kjlb_browseorgspace_menu_product_new_parameter***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-返回:点击

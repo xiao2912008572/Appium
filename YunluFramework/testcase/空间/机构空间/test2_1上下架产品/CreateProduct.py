@@ -52,8 +52,10 @@ class CreateProduct:
 
             driver.find_element_by_id("com.yunlu6.yunlu:id/et_classify").send_keys("建筑石材")
             self.log.info('商品分类输入：建筑石材')
+            sleep(1)
             t.click_element_by_coordinate(528,566)
             self.log.info('点击搜索结果中的建筑石材')
+            sleep(1)
 
             # handle.Kjlb_browseorgspace_menu_product_new_proname_bclassify_click()  # 点击分类
             # self.log.info('点击商品分类')

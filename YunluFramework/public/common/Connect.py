@@ -30,8 +30,8 @@ class Connect:
         file_path = os.path.join(BASE_DIR, "config", "connect.conf")
         # 读取配置文件
         cf.read(file_path)
-        desired_caps1 = eval(cf.get("APP","desired_caps1"))
-        # desired_caps = eval(cf.get("APP", "desired_caps"))
+        # desired_caps1 = eval(cf.get("APP","desired_caps1"))
+        desired_caps1 = eval(cf.get("APP", "desired_caps"))
         # 初始化appium连接
         try:
             driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps1)

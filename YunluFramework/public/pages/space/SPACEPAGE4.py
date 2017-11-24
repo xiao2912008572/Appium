@@ -36,10 +36,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_lock_list_middle = ("id->com.yunlu6.yunlu:id/tv_middle", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-石种属性检查
-    Kjlb_browseorgspace_menu_product_lock_list_middle_attribute = ("id->com.yunlu6.yunlu:id/tv_yunlu", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-石种属性检查")
+    Kjlb_browseorgspace_menu_product_lock_list_middle_attribute = ("id->com.yunlu6.yunlu:id/tv_stone", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-石种属性检查")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-制品与表面检查
-    Kjlb_browseorgspace_menu_product_lock_list_middle_pattern = ("id->com.yunlu6.yunlu:id/tv_yunlu_pattern", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-制品与表面检查")
+    Kjlb_browseorgspace_menu_product_lock_list_middle_pattern = ("id->com.yunlu6.yunlu:id/tv_stone_pattern", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-制品与表面检查")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-参数列表检查
     # Kjlb_browseorgspace_menu_product_lock_list_middle_parameter = ("id->com.yunlu6.yunlu:id/tv_name","空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品参数-参数列表检查")
@@ -175,10 +175,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_new_proname = ("id->com.yunlu6.yunlu:id/product_name", "空间列表-浏览企业空间-菜单栏-产品-新建-商品名称")
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性
-    Kjlb_browseorgspace_menu_product_new_attribute = ("id->com.yunlu6.yunlu:id/tv_yunlu_attribute", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性")
+    Kjlb_browseorgspace_menu_product_new_attribute = ("id->com.yunlu6.yunlu:id/tv_stone_attribute", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性")
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面
-    Kjlb_browseorgspace_menu_product_new_attryunlu = ("id->com.yunlu6.yunlu:id/tv_product_attr_yunlu", "空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面")
+    Kjlb_browseorgspace_menu_product_new_attrstone = ("id->com.yunlu6.yunlu:id/tv_product_attr_stone", "空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面")
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数
     Kjlb_browseorgspace_menu_product_new_parameter = ("id->com.yunlu6.yunlu:id/tv_restatte", "空间列表-浏览企业空间-菜单栏-产品-新建-产品参数")
@@ -402,7 +402,7 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseperspace_piclist_classifyspace_folderByID = ("id->com.yunlu6.yunlu:id/tv_name", "空间列表-浏览私人空间-照片列表-分类到-文件夹ByID")
 
     # 空间列表-浏览私人空间-照片列表-分类到-文件夹ByName
-    def Kjlb_browseperspace_piclist_classify_folderByName(self, name):
+    def Kjlb_browseperspace_piclist_classify_folderByNameP(self, name):
         return ("name->%s" % name, "空间列表-浏览私人空间-照片列表-分类到-文件夹ByName")
 
     # ***************************************【PAGE3】菜单栏-编辑Kjlb_browseperspace_piclist_edit***************************************
