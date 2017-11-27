@@ -191,6 +191,14 @@ class SPACEHANDLE4(SPACEHANDLE3):
     def Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_menu_delete)
 
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是:点击
+    def Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否:点击
+    def Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_n_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_n)
+
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-购物车图标:点击
     def Kjlb_browseorgspace_menu_product_unlock_list_shopicon_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_product_unlock_list_shopicon)

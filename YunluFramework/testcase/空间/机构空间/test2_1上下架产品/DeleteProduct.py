@@ -28,6 +28,8 @@ class DeleteProduct:
             # 2.点击删除
             self.handle.Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_click()  # 删除产品
             self.log.info('点击删除')
+            self.handle.Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y_click() #确认删除该产品
+            self.log.info('确认删除')
             self.log.info('------End:test2_1上下架产品.DeleteProduct.py------')
         except Exception as err:
             self.log.error("DeleteProduct Inside : %s" % err)

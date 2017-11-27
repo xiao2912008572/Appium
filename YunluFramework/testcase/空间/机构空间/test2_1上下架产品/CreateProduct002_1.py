@@ -56,7 +56,7 @@ class space_ProductO(unittest.TestCase):
         self.log.info("------------END:test2_1上下架产品.CreateProduct002_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, photo_1, proname_1, tag1_1,
@@ -78,6 +78,10 @@ class space_ProductO(unittest.TestCase):
             sleep(1)
             self.handle.Kjlb_click()  # 点击进入空间列表
             self.log.info('点击进入空间列表')
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动1.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)  # 点击进入测试空间123
             self.log.info('点击进入%s' % spacename)
             self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏

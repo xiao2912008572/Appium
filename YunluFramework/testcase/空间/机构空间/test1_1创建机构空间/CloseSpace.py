@@ -27,7 +27,8 @@ class CloseSpace:
             # 为了保证不中途退出，需要第一次进入的时候检查是否存在该机构，如果存在，先关闭
             t.swipeUp(500)
             t.swipeUp(500)
-            self.log.info('屏幕向上滑动0.5秒')
+            t.swipeUp(500)
+            self.log.info('屏幕向上滑动1.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击进入空间:{0}'.format(spacename))
             sleep(1)

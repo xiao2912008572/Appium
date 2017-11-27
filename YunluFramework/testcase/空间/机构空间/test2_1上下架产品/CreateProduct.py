@@ -50,7 +50,7 @@ class CreateProduct:
             handle.Kjlb_browseorgspace_menu_product_new_proname_name_title_click()  # 点击顶部标题
             self.log.info('点击顶部标题')
 
-            driver.find_element_by_id("com.yunlu6.yunlu:id/et_classify").send_keys("建筑石材")
+            driver.find_element_by_id("com.yunlu6.yunlu:id/et_classify").send_keys(u"建筑石材")
             self.log.info('商品分类输入：建筑石材')
             sleep(1)
             t.click_element_by_coordinate(528,566)
@@ -108,6 +108,8 @@ class CreateProduct:
             self.log.info('单价：%s' % price1)
             handle.Kjlb_browseorgspace_menu_product_new_price_stock_sendkeys(-1, stock1)  # 库存0
             self.log.info('库存：%s' % stock1)
+            t.swipeUp(500)
+            self.log.info('向上滑动屏幕0.5秒')
             handle.Kjlb_browseorgspace_menu_product_new_price_save_click()  # 点击保存
             self.log.info('点击保存')
             # 6.2 价格:123 库存:空
@@ -117,6 +119,8 @@ class CreateProduct:
             self.log.info('单价：%s' % price2)
             handle.Kjlb_browseorgspace_menu_product_new_price_stock_sendkeys(-1, stock2)  # 库存空
             self.log.info('库存：%s' % stock2)
+            t.swipeUp(500)
+            self.log.info('向上滑动屏幕0.5秒')
             handle.Kjlb_browseorgspace_menu_product_new_price_save_click()  # 点击保存
             self.log.info('点击保存')
             # 6.3 价格:空 库存:123
@@ -126,6 +130,8 @@ class CreateProduct:
             self.log.info('库存：%s' % stock3)
             handle.Kjlb_browseorgspace_menu_product_new_price_unitprice_sendkeys(-2, price3)  # 单价空
             self.log.info('单价：%s' % price1)
+            t.swipeUp(500)
+            self.log.info('向上滑动屏幕0.5秒')
             handle.Kjlb_browseorgspace_menu_product_new_price_save_click()  # 点击保存
             self.log.info('点击保存')
             # 6.4 价格:999 库存:999
@@ -135,6 +141,8 @@ class CreateProduct:
             self.log.info('单价：%s' % price4)
             handle.Kjlb_browseorgspace_menu_product_new_price_stock_sendkeys(-1, stock4)  # 库存999
             self.log.info('库存：%s' % stock4)
+            t.swipeUp(500)
+            self.log.info('向上滑动屏幕0.5秒')
             handle.Kjlb_browseorgspace_menu_product_new_price_save_click()  # 点击保存
             self.log.info('点击保存')
             handle.Kjlb_browseorgspace_menu_product_new_price_back_click()  # 点击返回

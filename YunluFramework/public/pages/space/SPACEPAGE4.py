@@ -149,6 +149,12 @@ class SPACEPAGE4(SPACEPAGE3):
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除
     Kjlb_browseorgspace_menu_product_unlock_list_menu_delete = ("id->com.yunlu6.yunlu:id/bt_delete", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除")
 
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是
+    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是")
+
+    #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否
+    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_n = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否")
+
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-购物车图标
     Kjlb_browseorgspace_menu_product_unlock_list_shopicon = ("id->com.yunlu6.yunlu:id/shop_cart", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-购物车图标")
 

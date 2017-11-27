@@ -48,7 +48,7 @@ class space_CreateO(unittest.TestCase):
         self.log.info("------------END:test1_1创建机构空间.CreateOrgSpace001_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([fullname_1, easyname_1, province_1, city_1,
