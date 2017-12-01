@@ -46,7 +46,7 @@ class space_CreateO(unittest.TestCase):
     def tearDown(self):
         # 1.打印日志
         self.log.info("------------END:test1_1创建机构空间.CreateOrgSpace001_1.py------------")
-        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
         # 2.关闭driver
         # self.driver.quit()
 

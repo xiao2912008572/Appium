@@ -24,6 +24,10 @@ class CreatePerSFolder:
         try:
             self.log.info('------START:test2_1私人空间加文件夹.CreatePerSFolder.py------')
             # 1.空间-菜单栏
+            tools.swipeUp(500)
+            tools.swipeUp(500)
+            tools.swipeUp(500)
+            self.log.info('向上滑动1.5秒')
             driver.find_element_by_name(spacename).click()
             self.log.info('点击{0}空间'.format(spacename))
             # handle.Kjlb_browseperspaceByName(spacename).click()

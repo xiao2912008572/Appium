@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.登录.test1_1登录 import *
+from YunluFramework.testcase.登录.test1_1登录 import *
 
 '''
 用ddt数据驱动去准备username和password（ddt不会别说）
@@ -55,7 +55,7 @@ class Login(unittest.TestCase):
         self.log.info("------------END:test1_1登录.Login001_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([phone1, password1],
@@ -68,7 +68,8 @@ class Login(unittest.TestCase):
             # 1.登录
             self.login.login(self.driver, phone, password)
             # 2.判断登录是否成功
-            assert self.driver.find_element_by_id("com.yunlu6.stone:id/sv_cloundview") is not None, "Error Login Failed!"
+            assert self.driver.find_element_by_id(
+                "com.yunlu6.yunlu:id/sv_cloundview") is not None, "Error Login Failed!"
             self.log.info('检查是否登录成功')
             # 3.登出
             self.loginout.loginout(self.driver, 1)  # 云视页设置

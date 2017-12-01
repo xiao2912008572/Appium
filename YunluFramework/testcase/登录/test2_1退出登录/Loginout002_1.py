@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.登录.test2_1退出登录 import *
+from YunluFramework.testcase.登录.test2_1退出登录 import *
 
 
 # 退出登录
@@ -43,7 +43,7 @@ class Loginout(unittest.TestCase):
             # 1.退出登录
             self.loginout.loginout(self.driver, 1)  # 云视页设置
             # 2.判断退出是否成功
-            assert self.driver.find_element_by_id("com.yunlu6.stone:id/login_btn") is not None, "Error Loginout Failed!"
+            assert self.driver.find_element_by_id("com.yunlu6.yunlu:id/btn_login") is not None, "Error Loginout Failed!"
             self.log.info('判断是否退出成功')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")

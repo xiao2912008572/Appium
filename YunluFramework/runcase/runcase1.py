@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # 2.创建控制器对象
     SC = SuiteController()
     # 2.选择测试用例
-    suiteA = SC.chooseSuite(22, 22, 'ALL')  # 所有用例
+    suiteA = SC.chooseSuite(3, 7, 'ALL')  # 所有用例
     a = 1
     while a != 5:
         # a = a + 1
@@ -46,4 +46,3 @@ if __name__ == '__main__':
         sendMail.send()
         logger.info('{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{END:RUNCASSE1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}')
         break
-

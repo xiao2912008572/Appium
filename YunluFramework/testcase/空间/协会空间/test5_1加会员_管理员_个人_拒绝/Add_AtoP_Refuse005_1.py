@@ -46,7 +46,7 @@ class AddAtoPRefuseA(unittest.TestCase):
         self.log.info("------------END:test5_1加会员_管理员_个人_拒绝.Add_AtoP_Refuse005_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, vipname_1, phone1_1, password1_1, phone2_1, password2_1])
@@ -59,6 +59,8 @@ class AddAtoPRefuseA(unittest.TestCase):
             self.handleS.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:协会测试123
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动0.5秒')
             self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入协会空间：{0}'.format(spacename))
             # 3.+会员
@@ -73,16 +75,18 @@ class AddAtoPRefuseA(unittest.TestCase):
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 4.3点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 7.5点击消息第一条
-            self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击拒绝
-            self.driver.find_element_by_id("com.yunlu6.stone:id/refuse_btn").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/refuse_btn").click()
             self.log.info('点击拒绝')
             # 7.7返回到云视
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.tools.click_element_by_coordinate(50,131)
+            self.log.info('点击返回流程')
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8退出受邀账号
             self.loginout.loginout(self.driver, 1)
@@ -94,15 +98,15 @@ class AddAtoPRefuseA(unittest.TestCase):
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 8.2点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 8.3查看消息第一条
-            message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
+            message = self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").text
             self.log.info('查看第1条消息')
             assert message == vipname + ' 回绝邀请 贵公司的 会员 邀请', "Error Message Handled"
             self.log.info('检查是否收到拒绝消息')
             # 8.4返回-空间主界面
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回，返回至空间主界面')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")

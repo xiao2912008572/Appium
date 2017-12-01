@@ -16,92 +16,95 @@ class SPACEPAGE2(SPACEPAGE1):
 
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称
-    Kjlb_mainmenu_newspace_orgname = ("id->com.yunlu6.yunlu:id/ed_organization_name", "定位空间列表-主菜单-'+机构空间'-机构全称失败")
+    Kjlb_mainmenu_newspace_orgname = ("id->com.yunlu6.yunlu:id/ed_organization_name", "定位空间列表-主菜单-'+机构空间'-机构全称")
 
     # 空间列表-主菜单-'+机构空间'-机构简称
-    Kjlb_mainmenu_newspace_orgintro = ("id->com.yunlu6.yunlu:id/ed_organization_intro", "定位空间列表-主菜单-'+机构空间'-机构简称失败")
+    Kjlb_mainmenu_newspace_orgintro = ("id->com.yunlu6.yunlu:id/ed_organization_intro", "定位空间列表-主菜单-'+机构空间'-机构简称")
 
     # 空间列表-主菜单-'+机构空间'-新建机构空间标题
-    Kjlb_mainmenu_newspace_orgtitle = ("id->com.yunlu6.yunlu:id/title_tv_title", "定位空间列表-主菜单-'+机构空间'-新建机构空间标题失败")
+    Kjlb_mainmenu_newspace_orgtitle = ("id->com.yunlu6.yunlu:id/title_tv_title", "定位空间列表-主菜单-'+机构空间'-新建机构空间标题")
 
     # 空间列表-主菜单-'+机构空间'-机构类型
-    Kjlb_mainmenu_newspace_orgtype = ("id->com.yunlu6.yunlu:id/tv_organization_type", "定位空间列表-主菜单-'+机构空间'-机构类型失败")
+    Kjlb_mainmenu_newspace_orgtype = ("id->com.yunlu6.yunlu:id/tv_organization_type", "定位空间列表-主菜单-'+机构空间'-机构类型")
 
     # 空间列表-主菜单-'+机构空间'-机构类型-企业
-    Kjlb_mainmenu_newspace_orgtype_company = ("id->com.yunlu6.yunlu:id/btn_pop_company", "定位空间列表-主菜单-'+机构空间'-机构类型-企业失败")
+    Kjlb_mainmenu_newspace_orgtype_company = ("id->com.yunlu6.yunlu:id/btn_pop_company", "定位空间列表-主菜单-'+机构空间'-机构类型-企业")
 
     # 空间列表-主菜单-'+机构空间'-机构类型-协会
-    Kjlb_mainmenu_newspace_orgtype_association = ("id->com.yunlu6.yunlu:id/btn_pop_association", "定位空间列表-主菜单-'+机构空间'-机构类型-协会失败")
+    Kjlb_mainmenu_newspace_orgtype_association = ("id->com.yunlu6.yunlu:id/btn_pop_association", "定位空间列表-主菜单-'+机构空间'-机构类型-协会")
 
     # 空间列表-主菜单-'+机构空间'-产业角色
-    Kjlb_mainmenu_newspace_industry = ("id->com.yunlu6.yunlu:id/iv_organization_industry", "定位空间列表-主菜单-'+机构空间'-产业角色失败")
+    Kjlb_mainmenu_newspace_industry = ("id->com.yunlu6.yunlu:id/iv_organization_industry", "定位空间列表-主菜单-'+机构空间'-产业角色")
 
     # 空间列表-主菜单-'+机构空间'-产业角色-产业角色标签
-    Kjlb_mainmenu_newspace_industry_tag = ("id->com.yunlu6.yunlu:id/tag_id", "定位空间列表-主菜单-'+机构空间'-产业角色-产业角色标签失败")
+    Kjlb_mainmenu_newspace_industry_tag = ("id->com.yunlu6.yunlu:id/tag_id", "定位空间列表-主菜单-'+机构空间'-产业角色-产业角色标签")
 
     # 空间列表-主菜单-'+机构空间'-客户类型
-    Kjlb_mainmenu_newspace_customertype = ("id->com.yunlu6.yunlu:id/tv_organization_customer_type", "定位空间列表-主菜单-'+机构空间'-客户类型失败")
+    Kjlb_mainmenu_newspace_customertype = ("id->com.yunlu6.yunlu:id/tv_organization_customer_type", "定位空间列表-主菜单-'+机构空间'-客户类型")
 
     # 空间列表-主菜单-'+机构空间'-客户类型-客户类型标签
-    Kjlb_mainmenu_newspace_customertype_tag = ("id->com.yunlu6.yunlu:id/tag_id", "定位空间列表-主菜单-'+机构空间'-客户类型-客户类型标签失败")
+    Kjlb_mainmenu_newspace_customertype_tag = ("id->com.yunlu6.yunlu:id/tag_id", "定位空间列表-主菜单-'+机构空间'-客户类型-客户类型标签")
 
     # 空间列表-主菜单-'+机构空间'-客户类型-客户类型确定
-    Kjlb_mainmenu_newspace_customertype_confirm = ("id->com.yunlu6.yunlu:id/btn_confirm", "定位空间列表-主菜单-'+机构空间'-客户类型-客户类型确定失败")
+    Kjlb_mainmenu_newspace_customertype_confirm = ("id->com.yunlu6.yunlu:id/btn_confirm", "定位空间列表-主菜单-'+机构空间'-客户类型-客户类型确定")
 
     # 空间列表-主菜单-'+机构空间'-所在地区
-    Kjlb_mainmenu_newspace_area = ("id->com.yunlu6.yunlu:id/tv_organization_address", "定位空间列表-主菜单-'+机构空间'-所在地区失败")
+    Kjlb_mainmenu_newspace_area = ("id->com.yunlu6.yunlu:id/tv_organization_address", "定位空间列表-主菜单-'+机构空间'-所在地区")
 
     # 空间列表-主菜单-'+机构空间'-所在地区-省市区列表
-    Kjlb_mainmenu_newspace_area_address = ("id->com.yunlu6.yunlu:id/tv_address", "定位空间列表-主菜单-'+机构空间'-所在地区-省市区失败")
+    Kjlb_mainmenu_newspace_area_address = ("id->com.yunlu6.yunlu:id/tv_address", "定位空间列表-主菜单-'+机构空间'-所在地区-省市区")
 
     # 空间列表-主菜单-'+机构空间'-详细地址框
-    Kjlb_mainmenu_newspace_addressdetail = ("id->com.yunlu6.yunlu:id/tv_organization_detailed", "定位空间列表-主菜单-'+机构空间'-详细地址框失败")
+    Kjlb_mainmenu_newspace_addressdetail = ("id->com.yunlu6.yunlu:id/tv_organization_detailed", "定位空间列表-主菜单-'+机构空间'-详细地址框")
 
     # 空间列表-主菜单-'+机构空间'-详细地址按钮
-    Kjlb_mainmenu_newspace_mapdetail = ("id->com.yunlu6.yunlu:id/iv_map", "定位空间列表-主菜单-'+机构空间'-详细地址失败")
+    Kjlb_mainmenu_newspace_mapdetail = ("id->com.yunlu6.yunlu:id/iv_map", "定位空间列表-主菜单-'+机构空间'-详细地址")
 
     # 空间列表-主菜单-'+机构空间'-提交
-    Kjlb_mainmenu_newspace_affirm = ("id->com.yunlu6.yunlu:id/btn_affirm", "定位空间列表-主菜单-'+机构空间'-提交失败")
+    Kjlb_mainmenu_newspace_affirm = ("id->com.yunlu6.yunlu:id/btn_affirm", "定位空间列表-主菜单-'+机构空间'-提交")
 
     # ----------------------对公账号验证-----------------------
     # 空间列表-主菜单-'+机构空间'-去验证
-    Kjlb_mainmenu_newspace_verifynow = ("id->com.yunlu6.yunlu:id/tv_now", "定位空间列表-主菜单-'+机构空间'-去验证失败")
+    Kjlb_mainmenu_newspace_verifynow = ("id->com.yunlu6.yunlu:id/tv_now", "定位空间列表-主菜单-'+机构空间'-去验证")
 
     # 空间列表-主菜单-'+机构空间'-去验证-返回
-    Kjlb_mainmenu_newspace_verifynow_back = ("id->com.yunlu6.yunlu:id/title_back_icon", "定位空间列表-主菜单-'+机构空间'-去验证-返回失败")
+    Kjlb_mainmenu_newspace_verifynow_back = ("id->com.yunlu6.yunlu:id/title_back_icon", "定位空间列表-主菜单-'+机构空间'-去验证-返回")
 
     # 空间列表-主菜单-'+机构空间'-去验证-真实姓名
-    Kjlb_mainmenu_newspace_verifynow_sovereigntyname = ("id->com.yunlu6.yunlu:id/et_sovereignty_name", "定位空间列表-主菜单-'+机构空间'-去验证-真实姓名失败")
+    Kjlb_mainmenu_newspace_verifynow_sovereigntyname = ("id->com.yunlu6.yunlu:id/et_sovereignty_name", "定位空间列表-主菜单-'+机构空间'-去验证-真实姓名")
 
     # 空间列表-主菜单-'+机构空间'-去验证-身份证号
-    Kjlb_mainmenu_newspace_verifynow_idnumber = ("id->com.yunlu6.yunlu:id/et_sovereignty_id_number", "定位空间列表-主菜单-'+机构空间'-去验证-身份证号失败")
+    Kjlb_mainmenu_newspace_verifynow_idnumber = ("id->com.yunlu6.yunlu:id/et_sovereignty_id_number", "定位空间列表-主菜单-'+机构空间'-去验证-身份证号")
 
     # 空间列表-主菜单-'+机构空间'-去验证-银行开户名
-    Kjlb_mainmenu_newspace_verifynow_bankname = ("id->com.yunlu6.yunlu:id/tv_sover_bank_name", "定位空间列表-主菜单-'+机构空间'-去验证-银行开户名失败")
+    Kjlb_mainmenu_newspace_verifynow_bankname = ("id->com.yunlu6.yunlu:id/tv_sover_bank_name", "定位空间列表-主菜单-'+机构空间'-去验证-银行开户名")
 
     # 空间列表-主菜单-'+机构空间'-去验证-开户银行
-    Kjlb_mainmenu_newspace_verifynow_soverbank = ("id->com.yunlu6.yunlu:id/et_sover_bank", "定位空间列表-主菜单-'+机构空间'-去验证-开户银行失败")
+    Kjlb_mainmenu_newspace_verifynow_soverbank = ("id->com.yunlu6.yunlu:id/et_sover_bank", "定位空间列表-主菜单-'+机构空间'-去验证-开户银行")
+
+    # 空间列表-主菜单-'+机构空间'-去验证-开户银行-列表1(可复用)
+    Kjlb_mainmenu_newspace_verifynow_soverbank_list1 = ("id->com.yunlu6.yunlu:id/tv_name_item_bank", "定位空间列表-主菜单-'+机构空间'-去验证-开户银行-列表1")
 
     # 空间列表-主菜单-'+机构空间'-去验证-所在地区
-    Kjlb_mainmenu_newspace_verifynow_soveraddress = ("id->com.yunlu6.yunlu:id/tv_sover_address", "定位空间列表-主菜单-'+机构空间'-去验证-所在地区失败")
+    Kjlb_mainmenu_newspace_verifynow_soveraddress = ("id->com.yunlu6.yunlu:id/tv_sover_address", "定位空间列表-主菜单-'+机构空间'-去验证-所在地区")
 
     # 空间列表-主菜单-'+机构空间'-去验证-所在地区-列表
-    Kjlb_mainmenu_newspace_verifynow_soveraddress_list = ("com.yunlu6.yunlu:id/tv_address", "定位空间列表-主菜单-'+机构空间'-去验证-所在地区-列表失败")
+    Kjlb_mainmenu_newspace_verifynow_soveraddress_list = ("com.yunlu6.yunlu:id/tv_address", "定位空间列表-主菜单-'+机构空间'-去验证-所在地区-列表")
 
     # 空间列表-主菜单-'+机构空间'-去验证-支行
-    Kjlb_mainmenu_newspace_verifynow_sovermybank = ("id->com.yunlu6.yunlu:id/et_sover_my_bank", "定位空间列表-主菜单-'+机构空间'-去验证-支行失败")
+    Kjlb_mainmenu_newspace_verifynow_sovermybank = ("id->com.yunlu6.yunlu:id/et_sover_my_bank", "定位空间列表-主菜单-'+机构空间'-去验证-支行")
 
     # 空间列表-主菜单-'+机构空间'-去验证-银行账号
-    Kjlb_mainmenu_newspace_verifynow_soverbanknub = ("id->com.yunlu6.yunlu:id/et_sover_bank_nub", "定位空间列表-主菜单-'+机构空间'-去验证-银行账号失败")
+    Kjlb_mainmenu_newspace_verifynow_soverbanknub = ("id->com.yunlu6.yunlu:id/et_sover_bank_nub", "定位空间列表-主菜单-'+机构空间'-去验证-银行账号")
 
     # 空间列表-主菜单-'+机构空间'-去验证-审核费
-    Kjlb_mainmenu_newspace_verifynow_money = ("id->com.yunlu6.yunlu:id/tv_money", "定位空间列表-主菜单-'+机构空间'-去验证-审核费失败")
+    Kjlb_mainmenu_newspace_verifynow_money = ("id->com.yunlu6.yunlu:id/tv_money", "定位空间列表-主菜单-'+机构空间'-去验证-审核费")
 
     # 空间列表-主菜单-'+机构空间'-去验证-确定提交
-    Kjlb_mainmenu_newspace_verifynow_soversave = ("id->com.yunlu6.yunlu:id/bt_sover_save", "定位空间列表-主菜单-'+机构空间'-去验证-确定提交失败")
+    Kjlb_mainmenu_newspace_verifynow_soversave = ("id->com.yunlu6.yunlu:id/bt_sover_save", "定位空间列表-主菜单-'+机构空间'-去验证-确定提交")
 
     # 空间列表-主菜单-'+机构空间'-去验证-确定提交-返回
-    Kjlb_mainmenu_newspace_verifynow_soversave_back = ("id->com.yunlu6.yunlu:id/title_back_icon", "定位空间列表-主菜单-'+机构空间'-去验证-确定提交-返回失败")
+    Kjlb_mainmenu_newspace_verifynow_soversave_back = ("id->com.yunlu6.yunlu:id/title_back_icon", "定位空间列表-主菜单-'+机构空间'-去验证-确定提交-返回")
 
     # *********************************【PAGE1】+私人空间空间：Kjlb_mainmenu_newpersonspace*********************************
     # 空间列表-主菜单-'+私人空间'-返回
@@ -155,7 +158,7 @@ class SPACEPAGE2(SPACEPAGE1):
 
     # *********************************【PAGE1】【机构空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览企业空间-返回
-    Kjlb_browseorgspace_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览企业空间-返回失败")
+    Kjlb_browseorgspace_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览企业空间-返回")
 
     # 空间列表-浏览企业空间-菜单栏
     Kjlb_browseorgspace_menu = ("id->com.yunlu6.yunlu:id/title_main_tv_more_menu", "空间列表-浏览企业空间-菜单栏")
@@ -278,16 +281,16 @@ class SPACEPAGE2(SPACEPAGE1):
     Kjlb_browseascspace_menu_vip = ("id->com.yunlu6.yunlu:id/btn_pop_association_vip", "空间列表-浏览协会空间-菜单栏-会员")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员
-    Kjlb_browseascspace_menu_addvip = ("id->com.yunlu6.yunlu:id/btn_pop_association_addvip", "空间列表-浏览协会空间-菜单栏-会员失败")
+    Kjlb_browseascspace_menu_addvip = ("id->com.yunlu6.yunlu:id/btn_pop_association_addvip", "空间列表-浏览协会空间-菜单栏-会员")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员
-    Kjlb_browseascspace_menu_addvip_addperson = ("id->com.yunlu6.yunlu:id/pop_assvip_addperson", "空间列表-浏览协会空间-菜单栏-会员-个人会员失败")
+    Kjlb_browseascspace_menu_addvip_addperson = ("id->com.yunlu6.yunlu:id/pop_assvip_addperson", "空间列表-浏览协会空间-菜单栏-会员-个人会员")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员
-    Kjlb_browseascspace_menu_addvip_addcompany = ("id->com.yunlu6.yunlu:id/pop_assvip_addcompany", "空间列表-浏览协会空间-菜单栏-会员-企业会员失败")
+    Kjlb_browseascspace_menu_addvip_addcompany = ("id->com.yunlu6.yunlu:id/pop_assvip_addcompany", "空间列表-浏览协会空间-菜单栏-会员-企业会员")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-取消
-    Kjlb_browseascspace_menu_addvip_cancel = ("id->com.yunlu6.yunlu:id/pop_assvip_cancle", "空间列表-浏览协会空间-菜单栏-会员-取消失败")
+    Kjlb_browseascspace_menu_addvip_cancel = ("id->com.yunlu6.yunlu:id/pop_assvip_cancle", "空间列表-浏览协会空间-菜单栏-会员-取消")
 
     # 定位:空间列表-浏览协会空间-菜单栏-客户
     Kjlb_browseascspace_menu_customer = ("id->com.yunlu6.yunlu:id/btn_pop_association_customer", "空间列表-浏览协会空间-菜单栏-客户")

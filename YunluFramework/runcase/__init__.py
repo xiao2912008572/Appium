@@ -6,7 +6,7 @@ from YunluFramework.testcase.空间.机构空间.test1_1创建机构空间.Creat
 from YunluFramework.testcase.空间.机构空间.test2_1上下架产品.CreateProduct002_1 import space_ProductO
 from YunluFramework.testcase.空间.机构空间.test3_1团队人事任免.TeamAssignJob003_1 import team_AssignO
 from YunluFramework.testcase.空间.机构空间.test4_1资讯.Archivies004_1 import space_ArchiviesO
-from YunluFramework.testcase.空间.机构空间.test5_1企业名片.BusinessCard005_1 import space_BusinessCardO
+from YunluFramework.testcase.空间.机构空间.test5_1编辑.BusinessCard005_1 import space_BusinessCardO
 
 # @私人空间-测试用例
 from YunluFramework.testcase.空间.私人空间.test1_1创建私人空间.CreatePersonSpace001_1 import perspace_CreateP

@@ -38,7 +38,7 @@ class TeamAssignJob:
             handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
             self.log.info('点击编辑')
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AdministratorLoc)#编辑管理员人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[0].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
             self.log.info('编辑管理员人数')
             handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -48,7 +48,7 @@ class TeamAssignJob:
             self.log.info('点击是')
             # 4.2 销售员人数:3人
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.SalespersonLoc)#编辑销售员人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[1].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
             self.log.info('编辑销售员人数')
             handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -58,7 +58,7 @@ class TeamAssignJob:
             self.log.info('点击是')
             # 4.3 行政助理人数:4人
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AssistantLoc)#编辑助理人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[3].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
             self.log.info('编辑助理人数')
             handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -69,7 +69,7 @@ class TeamAssignJob:
             # 5.检查各职位人数是否保存生效
             # 5.1 检查管理员人数编辑是否生效
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AdministratorLoc)#编辑管理员人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[0].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
             self.log.info('点击编辑管理员人数')
             AdmNumm = int(handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前管理员人数：{0}'.format(AdmNumm))
@@ -80,7 +80,7 @@ class TeamAssignJob:
             self.log.info('点击否')
             # 5.2 检查销售员人数编辑是否生效
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.SalespersonLoc)#编辑管理员人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[1].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
             self.log.info('点击编辑销售员人数')
             SalNumm = int(handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前销售员人数：{0}'.format(SalNumm))
@@ -91,7 +91,7 @@ class TeamAssignJob:
             self.log.info('点击否')
             # 5.3 检查行政助理人数编辑是否生效
             # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AssistantLoc)#编辑管理员人数
-            driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_edit")[3].click()
+            driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
             self.log.info('点击行政助理人数')
             AssNumm = int(handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前行政助理人数：{0}'.format(AssNumm))
@@ -108,7 +108,7 @@ class TeamAssignJob:
             self.log.info('点击菜单栏')
             handle.Kjlb_browseorgspace_menu_team_menu_assignjob_click()  # 点击人事任免
             self.log.info('点击人事任免')
-            if driver.find_elements_by_id("com.yunlu6.stone:id/removaljobs_name") != []:  # 列表是否为空
+            if driver.find_elements_by_id("com.yunlu6.yunlu:id/removaljobs_name") != []:  # 列表是否为空
                 listT = handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact()
                 for i in range(len(listT)):  # 遍历列表
                     # if handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact()[i].text == self.Name:#再判断是否该人已被任免
@@ -145,7 +145,7 @@ class TeamAssignJob:
             self.log.info('勾选')
             handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_back_click()  # 返回
             self.log.info('返回')
-            name = driver.find_elements_by_id("com.yunlu6.stone:id/companyteam_item_name")[0].text  # 获取董事长姓名
+            name = driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_name")[0].text  # 获取董事长姓名
             assert Name == name, "董事长任免失败"
             self.log.info('判断该人脉董事长职位是否任免成功')
             # 11.移除任免,还原

@@ -70,7 +70,7 @@ class BusinessCard:
             sleep(1)
             self.log.info('检查联系方式是否保存成功：')
             self.log.info('当前需要保存联系方式数量：5')
-            camount_now = len(driver.find_elements_by_id('com.yunlu6.stone:id/contact_icon'))
+            camount_now = len(driver.find_elements_by_id('com.yunlu6.yunlu:id/contact_icon'))
             self.log.info('实际写入保存联系方式数量：{0}'.format(camount_now))
             assert camount_now == 5, "部分联系方式未保存成功"
             self.log.info('联系方式保存成功!')

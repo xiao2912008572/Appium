@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.登录.test1_1登录 import *
+from YunluFramework.testcase.登录.test1_1登录 import *
 
 
 # 登录
@@ -25,9 +25,9 @@ class LoginA:
             self.log.info('------START:test1_1登录.LoginA.py------')
             # 登录首页
             if driver.find_elements_by_id("com.yunlu6.stone:id/main_login") != []:
-                # 1.点击登录
-                handle.Login_click()
-                self.log.info('点击登录')
+                # 1.点击账号密码登录
+                handle.Login_byAccount_click()
+                self.log.info('点击账号密码登录')
                 # 2.输入手机号+密码
                 handle.Login_phone_sendkeys(phone)
                 self.log.info('输入手机号：{0}'.format(phone))
@@ -39,6 +39,9 @@ class LoginA:
                 sleep(1)
             # 输入框页
             else:
+                #1.点击账号密码登录
+                handle.Login_byAccount_click()
+                self.log.info('点击账号密码登录')
                 # 2.输入手机号+密码
                 handle.Login_phone_sendkeys(phone)
                 self.log.info('输入手机号：{0}'.format(phone))

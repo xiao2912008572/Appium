@@ -1,6 +1,6 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from StoneUIFramework.testcase.登录.test2_1退出登录 import *
+from YunluFramework.testcase.登录.test2_1退出登录 import *
 
 
 # 登出

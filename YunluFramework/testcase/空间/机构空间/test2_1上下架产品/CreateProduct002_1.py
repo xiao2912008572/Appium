@@ -54,7 +54,8 @@ class space_ProductO(unittest.TestCase):
     def tearDown(self):
         # 1.打印日志
         self.log.info("------------END:test2_1上下架产品.CreateProduct002_1.py------------")
-        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
+
         # 2.关闭driver
         # self.driver.quit()
 
@@ -81,7 +82,7 @@ class space_ProductO(unittest.TestCase):
             self.tools.swipeUp(500)
             self.tools.swipeUp(500)
             self.tools.swipeUp(500)
-            self.log.info('向上滑动1.5秒')
+            self.log.info('向上滑动2秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)  # 点击进入测试空间123
             self.log.info('点击进入%s' % spacename)
             self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
@@ -128,21 +129,21 @@ class space_ProductO(unittest.TestCase):
             self.log.info('价格检查')
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_moreprice_list_click(0)  # 点击第一个价格
             self.log.info('点击第一个价格')
-            # 4.3石种属性检查
-            self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_click()  # 点击产品参数
-            self.log.info('点击产品参数')
-            attribute = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_attribut_text()  # 获取石种相关属性
-            assert attribute == "西班牙米黄 /浅 /黄 /云", "Attribute Show Error!"
-            self.log.info('石种属性检查')
-            # 4.4制品与表面检查
-            pattern = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_pattern_text()  # 获取制品与表面相关属性
-            assert pattern == "平板 /光  面", "Pattern Show Error!"
-            self.log.info('制品与表面检查')
-            # 4.5参数名,参数值检查
-            self.tools.swipeUp(500)  # 上滑,展示出key/value
-            parameter = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_keyvalue_text(1)
-            assert parameter == "key:value", "Parameter Shwo Error!"
-            self.log.info('参数名/参数值检查')
+            # # 4.3石种属性检查
+            # self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_click()  # 点击产品参数
+            # self.log.info('点击产品参数')
+            # attribute = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_attribut_text()  # 获取石种相关属性
+            # assert attribute == "西班牙米黄 /浅 /黄 /云", "Attribute Show Error!"
+            # self.log.info('石种属性检查')
+            # # 4.4制品与表面检查
+            # pattern = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_pattern_text()  # 获取制品与表面相关属性
+            # assert pattern == "平板 /光  面", "Pattern Show Error!"
+            # self.log.info('制品与表面检查')
+            # # 4.5参数名,参数值检查
+            # self.tools.swipeUp(500)  # 上滑,展示出key/value
+            # parameter = self.handle.Kjlb_browseorgspace_menu_product_lock_list_middle_keyvalue_text(1)
+            # assert parameter == "key:value", "Parameter Shwo Error!"
+            # self.log.info('参数名/参数值检查')
             # 5.下架产品
             self.handle.Kjlb_browseorgspace_menu_product_lock_list_offshelf_click()  # 点击下架
             self.log.info('点击下架')

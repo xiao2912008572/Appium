@@ -8,13 +8,13 @@ from YunluFramework.testcase.空间.协会空间.test2_1编辑 import *
 class space_EditA(unittest.TestCase):
     # 1.全局测试数据
     d = DataInfo("space.xls")  # 创建DataInfo()对象
-    spacename_1 = d.cell("test005-企业名片", 3, 7)  # 测试空间123
-    contact_1 = d.cell("test005-企业名片", 3, 1)  # 联系人
-    phone_1 = int(d.cell("test005-企业名片", 3, 2))  # 手机号
-    tel_1 = int(d.cell("test005-企业名片", 3, 3))  # 座机号
-    email_1 = d.cell("test005-企业名片", 3, 4)  # 邮箱
-    QQ_1 = int(d.cell("test005-企业名片", 3, 5))  # QQ
-    website_1 = d.cell("test005-企业名片", 3, 6)  # 网址
+    spacename_1 = d.cell("test005-编辑", 3, 7)  # 测试空间123
+    contact_1 = d.cell("test005-编辑", 3, 1)  # 联系人
+    phone_1 = int(d.cell("test005-编辑", 3, 2))  # 手机号
+    tel_1 = int(d.cell("test005-编辑", 3, 3))  # 座机号
+    email_1 = d.cell("test005-编辑", 3, 4)  # 邮箱
+    QQ_1 = int(d.cell("test005-编辑", 3, 5))  # QQ
+    website_1 = d.cell("test005-编辑", 3, 6)  # 网址
 
     # 2.初始化
     def setUp(self):
@@ -45,7 +45,7 @@ class space_EditA(unittest.TestCase):
         self.log.info("------------END:test1_2协会编辑.Edit002_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, contact_1, phone_1, tel_1, email_1, QQ_1, website_1])
@@ -58,6 +58,8 @@ class space_EditA(unittest.TestCase):
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:测试空间123
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动0.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入空间：%s' % spacename)
             # 3.企业名片

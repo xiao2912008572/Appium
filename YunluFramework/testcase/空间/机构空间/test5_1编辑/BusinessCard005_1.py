@@ -43,7 +43,7 @@ class space_BusinessCardO(unittest.TestCase):
     def tearDown(self):
         # 1.打印日志
         self.log.info("------------END::test5_1编辑.BusinessCard005_1.py------------")  # 宣布成功
-        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
         # 2.关闭driver
         self.driver.quit()
 
@@ -57,6 +57,10 @@ class space_BusinessCardO(unittest.TestCase):
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:测试空间123
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动1.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入空间：%s' % spacename)
             # 3.企业名片

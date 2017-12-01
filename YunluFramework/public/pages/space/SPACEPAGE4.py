@@ -63,10 +63,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_lock_list_offshelf = ("id->com.yunlu6.yunlu:id/title_text_menu", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-否
-    Kjlb_browseorgspace_menu_product_lock_list_offshelf_no = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
+    Kjlb_browseorgspace_menu_product_lock_list_offshelf_no = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是
-    Kjlb_browseorgspace_menu_product_lock_list_offshelf_sure = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是")
+    Kjlb_browseorgspace_menu_product_lock_list_offshelf_sure = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-下架-是")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-购物车图标
     Kjlb_browseorgspace_menu_product_lock_list_shopicon = ("id->com.yunlu6.yunlu:id/shop_cart", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-购物车图标")
@@ -150,10 +150,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_unlock_list_menu_delete = ("id->com.yunlu6.yunlu:id/bt_delete", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是
-    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是")
+    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_y = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-是")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否
-    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_n = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否")
+    Kjlb_browseorgspace_menu_product_unlock_list_menu_delete_n = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-菜单栏-删除-否")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-购物车图标
     Kjlb_browseorgspace_menu_product_unlock_list_shopicon = ("id->com.yunlu6.yunlu:id/shop_cart", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-购物车图标")
@@ -300,10 +300,10 @@ class SPACEPAGE4(SPACEPAGE3):
 
     # ***************************************【PAGE3】菜单栏-关闭Kjlb_browseorgspace_menu_bcard_menu_close***************************************
     # 空间列表-浏览企业空间-菜单栏-关闭-是
-    Kjlb_browseorgspace_menu_close_confirm = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览企业空间-菜单栏-关闭-是")
+    Kjlb_browseorgspace_menu_close_confirm = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览企业空间-菜单栏-关闭-是")
 
     # 空间列表-浏览企业空间-菜单栏-关闭-否
-    Kjlb_browseorgspace_menu_cancel = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览企业空间-菜单栏-关闭-否")
+    Kjlb_browseorgspace_menu_cancel = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel", "空间列表-浏览企业空间-菜单栏-关闭-否")
 
     # ***************************************【PAGE3】菜单栏-分享Kjlb_browseorgspace_menu_bcard_menu_share***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-分享-资信

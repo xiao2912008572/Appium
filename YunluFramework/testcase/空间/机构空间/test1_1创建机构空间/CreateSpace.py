@@ -77,16 +77,20 @@ class CreateSpace:
             # 所在地区:北京-东城
             # 支行:BBB
             # 银行账号:123456
-            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(soverbank)  # 开户银行
-            self.log.info('填写开户银行：%s' % soverbank)
+            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_click()  # 开户银行
+            self.log.info('点击开户银行')
+            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_list1_click(0)
+            self.log.info('点击开户银行列表1中第1家银行')
+            handle.Kjlb_mainmenu_newspace_verifynow_soverbank_list1_click(0)
+            self.log.info('点击开户银行列表2中第1家银行')
             handle.Kjlb_mainmenu_newspace_verifynow_soveraddress_click()  # 所在地区
             self.log.info('点击所在地区')
             driver.find_element_by_name(province).click()  # 北京
             self.log.info('选择%s省' % province)
             driver.find_element_by_name(city).click()  # 东城
             self.log.info('选择%s市' % city)
-            handle.Kjlb_mainmenu_newspace_verifynow_sovermybank_sendkeys(sovermybank)  # 支行
-            self.log.info('填写支行：%s' % sovermybank)
+            # handle.Kjlb_mainmenu_newspace_verifynow_sovermybank_sendkeys(sovermybank)  # 支行
+            # self.log.info('填写支行：%s' % sovermybank)
             handle.Kjlb_mainmenu_newspace_verifynow_soverbanknub_sendkeys(soverbanknub)  # 银行账户
             self.log.info('填写银行账户：%s' % soverbanknub)
             handle.Kjlb_mainmenu_newspace_verifynow_soversave_click()  # 确定提交

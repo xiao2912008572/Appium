@@ -87,6 +87,8 @@ class AddPtoPRefuseA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.stone:id/refuse_btn").click()
             self.log.info('点击拒绝')
             # 7.7返回到云视
+            self.tools.click_element_by_coordinate(50, 131)
+            self.log.info('点击返回流程')
             self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8退出受邀账号

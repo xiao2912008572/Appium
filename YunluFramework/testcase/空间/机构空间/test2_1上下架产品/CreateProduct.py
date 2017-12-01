@@ -67,28 +67,28 @@ class CreateProduct:
             # self.log.info('确定按钮')
             handle.Kjlb_browseorgspace_menu_product_new_proname_choose_click()  # 点击勾选按钮
             self.log.info('点击勾选按钮')
-            # 3.石种属性
-            handle.Kjlb_browseorgspace_menu_product_new_attribute_click()  # 点击石种属性
-            self.log.info('点击石种属性')
-            handle.Kjlb_browseorgspace_menu_product_new_attribute_species_sendkeys(species)  # 种类名
-            self.log.info('选择种类名：%s' % species)
-            handle.Kjlb_browseorgspace_menu_product_new_attribute_species_match_click(0)  # 点击匹配出的石种名
-            self.log.info('点击匹配出的石种名')
-            handle.Kjlb_browseorgspace_menu_product_new_attribute_confirm_click()  # 点击勾选
-            self.log.info('点击勾选按钮')
-            # 4.制品和表面
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_click()  # 点击制品和表面
-            self.log.info('点击制品与表面')
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_type_click()  # 点击制品
-            self.log.info('点击制品')
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_type_list_click(type)  # 平板
-            self.log.info('选择%s' % type)
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_surface_click()  # 点击表面
-            self.log.info('点击表面')
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_surface_list_click(surface)  # 光面
-            self.log.info('选择%s' % surface)
-            handle.Kjlb_browseorgspace_menu_product_new_attrstone_confirm_click()  # 勾选
-            self.log.info('点击勾选按钮')
+            # # 3.石种属性
+            # handle.Kjlb_browseorgspace_menu_product_new_attribute_click()  # 点击石种属性
+            # self.log.info('点击石种属性')
+            # handle.Kjlb_browseorgspace_menu_product_new_attribute_species_sendkeys(species)  # 种类名
+            # self.log.info('选择种类名：%s' % species)
+            # handle.Kjlb_browseorgspace_menu_product_new_attribute_species_match_click(0)  # 点击匹配出的石种名
+            # self.log.info('点击匹配出的石种名')
+            # handle.Kjlb_browseorgspace_menu_product_new_attribute_confirm_click()  # 点击勾选
+            # self.log.info('点击勾选按钮')
+            # # 4.制品和表面
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_click()  # 点击制品和表面
+            # self.log.info('点击制品与表面')
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_type_click()  # 点击制品
+            # self.log.info('点击制品')
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_type_list_click(type)  # 平板
+            # self.log.info('选择%s' % type)
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_surface_click()  # 点击表面
+            # self.log.info('点击表面')
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_surface_list_click(surface)  # 光面
+            # self.log.info('选择%s' % surface)
+            # handle.Kjlb_browseorgspace_menu_product_new_attrstone_confirm_click()  # 勾选
+            # self.log.info('点击勾选按钮')
             # 5.产品参数
             handle.Kjlb_browseorgspace_menu_product_new_parameter_click()  # 点击产品参数
             self.log.info('点击产品参数')

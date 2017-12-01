@@ -46,9 +46,9 @@ class team_AssignO(unittest.TestCase):
     def tearDown(self):
         # 1.打印日志
         self.log.info("------------End:test3_1团队人事任免.TeamAssignJob003_1.py------------")
-        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, AdministratorLoc_1, SalespersonLoc_1, AssistantLoc_1,
@@ -64,6 +64,10 @@ class team_AssignO(unittest.TestCase):
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:测试空间123
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动1.5秒')
             self.handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('选择空间：%s' % spacename)
             # 3.任免+移除

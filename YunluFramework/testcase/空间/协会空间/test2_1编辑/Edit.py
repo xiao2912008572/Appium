@@ -66,11 +66,15 @@ class Edit:
             handle.Kjlb_browseascspace_menu_edit_website_sendkeys(website)
             self.log.info('输入网址：%s' % website)
             # 6.勾选+点击检查
-            handle.Kjlb_browseorgspace_menu_bcard_menu_edit_confirm_click()  # 勾选
+            handle.Kjlb_browseorgspace_menu_edit_confirm_click()  # 勾选
             self.log.info('勾选保存')
             sleep(1)
-            assert len(handle.Kjlb_browseorgspace_menu_bcard_contactlist_element()) == 5, "部分联系方式未保存成功"
-            self.log.info('联系方式是否保存成功检查')
+            self.log.info('检查联系方式是否保存成功：')
+            self.log.info('当前需要保存联系方式数量：5')
+            camount_now = len(driver.find_elements_by_id('com.yunlu6.yunlu:id/contact_icon'))
+            self.log.info('实际写入保存联系方式数量：{0}'.format(camount_now))
+            assert camount_now == 5, "部分联系方式未保存成功"
+            self.log.info('联系方式保存成功!')
             '''
             #6.1 手机号
             handle.Kjlb_browseorgspace_menu_bcard_contactlist_click(0)

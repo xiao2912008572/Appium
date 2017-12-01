@@ -105,9 +105,13 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_mainmenu_newspace_verifynow_bankname_click(self):
         return self.p.click(self.Kjlb_mainmenu_newspace_verifynow_bankname)
 
-    # 空间列表-主菜单-'+机构空间'-去验证-开户银行:发送文本
-    def Kjlb_mainmenu_newspace_verifynow_soverbank_sendkeys(self, text):
-        return self.p.send_keys(self.Kjlb_mainmenu_newspace_verifynow_soverbank, text)
+    # 空间列表-主菜单-'+机构空间'-去验证-开户银行:点击
+    def Kjlb_mainmenu_newspace_verifynow_soverbank_click(self):
+        return self.p.click(self.Kjlb_mainmenu_newspace_verifynow_soverbank)
+
+    # 空间列表-主菜单-'+机构空间'-去验证-开户银行-列表1：点击(可复用)
+    def Kjlb_mainmenu_newspace_verifynow_soverbank_list1_click(self, n):
+        return self.p.clicks(self.Kjlb_mainmenu_newspace_verifynow_soverbank_list1, n)
 
     # 空间列表-主菜单-'+机构空间'-去验证-所在地区列表:点击
     def Kjlb_mainmenu_newspace_verifynow_soveraddress_list_click(self, n):
@@ -165,7 +169,8 @@ class SPACEHANDLE2(SPACEHANDLE1):
 
     # 空间列- 主菜单-'+私人空间'-推荐空间名标签列表:获取
     def Kjlb_mainmenu_newpersonspace_suggestspacenametag_get(self):
-        return self.p.get_elements(self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[0], self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[1])
+        return self.p.get_elements(self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[0],
+                                   self.Kjlb_mainmenu_newpersonspace_suggestspacenametag[1])
 
     # 空间列表-主菜单-'+私人空间'-保存:点击
     def Kjlb_mainmenu_newpersonspace_save_click(self):
@@ -190,7 +195,8 @@ class SPACEHANDLE2(SPACEHANDLE1):
 
     # 空间列表-主菜单-分享名片-邮箱:点击
     def Kjlb_mainmenu_sharecard_email_click(self):
-        self.Kjlb_mainmenu_sharecard_email = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_email_cb", "空间列表-主菜单-分享名片-邮箱")
+        self.Kjlb_mainmenu_sharecard_email = self.p.get_element("id->com.yunlu6.stone:id/user_card_team_email_cb",
+                                                                "空间列表-主菜单-分享名片-邮箱")
         return self.p.click(self.Kjlb_mainmenu_sharecard_email)
 
     # 空间列表-主菜单-分享名片-地址:点击

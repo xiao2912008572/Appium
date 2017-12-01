@@ -25,7 +25,7 @@ class DeletePerSFloder:
             handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击{0}空间'.format(spacename))
             self.log.info('判断文件夹是否为空')
-            if driver.find_element_by_id("com.yunlu6.stone:id/personzone_item_foldernum").text != "(0)":  # 判断文件夹是否为空
+            if driver.find_element_by_id("com.yunlu6.yunlu:id/personzone_item_foldernum").text != "(0)":  # 判断文件夹是否为空
                 # 2.菜单栏
                 handle.Kjlb_browseperspace_menu_click()
                 self.log.info('点击菜单栏')
@@ -48,7 +48,7 @@ class DeletePerSFloder:
                 # 4.5删除文件夹(为空)
                 handle.Kjlb_browseperspace_more_menu_edit_deletefolder_click(0)
                 self.log.info('删除文件夹-为空时')
-                driver.find_element_by_id("com.yunlu6.stone:id/edit_folder_ok").click()
+                driver.find_element_by_id("com.yunlu6.yunlu:id/edit_folder_ok").click()
                 self.log.info('确认删除文件夹')
             else:
                 # 4.5.菜单栏
@@ -60,7 +60,7 @@ class DeletePerSFloder:
                 # 4.7删除文件夹(为空)
                 handle.Kjlb_browseperspace_more_menu_edit_deletefolder_click(0)
                 self.log.info('删除文件夹-为空时')
-                driver.find_element_by_id("com.yunlu6.stone:id/edit_folder_ok").click()
+                driver.find_element_by_id("com.yunlu6.yunlu:id/edit_folder_ok").click()
                 self.log.info('确认删除文件将爱')
                 # 5.返回空间列表
             handle.Kjlb_browseperspace_more_menu_edit_back_click()
