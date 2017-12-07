@@ -29,7 +29,7 @@ class AddAtoPAgreeA(unittest.TestCase):
         cf = GlobalParam('config', 'path_file.conf')
         # 5.获取截图路径、日志路径、日志名
         self.screen_path = cf.getParam('space', "ass_path_005_3")  # 通过配置文件获取截图的路径
-        self.logfile = cf.getParam('space', "logfile")  # 日志文件名
+        self.logfile = cf.getParam('log', "logfile")  # 日志文件名
         sleep(1)
         # 6.创建日志记录模块
         self.log = Log(self.logfile)
@@ -48,7 +48,7 @@ class AddAtoPAgreeA(unittest.TestCase):
         self.log.info("------------END:test5_3加会员_管理员_个人_同意.Add_AtoP_Agree005_3.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, vipname_1, phone1_1, password1_1,
@@ -61,33 +61,41 @@ class AddAtoPAgreeA(unittest.TestCase):
             # 1.空间首页
             self.handleS.Kjlb_click()
             self.log.info('点击空间列表')
+
             # 2.选择空间:测试空间123
             self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入协会空间：{0}'.format(spacename))
+
             # 3.+会员
             self.addvip.addPerVip(self.driver, vipname)
+
             # 4.退出账号,登录受邀账号处理消息
             # 4.1调用loginout模块:退出当前账号
+            self.log.info('退出当前账号：')
             self.loginout.loginout(self.driver, 4)  # 空间页设置
+            self.log.info('退出当前账号完毕')
             # 4.2调用loginA模块:登录受邀账号
+            self.log.info('登录受邀账号:{0},{1}'.format(phone1, password1))
             self.login.login(self.driver, phone1, password1)
+            self.log.info('登录受邀账号完毕')
             sleep(1)
             '''
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 4.3点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
+
             # 7.5点击消息第一条
-            self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击同意
-            self.driver.find_element_by_id("com.yunlu6.stone:id/agree_btn").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/agree_btn").click()
             self.log.info('点击同意')
             # 7.7返回到云视
-            self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()
-            self.log.info('点击返回')
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.tools.click_element_by_coordinate(50, 131)
+            self.log.info('点击返回流程')
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8检查空间是否有该协会
             self.handleS.Kjlb_click()
@@ -95,25 +103,31 @@ class AddAtoPAgreeA(unittest.TestCase):
             assert self.handleS.Kjlb_browseorgspaceByName(spacename) is not None, "Error SpaceList Showing"
             self.log.info('检查空间列表是否有该协会')
             # 7.9退出受邀账号
+            self.log.info('退出受邀账号：')
             self.loginout.loginout(self.driver, 4)
+            self.log.info('退出受邀账号完毕')
+
             # 8.登录邀请账号-检查各处消息
             # 8.1登录
+            self.log.info('登录邀请账号:{0},{1}'.format(phone2, password2))
             self.login.login(self.driver, phone2, password2)
+            self.log.info('登录邀请账号完毕')
             sleep(1)
             '''
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 8.2点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 8.3查看消息第一条
-            message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
+            message = self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").text
             self.log.info('查看第1条消息')
-            assert message == vipname + ' 已接受 贵公司的 会员 邀请', "Error Message Handled"
+            assert message == vipname + ' 已接受 %s的 会员 邀请'%spacename, "Error Message Handled"
             self.log.info('检查是否收到拒绝消息')
             # 8.4返回-空间主界面
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回，返回至空间主界面')
+
             # 9.移除会员,还原测试场景
             # 9.1进入空间
             self.handleS.Kjlb_click()

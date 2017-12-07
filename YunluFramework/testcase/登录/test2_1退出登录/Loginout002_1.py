@@ -36,6 +36,7 @@ class Loginout(unittest.TestCase):
         # 2.关闭driver
         self.driver.quit()
 
+    # 4.测试用例
     def test_loginout(self):
         '''退出登录'''
         try:

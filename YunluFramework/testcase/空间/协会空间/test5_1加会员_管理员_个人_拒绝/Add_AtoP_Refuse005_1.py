@@ -58,18 +58,25 @@ class AddAtoPRefuseA(unittest.TestCase):
             # 1.空间首页
             self.handleS.Kjlb_click()
             self.log.info('点击空间首页')
+
             # 2.选择空间:协会测试123
-            self.tools.swipeUp(500)
-            self.log.info('向上滑动0.5秒')
+            # self.tools.swipeUp(500)
+            # self.log.info('向上滑动0.5秒')
             self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入协会空间：{0}'.format(spacename))
+
             # 3.+会员
             self.addvip.addPerVip(self.driver, vipname)
+
             # 4.退出账号,登录受邀账号处理消息
             # 4.1调用loginout模块:退出当前账号
+            self.log.info('退出当前账号')
             self.loginout.loginout(self.driver, 4)  # 空间页设置
+            self.log.info('退出当前账号完毕')
             # 4.2调用loginA模块:登录受邀账号
+            self.log.info('登录受邀账号：{0},{1}'.format(phone1, password1))
             self.login.login(self.driver, phone1, password1)
+            self.log.info('登录受邀账号完毕')
             sleep(1)
             '''
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
@@ -77,6 +84,7 @@ class AddAtoPRefuseA(unittest.TestCase):
             # 4.3点击流程
             self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
+
             # 7.5点击消息第一条
             self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").click()
             self.log.info('点击第1条消息')
@@ -84,15 +92,20 @@ class AddAtoPRefuseA(unittest.TestCase):
             self.driver.find_element_by_id("com.yunlu6.yunlu:id/refuse_btn").click()
             self.log.info('点击拒绝')
             # 7.7返回到云视
-            self.tools.click_element_by_coordinate(50,131)
+            self.tools.click_element_by_coordinate(50, 131)
             self.log.info('点击返回流程')
             self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8退出受邀账号
+            self.log.info('退出受邀账号')
             self.loginout.loginout(self.driver, 1)
+            self.log.info('退出受邀账号完毕')
+
             # 8.登录邀请账号-检查各处消息
             # 8.1登录
+            self.log.info('登录邀请账号:{0},{1} 检查各处消息'.format(phone2, password2))
             self.login.login(self.driver, phone2, password2)
+            self.log.info('登录邀请账号完毕')
             sleep(1)
             '''
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
@@ -103,7 +116,7 @@ class AddAtoPRefuseA(unittest.TestCase):
             # 8.3查看消息第一条
             message = self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").text
             self.log.info('查看第1条消息')
-            assert message == vipname + ' 回绝邀请 贵公司的 会员 邀请', "Error Message Handled"
+            assert message == vipname + ' 已回绝 %s的 会员 邀请' % spacename, "Error Message Handled"
             self.log.info('检查是否收到拒绝消息')
             # 8.4返回-空间主界面
             self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()

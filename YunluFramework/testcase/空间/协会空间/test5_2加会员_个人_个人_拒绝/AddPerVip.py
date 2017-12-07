@@ -29,14 +29,12 @@ class AddPerVip:
             # tools.getScreenShot(screen_path,"空间首页")
             # 2.选择空间:测试空间123
             # handle.Kjlb_browseascspaceByName_click(self.spacename)
-            # 3.右上角:菜单栏选择+会员
-            handle.Kjlb_browseascspace_menu_click()  # 右上角菜单
-            self.log.info('点击右上角菜单')
-            handle.Kjlb_browseascspace_menu_addvip_click()  # 点击+会员
-            self.log.info('点击：+会员')
+            # 3.点击+按钮
+            handle.Kjlb_browseascspace_addbtn_click()  # 点击+按钮
+            self.log.info('点击：+按钮')
             # 4.个人会员
-            handle.Kjlb_browseascspace_menu_addvip_addperson_click()
-            self.log.info('点击个人会员')
+            handle.Kjlb_browseascspace_addbtn_pVip_click()  # 点击个人会员
+            self.log.info('点击：个人会员')
             # 5.搜索栏搜索姓名添加
             handle.Kjlb_browseascspace_menu_addvip_addperson_search_sendkeys(vipname)
             self.log.info('搜索栏搜索姓名：{0}'.format(vipname))

@@ -121,10 +121,10 @@ class SETTINGPAGE3(SETTINGPAGE2):
 
 # ******************************************************【PAGE2】退出Setting_about_loginout******************************************************
     #设置:设置-关于我们-退出-确定
-        Setting_aboutus_loginout_confirm = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel","设置-关于我们-退出-确定")
+        Setting_aboutus_loginout_confirm = ("id->com.yunlu6.yunlu:id/dialog_warm_sure","设置-关于我们-退出-确定")
 
     #设置:设置-关于我们-退出-取消
-        Setting_aboutus_loginout_confirm_loginout_cancel = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure","设置-关于我们-退出-取消")
+        Setting_aboutus_loginout_confirm_loginout_cancel = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel","设置-关于我们-退出-取消")
 
 # ******************************************************【PAGE2】帮助中心Setting_aboutus_help******************************************************
     #设置:设置-关于我们-帮助中心-返回

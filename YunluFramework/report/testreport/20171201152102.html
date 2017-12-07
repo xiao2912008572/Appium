@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试结果</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">测试结果</h1>
+<p class='attribute'><strong>测试人员 : </strong> xiaojingyuan</p>
+<p class='attribute'><strong>开始时间 : </strong> 2017-12-01 15:21:02</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:14:41.565538</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 5，通过 4，错误 1，通过率= 80.00%</p>
+
+<p class='description'>测试报告</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 80.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 4 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 5 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>YunluFramework.testcase.空间.机构空间.test1_1创建机构空间.CreateOrgSpace001_1.space_CreateO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_spacecreate_1___appium测试空间____appium测试空间____北京____东城____AAA____BBB___123456__1__1_: 创建机构空间</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: 2017-12-01 15:21:56,518 - INFO - ****************************************用例开始！****************************************
+2017-12-01 15:21:56,519 - INFO - ------------START:test1_1创建机构空间.CreateOrgSpace001_1.py------------
+2017-12-01 15:21:58,604 - INFO - 进入空间列表
+2017-12-01 15:22:02,382 - INFO - ------START:test1_1创建机构空间.CreateSpace.py------
+2017-12-01 15:22:06,129 - INFO - 点击进入空间首页
+2017-12-01 15:22:06,613 - INFO - 点击：+按钮
+2017-12-01 15:22:07,734 - INFO - 选择：+机构空间
+2017-12-01 15:22:14,793 - INFO - 输入企业全称：appium测试空间
+2017-12-01 15:22:28,592 - INFO - 输入企业简称：appium测试空间
+2017-12-01 15:22:32,640 - INFO - 点击标题
+2017-12-01 15:22:33,095 - INFO - 点击机构类型
+2017-12-01 15:22:36,789 - INFO - 选择机构类型：企业
+2017-12-01 15:22:38,499 - INFO - 点击客户类型
+2017-12-01 15:22:39,640 - INFO - 点击客户类型标签
+2017-12-01 15:22:40,938 - INFO - 点击确定按钮
+2017-12-01 15:22:41,953 - INFO - 点击所在地区
+2017-12-01 15:22:42,914 - INFO - 选择北京省
+2017-12-01 15:22:44,201 - INFO - 选择东城市
+2017-12-01 15:22:45,962 - INFO - 确定提交
+2017-12-01 15:22:47,263 - INFO - 点击去验证对公账号
+2017-12-01 15:22:48,496 - INFO - 点击开户银行
+2017-12-01 15:22:50,017 - INFO - 点击开户银行列表1中第1家银行
+2017-12-01 15:22:51,678 - INFO - 点击开户银行列表2中第1家银行
+2017-12-01 15:22:52,704 - INFO - 点击所在地区
+2017-12-01 15:22:53,567 - INFO - 选择北京省
+2017-12-01 15:22:54,519 - INFO - 选择东城市
+2017-12-01 15:23:01,543 - INFO - 填写银行账户：123456
+2017-12-01 15:23:05,512 - INFO - 确定提交
+2017-12-01 15:23:07,440 - INFO - 点击返回
+2017-12-01 15:23:08,445 - INFO - ------END:test1_1创建机构空间.CreateSpace.py------
+2017-12-01 15:23:08,446 - INFO - ------START:test1_1创建机构空间.CloseSpace.py-----
+2017-12-01 15:23:24,453 - INFO - 屏幕向上滑动1.5秒
+2017-12-01 15:23:25,406 - INFO - 点击进入空间:appium测试空间
+2017-12-01 15:23:26,950 - INFO - 点击空间菜单栏
+2017-12-01 15:23:28,049 - INFO - 点击关闭按钮
+2017-12-01 15:23:29,935 - INFO - 点击确认关闭
+2017-12-01 15:23:29,936 - INFO - ------END:test1_1创建机构空间.CloseSpace.pyy-----
+2017-12-01 15:23:29,938 - INFO - ------------END:test1_1创建机构空间.CreateOrgSpace001_1.py------------
+2017-12-01 15:23:29,938 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>YunluFramework.testcase.空间.机构空间.test2_1上下架产品.CreateProduct002_1.space_ProductO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_spaceproduct_1___测试空间123___0___appium___0__1___西班牙米黄___0__0___key____value___0__0__123__________123__999__999_</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in" align="left">
+    <pre>
+    
+pt2_1: 2017-12-01 15:24:45,212 - INFO - ****************************************用例开始！****************************************
+2017-12-01 15:24:45,212 - INFO - ------------START:test2_1上下架产品.CreateProduct002_1.py------------
+2017-12-01 15:24:47,048 - INFO - 点击进入空间列表
+2017-12-01 15:25:04,924 - INFO - 向上滑动2秒
+2017-12-01 15:25:05,468 - INFO - 点击进入测试空间123
+2017-12-01 15:25:07,294 - INFO - 点击菜单栏
+2017-12-01 15:25:09,005 - INFO - 点击产品
+2017-12-01 15:25:09,006 - INFO - ------START:test2_1上下架产品.CreateProduct.py------
+2017-12-01 15:25:10,724 - INFO - 点击新建按钮
+2017-12-01 15:25:11,666 - INFO - 点击添加照片按钮
+2017-12-01 15:25:12,893 - INFO - 选择相册添加
+2017-12-01 15:25:14,772 - INFO - 选择第0张照片
+2017-12-01 15:25:15,693 - INFO - 点击完成
+2017-12-01 15:25:20,395 - INFO - 点击商品名称
+2017-12-01 15:25:30,170 - INFO - 输入商品名称：appium
+2017-12-01 15:25:34,344 - INFO - 点击顶部标题
+2017-12-01 15:25:40,352 - INFO - 商品分类输入：建筑石材
+2017-12-01 15:25:41,994 - INFO - 点击搜索结果中的建筑石材
+2017-12-01 15:25:46,488 - INFO - 点击勾选按钮
+2017-12-01 15:25:47,088 - INFO - 点击产品参数
+2017-12-01 15:25:51,396 - INFO - 清空参数名
+2017-12-01 15:25:58,045 - INFO - 输入参数名：key
+2017-12-01 15:26:04,616 - INFO - 输入参数值：value
+2017-12-01 15:26:08,444 - INFO - 点击勾选
+2017-12-01 15:26:09,010 - INFO - 点击价格
+2017-12-01 15:26:15,444 - INFO - 单价：0
+2017-12-01 15:26:21,469 - INFO - 库存：0
+2017-12-01 15:26:26,791 - INFO - 向上滑动屏幕0.5秒
+2017-12-01 15:26:27,140 - INFO - 点击保存
+2017-12-01 15:26:28,294 - INFO - 点击+新价
+2017-12-01 15:26:35,157 - INFO - 单价：123
+2017-12-01 15:26:42,016 - INFO - 库存：
+2017-12-01 15:26:48,158 - INFO - 向上滑动屏幕0.5秒
+2017-12-01 15:26:48,691 - INFO - 点击保存
+2017-12-01 15:26:49,694 - INFO - 点击+新价
+2017-12-01 15:26:56,313 - INFO - 库存：123
+2017-12-01 15:27:02,841 - INFO - 单价：0
+2017-12-01 15:27:08,221 - INFO - 向上滑动屏幕0.5秒
+2017-12-01 15:27:08,588 - INFO - 点击保存
+2017-12-01 15:27:09,452 - INFO - 点击+新价
+2017-12-01 15:27:16,299 - INFO - 单价：999
+2017-12-01 15:27:23,360 - INFO - 库存：999
+2017-12-01 15:27:28,661 - INFO - 向上滑动屏幕0.5秒
+2017-12-01 15:27:29,135 - INFO - 点击保存
+2017-12-01 15:27:33,087 - INFO - 点击返回
+2017-12-01 15:27:34,485 - INFO - 点击保存
+2017-12-01 15:27:34,486 - INFO - ------END:test2_1上下架产品.CreateProduct.py------
+2017-12-01 15:27:35,483 - INFO - 点击未发布列表
+2017-12-01 15:27:36,952 - INFO - 点击最后一个产品-刚上架
+2017-12-01 15:27:38,441 - INFO - 点击菜单栏
+2017-12-01 15:27:40,081 - INFO - 点击发布
+2017-12-01 15:27:41,241 - INFO - 点击确认
+2017-12-01 15:27:42,167 - INFO - 点击已发布列表
+2017-12-01 15:27:44,516 - INFO - 点击最后一个产品-刚发布
+2017-12-01 15:27:45,779 - INFO - 商品名检查
+2017-12-01 15:27:47,869 - INFO - 价格检查
+2017-12-01 15:27:48,268 - INFO - 点击第一个价格
+2017-12-01 15:27:49,350 - INFO - 点击下架
+2017-12-01 15:27:50,736 - INFO - 确定下架
+2017-12-01 15:27:51,770 - INFO - 点击未发布列表
+2017-12-01 15:27:53,131 - INFO - 点击最后一个产品-刚下架
+2017-12-01 15:27:53,132 - INFO - ------START:test2_1上下架产品.DeleteProduct.py------
+2017-12-01 15:27:54,743 - INFO - 点击菜单栏
+2017-12-01 15:27:55,795 - INFO - 点击删除
+2017-12-01 15:27:56,998 - INFO - 确认删除
+2017-12-01 15:27:56,998 - INFO - ------End:test2_1上下架产品.DeleteProduct.py------
+2017-12-01 15:27:57,000 - INFO - ------------END:test2_1上下架产品.CreateProduct002_1.py------------
+2017-12-01 15:27:57,001 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>YunluFramework.testcase.空间.机构空间.test3_1团队人事任免.TeamAssignJob003_1.team_AssignO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',1)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='ft3_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_teamassign_1___测试空间123___0__0__3__2__3__4___肖静远___0__1__2_: 团队人事任免</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
+    <div id='div_ft3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
+    <div id='div_ft3_1' class="collapse in" align="left">
+    <pre>
+    
+ft3_1: 2017-12-01 15:28:51,499 - INFO - ****************************************用例开始！****************************************
+2017-12-01 15:28:51,499 - INFO - ------------Start:test3_1团队人事任免.TeamAssignJob003_1.py------------
+2017-12-01 15:28:56,099 - INFO - 点击空间首页
+2017-12-01 15:29:14,073 - INFO - 向上滑动1.5秒
+2017-12-01 15:29:14,487 - INFO - 选择空间：测试空间123
+2017-12-01 15:29:15,488 - INFO - ------START:test3_1团队人事任免.TeamAssignJob.py------
+2017-12-01 15:29:16,494 - INFO - 点击右上角菜单
+2017-12-01 15:29:17,851 - INFO - 点击团队
+2017-12-01 15:29:18,710 - INFO - 点击编辑
+2017-12-01 15:29:19,652 - INFO - 编辑管理员人数
+2017-12-01 15:29:22,712 - INFO - 清空输入框
+2017-12-01 15:29:28,418 - INFO - 设置管理员人数：2
+2017-12-01 15:29:29,502 - INFO - 点击是
+2017-12-01 15:29:30,390 - ERROR - TeamAssignJob Inside : list index out of range
+2017-12-01 15:29:35,147 - ERROR - TeamAssignJob Outside : list index out of range
+2017-12-01 15:29:35,147 - INFO - ------------End:test3_1团队人事任免.TeamAssignJob003_1.py------------
+2017-12-01 15:29:35,149 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework/testcase/空间/机构空间/test3_1团队人事任免/TeamAssignJob003_1.py", line 80, in test_teamassign
+    raise err
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework/testcase/空间/机构空间/test3_1团队人事任免/TeamAssignJob003_1.py", line 76, in test_teamassign
+    AssNum, Name, Director, Marketing, Hr)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework/testcase/空间/机构空间/test3_1团队人事任免/TeamAssignJob.py", line 163, in teamAssignJob
+    raise err
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework/testcase/空间/机构空间/test3_1团队人事任免/TeamAssignJob.py", line 51, in teamAssignJob
+    driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
+IndexError: list index out of range
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>YunluFramework.testcase.空间.机构空间.test4_1资讯.Archivies004_1.space_ArchiviesO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',1)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_archivies_1___测试空间123____appium资讯___2_: 资讯发布</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse in" align="left">
+    <pre>
+    
+pt4_1: 2017-12-01 15:30:32,491 - INFO - ****************************************用例开始！****************************************
+2017-12-01 15:30:32,494 - INFO - ------------START:test4_1资讯.Archivies004_1.py------------
+2017-12-01 15:30:35,663 - INFO - 进入空间首页
+2017-12-01 15:30:53,731 - INFO - 向上滑动1.5秒
+2017-12-01 15:30:54,217 - INFO - 进入空间：测试空间123
+2017-12-01 15:30:55,220 - INFO - ------START:test4_1资讯.NewArchivies.py------
+2017-12-01 15:30:56,115 - INFO - 点击菜单栏
+2017-12-01 15:30:57,798 - INFO - 点击资讯
+2017-12-01 15:30:57,799 - INFO - 入口一：图片新增按钮检查
+2017-12-01 15:30:58,585 - INFO - 点击新增图片按钮
+2017-12-01 15:30:59,829 - INFO - 点击返回
+2017-12-01 15:30:59,829 - INFO - 入口二：右上角新增检查
+2017-12-01 15:31:00,908 - INFO - 点击右上角新增按钮
+2017-12-01 15:31:01,770 - INFO - 点击+照片
+2017-12-01 15:31:02,924 - INFO - 点击相册
+2017-12-01 15:31:05,326 - INFO - 点击第一张照片
+2017-12-01 15:31:06,286 - INFO - 点击完成
+2017-12-01 15:31:15,493 - INFO - 标题：appium资讯
+2017-12-01 15:31:16,828 - INFO - 点击类型
+2017-12-01 15:31:17,741 - INFO - 选择经典作品
+2017-12-01 15:31:19,005 - INFO - 勾选
+2017-12-01 15:31:20,372 - INFO - 保存
+2017-12-01 15:31:21,900 - INFO - 点击第一张资讯
+2017-12-01 15:31:23,248 - INFO - 点击第一张资讯
+2017-12-01 15:31:24,522 - INFO - 点击菜单栏
+2017-12-01 15:31:26,119 - INFO - 点击发布
+2017-12-01 15:31:26,853 - INFO - 资讯类型检查
+2017-12-01 15:31:27,071 - INFO - 点击第一张资讯
+2017-12-01 15:31:28,322 - INFO - 点击第一张资讯
+2017-12-01 15:31:29,071 - INFO - 资讯标题检查
+2017-12-01 15:31:35,778 - INFO - 返回空间
+2017-12-01 15:31:35,778 - INFO - ------END:test4_1资讯.NewArchivies.py------
+2017-12-01 15:31:36,780 - INFO - ------START:test4_1资讯.DeleteArchivies.py------
+2017-12-01 15:31:40,231 - INFO - 进入空间首页
+2017-12-01 15:31:40,580 - INFO - 进入空间：测试空间123
+2017-12-01 15:31:42,263 - INFO - 菜单栏选择资讯
+2017-12-01 15:31:43,615 - INFO - 点击资讯
+2017-12-01 15:31:44,426 - INFO - 判断是否有图片，有就进入删除
+2017-12-01 15:31:44,633 - INFO - 点击第一张图片
+2017-12-01 15:31:45,874 - INFO - 点击第一张图片
+2017-12-01 15:31:47,032 - INFO - 点击菜单栏
+2017-12-01 15:31:48,279 - INFO - 下架
+2017-12-01 15:31:49,901 - INFO - 点击第一张图片
+2017-12-01 15:31:52,140 - INFO - 点击第一张图片
+2017-12-01 15:31:53,342 - INFO - 菜单栏
+2017-12-01 15:31:54,631 - INFO - 删除
+2017-12-01 15:31:55,704 - INFO - 返回
+2017-12-01 15:31:59,908 - INFO - 进入空间：测试空间123
+2017-12-01 15:32:00,289 - INFO - 点击菜单栏
+2017-12-01 15:32:01,857 - INFO - 点击资讯
+2017-12-01 15:32:01,858 - INFO - 判断是否为空，为空即是已删除
+2017-12-01 15:32:07,588 - ERROR - 元素: com.yunlu6.yunlu:id/iv_profile 在5秒内未定位到
+2017-12-01 15:32:09,898 - INFO - ------END:test4_1资讯.DeleteArchivies.py------
+2017-12-01 15:32:09,899 - INFO - ------------END:test4_1资讯.Archivies004_1.py------------
+2017-12-01 15:32:09,901 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>YunluFramework.testcase.空间.机构空间.test5_1编辑.BusinessCard005_1.space_BusinessCardO</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_businesscard_1___测试空间123____appium___13027104206__86329302___291008572_qq_com___291008572___www_baidu_com__: 企业名片编辑</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
+    <div id='div_pt5_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
+    <div id='div_pt5_1' class="collapse in" align="left">
+    <pre>
+    
+pt5_1: 2017-12-01 15:33:12,800 - INFO - ****************************************用例开始！****************************************
+2017-12-01 15:33:12,801 - INFO - ------------START:test5_1编辑.BusinessCard005_1.py------------
+2017-12-01 15:33:14,609 - INFO - 点击空间首页
+2017-12-01 15:33:31,776 - INFO - 向上滑动1.5秒
+2017-12-01 15:33:32,834 - INFO - 进入空间：测试空间123
+2017-12-01 15:33:35,887 - INFO - 点击菜单栏
+2017-12-01 15:33:40,308 - INFO - 点击编辑
+2017-12-01 15:33:57,479 - INFO - 输入联系人：appium
+2017-12-01 15:34:10,910 - INFO - 输入手机号：13027104206
+2017-12-01 15:34:23,917 - INFO - 输入座机号：86329302
+2017-12-01 15:34:40,921 - INFO - 输入邮箱：291008572@qq.com
+2017-12-01 15:34:54,632 - INFO - 输入QQ号：291008572
+2017-12-01 15:35:10,163 - INFO - 输入网址：www.baidu.com
+2017-12-01 15:35:11,608 - INFO - 勾选保存
+2017-12-01 15:35:12,609 - INFO - 检查联系方式是否保存成功：
+2017-12-01 15:35:12,609 - INFO - 当前需要保存联系方式数量：5
+2017-12-01 15:35:12,895 - INFO - 实际写入保存联系方式数量：5
+2017-12-01 15:35:12,895 - INFO - 联系方式保存成功!
+2017-12-01 15:35:13,396 - INFO - 点击菜单栏
+2017-12-01 15:35:17,182 - INFO - 点击编辑
+2017-12-01 15:35:17,182 - INFO - 检查联系人：
+2017-12-01 15:35:17,346 - INFO - 当前联系人为：appium
+2017-12-01 15:35:17,347 - INFO - 预期联系人为：appium
+2017-12-01 15:35:17,349 - INFO - 联系人与预期一致
+2017-12-01 15:35:17,350 - INFO - 检查手机号:
+2017-12-01 15:35:17,439 - INFO - 当前手机号为：13027104206
+2017-12-01 15:35:17,439 - INFO - 预期手机号为：13027104206
+2017-12-01 15:35:17,439 - INFO - 手机号与预期一致
+2017-12-01 15:35:17,439 - INFO - 检查座机号：
+2017-12-01 15:35:17,522 - INFO - 当前座机号为：86329302
+2017-12-01 15:35:17,523 - INFO - 预期座机号为：86329302
+2017-12-01 15:35:17,524 - INFO - 座机号与预期一致
+2017-12-01 15:35:17,525 - INFO - 检查邮箱：
+2017-12-01 15:35:17,622 - INFO - 当前邮箱为：291008572@qq.com
+2017-12-01 15:35:17,622 - INFO - 预期邮箱为：291008572@qq.com
+2017-12-01 15:35:17,624 - INFO - 邮箱与预期一致
+2017-12-01 15:35:17,624 - INFO - 检查QQ号：
+2017-12-01 15:35:17,770 - INFO - 当前QQ号为：291008572
+2017-12-01 15:35:17,770 - INFO - 预期QQ号为：291008572
+2017-12-01 15:35:17,772 - INFO - QQ与预期一致
+2017-12-01 15:35:17,772 - INFO - 检查网址：
+2017-12-01 15:35:17,886 - INFO - 当前网址为：www.baidu.com
+2017-12-01 15:35:17,887 - INFO - 预期网址为：www.baidu.com
+2017-12-01 15:35:18,011 - INFO - 网址与预期一致
+2017-12-01 15:35:20,457 - INFO - 清空联系人
+2017-12-01 15:35:23,336 - INFO - 清空手机号
+2017-12-01 15:35:26,016 - INFO - 清空座机号
+2017-12-01 15:35:29,318 - INFO - 清空邮箱
+2017-12-01 15:35:32,327 - INFO - 清空QQ号
+2017-12-01 15:35:35,685 - INFO - 清空网址
+2017-12-01 15:35:36,589 - INFO - 勾选保存
+2017-12-01 15:35:36,590 - INFO - ------END:test5_1编辑.BusinessCard.py------
+2017-12-01 15:35:36,592 - INFO - ------------END::test5_1编辑.BusinessCard005_1.py------------
+2017-12-01 15:35:36,592 - INFO - ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>5</td>
+    <td>4</td>
+    <td>0</td>
+    <td>1</td>
+    <td>通过率：80.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>

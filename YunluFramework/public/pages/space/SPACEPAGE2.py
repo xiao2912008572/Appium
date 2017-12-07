@@ -305,10 +305,10 @@ class SPACEPAGE2(SPACEPAGE1):
     Kjlb_browseascspace_menu_close = ("id->com.yunlu6.yunlu:id/bt_close", "空间列表-浏览协会空间-菜单栏-关闭")
 
     # 定位:空间列表-浏览协会空间-菜单栏-关闭-是
-    Kjlb_browseascspace_menu_close_yes = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览协会空间-菜单栏-关闭-是")
+    Kjlb_browseascspace_menu_close_yes = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览协会空间-菜单栏-关闭-是")
 
     # 定位:空间列表-浏览协会空间-菜单栏-关闭-否
-    Kjlb_browseascspace_menu_close_no = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览协会空间-菜单栏-关闭-否")
+    Kjlb_browseascspace_menu_close_no = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel", "空间列表-浏览协会空间-菜单栏-关闭-否")
 
     # 定位:空间列表-浏览协会空间-菜单栏-设置
     Kjlb_browseascspace_menu_setting = ("id->com.yunlu6.yunlu:id/bt_setup", "空间列表-浏览协会空间-菜单栏-设置")

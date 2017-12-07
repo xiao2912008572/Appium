@@ -370,10 +370,10 @@ class SPACEPAGE5(SPACEPAGE4):
     Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn = ("id->com.yunlu6.yunlu:id/btn_gallery_photos_cancle", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是
-    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y = ("id->com.yunlu6.yunlu:id/dialog_warm2_sure", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是")
+    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_y = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-是")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否
-    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n = ("id->com.yunlu6.yunlu:id/dialog_warm2_cancel", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否")
+    Kjlb_browseperspace_more_menu_edit_deletefolder_dbtn_n = ("id->com.yunlu6.yunlu:id/dialog_warm_cancel", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-删除按钮-否")
 
     # 空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-全选
     Kjlb_browseperspace_more_menu_edit_foldername_all = ("id->com.yunlu6.yunlu:id/title_tv_more_tv_selected", "空间列表-浏览私人空间-更多-菜单栏-编辑-删除文件夹-全选")

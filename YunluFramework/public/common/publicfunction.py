@@ -38,7 +38,7 @@ class Tools:
         l = self.getSize()
         x1 = int(l[0] * 0.5)
         y1 = int(l[1] * 0.8)
-        y2 = int(l[1] * 0.3)
+        y2 = int(l[1] * 0.4)
         self.driver.swipe(x1, y1, x1, y2, t)
         time.sleep(5)
 
