@@ -62,9 +62,11 @@ class team_AssignA(unittest.TestCase):
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
             # 2.选择空间:协会测试123
-            self.tools.swipeUp(500)
-            self.log.info('向上滑动0.5秒')
-            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            self.handle.Kjlb_click()  # 点击进入空间列表
+            self.log.info('点击进入空间列表')
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handle.Kjlb_browseorgspaceByID_click(0)
             self.log.info('进入空间：{0}'.format(spacename))
             # 3.任免+移除Kjlb_browseascspace_menu_team_menu_assignjob_addperson_confirm
             self.SpaceTa.teamAssignJob(self.driver, spacename, AdminstratorLoc, SalespersonLoc,

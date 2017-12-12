@@ -26,11 +26,9 @@ class CloseAscSpace:
             self.log.info('------START:test1_1创建协会空间.CloseAscSpace.py------')
             # 为了保证不中途退出，需要第一次进入的时候检查是否存在该机构，如果存在，先关闭
             # 1.进入协会空间
-            t.swipeUp(500)
-            t.swipeUp(500)
-            t.swipeUp(500)
-            self.log.info('向上滑动1.5秒')
-            handle.Kjlb_browseorgspaceByName_click(name)
+            t.find_space_by_name(name)
+            self.log.info('搜索栏搜索结果:{0}'.format(name))
+            handle.Kjlb_browseorgspaceByID_click(0)
             self.log.info('进入协会空间：{0}'.format(name))
             sleep(1)
             # 2.点击菜单栏

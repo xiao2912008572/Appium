@@ -50,7 +50,7 @@ class AddPtoPAgreeA(unittest.TestCase):
         self.log.info("------------END:test5_4加会员_个人_个人_拒绝.Add_PtoP_Refuse005_4.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
         # 2.关闭driver
-        self.driver.quit()
+        # self.driver.quit()
 
     # 4.测试用例
     @ddt.data([spacename_1, vipname_1, phone1_1, password1_1,
@@ -64,33 +64,41 @@ class AddPtoPAgreeA(unittest.TestCase):
             # 1.空间首页
             self.handleS.Kjlb_click()
             self.log.info('点击空间列表')
+            self.tools.swipeUp(500)
+            self.log.info('向上滑动屏幕0.5秒')
+
             # 2.选择空间:测试空间123
             self.handleS.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('进入协会空间：{0}'.format(spacename))
+
             # 3.+会员
             self.addvip.addPerVip(self.driver, vipname)
+
             # 4.退出账号,登录受邀账号处理消息
             # 4.1调用loginout模块:退出当前账号
             self.loginout.loginout(self.driver, 4)  # 空间页设置
             # 4.2调用loginA模块:登录受邀账号
+            self.log.info('登录受邀账号：{0},{1}'.format(phone3, password3))
             self.login.login(self.driver, phone3, password3)
+            self.log.info('登录受邀账号完毕')
             sleep(1)
             '''
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 4.3点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
+
             # 7.5点击消息第一条
-            self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击同意
-            self.driver.find_element_by_id("com.yunlu6.stone:id/agree_btn").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/agree_btn").click()
             self.log.info('点击同意')
             # 7.7返回到云视
-            self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/title_back_icon").click()
             self.log.info('点击返回')
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8检查空间是否有该协会
             self.handleS.Kjlb_click()
@@ -98,25 +106,31 @@ class AddPtoPAgreeA(unittest.TestCase):
             assert self.handleS.Kjlb_browseorgspaceByName(spacename) is not None, "Error SpaceList Showing"
             self.log.info('检查空间列表是否有该协会')
             # 7.9退出受邀账号
+            self.log.info('退出受邀账号：')
             self.loginout.loginout(self.driver, 4)
+            self.log.info('退出受邀账号完毕')
+
             # 8.登录邀请账号-检查各处消息
             # 8.1登录
+            self.log.info('登录邀请账号:{0},{1}'.format(phone1, password1))
             self.login.login(self.driver, phone1, password1)
+            self.log.info('登录邀请账号完毕')
             sleep(1)
             '''
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 8.2点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 8.3查看消息第一条
-            message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
+            message = self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").text
             self.log.info('查看第1条消息')
-            assert message == self.vipname + ' 已接受 贵公司的 会员 邀请', "Error Message Handled"
+            assert message == vipname + ' 已接受 %s的 会员 邀请' % spacename, "Error Message Handled"
             self.log.info('检查是否收到拒绝消息')
             # 8.4返回-空间主界面
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回，返回至空间主界面')
+
             # 9.移除会员,还原测试场景
             # 9.1进入空间
             self.handleS.Kjlb_click()
@@ -125,11 +139,15 @@ class AddPtoPAgreeA(unittest.TestCase):
             self.log.info('进入协会空间：{0}'.format(spacename))
             # 9.3会员_个人_移除
             self.deleteVip.deletePerVip(self.driver)
+
             # 10.退出该账号,回到邀请账号
             self.loginout.loginout(self.driver, 4)
+            self.log.info('登录邀请账号:{0},{1}'.format(phone2, password2))
             self.login.login(self.driver, phone2, password2)
-            assert self.driver.find_elements_by_id("com.yunlu6.stone:id/sv_cloundview") != [], "Error Login Account2 Failed"
+            assert self.driver.find_elements_by_id(
+                "com.yunlu6.yunlu:id/sv_cloundview") != [], "Error Login Account2 Failed"
             self.log.info('检查账号{0}，{1}是否登录成功'.format(phone2, password2))
+            self.log.info('登录邀请账号完毕')
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("Add_AtoP_Agree Outside : %s" % err)

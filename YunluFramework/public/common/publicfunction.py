@@ -3,12 +3,33 @@ import time
 import shutil  # 强制删除
 import os
 import logging
+from YunluFramework.public.handle.space.SPACEHANDLE6 import SPACEHANDLE6
+from YunluFramework.config.globalparam import GlobalParam
+from YunluFramework.public.common.log import Log
 
 
 class Tools:
     # 初始化传参,传入driver
     def __init__(self, driver):
         self.driver = driver
+        self.handle = SPACEHANDLE6(self.driver)
+        cf = GlobalParam('config', 'path_file.conf')  # 创建读取配置信息对象
+        self.logfile = cf.getParam('log', "logfile")  # 日志文件名
+        self.log = Log(self.logfile)  # 创建日志记录模块
+
+    # ---------------------------------------发现空间----------------------------------
+    def find_space_by_name(self, spacename):
+        '''
+        在空间列表中搜索指定的空间
+        :param spacename: 传入空间名
+        :return:返回该搜索结果->一个或多个空间的列表
+        '''
+        # 1.输入空间名
+        self.handle.Kjlb_searchspace_sendkeys(spacename)
+        self.log.info('搜索栏输入空间名:{0}'.format(spacename))
+        # 2.点击搜索按钮
+        self.handle.Kjlb_searchbutton_click()
+        self.log.info('点击搜索按钮')
 
     # -----------------------------------上下左右滑动功能-------------------------------
     # 获取屏幕大小

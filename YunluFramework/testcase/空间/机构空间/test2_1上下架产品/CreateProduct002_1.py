@@ -79,11 +79,9 @@ class space_ProductO(unittest.TestCase):
             sleep(1)
             self.handle.Kjlb_click()  # 点击进入空间列表
             self.log.info('点击进入空间列表')
-            self.tools.swipeUp(500)
-            self.tools.swipeUp(500)
-            self.tools.swipeUp(500)
-            self.log.info('向上滑动2秒')
-            self.handle.Kjlb_browseorgspaceByName_click(spacename)  # 点击进入测试空间123
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handle.Kjlb_browseorgspaceByID_click(0)
             self.log.info('点击进入%s' % spacename)
             self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
             self.log.info('点击菜单栏')

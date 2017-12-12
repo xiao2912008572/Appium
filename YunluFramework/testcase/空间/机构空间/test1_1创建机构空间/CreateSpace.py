@@ -40,9 +40,9 @@ class CreateSpace:
             # 客户类型:石材
             # 所在地区:北京-东城
             # 详细地址:不填
-            handle.Kjlb_mainmenu_newspace_orgname_sendkeys(fullname)  # 全称
+            handle.Kjlb_mainmenu_newspace_orgname_sendkeys(u'{0}'.format(fullname))  # 全称
             self.log.info('输入企业全称：%s' % fullname)
-            handle.Kjlb_mainmenu_newspace_orgintro_sendkeys(easyname)  # 简称
+            handle.Kjlb_mainmenu_newspace_orgintro_sendkeys(u'{0}'.format(easyname))  # 简称
             self.log.info('输入企业简称：%s' % easyname)
             handle.Kjlb_mainmenu_newspace_orgtitle_click()  # 点击标题
             self.log.info('点击标题')

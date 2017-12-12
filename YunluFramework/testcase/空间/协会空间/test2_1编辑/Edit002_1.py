@@ -57,11 +57,15 @@ class space_EditA(unittest.TestCase):
             # 1.空间首页
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
+
             # 2.选择空间:测试空间123
-            self.tools.swipeUp(500)
-            self.log.info('向上滑动0.5秒')
-            self.handle.Kjlb_browseorgspaceByName_click(spacename)
+            self.handle.Kjlb_click()  # 点击进入空间列表
+            self.log.info('点击进入空间列表')
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handle.Kjlb_browseorgspaceByID_click(0)
             self.log.info('进入空间：%s' % spacename)
+
             # 3.企业名片
             self.spaceE.edit(self.driver, contact, phone, tel, email, QQ, website)
         except Exception as err:

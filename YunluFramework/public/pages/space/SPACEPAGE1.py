@@ -24,7 +24,7 @@ class SPACEPAGE1(Page):
         return Kjlb_browseorgspaceByName
 
     # 空间列表-搜索按钮
-    Kjlb_searchbutton = ("id->com.yunlu6.yunlu:id/navi_item_zone", "空间列表-搜索按钮")
+    Kjlb_searchbutton = ("id->com.yunlu6.yunlu:id/iv_search_zone", "空间列表-搜索按钮")
 
     # 空间列表-搜索框
     Kjlb_searchspace = ("id->com.yunlu6.yunlu:id/edit_text", "空间列表-搜索框")

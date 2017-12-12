@@ -4,8 +4,8 @@ from YunluFramework.public.common.datainfo import DataInfo
 from YunluFramework.public.common.log import Log
 from YunluFramework.public.common.Connect import Connect
 from YunluFramework.public.common.publicfunction import Tools
-from YunluFramework.config.globalparam import GlobalParam
 from YunluFramework.public.handle.space.SPACEHANDLE5 import SPACEHANDLE5
+from YunluFramework.config.globalparam import GlobalParam
 import ddt
 from YunluFramework.testcase.空间.机构空间.test2_1上下架产品.CreateProduct import CreateProduct
 from YunluFramework.testcase.空间.机构空间.test2_1上下架产品.DeleteProduct import DeleteProduct

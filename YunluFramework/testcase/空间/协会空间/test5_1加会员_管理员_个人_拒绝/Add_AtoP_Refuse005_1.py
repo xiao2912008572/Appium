@@ -60,11 +60,10 @@ class AddAtoPRefuseA(unittest.TestCase):
             self.log.info('点击空间首页')
 
             # 2.选择空间:协会测试123
-            # self.tools.swipeUp(500)
-            # self.log.info('向上滑动0.5秒')
-            self.handleS.Kjlb_browseorgspaceByName_click(spacename)
-            self.log.info('进入协会空间：{0}'.format(spacename))
-
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handleS.Kjlb_browseorgspaceByID_click(0)
+            self.log.info('进入协会空间：%s' % spacename)
             # 3.+会员
             self.addvip.addPerVip(self.driver, vipname)
 
