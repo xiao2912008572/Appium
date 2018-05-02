@@ -1,0 +1,30 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./YunluFramework_API",
+        "-p",
+        "test*.py"
+    ],
+    //unitTest设置
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    //pythonPath
+    // "python.pythonPath": "/anaconda3/envs/test_py3/bin/python",
+    "python.pythonPath": "/usr/local/bin/python3",
+    // "python.pythonPath": "/anaconda3/lib/python3.6",
+    //不显示这些文件
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/*.pyc": true,
+        "**/.DS_Store": true
+    },
+    // Whether to run code in Integrated Terminal.
+    "code-runner.runInTerminal": true,
+    "python.unitTest.promptToConfigure": false,
+
+}
