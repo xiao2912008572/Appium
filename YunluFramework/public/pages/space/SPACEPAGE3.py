@@ -73,26 +73,76 @@ class SPACEPAGE3(SPACEPAGE2):
 
     # ***************************************【PAGE2】资讯Kjlb_browseorgspace_menu_archivies***************************************
     # 空间列表-浏览企业空间-菜单栏-资讯-返回
-    Kjlb_browseorgspace_menu_archivies_back = ("id->com.yunlu6.yunlu:id/title_back_icon", "空间列表-浏览企业空间-菜单栏-资讯-返回")
+    Kjlb_browseorgspace_menu_archivies_back = ("id->com.yunlu6.yunlu:id/ivBack", "空间列表-浏览企业空间-菜单栏-资讯-返回")
 
     # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮
-    Kjlb_browseorgspace_menu_archivies_new = ("id->com.yunlu6.yunlu:id/title_tv_menu", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮")
+    Kjlb_browseorgspace_menu_archivies_new = ("id->com.yunlu6.yunlu:id/titleMenu", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮")
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯
-    Kjlb_browseorgspace_menu_archivies_new_archivies = ("id->com.yunlu6.yunlu:id/add_zixun", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯")
+    # 空间列表-浏览企业空间-菜单栏-资讯-搜索栏
+    Kjlb_browseorgspace_menu_archivies_search = ("id->com.yunlu6.yunlu:id/etKey","空间列表-浏览企业空间-菜单栏-资讯-搜索栏")
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程
-    Kjlb_browseorgspace_menu_archivies_new_constitution = ("id->com.yunlu6.yunlu:id/to_rule", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程")
+    # 空间列表-浏览企业空间-菜单栏-资讯-搜索按钮
+    Kjlb_browseorgspace_menu_archivies_searchbutton = ("id->com.yunlu6.yunlu:id/ivSearch","空间列表-浏览企业空间-菜单栏-资讯-搜索按钮")
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片新增
-    Kjlb_browseorgspace_menu_archivies_picadd = ("id->com.yunlu6.yunlu:id/rl_add", "空间列表-浏览企业空间-菜单栏-资讯-图片新增")
+    # 空间列表-浏览企业空间-菜单栏-资讯-全部
+    Kjlb_browseorgspace_menu_archivies_all = ("name->全部","空间列表-浏览企业空间-菜单栏-资讯-全部")
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
-    Kjlb_browseorgspace_menu_archivies_pic = ("id->com.yunlu6.yunlu:id/iv_profile", "空间列表-浏览企业空间-菜单栏-资讯-图片列表")
+    # 空间列表-浏览企业空间-菜单栏-资讯-待发布
+    Kjlb_browseorgspace_menu_archivies_dafabu = ("name->待发布","空间列表-浏览企业空间-菜单栏-资讯-待发布")
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
-    def Kjlb_browseorgspace_menu_archivies_pic_element(self):
-        return self.p.get_elements(self.Kjlb_browseorgspace_menu_archivies_pic[0])
+    # 空间列表-浏览企业空间-菜单栏-资讯-已发布
+    Kjlb_browseorgspace_menu_archivies_yifabu = ("name->已发布","空间列表-浏览企业空间-菜单栏-资讯-已发布")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-全部类型
+    Kjlb_browseorgspace_menu_archivies_tvclass = ("id->com.yunlu6.yunlu:id/tvClass","空间列表-浏览企业空间-菜单栏-资讯-全部类型")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片
+    Kjlb_browseorgspace_menu_archivies_new_addpic = ("id->com.yunlu6.yunlu:id/iv_add_photo","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片切换封面
+    Kjlb_browseorgspace_menu_archivies_new_cover = ("id->com.yunlu6.yunlu:id/ll_cover","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片切换封面")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-标题
+    Kjlb_browseorgspace_menu_archivies_new_title = ("id->com.yunlu6.yunlu:id/archiveName","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-标题")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-类型选择
+    Kjlb_browseorgspace_menu_archivies_new_type = ("id->com.yunlu6.yunlu:id/llTypesOf","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-类型选择")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-保存按钮
+    Kjlb_browseorgspace_menu_archivies_new_save = ("id->com.yunlu6.yunlu:id/product_save","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-保存")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-发布按钮
+    Kjlb_browseorgspace_menu_archivies_new_issue = ("id->com.yunlu6.yunlu:id/product_issue","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-发布按钮")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册
+    Kjlb_browseorgspace_menu_archivies_new_addpic_Allbum = ("id->com.yunlu6.yunlu:id/iv_cloundlibrary_alumm","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-拍照
+    Kjlb_browseorgspace_menu_archivies_new_addpic_photograph = ("id->com.yunlu6.yunlu:id/iv_cloundlibrary_camera","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-拍照")
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-产品库
+    Kjlb_browseorgspace_menu_archivies_new_addpic_library = ("id->com.yunlu6.yunlu:id/iv_cloundlibrary_yun","空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-产品库")
+
+
+    '''
+        20180320资讯模块更新，此处代码已注释，start
+    '''
+    # # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯
+    # Kjlb_browseorgspace_menu_archivies_new_archivies = ("id->com.yunlu6.yunlu:id/add_zixun", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯")
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程
+    # Kjlb_browseorgspace_menu_archivies_new_constitution = ("id->com.yunlu6.yunlu:id/to_rule", "空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程")
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片新增
+    # Kjlb_browseorgspace_menu_archivies_picadd = ("id->com.yunlu6.yunlu:id/rl_add", "空间列表-浏览企业空间-菜单栏-资讯-图片新增")
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
+    # Kjlb_browseorgspace_menu_archivies_pic = ("id->com.yunlu6.yunlu:id/iv_profile", "空间列表-浏览企业空间-菜单栏-资讯-图片列表")
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
+    # def Kjlb_browseorgspace_menu_archivies_pic_element(self):
+    #     return self.p.get_elements(self.Kjlb_browseorgspace_menu_archivies_pic[0])
+
 
     # 空间列表-浏览企业空间-菜单栏-资讯-图片列表
     # def Kjlb_browseorgspace_menu_archivies_pics(self):
@@ -100,11 +150,14 @@ class SPACEPAGE3(SPACEPAGE2):
     #                                                                            "空间列表-浏览企业空间-菜单栏-资讯-图片列表")
     #     return self.Kjlb_browseorgspace_menu_archivies_picA
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片-标题
-    Kjlb_browseorgspace_menu_archivies_pic_title = ("id->com.yunlu6.yunlu:id/title_main_tv_more_title", "空间列表-浏览企业空间-菜单栏-资讯-图片-标题")
-
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片-类型
-    Kjlb_browseorgspace_menu_archivies_pic_type = ("id->com.yunlu6.yunlu:id/tv_profile", "空间列表-浏览企业空间-菜单栏-资讯-图片-类型")
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片-标题
+    # Kjlb_browseorgspace_menu_archivies_pic_title = ("id->com.yunlu6.yunlu:id/title_main_tv_more_title", "空间列表-浏览企业空间-菜单栏-资讯-图片-标题")
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片-类型
+    # Kjlb_browseorgspace_menu_archivies_pic_type = ("id->com.yunlu6.yunlu:id/tv_profile", "空间列表-浏览企业空间-菜单栏-资讯-图片-类型")
+    '''
+        20180320，end
+    '''
 
     # ***************************************【PAGE2】编辑Kjlb_browseorgspace_menu_edit***************************************
     # 空间列表-浏览企业空间-菜单栏-企业名片-菜单栏-编辑-返回
@@ -280,6 +333,40 @@ class SPACEPAGE3(SPACEPAGE2):
 
     # 空间列表-浏览企业空间-菜单栏-业务升级-返回
     Kjlb_browseorgspace_menu_upgrade_back = ("id->com.yunlu6.yunlu:id/companyupgrade_backe", "空间列表-浏览企业空间-菜单栏-业务升级-返回")
+
+    # ***************************************【PAGE2】流程Kjlb_browseorgspace_menu_flow_click***************************************
+    # 空间列表-浏览企业空间-菜单栏-流程-返回
+    Kjlb_browseorgspace_menu_flow_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon","空间列表-浏览企业空间-菜单栏-流程-返回")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏
+    Kjlb_browseorgspace_menu_flow_menu = ("id->com.yunlu6.yunlu:id/title_main_tv_more_menu","空间列表-浏览企业空间-菜单栏-流程-菜单栏")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-我审批的
+    Kjlb_browseorgspace_menu_flow_approve = ("id->com.yunlu6.yunlu:id/rb_approve","空间列表-浏览企业空间-菜单栏-流程-我审批的")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-我发起的
+    Kjlb_browseorgspace_menu_flow_create = ("id->com.yunlu6.yunlu:id/rb_create","空间列表-浏览企业空间-菜单栏-流程-我发起的")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-抄送我的
+    Kjlb_browseorgspace_menu_flow_copy = ("id->com.yunlu6.yunlu:id/rb_copy","空间列表-浏览企业空间-菜单栏-流程-抄送我的")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-待处理
+    Kjlb_browseorgspace_menu_flow_wait = ("id->com.yunlu6.yunlu:id/rb_wait","空间列表-浏览企业空间-菜单栏-流程-待处理")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-已处理
+    Kjlb_browseorgspace_menu_flow_already = ("id->com.yunlu6.yunlu:id/rb_already","空间列表-浏览企业空间-菜单栏-流程-已处理")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请
+    Kjlb_browseorgspace_menu_flow_menu_new = ("id->com.yunlu6.yunlu:id/btn_apply","空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-请假
+    Kjlb_browseorgspace_menu_flow_menu_new_leave = ("id->com.yunlu6.yunlu:id/bt_leave","空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-请假")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-加班
+    Kjlb_browseorgspace_menu_flow_menu_new_overtime = ("id->com.yunlu6.yunlu:id/bt_overtime","空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-加班")
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-方案审批
+    Kjlb_browseorgspace_menu_flow_menu_new_scheme = ("id->com.yunlu6.yunlu:id/bt_scheme","空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-方案审批")
 
     # ***************************************【PAGE2】照片列表(包括点击照片加数据)Kjlb_browseperspace_piclist***************************************
     # 空间列表-浏览私人空间-照片列表-菜单栏
@@ -639,33 +726,54 @@ class SPACEPAGE3(SPACEPAGE2):
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员-返回
     Kjlb_browseascspace_menu_addvip_addperson_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览协会空间-菜单栏-会员-个人会员-返回失败")
 
+    '''
+        20180322，添加企业会员此处代码已过期，注释，start
+    '''
+
     # ***************************************【PAGE2】菜单栏-+会员-企业会员Kjlb_browseascspace_menu_addvip_addcompany***************************************
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-返回
-    Kjlb_browseascspace_menu_addvip_addcompany_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览协会空间-菜单栏-会员-企业会员-返回失败")
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-返回
+    # Kjlb_browseascspace_menu_addvip_addcompany_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览协会空间-菜单栏-会员-企业会员-返回失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏
+    # Kjlb_browseascspace_menu_addvip_addcompany_search = ("id->com.yunlu6.yunlu:id/buildyunlu_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-搜索栏
+    # Kjlb_browseascspace_menu_addvip_addcompany_search_search = ("id->com.yunlu6.yunlu:id/et_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏-搜索栏失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索按钮
+    # Kjlb_browseascspace_menu_addvip_addcompany_searchbtn = ("id->com.yunlu6.yunlu:id/iv_search", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索按钮失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-菜单栏
+    # Kjlb_browseascspace_menu_addvip_addcompany_menu = ("id->com.yunlu6.yunlu:id/iv_more", "空间列表-浏览协会空间-菜单栏-会员-企业会员-菜单栏失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近
+    # Kjlb_browseascspace_menu_addvip_addcompany_nearby = ("id->com.yunlu6.yunlu:id/ll_recover", "空间列表-浏览协会空间-菜单栏-会员-企业会员-我的附近失败")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-浏览记录
+    # Kjlb_browseascspace_menu_history = ("id->com.yunlu6.yunlu:id/anti", "空间列表-浏览协会空间-菜单栏-浏览记录")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-圆圈勾选列表
+    # Kjlb_browseascspace_menu_addvip_addcompany_choose = ("id->com.yunlu6.yunlu:id/assadd_select_icon", "空间列表-浏览协会空间-菜单栏-会员-企业会员-圆圈勾选失败")
+    #
+    '''
+        20180322,end
+    '''
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏
-    Kjlb_browseascspace_menu_addvip_addcompany_search = ("id->com.yunlu6.yunlu:id/buildyunlu_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏失败")
-
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-搜索栏
-    Kjlb_browseascspace_menu_addvip_addcompany_search_search = ("id->com.yunlu6.yunlu:id/et_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏-搜索栏失败")
+    Kjlb_browseascspace_menu_addvip_addcompany_search = ("id->com.yunlu6.yunlu:id/buildstone_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏失败")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索按钮
     Kjlb_browseascspace_menu_addvip_addcompany_searchbtn = ("id->com.yunlu6.yunlu:id/iv_search", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索按钮失败")
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-菜单栏
-    Kjlb_browseascspace_menu_addvip_addcompany_menu = ("id->com.yunlu6.yunlu:id/iv_more", "空间列表-浏览协会空间-菜单栏-会员-企业会员-菜单栏失败")
-
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近
-    Kjlb_browseascspace_menu_addvip_addcompany_nearby = ("id->com.yunlu6.yunlu:id/ll_recover", "空间列表-浏览协会空间-菜单栏-会员-企业会员-我的附近失败")
-
-    # 定位:空间列表-浏览协会空间-菜单栏-浏览记录
-    Kjlb_browseascspace_menu_history = ("id->com.yunlu6.yunlu:id/anti", "空间列表-浏览协会空间-菜单栏-浏览记录")
+    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-搜索栏
+    Kjlb_browseascspace_menu_addvip_addcompany_search_search = ("id->com.yunlu6.yunlu:id/et_search_key", "空间列表-浏览协会空间-菜单栏-会员-企业会员-搜索栏-搜索栏失败")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-圆圈勾选列表
     Kjlb_browseascspace_menu_addvip_addcompany_choose = ("id->com.yunlu6.yunlu:id/assadd_select_icon", "空间列表-浏览协会空间-菜单栏-会员-企业会员-圆圈勾选失败")
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-确定
-    Kjlb_browseascspace_menu_addvip_addcompany_confirm = ("id->com.yunlu6.yunlu:id/company_search_assadd", "空间列表-浏览协会空间-菜单栏-会员-企业会员-确定失败")
+    Kjlb_browseascspace_menu_addvip_addcompany_confirm = (
+    "id->com.yunlu6.yunlu:id/company_search_assadd", "空间列表-浏览协会空间-菜单栏-会员-企业会员-确定失败")
 
     # ***************************************【PAGE2】菜单栏-搜附近Kjlb_browseascspace_menu_nearby***************************************
     # 【PAGE3】路线Kjlb_browseascspace_menu_addvip_addcompany_nearby_route

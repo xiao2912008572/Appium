@@ -21,20 +21,27 @@ class ascspace_CreateA(unittest.TestCase):
         # 1.建立连接信息
         cnn = Connect()
         self.driver = cnn.connect()
+
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
+
         # 3.创建_BrowseOrgSpace公有定位控件对象
         self.handle = SPACEHANDLE5(self.driver)
+
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
+
         # 5.获取截图路径、日志路径、日志名
         self.screen_path = cf.getParam('space', "ass_path_001_1")  # 通过配置文件获取截图的路径
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
+
         # 6.创建日志记录模块
         self.log = Log(self.logfile)
+
         # 7.创建CommonSpace对象
         self.common = CommonSpace(self.handle, self.log, self.tools)
         sleep(1)
+
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
         self.log.info("------------START:test1_1创建协会空间.CreateASCSpace001_1.py------------")
@@ -45,6 +52,7 @@ class ascspace_CreateA(unittest.TestCase):
         # 1.打印日志
         self.log.info("------------END:test1_1创建机构空间.CreateASCSpace001_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
         # 2.关闭driver
         # self.driver.quit()
 
@@ -58,10 +66,11 @@ class ascspace_CreateA(unittest.TestCase):
         :return:
         '''
         try:
-            self.common.enter_space(spacename)
+            self.common.enter_space(spacename) #进入空间
             self.common.click_asc_menu('close')  # 点击关闭
             self.handle.Kjlb_browseorgspace_menu_close_confirm_click()  # 确认关闭
             self.log.info('点击确认关闭')
+
         except:
             pass
 
@@ -75,12 +84,15 @@ class ascspace_CreateA(unittest.TestCase):
             # 1.空间首页
             self.handle.Kjlb_click()
             self.log.info('点击空间首页')
+
             # 2.右上角主菜单
             self.handle.Kjlb_mainmenu_click()
             self.log.info('点击右上角主菜单')
+
             # 3.+机构空间
             self.handle.Kjlb_mainmenu_newspace_click()
             self.log.info('点击+机构空间')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_asccreateSpace01 : %s" % err)
@@ -105,10 +117,15 @@ class ascspace_CreateA(unittest.TestCase):
             self.log.info('输入协会简称：{0}'.format(easyname))
             self.handle.Kjlb_mainmenu_newspace_orgtitle_click()  # 点击标题
             self.log.info('点击标题')
+
+
+            '''
             self.handle.Kjlb_mainmenu_newspace_orgtype_click()  # 机构类型
             self.log.info('点击机构类型')
             self.handle.Kjlb_mainmenu_newspace_orgtype_association_click()  # 机构类型：协会
             self.log.info('选择机构类型：协会')
+            '''
+
             sleep(1)
             self.handle.Kjlb_mainmenu_newspace_customertype_click()  # 客户类型
             self.log.info('点击客户类型')
@@ -124,6 +141,7 @@ class ascspace_CreateA(unittest.TestCase):
             self.log.info('选择%s市' % city)
             self.handle.Kjlb_mainmenu_newspace_affirm_click()  # 点击提交
             self.log.info('确定提交')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_asccreateSpace02 : %s" % err)
@@ -168,6 +186,7 @@ class ascspace_CreateA(unittest.TestCase):
             self.handle.Kjlb_mainmenu_newspace_verifynow_soversave_back_click()  # 点击返回
             self.log.info('点击返回')
             sleep(1)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_asccreateSpace03 : %s" % err)
@@ -191,6 +210,7 @@ class ascspace_CreateA(unittest.TestCase):
             self.common.click_asc_menu('close')  # 点击关闭
             self.handle.Kjlb_browseorgspace_menu_close_confirm_click()  # 确认关闭
             self.log.info('点击确认关闭')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createSpace04 : %s" % err)

@@ -1,7 +1,9 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
-from YunluFramework.testcase.空间.机构空间.test1_1创建机构空间 import *
+import sys
+sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
 
+from YunluFramework.testcase.空间.机构空间.test1_1创建机构空间 import *
 
 # 创建机构空间
 @ddt.ddt
@@ -80,19 +82,26 @@ class space_CreateO(unittest.TestCase):
         :return:
         '''
         try:
-            sleep(1)
-            # 1.空间首页
-            self.handle.Kjlb_click()
-            self.log.info('点击进入空间首页')
-            sleep(2)
 
-            # 2.点击+按钮
+
+            '''
+                20180319，已重复，本段注释，start
+            '''
+            # # 1.空间首页
+            # self.handle.Kjlb_click()
+            # self.log.info('点击进入空间首页')
+            '''
+                20180319，end
+            '''
+
+            # 2.点击空间列表主菜单
             self.handle.Kjlb_mainmenu_click()
-            self.log.info('点击：+按钮')
+            self.log.info('点击：空间列表主菜单')
 
             # 3.+机构空间
             self.handle.Kjlb_mainmenu_newspace_click()
             self.log.info('选择：+机构空间')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createSpace01 : %s" % err)
@@ -133,12 +142,15 @@ class space_CreateO(unittest.TestCase):
             self.handle.Kjlb_mainmenu_newspace_orgintro_click()
             self.log.info('点击企业简称输入框')
 
+            """
+            1.8.1版本创建机构空间无机构类型
             # 3.机构类型
             self.handle.Kjlb_mainmenu_newspace_orgtype_click()  # 机构类型
             self.log.info('点击机构类型')
             self.handle.Kjlb_mainmenu_newspace_orgtype_company_click()  # 机构类型：企业
             self.log.info('选择机构类型：企业')
             sleep(1)
+            """
 
             # 4.客户类型
             self.handle.Kjlb_mainmenu_newspace_customertype_click()  # 客户类型
@@ -159,7 +171,9 @@ class space_CreateO(unittest.TestCase):
             # 6.点击提交
             self.handle.Kjlb_mainmenu_newspace_affirm_click()  # 点击提交
             self.log.info('确定提交')
+
         except Exception as err:
+
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createSpacet02 : %s" % err)
             raise err
@@ -182,6 +196,7 @@ class space_CreateO(unittest.TestCase):
             # 支行:BBB
             # 银行账号:123456
             sleep(3)
+
             # 1.开户银行
             self.handle.Kjlb_mainmenu_newspace_verifynow_soverbank_click()  # 开户银行
             self.log.info('点击开户银行')
@@ -209,7 +224,9 @@ class space_CreateO(unittest.TestCase):
             self.handle.Kjlb_mainmenu_newspace_verifynow_soversave_back_click()  # 点击返回
             self.log.info('点击返回')
             sleep(1)
+
         except Exception as err:
+
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createSpace03 : %s" % err)
             raise err
@@ -230,7 +247,7 @@ class space_CreateO(unittest.TestCase):
             # 1.为了保证不中途退出，需要第一次进入的时候检查是否存在该机构，如果存在，先关闭
             self.tools.find_space_by_name(spacename)
             self.log.info('搜索栏搜索结果:{0}'.format(spacename))
-            self.handle.Kjlb_browseorgspaceByID_click(0)
+            self.handle.Kjlb_browseorgspaceByID_click()
             self.log.info('点击进入空间:{0}'.format(spacename))
             sleep(1)
 
@@ -238,7 +255,12 @@ class space_CreateO(unittest.TestCase):
             self.common.click_org_menu('close')  # 点击关闭
             self.handle.Kjlb_browseorgspace_menu_close_confirm_click()  # 确认关闭
             self.log.info('点击确认关闭')
+
         except Exception as err:
+
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createSpace04 : %s" % err)
             raise err
+            
+if __name__ == '__main__':
+    unittest.main()

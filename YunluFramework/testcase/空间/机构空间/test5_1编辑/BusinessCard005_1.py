@@ -64,6 +64,7 @@ class space_BusinessCardO(unittest.TestCase):
         try:
             # 1.进入空间
             self.common.enter_space(spacename)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard01 : %s" % err)
@@ -72,10 +73,12 @@ class space_BusinessCardO(unittest.TestCase):
     # 4.2 进入编辑
     def test_businesscard02(self):
         '''进入编辑
+        :return:
         '''
         try:
             # 1.进入编辑
             self.common.click_org_menu('edit')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard02 : %s" % err)
@@ -134,6 +137,7 @@ class space_BusinessCardO(unittest.TestCase):
             self.handle.Kjlb_browseorgspace_menu_edit_confirm_click()  # 勾选
             self.log.info('勾选保存')
             sleep(1)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard03 : %s" % err)
@@ -142,6 +146,7 @@ class space_BusinessCardO(unittest.TestCase):
     # 4.4 检查编辑后图标数量
     def test_businesscard04(self):
         '''检查编辑后图标数量
+        :return:
         '''
         try:
             # 1.检查联系方式是否保存
@@ -152,6 +157,7 @@ class space_BusinessCardO(unittest.TestCase):
             self.log.info('实际写入保存联系方式数量：{0}'.format(camount_now))
             assert camount_now == 5, "部分联系方式未保存成功"
             self.log.info('联系方式保存成功!')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard04 : %s" % err)
@@ -220,6 +226,7 @@ class space_BusinessCardO(unittest.TestCase):
             self.log.info('预期网址为：{0}'.format(website))
             assert self.handle.Kjlb_browseorgspace_menu_edit_website_text() == website, "Website:Save Failed"
             self.log.info('网址与预期一致')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard05 : %s" % err)
@@ -228,6 +235,7 @@ class space_BusinessCardO(unittest.TestCase):
     # 4.6 清空数据
     def test_businesscard06(self):
         '''清空数据
+        :return:
         '''
         try:
             # 1.清空联系人
@@ -257,6 +265,7 @@ class space_BusinessCardO(unittest.TestCase):
             # 7.勾选保存
             self.handle.Kjlb_browseorgspace_menu_edit_confirm_click()
             self.log.info('勾选保存')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard06 : %s" % err)

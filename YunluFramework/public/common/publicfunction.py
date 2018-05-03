@@ -64,6 +64,10 @@ class Tools:
         self.driver.swipe(x1, y1, x1, y2, t)
         time.sleep(5)
 
+    # 指定区域向上滑动
+    def swipeUps(self, x, y, t):
+        self.driver.swipe(x, y + 30, x, y - 30, t)
+
     # 向下滑动
     def swipeDown(self, t):
         l = self.getSize()

@@ -22,7 +22,6 @@ class LoginoutA:
         handle = SETTINGHANDLE4(driver)
         sleep(1)
         try:
-            self.log.info('------START:test2_1退出登录.LoginoutA.py------')
             # 1.点击设置按钮
             handle.Setting_click1(settingN)
             self.log.info('点击设置按钮')
@@ -35,7 +34,6 @@ class LoginoutA:
             # 4.点击确定
             handle.Setting_aboutus_loginout_confirm_click()
             self.log.info('点击确定')
-            self.log.info('------END:test2_1退出登录.LoginoutA.py------')
         except Exception as err:
             self.log.error("LoginoutA Inside : %s" % err)
             raise err

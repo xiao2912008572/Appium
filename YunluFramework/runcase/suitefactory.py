@@ -18,7 +18,7 @@ class SuiteFactory():
         # suite.addTest(contact_Exc("test_excContact"))                                                     #人脉换名片
         # suite.addTest(contact_Label("test_labelContact"))                                                 #打标签
 
-        # ----------------------------------【Space-测试用例】----------------------------------
+        # ----------------------------------【空间-测试用例】----------------------------------
         # @机构空间
         sapce_CreateO_01 = unittest.TestLoader().loadTestsFromTestCase(space_CreateO)                       # test1_1 创建机构空间
         space_ProductO_01 = unittest.TestLoader().loadTestsFromTestCase(space_ProductO)                     # test2_1 上下架产品
@@ -42,7 +42,7 @@ class SuiteFactory():
         AddPtoOAgreeA_01 = unittest.TestLoader().loadTestsFromTestCase(AddPtoOAgreeA)                       # test5_6 加会员_管理员_企业_同意
         space_ArchiviesA_01 = unittest.TestLoader().loadTestsFromTestCase(space_ArchiviesA)                 # test6_1 资讯发布
 
-        # ----------------------------------【Space-测试用例】----------------------------------
+        # ----------------------------------【空间-测试用例】----------------------------------
         # @订单
         order_OrderBuy_01 = unittest.TestLoader().loadTestsFromTestCase(order_OrderBuy)
 
@@ -52,7 +52,7 @@ class SuiteFactory():
             yunku_uploadPic_01,                                                                             # test1_1 云库上传图片
             yunku_EditPic_01,                                                                               # test2_1 云库编辑图片
 
-            # ----------------------------------【Space-测试用例:19】----------------------------------
+            # ----------------------------------【空间-测试用例:19】----------------------------------
             # --------------------@机构空间:5--------------------
             sapce_CreateO_01,                                                                               # test1_1 创建机构空间
             space_ProductO_01,                                                                              # test2_1 上下架产品

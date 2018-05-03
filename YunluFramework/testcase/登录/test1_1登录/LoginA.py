@@ -20,7 +20,6 @@ class LoginA:
         handle = LOGINHANDLE2(driver)
         sleep(1)
         try:
-            self.log.info('------START:test1_1登录.LoginA.py------')
 
             # 登录首页
             if driver.find_elements_by_id("com.yunlu6.stone:id/main_login") != []:
@@ -55,7 +54,7 @@ class LoginA:
                 handle.Login_loginbtn_click()
                 self.log.info('点击登录')
                 sleep(1)
-            self.log.info('------END:test1_1登录.LoginA.py------')
+
         except Exception as err:
             self.log.error("LoginA Inside : %s" % err)
             raise err

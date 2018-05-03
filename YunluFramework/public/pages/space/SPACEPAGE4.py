@@ -51,10 +51,10 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_lock_list_left = ("id->com.yunlu6.yunlu:id/tv_left", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-价格参数")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格
-    Kjlb_browseorgspace_menu_product_lock_list_moreprice = ("id->com.yunlu6.yunlu:id/iv_logo_right", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格")
+    Kjlb_browseorgspace_menu_product_lock_list_moreprice = ("id->com.yunlu6.yunlu:id/tv_select_money", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格")
 
-    #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格-列表
-    Kjlb_browseorgspace_menu_product_lock_list_moreprice_list = ("id->com.yunlu6.yunlu:id/tv_money", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格")
+    #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格-价格
+    Kjlb_browseorgspace_menu_product_lock_list_moreprice_list = ("id->com.yunlu6.yunlu:id/select_money", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格-列表")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品图片
     Kjlb_browseorgspace_menu_product_lock_list_photo = ("id->com.yunlu6.yunlu:id/iv_product_photo", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-产品图片")
@@ -129,7 +129,8 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseorgspace_menu_product_unlock_list_moreprice = ("id->com.yunlu6.yunlu:id/iv_logo_right", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-更多价格")
 
     #  空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格-列表
-    Kjlb_browseorgspace_menu_product_unlock_list_moreprice_list = ("id->com.yunlu6.yunlu:id/tv_money", "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格")
+    def Kjlb_browseorgspace_menu_product_lock_list_moreprice_list(self, name):
+        return ("name->%s" % name, "空间列表-浏览企业空间-菜单栏-产品-已发布-产品列表-更多价格-价格")
 
     #  空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品图片
     Kjlb_browseorgspace_menu_product_unlock_list_photo = ("id->com.yunlu6.yunlu:id/iv_product_photo", "空间列表-浏览企业空间-菜单栏-产品-未发布-产品列表-产品图片")
@@ -435,7 +436,7 @@ class SPACEPAGE4(SPACEPAGE3):
 
     # ***************************************【PAGE3】加数据-相册Kjlb_browseperspace_addData_ByAlbum***************************************
     # 空间列表-浏览私人空间-加数据-相册-完成
-    Kjlb_browseperspace_addData_ByAlbum_confirm = ("id->com.yunlu6.yunlu:id/title_tv_edit_menu_tv", "空间列表-浏览私人空间--加数据-相册-完成")
+    Kjlb_browseperspace_addData_ByAlbum_confirm = ("id->com.yunlu6.yunlu:id/id_ll_ok", "空间列表-浏览私人空间--加数据-相册-完成")
 
     # 空间列表-浏览私人空间-加数据-相册-完成-返回
     Kjlb_browseperspace_addData_ByAlbum_confirm_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览私人空间--加数据-相册-完成-返回")
@@ -444,7 +445,7 @@ class SPACEPAGE4(SPACEPAGE3):
     Kjlb_browseperspace_addData_ByAlbum_backP = ("id->com.yunlu6.yunlu:id/title_back_edit_icon", "空间列表-浏览私人空间--加数据-相册-返回")
 
     # 空间列表-浏览私人空间-加数据-相册-照片列表
-    Kjlb_browseperspace_addData_ByAlbum_piclist = ("id->com.yunlu6.yunlu:id/item_cloudlibrary_ll_checked", "空间列表-浏览私人空间--加数据-相册-照片列表")
+    Kjlb_browseperspace_addData_ByAlbum_piclist = ("id->com.yunlu6.yunlu:id/check", "空间列表-浏览私人空间--加数据-相册-照片列表")
 
     # ***************************************【PAGE3】删除文件夹列表Kjlb_browseperspace_menu_edit_deletefolder***************************************
     #     【PAGE4】照片列表
@@ -639,6 +640,80 @@ class SPACEPAGE4(SPACEPAGE3):
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-加会员-添加
     Kjlb_browseascspace_menu_vip_menu_addvip_confirm = ("id->com.yunlu6.yunlu:id/btn_pop_client_operate", "空间列表-浏览协会空间-菜单栏-会员-菜单栏-加会员-添加")
 
+
+    # ***************************************【PAGE3】菜单栏-流程-新申请Kjlb_browseorgspace_menu_flow_menu_new_leave***************************************
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-类型
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_type = ("id->com.yunlu6.yunlu:id/tv_type","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-类型")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-开始时间
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start = ("id->com.yunlu6.yunlu:id/rl_start_time","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-开始时间")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-结束时间
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_end = ("id->com.yunlu6.yunlu:id/rl_end_time","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-结束时间")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-天
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_day = ("id->com.yunlu6.yunlu:id/tv_day_content","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-天")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-小时
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_hour = ("id->com.yunlu6.yunlu:id/tv_hour_content","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-小时")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-事由
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_et = ("id->com.yunlu6.yunlu:id/et_content","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-事由")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_photo = ("id->com.yunlu6.yunlu:id/iv_add_photo","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-申请人身份
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_job = ("id->com.yunlu6.yunlu:id/tv_job","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-申请人身份")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_approver = ("id->com.yunlu6.yunlu:id/iv_add_approver","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-抄送人
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_ccpeople = ("id->com.yunlu6.yunlu:id/iv_add_ccPeople","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-抄送人")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-提交按钮
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_submit = ("id->com.yunlu6.yunlu:id/bt_submit","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-提交按钮")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-年
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_year = ("id->com.yunlu6.yunlu:id/year","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-年")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-月
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_month = ("id->com.yunlu6.yunlu:id/month","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-月")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-日
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_day = ("id->com.yunlu6.yunlu:id/day","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-日")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-时
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_hour = ("id->com.yunlu6.yunlu:id/hour","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-时")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-分
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_minute = ("id->com.yunlu6.yunlu:id/minute","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-分")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-取消
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_cancel = ("id->com.yunlu6.yunlu:id/cancel","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-取消")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-确定
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_sure = ("id->com.yunlu6.yunlu:id/sure","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-时间-确定")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件-相册
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_alumm = ("id->com.yunlu6.yunlu:id/iv_cloundlibrary_alumm","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件-相册")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件-拍照
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_start_camera = ("id->com.yunlu6.yunlu:id/iv_cloundlibrary_camera","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-附件-拍照")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-选择按钮
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_approver_btn = ("id->com.yunlu6.yunlu:id/cb_btn","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-选择按钮")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_revoke = ("id->com.yunlu6.yunlu:id/tv_cancel_1","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销-确认
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_revoke_confirm = ("id->com.yunlu6.yunlu:id/bt_confirm","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销-确认")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销-取消
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_revoke_cancel = ("id->com.yunlu6.yunlu:id/bt_cancel","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-撤销-取消")
+
     # ***************************************【PAGE3】菜单栏-管理-编辑Kjlb_browseascspace_menu_vip_menu_manage_edit***************************************
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑-同意
     Kjlb_browseascspace_menu_vip_menu_manage_edit_agree = ("id->com.yunlu6.yunlu:id/ass_company_agree", "空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑-同意")
@@ -657,6 +732,10 @@ class SPACEPAGE4(SPACEPAGE3):
 
     # 空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑-取消
     Kjlb_browseascspace_menu_vip_menu_manage_edit_cancel = ("id->com.yunlu6.yunlu:id/title_main_tv_more_tv", "空间列表-浏览协会空间-菜单栏-会员-菜单栏-管理-编辑-取消")
+
+
+
+
 
     # ***************************************【PAGE3】菜单栏-我的附近Kjlb_browseascspace_menu_addvip_addcompany_nearby***************************************
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近-路线

@@ -33,8 +33,12 @@ class CommonSpace:
         self.log.info('搜索栏搜索结果:{0}'.format(spacename))
 
         # 3. 点击搜索结果第一条
-        self.handle.Kjlb_browseorgspaceByID_click(0)
-        self.log.info('点击进入%s' % spacename)
+        try:
+            self.handle.Kjlb_browseorgspaceByID_click()
+            self.log.info('点击进入%s' % spacename)
+        except Exception as err:
+            self.log.error("空间不存在 : %s" % err)
+            raise err
 
     # 进入机构空间菜单项
     def click_org_menu(self, menu):
@@ -85,6 +89,11 @@ class CommonSpace:
         elif menu == 'archivies':
             self.handle.Kjlb_browseorgspace_menu_archivies_click()  # 点击资讯
             self.log.info('点击资讯')
+
+        # 流程
+        elif menu == 'process':
+            self.handle.Kjlb_browseorgspace_menu_flow_click()    #点击流程
+            self.log.info('点击流程')
 
         # 业务升级
         elif menu == 'upgrade':
@@ -185,8 +194,40 @@ class CommonSpace:
         else:
             self.log.error('Error : menu值不正确！')
 
+    # 进入私人空间菜单项
+    def click_ps_menu(self, menu):
+        '''进入机构空间菜单栏各级菜单
+                :param menu: 菜单选项，例如进入产品，传入product等
+                :card : 名片
+                :edit : 编辑
+                :customer : 客户
+                :add : 文件夹
+                :return:
+                '''
+        self.handle.Kjlb_browseascspace_menu_click()  # 点击菜单栏
+        self.log.info('点击菜单栏')
+        # 名片
+        if menu == 'card':
+            self.handle.Kjlb_browseperspace_menu_card_click()  # 点击名片
+            self.log.info('点击名片')
+        # 编辑
+        elif menu == 'edit':
+            self.handle.Kjlb_browseperspace_menu_edit_click()  # 编辑
+            self.log.info('点击编辑')
+        # 客户
+        elif menu == 'customer':
+            self.handle.Kjlb_browseperspace_menu_customer_click()  #客户
+            self.log.info('点击客户')
+        # 文件夹
+        elif menu == 'add':
+            self.handle.Kjlb_browseperspace_menu_addfolder_click()  #文件夹
+            self.log.info('点击文件夹')
+        else:
+            self.log.error('Error : menu值不正确！')
+
+
     # 从各页面退出当前账号
-    def logout_from_page(self,N):
+    def logout_from_page(self, N):
         '''从各页面退退出当前账号
         :return:
         '''

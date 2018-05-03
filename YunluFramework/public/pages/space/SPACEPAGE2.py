@@ -11,12 +11,21 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-空间首页产品列表-产品名称
     Kjlb_prolist_proname = ("id->com.yunlu6.yunlu:id/company_product_title", '空间列表-空间首页产品列表-产品名')
 
+
+    '''
+    20180320 资讯已过期 start
+    '''
+
     # 空间列表-空间首页产品列表-产品价格
     Kjlb_prolist_proprice = ("id->com.yunlu6.yunlu:id/company_product_price", '空间列表-空间首页产品列表-产品价格')
 
     # *********************************【PAGE1】+机构空间：Kjlb_mainmenu_newspace*********************************
     # 空间列表-主菜单-'+机构空间'-机构全称
     Kjlb_mainmenu_newspace_orgname = ("id->com.yunlu6.yunlu:id/ed_organization_name", "定位空间列表-主菜单-'+机构空间'-机构全称")
+
+    '''
+    20180320 资讯已过期，end
+    '''
 
     # 空间列表-主菜单-'+机构空间'-机构简称
     Kjlb_mainmenu_newspace_orgintro = ("id->com.yunlu6.yunlu:id/ed_organization_intro", "定位空间列表-主菜单-'+机构空间'-机构简称")
@@ -206,6 +215,9 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-浏览企业空间-菜单栏-访客
     Kjlb_browseorgspace_menu_visitor = ("id->com.yunlu6.yunlu:id/btn_pop_company_fangke", "空间列表-浏览企业空间-菜单栏-访客")
 
+    # 空间列表-浏览企业空间-菜单栏-流程
+    Kjlb_browseorgspace_menu_flow = ("xpath->android.widget.TextView","空间列表-浏览企业空间-菜单栏-流程")
+
     # *********************************【PAGE1】【私人空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览私人空间-返回
     Kjlb_browseperspace_back = ("id->com.yunlu6.yunlu:id/title_main_back_more_icon", "空间列表-浏览私人空间-返回")
@@ -280,17 +292,25 @@ class SPACEPAGE2(SPACEPAGE1):
     # 空间列表-浏览协会空间-菜单栏-会员
     Kjlb_browseascspace_menu_vip = ("id->com.yunlu6.yunlu:id/btn_pop_association_vip", "空间列表-浏览协会空间-菜单栏-会员")
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员
-    Kjlb_browseascspace_menu_addvip = ("id->com.yunlu6.yunlu:id/btn_pop_association_addvip", "空间列表-浏览协会空间-菜单栏-会员")
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员
-    Kjlb_browseascspace_menu_addvip_addperson = ("id->com.yunlu6.yunlu:id/pop_assvip_addperson", "空间列表-浏览协会空间-菜单栏-会员-个人会员")
+    '''
+        20180322，下方代码已过期，此处注释，start
+    '''
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员
+    # Kjlb_browseascspace_menu_addvip = ("id->com.yunlu6.yunlu:id/btn_pop_association_addvip", "空间列表-浏览协会空间-菜单栏-会员")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员
+    # Kjlb_browseascspace_menu_addvip_addperson = ("id->com.yunlu6.yunlu:id/pop_assvip_addperson", "空间列表-浏览协会空间-菜单栏-会员-个人会员")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员
+    # Kjlb_browseascspace_menu_addvip_addcompany = ("id->com.yunlu6.yunlu:id/pop_assvip_addcompany", "空间列表-浏览协会空间-菜单栏-会员-企业会员")
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-取消
+    # Kjlb_browseascspace_menu_addvip_cancel = ("id->com.yunlu6.yunlu:id/pop_assvip_cancle", "空间列表-浏览协会空间-菜单栏-会员-取消")
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员
-    Kjlb_browseascspace_menu_addvip_addcompany = ("id->com.yunlu6.yunlu:id/pop_assvip_addcompany", "空间列表-浏览协会空间-菜单栏-会员-企业会员")
-
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-取消
-    Kjlb_browseascspace_menu_addvip_cancel = ("id->com.yunlu6.yunlu:id/pop_assvip_cancle", "空间列表-浏览协会空间-菜单栏-会员-取消")
+    '''
+        20180322，end
+    '''
 
     # 定位:空间列表-浏览协会空间-菜单栏-客户
     Kjlb_browseascspace_menu_customer = ("id->com.yunlu6.yunlu:id/btn_pop_association_customer", "空间列表-浏览协会空间-菜单栏-客户")
@@ -302,7 +322,7 @@ class SPACEPAGE2(SPACEPAGE1):
     Kjlb_browseascspace_menu_nearby = ("id->com.yunlu6.yunlu:id/btn_pop_association_nearbusz", "空间列表-浏览协会空间-菜单栏-搜附近")
 
     # 定位:空间列表-浏览协会空间-菜单栏-关闭
-    Kjlb_browseascspace_menu_close = ("id->com.yunlu6.yunlu:id/bt_close", "空间列表-浏览协会空间-菜单栏-关闭")
+    Kjlb_browseascspace_menu_close = ("id->com.yunlu6.yunlu:id/btn_pop_company_close", "空间列表-浏览协会空间-菜单栏-关闭")
 
     # 定位:空间列表-浏览协会空间-菜单栏-关闭-是
     Kjlb_browseascspace_menu_close_yes = ("id->com.yunlu6.yunlu:id/dialog_warm_sure", "空间列表-浏览协会空间-菜单栏-关闭-是")

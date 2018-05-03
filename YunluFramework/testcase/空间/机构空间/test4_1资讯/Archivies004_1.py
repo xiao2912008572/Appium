@@ -66,6 +66,7 @@ class space_ArchiviesO(unittest.TestCase):
         try:
             # 1.进入空间
             self.common.enter_space(spacename)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_archivies01 : %s" % err)
@@ -79,6 +80,7 @@ class space_ArchiviesO(unittest.TestCase):
         try:
             # 1.进入资讯
             self.common.click_org_menu('archivies')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_archivies02 : %s" % err)
@@ -90,17 +92,26 @@ class space_ArchiviesO(unittest.TestCase):
         :return:
         '''
         try:
+            '''
+                20180320资讯功能更新，此处需更改，start
+            '''
             # 4.1 入口一:图片新增按钮
-            self.log.info('入口一：图片新增按钮检查')
-            self.handle.Kjlb_browseorgspace_menu_archivies_picadd_click()
-            self.log.info('点击新增图片按钮')
-            self.handle.Kjlb_browseorgspace_menu_archivies_new_back_click()  # 返回
-            self.log.info('点击返回')
+            # self.log.info('入口一：图片新增按钮检查')
+            # self.handle.Kjlb_browseorgspace_menu_archivies_picadd_click()
+            # self.log.info('点击新增图片按钮')
+            # self.handle.Kjlb_browseorgspace_menu_archivies_new_back_click()  # 返回
+            # self.log.info('点击返回')
+            '''
+                20180320，end
+            '''
+
+            # 1.新增资讯
 
             # 4.2 入口二:右上角新增
             self.log.info('入口二：右上角新增检查')
             self.handle.Kjlb_browseorgspace_menu_archivies_new_click()
             self.log.info('点击右上角新增按钮')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_archivies03 : %s" % err)
@@ -165,6 +176,7 @@ class space_ArchiviesO(unittest.TestCase):
             self.handle.Kjlb_browseorgspace_menu_archivies_back_click()
             self.handle.Kjlb_browseorgspace_back_click()  # 返回空间
             self.log.info('返回空间')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_archivies04 : %s" % err)
@@ -236,6 +248,7 @@ class space_ArchiviesO(unittest.TestCase):
                 # 3.10判断
                 self.log.info('判断是否为空，为空即是已删除')
                 assert [] == self.handle.Kjlb_browseorgspace_menu_archivies_pic_element(), 'Error Pic Delete Failed!'
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_archivies05 : %s" % err)

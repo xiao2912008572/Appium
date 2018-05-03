@@ -45,6 +45,7 @@ class perspace_CreateP(unittest.TestCase):
         self.log.info("------------START:test1_1创建私人空间CreatePersonSpace001_1.py------------")
 
     # 3.释放资源
+    @classmethod
     def tearDownClass(self):
         # 1.打印日志
         self.log.info("------------END:test1_1创建私人空间CreatePersonSpace001_1.py------------")
@@ -64,38 +65,39 @@ class perspace_CreateP(unittest.TestCase):
         try:
             # 1.查找空间
             self.common.enter_space(spacename)  # 查找空间
-            self.common.click_org_menu('close')  # 点击关闭
-            self.handle.Kjlb_browseorgspace_menu_close_confirm_click()  # 确认关闭
-            self.log.info('点击确认关闭')
+            self.common.click_ps_menu('edit')  # 点击编辑按钮
+            self.handle.Kjlb_browseperspace_menu_edit_deletespace_click() #点击删除按钮
+            self.log.info('点击删除')
+            self.handle.Kjlb_browseperspace_menu_edit_deletespace_OK_click()  # 点击是
+            self.log.info('点击是')
+
         except:
             pass
 
-    # 4.1进入空间
-    def test_percreatesSapce01(self):
+    # 4.2进入空间
+    def test_percreateSpace01(self):
         '''进入空间首页
+        :return:
         '''
         try:
             sleep(1)
-            # 1.空间首页
-            self.handle.Kjlb_click()
-            self.log.info('点击进入空间首页')
+            # 1.点击+按钮
+            self.handle.Kjlb_browseascspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
 
-            # 2.点击+按钮
-            self.handle.Kjlb_mainmenu_click()
-            self.log.info('点击：+按钮')
-
-            # 3.+私人空间
+            # 2.+私人空间
             self.handle.Kjlb_mainmenu_newpersonspace_click()
             self.log.info('点击+私人空间')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_percreatesSapce01 : %s" % err)
             raise err
 
-    # 4.2 检查空间类型和标签对应关系
+    # 4.3 检查空间类型和标签对应关系
     @ddt.data(data02)
     @ddt.unpack
-    def test_percreatesSpace02(self, clothesT, foodT, liveT, walkT, studyT,
+    def test_percreateSpace02(self, clothesT, foodT, liveT, walkT, studyT,
                                healthT, socialT, workT, literatureT, entertainmentT,
                                beautyT, otherT):
         '''检查空间类型和标签对应关系
@@ -126,6 +128,7 @@ class perspace_CreateP(unittest.TestCase):
                     EveryLabel.append(text)
                 AllLabel.append(EveryLabel)
                 self.handle.Kjlb_mainmenu_newpersonspace_changespacetype_click()  # 切换类型
+
             # 1.衣
             self.log.info("判断'衣'下的推荐标签")
             assert clothesT in AllLabel[0], "Clothes : The recommended name does not conform to type"
@@ -173,12 +176,13 @@ class perspace_CreateP(unittest.TestCase):
             # 12.其它
             self.log.info("判断'其它'下的推荐标签")
             assert otherT in AllLabel[11], "Other : The recommended name does not conform to type"
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_percreatesSpace02 : %s" % err)
             raise err
 
-    # 4.3创建私人空间
+    # 4.4创建私人空间
     @ddt.data(data00)
     @ddt.unpack
     def test_percreateSpace03(self, spacename):
@@ -196,13 +200,14 @@ class perspace_CreateP(unittest.TestCase):
 
             # 2.返回到空间列表
             self.handle.Kjlb_mainmenu_newpersonspace_mainback_click()
-            self.log.info('点击保存')
+            self.log.info('点击返回')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_percreateSpace03 : %s" % err)
             raise err
 
-    # 4.4关闭空间
+    # 4.5关闭空间
     @ddt.data(data00)
     @ddt.unpack
     def test_percreateSpace04(self, spacename):
@@ -226,6 +231,7 @@ class perspace_CreateP(unittest.TestCase):
             self.log.info('点击删除空间')
             self.handle.Kjlb_browseperspace_menu_edit_deletespace_OK_click()
             self.log.info('点击确定删除')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_percreateSpace04 : %s" % err)

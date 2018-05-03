@@ -115,25 +115,93 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_archivies_new_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯:点击
-    def Kjlb_browseorgspace_menu_archivies_new_archivies_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_archivies)
+    # 空间列表-浏览企业空间-菜单栏-资讯-搜索栏:点击
+    def Kjlb_browseorgspace_menu_archivies_search_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_search)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程:点击
-    def Kjlb_browseorgspace_menu_archivies_new_constitution_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_constitution)
+    # 空间列表-浏览企业空间-菜单栏-资讯-搜索按钮:点击
+    def Kjlb_browseorgspace_menu_archivies_searchbutton_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_searchbutton)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片新增:点击
-    def Kjlb_browseorgspace_menu_archivies_picadd_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_picadd)
+    # 空间列表-浏览企业空间-菜单栏-资讯-全部:点击
+    def Kjlb_browseorgspace_menu_archivies_all_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_all)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表:点击
-    def Kjlb_browseorgspace_menu_archivies_pic_click(self, n):
-        return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_pic, n)
+    # 空间列表-浏览企业空间-菜单栏-资讯-待发布:点击
+    def Kjlb_browseorgspace_menu_archivies_dafabu_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_dafabu)
 
-    # 空间列表-浏览企业空间-菜单栏-资讯-图片列表-标题:文本获取
-    def Kjlb_browseorgspace_menu_archivies_pic_title_text(self):
-        return self.p.get_text(self.Kjlb_browseorgspace_menu_archivies_pic_title)
+    # 空间列表-浏览企业空间-菜单栏-资讯-已发布:点击
+    def Kjlb_browseorgspace_menu_archivies_yifabu_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_yifabu)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-全部类型:点击
+    def Kjlb_browseorgspace_menu_archivies_tvclass_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_tvclass)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片:点击
+    def Kjlb_browseorgspace_menu_archivies_new_addpic_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addpic)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片切换封面:点击
+    def Kjlb_browseorgspace_menu_archivies_new_cover_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_cover)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-标题:点击
+    def Kjlb_browseorgspace_menu_archivies_new_title_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_title)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-类型选择:点击
+    def Kjlb_browseorgspace_menu_archivies_new_type_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_type)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-保存按钮:点击
+    def Kjlb_browseorgspace_menu_archivies_new_save_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_save)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-发布按钮:点击
+    def Kjlb_browseorgspace_menu_archivies_new_issue_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_issue)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-相册:点击
+    def Kjlb_browseorgspace_menu_archivies_new_addpic_Allbum_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addpic_Allbum)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-拍照:点击
+    def Kjlb_browseorgspace_menu_archivies_new_addpic_photograph_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addpic_photograph)
+
+    # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-添加照片-产品库:点击
+    def Kjlb_browseorgspace_menu_archivies_new_addpic_library_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_addpic_library)
+
+
+
+    '''
+        20180320,资讯模块更新，此处代码注释，start
+    '''
+    # # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-资讯:点击
+    # def Kjlb_browseorgspace_menu_archivies_new_archivies_click(self):
+    #     return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_archivies)
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-新增按钮-章程:点击
+    # def Kjlb_browseorgspace_menu_archivies_new_constitution_click(self):
+    #     return self.p.click(self.Kjlb_browseorgspace_menu_archivies_new_constitution)
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片新增:点击
+    # def Kjlb_browseorgspace_menu_archivies_picadd_click(self):
+    #     return self.p.click(self.Kjlb_browseorgspace_menu_archivies_picadd)
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片列表:点击
+    # def Kjlb_browseorgspace_menu_archivies_pic_click(self, n):
+    #     return self.p.clicks(self.Kjlb_browseorgspace_menu_archivies_pic, n)
+    #
+    # # 空间列表-浏览企业空间-菜单栏-资讯-图片列表-标题:文本获取
+    # def Kjlb_browseorgspace_menu_archivies_pic_title_text(self):
+    #     return self.p.get_text(self.Kjlb_browseorgspace_menu_archivies_pic_title)
+    '''
+        20180320,end
+    '''
 
     # ***************************************【PAGE2】企业名片Kjlb_browseorgspace_menu_bcard***************************************
     # 空间列表-浏览企业空间-菜单栏-编辑-返回:点击
@@ -160,8 +228,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_edit_fullname_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_fullname, text)
 
-        # 空间列表-浏览企业空间-菜单栏-编辑-企业简称:发送文本
-
+    # 空间列表-浏览企业空间-菜单栏-编辑-企业简称:发送文本
     def Kjlb_browseorgspace_menu_edit_simplename_sendkeys(self, text):
         return self.p.send_keys(self.Kjlb_browseorgspace_menu_edit_simplename, text)
 
@@ -418,6 +485,59 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseorgspace_menu_upgrade_back_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_upgrade_back)
 
+    '''
+        20180404,新增流程，start
+    '''
+    # ***************************************【PAGE2】流程Kjlb_browseorgspace_menu_flow***************************************
+    # 空间列表-浏览企业空间-菜单栏-流程-返回:点击
+    def Kjlb_browseorgspace_menu_flow_back_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_back)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏：点击
+    def Kjlb_browseorgspace_menu_flow_menu_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-我审批的：点击
+    def Kjlb_browseorgspace_menu_flow_approve_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_approve)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-我发起的：点击
+    def Kjlb_browseorgspace_menu_flow_create_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_create)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-抄送我的：点击
+    def Kjlb_browseorgspace_menu_flow_copy_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_copy)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-待处理:点击
+    def Kjlb_browseorgspace_menu_flow_wait_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_wait)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-已处理：点击
+    def Kjlb_browseorgspace_menu_flow_already_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_already)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请：点击
+    def Kjlb_browseorgspace_menu_flow_menu_new_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu_new)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-请假：点击
+    def Kjlb_browseorgspace_menu_flow_menu_new_leave_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu_new_leave)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-加班：点击
+    def Kjlb_browseorgspace_menu_flow_menu_new_overtime_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu_new_overtime)
+
+    # 空间列表-浏览企业空间-菜单栏-流程-菜单栏-新申请-方案审批：点击
+    def Kjlb_browseorgspace_menu_flow_menu_new_scheme_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu_new_scheme)
+
+
+    '''
+        20180404，end
+    '''
+
     # ***************************************【PAGE2】照片列表(包括点击照片加数据)Kjlb_browseperspace_piclist***************************************
     # 空间列表-浏览私人空间-照片列表-菜单栏
     def Kjlb_browseperspace_piclist_menu_click(self, n):
@@ -427,8 +547,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_piclist_classify_click(self):
         return self.p.click(self.Kjlb_browseperspace_piclist_classify)
 
-        # 空间列表-浏览私人空间-照片列表-编辑
-
+    # 空间列表-浏览私人空间-照片列表-编辑
     def Kjlb_browseperspace_piclist_edit_click(self):
         return self.p.click(self.Kjlb_browseperspace_piclist_edit)
 
@@ -514,13 +633,11 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_menu_edit_editfolder_click(self, n):
         return self.p.clicks(self.Kjlb_browseperspace_menu_edit_editfolder, n)
 
-        # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表
-
+    # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表
     def Kjlb_browseperspace_menu_edit_editfolder_fname_sendkeys(self, name):
         return self.p.send_keys(self.Kjlb_browseperspace_menu_edit_editfolder_fname, name)
 
-        # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-是
-
+    # 空间列表-浏览私人空间-菜单栏-编辑-文件夹名称-名称列表-是
     def Kjlb_browseperspace_menu_edit_editfolder_fname_OK_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_edit_editfolder_spaceEdit_OK)
 
@@ -552,8 +669,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_menu_edit_back_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_edit_back)
 
-        # 空间列表-浏览私人空间-菜单栏-编辑-空间名
-
+    # 空间列表-浏览私人空间-菜单栏-编辑-空间名
     def Kjlb_browseperspace_menu_edit_spacename_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_edit_spacename)
 
@@ -578,8 +694,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_menu_customer_search_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_customer_search)
 
-        # 空间列表-浏览私人空间-菜单栏-客户-搜索按钮
-
+    # 空间列表-浏览私人空间-菜单栏-客户-搜索按钮
     def Kjlb_browseperspace_menu_customer_searchbtn_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_customer_searchbtn)
 
@@ -591,8 +706,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_menu_customer_menu_addcus_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_customer_menu_addcus)
 
-        # 空间列表-浏览私人空间-菜单栏-客户-客户列表
-
+    # 空间列表-浏览私人空间-菜单栏-客户-客户列表
     def Kjlb_browseperspace_menu_customer_clist_click(self, n):
         return self.p.clicks(self.Kjlb_browseperspace_menu_customer_clist, n)
 
@@ -604,8 +718,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseperspace_menu_addfolder_confirm_click(self):
         return self.p.click(self.Kjlb_browseperspace_menu_addfolder_confirm)
 
-        # 空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称
-
+    # 空间列表-浏览私人空间-菜单栏-+文件夹-文件夹名称
     def Kjlb_browseperspace_menu_addfolder_foldername_sendkeys(self, name):
         return self.p.send_keys(self.Kjlb_browseperspace_menu_addfolder_foldername, name)
 
@@ -716,8 +829,7 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseascspace_menu_edit_back_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_edit_back)
 
-        # 空间列表-浏览协会空间-菜单栏-编辑-Logo:点击
-
+    # 空间列表-浏览协会空间-菜单栏-编辑-Logo:点击
     def Kjlb_browseascspace_menu_edit_logo_sendkeys(self, text):
         return self.p.click(self.Kjlb_browseascspace_menu_edit_logo)
 
@@ -963,13 +1075,45 @@ class SPACEHANDLE3(SPACEHANDLE2):
     def Kjlb_browseascspace_menu_addvip_addperson_back_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_addvip_addperson_back)
 
-    # ***************************************【PAGE2】菜单栏-+会员-企业会员Kjlb_browseascspace_menu_addvip_addcompany***************************************
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-返回:点击
-    def Kjlb_browseascspace_menu_addvip_addcompany_back_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_back)
 
-        # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-:点击
+    '''
+        20180322,添加企业会员此处定位已过期，注释，start
+    '''
+    # # ***************************************【PAGE2】菜单栏-+会员-企业会员Kjlb_browseascspace_menu_addvip_addcompany***************************************
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-返回:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_back_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_back)
+    #
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-搜索栏:发送文本
+    # def Kjlb_browseascspace_menu_addvip_addcompany_search_search_sendkeys(self, text):
+    #     return self.p.send_keys(self.Kjlb_browseascspace_menu_addvip_addcompany_search_search, text)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索按钮:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_searchbtn_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_searchbtn)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-菜单栏:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_menu_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_menu)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_nearby_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_nearby)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-浏览记录
+    # def Kjlb_browseascspace_menu_history_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_history)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-圆圈勾选列表:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_choose_click(self, n):
+    #     return self.p.clicks(self.Kjlb_browseascspace_menu_addvip_addcompany_choose, n)
+    #
 
+    '''
+        20180322,end
+    '''
+    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索栏-:点击
     def Kjlb_browseascspace_menu_addvip_addcompany_search_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_search)
 
@@ -980,19 +1124,6 @@ class SPACEHANDLE3(SPACEHANDLE2):
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-搜索按钮:点击
     def Kjlb_browseascspace_menu_addvip_addcompany_searchbtn_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_searchbtn)
-
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-菜单栏:点击
-    def Kjlb_browseascspace_menu_addvip_addcompany_menu_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_menu)
-
-        # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-我的附近:点击
-
-    def Kjlb_browseascspace_menu_addvip_addcompany_nearby_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany_nearby)
-
-    # 定位:空间列表-浏览协会空间-菜单栏-浏览记录
-    def Kjlb_browseascspace_menu_history_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_history)
 
     # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员-圆圈勾选列表:点击
     def Kjlb_browseascspace_menu_addvip_addcompany_choose_click(self, n):

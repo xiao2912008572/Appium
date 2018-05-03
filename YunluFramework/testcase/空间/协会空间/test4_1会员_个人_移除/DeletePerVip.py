@@ -61,6 +61,11 @@ class DeletePerVip:
             self.log.info('点击管理界面返回，返回至名片页')
             self.handleS.Kjlb_browseascspace_back_click()  # 返回到空间列表
             self.log.info('返回到空间列表')
+            try:
+                self.handleS.Kjlb_search_back_click()
+                self.log.info('点击搜索返回按钮，返回空间列表页面')  # 返回空间列表
+            except Exception as e:
+                self.log.info('未找到该控件，不执行返回空间列表页面操作')
             self.log.info('------END:test4_1会员_个人_移除.DeletePerVip.py------')
         except Exception as err:
             self.log.error("DeletePerVip Inside : %s" % err)

@@ -30,12 +30,12 @@ class Connect:
         file_path = os.path.join(BASE_DIR, "config", "connect.conf")
         # 读取配置文件
         cf.read(file_path)
-        # desired_caps1 = eval(cf.get("APP","desired_caps1"))
-        desired_caps = eval(cf.get("APP", "desired_caps"))
+        desired_caps1 = eval(cf.get("APP","desired_caps1"))
+        # desired_caps1 = eval(cf.get("APP", "desired_caps"))
         # 初始化appium连接
         try:
-            # driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps1)
-            driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
+            driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps1)
+            # driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
         except:
             assert False, "初始化appium连接失败,程序已退出!!!"
         sleep(2)

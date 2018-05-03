@@ -283,6 +283,10 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseorgspace_menu_visitor_click(self):
         return self.p.click(self.Kjlb_browseorgspace_menu_visitor)
 
+    # 空间列表-浏览企业空间-菜单栏-流程：点击
+    def Kjlb_browseorgspace_menu_flow_click(self,text):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_flow,text)
+
     # *********************************【PAGE1】【私人空间】浏览空间列表：Kjlb_browseorgspaceByID*********************************
     # 空间列表-浏览私人空间-返回-点击
     def Kjlb_browseperspace_back_click(self):
@@ -382,25 +386,33 @@ class SPACEHANDLE2(SPACEHANDLE1):
     def Kjlb_browseascspace_menu_vip_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_vip)
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员:点击
-    def Kjlb_browseascspace_menu_addvip_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip)
+    '''
+        20180322，代码过期，此处注释，start
+    '''
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员:点击
-    def Kjlb_browseascspace_menu_addvip_addperson_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_addperson)
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员:点击
+    # def Kjlb_browseascspace_menu_addvip_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-个人会员:点击
+    # def Kjlb_browseascspace_menu_addvip_addperson_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addperson)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员:点击
+    # def Kjlb_browseascspace_menu_addvip_addcompany_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-加会员-取消:点击
+    # def Kjlb_browseascspace_menu_addvip_cancel_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_cancel)
+    #
+    # # 定位:空间列表-浏览协会空间-菜单栏-客户
+    # def Kjlb_browseascspace_menu_customer_click(self):
+    #     return self.p.click(self.Kjlb_browseascspace_menu_addvip_cancel)
 
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-企业会员:点击
-    def Kjlb_browseascspace_menu_addvip_addcompany_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_addcompany)
-
-    # 定位:空间列表-浏览协会空间-菜单栏-加会员-取消:点击
-    def Kjlb_browseascspace_menu_addvip_cancel_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_cancel)
-
-    # 定位:空间列表-浏览协会空间-菜单栏-客户
-    def Kjlb_browseascspace_menu_customer_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_addvip_cancel)
+    '''
+        20180322，end
+    '''
 
     # 定位:空间列表-浏览协会空间-菜单栏-资讯
     def Kjlb_browseascspace_menu_arc_click(self):

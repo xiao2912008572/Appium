@@ -97,8 +97,6 @@ class SPACEHANDLE5(SPACEHANDLE4):
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_color_click(self):
-        self.Kjlb_browseorgspace_menu_product_new_attribute_color = self.p.get_element(
-            "id->com.yunlu6.stone:id/tv_color_name", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色")
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_color)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-颜色-列表:点击
@@ -115,13 +113,11 @@ class SPACEHANDLE5(SPACEHANDLE4):
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹:点击
     def Kjlb_browseorgspace_menu_product_new_attribute_pattern_click(self):
-        self.Kjlb_browseorgspace_menu_product_new_attribute_pattern = self.p.get_element(
-            "id->com.yunlu6.stone:id/tv_pattern_name", "空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹")
         return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_pattern)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-石种属性-花纹-列表:点击
-    def Kjlb_browseorgspace_menu_product_new_attribute_pattern_list_click(self):
-        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_attribute_pattern_list)
+    def Kjlb_browseorgspace_menu_product_new_attribute_pattern_list_click(self, n):
+        return self.p.clicks(self.Kjlb_browseorgspace_menu_product_new_attribute_pattern_list, n)
 
     # ***************************************【PAGE4】制品/表面Kjlb_browseorgspace_menu_product_new_attrstone***************************************
     #  空间列表-浏览企业空间-菜单栏-产品-新建-制品/表面-返回:点击
@@ -164,6 +160,10 @@ class SPACEHANDLE5(SPACEHANDLE4):
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数名列表:清空文本
     def Kjlb_browseorgspace_menu_product_new_parameter_key_clear(self, n):
         return self.p.clears(self.Kjlb_browseorgspace_menu_product_new_parameter_keylist, n)
+
+    #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-请输入：点击
+    def Kjlb_browseorgspace_menu_product_new_parameter_input(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_product_new_parameter_entry)
 
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数值列表:发送文本
     def Kjlb_browseorgspace_menu_product_new_parameter_value_sendkeys(self, n, text):
@@ -520,7 +520,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-搜索按钮:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_searchbtn_click(self):
-        return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_searchbtn)
+        return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_search)
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-全选:点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_all_click(self):
@@ -537,3 +537,7 @@ class SPACEHANDLE5(SPACEHANDLE4):
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-添加(确认):点击
     def Kjlb_browseascspace_menu_team_menu_assignjob_addperson_confirm_click(self):
         return self.p.click(self.Kjlb_browseascspace_menu_team_menu_assignjob_addperson_confirm)
+
+    # ***************************************【PAGE4】审批/抄送人选择Kjlb_browseorgspace_menu_flow_menu_new_leave_approver***************************************
+    def Kjlb_browseorgspace_menu_flow_menu_new_leave_approver_submit_click(self):
+        return self.p.click(self.Kjlb_browseorgspace_menu_flow_menu_new_leave_approver_submit)

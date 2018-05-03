@@ -1,3 +1,4 @@
+
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from YunluFramework.testcase.空间.机构空间.test3_1团队人事任免 import *
@@ -24,6 +25,7 @@ class team_AssignO(unittest.TestCase):
     # 2.初始化
     @classmethod
     def setUpClass(self):
+
         # 1.建立连接信息
         cnn = Connect()
         self.driver = cnn.connect()
@@ -58,6 +60,7 @@ class team_AssignO(unittest.TestCase):
     # 3.释放资源
     @classmethod
     def tearDownclass(self):
+
         # 1.打印日志
         self.log.info("------------End:test3_1团队人事任免.TeamAssignJob003_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
@@ -78,6 +81,11 @@ class team_AssignO(unittest.TestCase):
             # 1.进入空间
             self.log.info('进入空间：{0}'.format(spacename))
             self.common.enter_space(spacename)
+            # kj = self.driver.find_element_by_id('android:id/list')
+            # kjs = kj.find_elements_by_class_name('android.widget.RelativeLayout')
+            # kjs[0].click()
+            self.log.info('点击进入%s' % spacename)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign01 : %s" % err)
@@ -92,6 +100,7 @@ class team_AssignO(unittest.TestCase):
             # 1.进入团队
             self.log.info('进入团队：')
             self.common.click_org_menu('team')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign02 : %s" % err)
@@ -112,7 +121,7 @@ class team_AssignO(unittest.TestCase):
             :return:
             '''
             # 1.管理员人数:2人
-            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.hanedle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
             self.log.info('点击编辑')
             # self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AdministratorLoc)#编辑管理员人数
             self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
@@ -145,6 +154,7 @@ class team_AssignO(unittest.TestCase):
             self.log.info('设置助理人数：%s' % AssNum)
             self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirm_click()  # 点击是
             self.log.info('点击是')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign03 : %s" % err)
@@ -198,6 +208,7 @@ class team_AssignO(unittest.TestCase):
             self.log.info('点击否')
             self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑按钮
             self.log.info('点击编辑按钮')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign04 : %s" % err)
@@ -237,6 +248,7 @@ class team_AssignO(unittest.TestCase):
                             pass
                 else:
                     pass
+
             except Exception as e:
                 self.log.info('等待人士任免列表为空，错误信息为：%s' % e)
 
@@ -266,6 +278,7 @@ class team_AssignO(unittest.TestCase):
             self.log.info('返回搜索结果页面')
             self.handle.Kjlb_search_back_click()
             self.log.info('点击搜索返回按钮，返回空间列表页面')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createProduct05 : %s" % err)
@@ -278,8 +291,9 @@ class team_AssignO(unittest.TestCase):
         '''
         try:
             # 1.退出当前账号
-            self.log.info('退出当前账号：17607136211')
+            self.log.info('退出当前账号：13636059628')
             self.common_logout.logout_from_page(4)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign06 : %s" % err)
@@ -297,6 +311,7 @@ class team_AssignO(unittest.TestCase):
         try:
             # 1.调用LoginA模块
             self.loginA.login(self.driver, phone, password)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign07 : %s" % err)
@@ -323,6 +338,7 @@ class team_AssignO(unittest.TestCase):
             # 4.返回云视
             self.driver.find_element_by_id('com.yunlu6.yunlu:id/buildstione_backe').click()
             self.log.info('点击返回云视页')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign08 : %s" % err)
@@ -335,8 +351,9 @@ class team_AssignO(unittest.TestCase):
         '''
         try:
             # 1.退出当前账号
-            self.log.info('退出当前账号：17607136211')
+            self.log.info('退出当前账号：17786174226')
             self.common_logout.logout_from_page(1)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign09 : %s" % err)
@@ -346,7 +363,7 @@ class team_AssignO(unittest.TestCase):
     @ddt.data(data10)
     @ddt.unpack
     def test_teamAssign10(self, phone, password):
-        '''登录邀请账号：13027104206
+        '''登录邀请账号：13636059628
         :param phone: 手机号
         :param password: 密码
         :return:
@@ -354,6 +371,7 @@ class team_AssignO(unittest.TestCase):
         try:
             # 1.调用调用LoginA模块
             self.loginA.login(self.driver, phone, password)
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign10 : %s" % err)
@@ -375,6 +393,7 @@ class team_AssignO(unittest.TestCase):
             # 2.进入团队
             self.log.info('进入团队：')
             self.common.click_org_menu('team')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_teamAssign11 : %s" % err)
@@ -421,6 +440,7 @@ class team_AssignO(unittest.TestCase):
             name = self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_name")[0].text  # 获取董事长姓名
             assert Name == name, "董事长任免失败"
             self.log.info('判断该人脉董事长职位是否任免成功')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createProduct12 : %s" % err)
@@ -447,6 +467,7 @@ class team_AssignO(unittest.TestCase):
             # 4.点击移除
             self.handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_delete_click()  # 点击移除
             self.log.info('点击移除')
+
         except Exception as err:
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createProduct13 : %s" % err)

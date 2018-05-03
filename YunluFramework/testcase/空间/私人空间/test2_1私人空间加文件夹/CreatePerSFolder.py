@@ -23,13 +23,27 @@ class CreatePerSFolder:
         sleep(2)
         try:
             self.log.info('------START:test2_1私人空间加文件夹.CreatePerSFolder.py------')
-            # 1.Space-菜单栏
-            tools.swipeUp(500)
-            tools.swipeUp(500)
-            tools.swipeUp(500)
-            self.log.info('向上滑动1.5秒')
-            driver.find_element_by_name(spacename).click()
-            self.log.info('点击{0}空间'.format(spacename))
+            # # 1.空间-菜单栏
+            # tools.swipeUp(500)
+            # tools.swipeUp(500)
+            # tools.swipeUp(500)
+            # self.log.info('向上滑动1.5秒')
+            # driver.find_element_by_name(spacename).click()
+            # self.log.info('点击{0}空间'.format(spacename))
+            handle.Kjlb_click()
+            self.log.info('点击进入空间列表')
+
+            # 2.搜索空间名找到空间
+            tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+
+            # 3. 点击搜索结果第一条
+            try:
+                handle.Kjlb_browseorgspaceByID_click()
+                self.log.info('点击进入%s' % spacename)
+            except Exception as err:
+                self.log.error("空间不存在 : %s" % err)
+                raise err
             # handle.Kjlb_browseperspaceByName(spacename).click()
             handle.Kjlb_browseperspace_menu_click()
             self.log.info('点击菜单栏')

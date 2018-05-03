@@ -121,6 +121,9 @@ class SPACEPAGE5(SPACEPAGE4):
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数名列表
     Kjlb_browseorgspace_menu_product_new_parameter_keylist = ("id->com.yunlu6.yunlu:id/et_key", "空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数名")
 
+    #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-请输入
+    Kjlb_browseorgspace_menu_product_new_parameter_entry = ("id->com.yunlu6.yunlu:id/tv_input","空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-请输入")
+
     #  空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数值
     Kjlb_browseorgspace_menu_product_new_parameter_valuelist = ("id->com.yunlu6.yunlu:id/et_value", "空间列表-浏览企业空间-菜单栏-产品-新建-产品参数-参数值")
 
@@ -425,3 +428,10 @@ class SPACEPAGE5(SPACEPAGE4):
 
     # 空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-添加(确认)
     Kjlb_browseascspace_menu_team_menu_assignjob_addperson_confirm = ("id->com.yunlu6.yunlu:id/btn_pop_client_operate", "空间列表-浏览协会空间-菜单栏-团队-菜单栏-人事任免-新增-添加")
+
+    # ***************************************【PAGE4】审批/抄送人选择Kjlb_browseorgspace_menu_flow_menu_new_leave_approver***************************************
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人/抄送人-选择
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_approver_choose = ("id->com.yunlu6.yunlu:id/tv_job_post","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人-选择审批人")
+
+    # 空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人/抄送人-提交按钮
+    Kjlb_browseorgspace_menu_flow_menu_new_leave_approver_submit = ("id->com.yunlu6.yunlu:id/title_main_fl_more_menu","空间列表-企业空间-菜单栏-流程-菜单栏-新申请-请假-审批人/抄送人-提交按钮")

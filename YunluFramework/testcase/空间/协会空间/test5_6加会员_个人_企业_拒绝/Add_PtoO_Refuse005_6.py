@@ -23,33 +23,42 @@ class AddPtoORefuseA(unittest.TestCase):
         # 1.建立连接信息
         cnn = Connect()
         self.driver = cnn.connect()
+
         # 2.创建工具类
         self.tools = Tools(self.driver)  # tools工具
+
         # 3.创建_LOGINHANDLE2和_SPACEHANDLE5公有定位控件对象
         self.handleL = LOGINHANDLE2(self.driver)
         self.handleS = SPACEHANDLE5(self.driver)
+
         # 4.创建读取配置信息对象
         cf = GlobalParam('config', 'path_file.conf')
+
         # 5.获取截图路径、日志路径、日志名
         self.screen_path = cf.getParam('space', "ass_path_005_6")  # 通过配置文件获取截图的路径
         self.logfile = cf.getParam('log', "logfile")  # 日志文件名
         sleep(1)
+
         # 6.创建日志记录模块
         self.log = Log(self.logfile)
+
         # 7.创建LoginA对象
         self.login = LoginA()
         self.loginout = LoginoutA()
         self.addvip = AddOrgVip()
         self.delete = DeleteOrgVip()
+
         # 8.打印日志
         self.log.info('****************************************用例开始！****************************************')
         self.log.info("------------START:test5_6加会员_个人_企业_拒绝.Add_PtoO_Refuse005_6.py------------")
 
     # 3.释放资源
-    def tearDown(self):
+    @classmethod
+    def tearDownClass(self):
         # 1.打印日志
         self.log.info("------------END:test5_6加会员_个人_企业_拒绝.Add_PtoO_Refuse005_6.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
         # 2.关闭driver
         self.driver.quit()
 
@@ -59,14 +68,26 @@ class AddPtoORefuseA(unittest.TestCase):
     @ddt.unpack
     def test_addPtoORefuse(self, spacename, orgname, phone1, password1,
                            phone2, password2, phone3, password3):
-        '''+企业会员:【个人邀请-受邀企业对象拒绝】'''
+        '''+企业会员:【个人邀请-受邀企业对象拒绝】
+        :param spacename:协会名
+        :param orgname:受邀用户名
+        :param phone1:13636059628
+        :param password1:88888888
+        :param phone2:1363605928
+        :param password2:88888888
+        :param phone3:17786174226
+        :param password3:88888888
+        :return:
+        '''
         try:
             sleep(1)
             # 1.空间首页
             self.handleS.Kjlb_click()
             self.log.info('点击空间列表')
             # 2.选择空间:协会空间123
-            self.handleS.Kjlb_browseorgspaceByName_click(spacename)
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handleS.Kjlb_browseorgspaceByID_click()
             self.log.info('进入协会空间：{0}'.format(spacename))
             # 3.+会员
             self.addvip.addOrgVip(self.driver, orgname)
@@ -80,18 +101,18 @@ class AddPtoORefuseA(unittest.TestCase):
                 4.3 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 4.3点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 7.5点击消息第一条
-            self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").click()
             self.log.info('点击第1条消息')
             # 7.6点击拒绝 (同意com.yunlu6.stone:id/ass_invite_commit)
-            self.driver.find_element_by_id("com.yunlu6.stone:id/refuse_btn").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/refuse_btn").click()
             self.log.info('点击拒绝')
             # 7.7返回到云视
-            self.driver.find_element_by_id("com.yunlu6.stone:id/title_back_icon").click()
+            self.driver.find_elements_by_class_name("android.widget.ImageView")[0].click()
             self.log.info('点击返回')
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回云视')
             # 7.8退出受邀账号
             self.loginout.loginout(self.driver, 1)
@@ -103,15 +124,15 @@ class AddPtoORefuseA(unittest.TestCase):
                 8.2 为临时性方案：由于云视界面还没有做元素获取封装,目前直接用driver.find....等方法获取元素
             '''
             # 8.2点击流程
-            self.driver.find_element_by_id("com.yunlu6.stone:id/icon_flow").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/icon_flow").click()
             self.log.info('点击流程')
             # 8.3查看消息第一条
-            message = self.driver.find_element_by_id("com.yunlu6.stone:id/reminditem_content").text
+            message = self.driver.find_element_by_id("com.yunlu6.yunlu:id/reminditem_content").text
             self.log.info('查看第1条消息')
-            assert message == orgname + ' 机构已回绝 贵公司的企业会员邀请', "Error Message Handled"
+            assert message == orgname + '已回绝%s的企业会员邀请!' % spacename, "Error Message Handled"
             self.log.info('检查是否收到拒绝消息')
             # 8.4返回-空间主界面
-            self.driver.find_element_by_id("com.yunlu6.stone:id/buildstione_backe").click()
+            self.driver.find_element_by_id("com.yunlu6.yunlu:id/buildstione_backe").click()
             self.log.info('点击返回，返回至空间主界面')
             # 9.还原测试场景
             '''
@@ -121,8 +142,10 @@ class AddPtoORefuseA(unittest.TestCase):
             self.handleS.Kjlb_click()
             self.log.info('进入空间列表')
             # 9.2进入空间
-            self.handleS.Kjlb_browseorgspaceByName_click(spacename)
-            self.log.info('进入协会空间：{0}'.format(spacename))
+            self.tools.find_space_by_name(spacename)
+            self.log.info('搜索栏搜索结果:{0}'.format(spacename))
+            self.handleS.Kjlb_browseorgspaceByID_click()
+            self.log.info('进入协会空间：%s' % spacename)
             # 9.3会员中移除企业
             self.delete.deletOrgVip(self.driver, 0)  # 列表第0个
             # 10.退出管理员账号，恢复初始账号

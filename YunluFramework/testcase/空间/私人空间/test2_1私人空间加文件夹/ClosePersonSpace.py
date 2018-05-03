@@ -23,12 +23,14 @@ class ClosePersonSpace:
         self.tools = Tools(driver)  # tools工具
         try:
             self.log.info("------START:test2_1私人空间加文件夹ClosePersonSpace.py------")
+            """
             # 1.点击该空间
             self.tools.find_space_by_name(spacename)
             self.log.info('搜索栏搜索结果:{0}'.format(spacename))
             handle.Kjlb_browseorgspaceByID_click(0)
             handle.Kjlb_browseorgspaceByName_click(spacename)
             self.log.info('点击{0}空间'.format(spacename))
+            """
             # 2.菜单栏
             handle.Kjlb_browseperspace_menu_click()
             self.log.info('点击菜单栏')

@@ -4,7 +4,7 @@ import logging
 import time
 import os
 # from config import globalparam
-from StoneUIFramework.config.globalparam import GlobalParam
+from YunluFramework.config.globalparam import GlobalParam
 
 
 # log_path = globalparam.log_path

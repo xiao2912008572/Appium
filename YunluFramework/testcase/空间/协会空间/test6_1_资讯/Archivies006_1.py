@@ -13,7 +13,8 @@ class space_ArchiviesA(unittest.TestCase):
     typelist_1 = int(d.cell("test008-协会资讯", 2, 2))  # 类型列表:经典作品
 
     # 2.初始化
-    def setUp(self):
+    @classmethod
+    def setUpClass(self):
         # 1.建立连接信息
         cnn = Connect()
         self.driver = cnn.connect()
@@ -37,7 +38,8 @@ class space_ArchiviesA(unittest.TestCase):
         self.log.info("------------START:test5_8资讯Archivies006_1.py------------")
 
     # 3.释放资源
-    def tearDown(self):
+    @classmethod
+    def tearDownClass(self):
         # 1.打印日志
         self.log.info("------------END:test5_8资讯Archivies006_1.py------------")
         self.log.info('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~用例结束！~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
