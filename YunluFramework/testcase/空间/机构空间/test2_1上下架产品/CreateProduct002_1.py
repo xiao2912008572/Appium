@@ -1,5 +1,6 @@
 __author__ = 'Administrator'
-# coding=utf-8
+import sys
+sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
 from YunluFramework.testcase.空间.机构空间.test2_1上下架产品 import *
 import time
 
@@ -403,3 +404,6 @@ class space_ProductO(unittest.TestCase):
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createProduct07 : %s" % err)
             raise err
+
+if __name__ == '__main__':
+    unittest.main()

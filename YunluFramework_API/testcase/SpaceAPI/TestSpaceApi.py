@@ -17,16 +17,34 @@ from YunluFramework_API.api_test.api_request import API_REQUEST
 @ddt.ddt
 class SpaceAPI_Private(unittest.TestCase):
 
+    '''
+    全局接口数据：持续更新
+    '''
     # 全局数据: 获取excel中行数据
     # request = API_REQUEST(sheet_name='test2')
     # excel1 = Excel(xls='data_api.xls', sheet_name='test2')
     # data = excel1.get_row_data(sheet_name='test2')
+    
     '''
-    接口测试
+    20180417 - 订单退货退款流程接口测试
     '''
-    request = API_REQUEST(sheet_name='refund')
-    excel1 = Excel(xls='data_api.xls', sheet_name='refund')
-    data = excel1.get_row_data(sheet_name='refund')
+    # request = API_REQUEST(sheet_name='refund')
+    # excel1 = Excel(xls='data_api.xls', sheet_name='refund')
+    # data = excel1.get_row_data(sheet_name='refund')
+
+    '''
+    20180504 - 订单退货退款流程接口测试1
+    '''
+    # request = API_REQUEST(sheet_name='refund1')
+    # excel1 = Excel(xls='data_api.xls', sheet_name='refund1')
+    # data = excel1.get_row_data(sheet_name='refund1')
+
+    '''
+    20180507 - 权限模块检查
+    '''
+    request = API_REQUEST(sheet_name='cando')
+    excel1 = Excel(xls='data_api.xls', sheet_name='cando')
+    data = excel1.get_row_data(sheet_name='cando')
 
     # 1.类开始
     @classmethod

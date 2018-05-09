@@ -14,6 +14,8 @@ class API_REQUEST(Login):
         # 2.token
         self.token = self.get_token()
         self.token1 = self.get_token1()
+        self.token88 = self.get_token88()
+        self.token89 = self.get_token89()
 
         # 3. 创建请求对象
         self.R = RequestForHttp()
@@ -36,6 +38,8 @@ class API_REQUEST(Login):
 
         self.correlationDict['${self.token}'] = self.token
         self.correlationDict['${self.token1}'] = self.token1
+        self.correlationDict['${self.token88}'] = self.token88
+        self.correlationDict['${self.token89}'] = self.token89
         self.correlationDict['${space_name}'] = 'api测试'
 
     def print_log(self, api_no, api_name, api_describe, api_url, api_function,
@@ -363,11 +367,12 @@ class API_REQUEST(Login):
                         self.log.error(api_no + ' ' + api_name +
                                        ' 关联参数设置有误，请检查[Check]字段参数格式是否正确！！！')
                         continue
-
+        
                     # 4.返回结果赋值
                     value = response
                     # 5.继续处理api_check
                     a = param[1][1:-1].split('][')
+                    # print('***********&&&&&&&&&&&&&&&&&',a)
 
                     # 6.循环遍历列表的键
                     for key in a:
@@ -394,6 +399,8 @@ class API_REQUEST(Login):
 
                 try:
                     self.log.debug('----------进入检查点数据校验-------------')
+                    self.log.debug('检查项' + str(a))
+                    # self.log.debug('检查项: ' + '[' +a[0]+ ']'+'['+ a[1]+']')
                     # print("----------进入检查点数据校验-------------")
                     self.log.debug('flag = {0}'.format(flag))
                     # 检查点数据校验
@@ -401,7 +408,7 @@ class API_REQUEST(Login):
                     if flag == '=':
                         self.log.debug('进入等于')
 
-                        self.log.debug('进入等于阶段后的---->param[0] = {0}'.format(
+                        self.log.debug('进入等于阶段后的---->预期param[0] = {0}'.format(
                             param[0]))
 
                         self.log.debug(
@@ -409,7 +416,7 @@ class API_REQUEST(Login):
                                 type(param[0])))
 
                         self.log.debug(
-                            '进入等于阶段后的---->value 值 = {0}'.format(value))
+                            '进入等于阶段后的---->实际value 值 = {0}'.format(value))
 
                         self.log.debug(
                             '进入等于阶段后的---->type(value) 值 = {0}'.format(
@@ -465,14 +472,14 @@ class API_REQUEST(Login):
                     if flag == '<>':
                         self.log.debug('进入不等于')
 
-                        self.log.debug('进入不等于阶段后的---->param[0] = {0}'.format(
+                        self.log.debug('进入不等于阶段后的---->预期param[0] = {0}'.format(
                             param[0]))
 
                         self.log.debug(
                             '进入不等于阶段后的---->type(param[0]) 值 = {0}'.format(
                                 type(param[0])))
 
-                        self.log.debug('进入不等于阶段后的---->value 值 = {0}'.format(
+                        self.log.debug('进入不等于阶段后的---->实际value 值 = {0}'.format(
                             type(value)))
 
                         self.log.debug(

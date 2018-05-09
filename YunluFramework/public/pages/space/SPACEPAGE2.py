@@ -174,25 +174,26 @@ class SPACEPAGE2(SPACEPAGE1):
     # Kjlb_browseorgspace_menu = ("id->com.yunlu6.yunlu:id/title_main_fl_more_menu", "空间列表-浏览企业空间-菜单栏")
 
     #  空间列表-浏览企业空间-菜单栏-产品
-    Kjlb_browseorgspace_menu_product = ("id->com.yunlu6.yunlu:id/btn_pop_company_product", "空间列表-浏览企业空间-菜单栏-产品")
+    # Kjlb_browseorgspace_menu_product = ("id->com.yunlu6.yunlu:id/btn_pop_company_product", "空间列表-浏览企业空间-菜单栏-产品")
+    Kjlb_browseorgspace_menu_product = ("name->产品", "空间列表-浏览企业空间-菜单栏-产品")
 
     # 空间列表-浏览企业空间-菜单栏-订单
-    Kjlb_browseorgspace_menu_order = ("id->com.yunlu6.yunlu:id/btn_pop_company_order", "空间列表-浏览企业空间-菜单栏-订单")
+    Kjlb_browseorgspace_menu_order = ("name->订单", "空间列表-浏览企业空间-菜单栏-订单")
 
     # 空间列表-浏览企业空间-菜单栏-资金
-    Kjlb_browseorgspace_menu_money = ("id->com.yunlu6.yunlu:id/btn_pop_company_bankroll", "空间列表-浏览企业空间-菜单栏-资金")
+    Kjlb_browseorgspace_menu_money = ("name->资金", "空间列表-浏览企业空间-菜单栏-资金")
 
     # 空间列表-浏览企业空间-菜单栏-团队
-    Kjlb_browseorgspace_menu_team = ("id->com.yunlu6.yunlu:id/btn_pop_company_team", "空间列表-浏览企业空间-菜单栏-团队")
+    Kjlb_browseorgspace_menu_team = ("name->团队", "空间列表-浏览企业空间-菜单栏-团队")
 
     # 空间列表-浏览企业空间-菜单栏-客户
-    Kjlb_browseorgspace_menu_customer = ("id->com.yunlu6.yunlu:id/btn_pop_company_customer", "空间列表-浏览企业空间-菜单栏-客户")
+    Kjlb_browseorgspace_menu_customer = ("name->客户", "空间列表-浏览企业空间-菜单栏-客户")
 
     # 空间列表-浏览企业空间-菜单栏-公司档
-    Kjlb_browseorgspace_menu_archivies = ("id->com.yunlu6.yunlu:id/btn_pop_company_archivies", "空间列表-浏览企业空间-菜单栏-公司档")
+    Kjlb_browseorgspace_menu_archivies = ("name->文档", "空间列表-浏览企业空间-菜单栏-公司档")
 
     # 空间列表-浏览企业空间-菜单栏-业务升级
-    Kjlb_browseorgspace_menu_upgrade = ("id->com.yunlu6.yunlu:id/btn_pop_company_upgrade", "空间列表-浏览企业空间-菜单栏-业务升级")
+    Kjlb_browseorgspace_menu_upgrade = ("name->业务", "空间列表-浏览企业空间-菜单栏-业务升级")
 
     # 空间列表-浏览企业空间-菜单栏-编辑
     Kjlb_browseorgspace_menu_edit = ("id->com.yunlu6.yunlu:id/btn_pop_company_edit", "空间列表-浏览企业空间-菜单栏-编辑")

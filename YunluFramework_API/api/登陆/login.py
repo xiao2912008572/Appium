@@ -37,7 +37,7 @@ class Login(Handle):
             response = r.post_function(self.url, data)
 
             # 4.打印日志
-            self.plog.printlog(data, response, describle='登录接口', url=self.url, method='post')
+            # self.plog.printlog(data, response, describle='登录接口', url=self.url, method='post')
 
             # 5.保留token值
             # 5.1获取token
@@ -86,6 +86,41 @@ class Login(Handle):
             # 2.执行
             token = self.d.select(sql)
             return token[0][1]
+
+        except Exception as err:
+            self.log.error("Function get_token error : %s" % err)
+            raise err
+    
+
+    def get_token88(self):
+        '''
+        从数据库中查询token
+        :return:
+        '''
+        try:
+            # 1.查询语句
+            sql = 'select * from test_token'
+
+            # 2.执行
+            token = self.d.select(sql)
+            return token[0][2]
+
+        except Exception as err:
+            self.log.error("Function get_token error : %s" % err)
+            raise err
+    
+    def get_token89(self):
+        '''
+        从数据库中查询token
+        :return:
+        '''
+        try:
+            # 1.查询语句
+            sql = 'select * from test_token'
+
+            # 2.执行
+            token = self.d.select(sql)
+            return token[0][3]
 
         except Exception as err:
             self.log.error("Function get_token error : %s" % err)

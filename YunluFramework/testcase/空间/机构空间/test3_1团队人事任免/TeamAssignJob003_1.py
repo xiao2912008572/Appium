@@ -1,6 +1,8 @@
 
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
+import sys
+sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
 from YunluFramework.testcase.空间.机构空间.test3_1团队人事任免 import *
 
 
@@ -78,6 +80,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.1 -----------------')
             # 1.进入空间
             self.log.info('进入空间：{0}'.format(spacename))
             self.common.enter_space(spacename)
@@ -97,6 +100,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.2 -----------------')
             # 1.进入团队
             self.log.info('进入团队：')
             self.common.click_org_menu('team')
@@ -117,14 +121,15 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.3 -----------------')
             '''编辑各职位人数
             :return:
             '''
             # 1.管理员人数:2人
-            self.hanedle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
             self.log.info('点击编辑')
-            # self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AdministratorLoc)#编辑管理员人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(1)#编辑管理员人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/newteam_edit")[0].click()
             self.log.info('编辑管理员人数')
             self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -134,8 +139,10 @@ class team_AssignO(unittest.TestCase):
             self.log.info('点击是')
 
             # 2.销售员人数:3人
-            # self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.SalespersonLoc)#编辑销售员人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.log.info('点击编辑')
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(8)#编辑销售员人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
             self.log.info('编辑销售员人数')
             self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -145,8 +152,10 @@ class team_AssignO(unittest.TestCase):
             self.log.info('点击是')
 
             # 3.行政助理人数:4人
-            # self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AssistantLoc)#编辑助理人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.log.info('点击编辑')
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(5)#编辑助理人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
             self.log.info('编辑助理人数')
             self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_claer()  # 清空
             self.log.info('清空输入框')
@@ -171,9 +180,12 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.4 -----------------')
             # 1.检查管理员人数编辑是否生效
-            # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AdministratorLoc)#编辑管理员人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.log.info('点击编辑')
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(1)#编辑管理员人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[0].click()
             self.log.info('点击编辑管理员人数')
             AdmNumm = int(self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前管理员人数：{0}'.format(AdmNumm))
@@ -184,8 +196,10 @@ class team_AssignO(unittest.TestCase):
             self.log.info('点击否')
 
             # 2.检查销售员人数编辑是否生效
-            # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.SalespersonLoc)#编辑管理员人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.log.info('点击编辑')
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(8)#编辑管理员人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[1].click()
             self.log.info('点击编辑销售员人数')
             SalNumm = int(self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前销售员人数：{0}'.format(SalNumm))
@@ -196,8 +210,10 @@ class team_AssignO(unittest.TestCase):
             self.log.info('点击否')
 
             # 3.检查行政助理人数编辑是否生效
-            # handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(self.AssistantLoc)#编辑管理员人数
-            self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_click()  # 点击编辑
+            self.log.info('点击编辑')
+            self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_click(5)#编辑管理员人数
+            # self.driver.find_elements_by_id("com.yunlu6.yunlu:id/companyteam_item_edit")[3].click()
             self.log.info('点击行政助理人数')
             AssNumm = int(self.handle.Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit_text())
             self.log.info('当前行政助理人数：{0}'.format(AssNumm))
@@ -224,6 +240,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.5 -----------------')
             # 1.点击菜单栏
             self.handle.Kjlb_browseorgspace_menu_team_menu_click()  # 点击菜单栏
             self.log.info('点击菜单栏')
@@ -235,7 +252,8 @@ class team_AssignO(unittest.TestCase):
             # 3.判断等待任免列表是否为空
             try:
                 if self.driver.find_elements_by_id("com.yunlu6.yunlu:id/removaljobs_name") != []:  # 列表是否为空
-                    listT = self.handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact()
+                    # listT = self.handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact()
+                    listT = self.driver.find_elements_by_id("com.yunlu6.yunlu:id/removaljobs_name")
                     for i in range(len(listT)):  # 遍历列表
                         if self.handle.Kjlb_browseorgspace_menu_team_menu_assignjob_contact_text(
                                 i) == Name:  # 再判断是否该人已被任免
@@ -290,8 +308,9 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.6 -----------------')
             # 1.退出当前账号
-            self.log.info('退出当前账号：13636059628')
+            self.log.info('退出当前账号：13027104206')
             self.common_logout.logout_from_page(4)
 
         except Exception as err:
@@ -309,6 +328,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.7 -----------------')
             # 1.调用LoginA模块
             self.loginA.login(self.driver, phone, password)
 
@@ -323,6 +343,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.8 -----------------')
             # 1.点击通知
             self.yunshi.YS_flow_click()
             self.log.info('点击通知')
@@ -350,8 +371,9 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.9 -----------------')
             # 1.退出当前账号
-            self.log.info('退出当前账号：17786174226')
+            self.log.info('退出当前账号：17607136211')
             self.common_logout.logout_from_page(1)
 
         except Exception as err:
@@ -363,12 +385,13 @@ class team_AssignO(unittest.TestCase):
     @ddt.data(data10)
     @ddt.unpack
     def test_teamAssign10(self, phone, password):
-        '''登录邀请账号：13636059628
+        '''登录邀请账号：13027104206
         :param phone: 手机号
         :param password: 密码
         :return:
         '''
         try:
+            self.log.info('----------------- 4.10 -----------------')
             # 1.调用调用LoginA模块
             self.loginA.login(self.driver, phone, password)
 
@@ -386,6 +409,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.11 -----------------')
             # 1.进入空间
             self.log.info('进入空间：{0}'.format(spacename))
             self.common.enter_space(spacename)
@@ -409,6 +433,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.12 -----------------')
             # 0. 菜单栏
             self.handle.Kjlb_browseorgspace_menu_team_menu_click()
             self.log.info('点击菜单栏')
@@ -452,6 +477,7 @@ class team_AssignO(unittest.TestCase):
         :return:
         '''
         try:
+            self.log.info('----------------- 4.13 -----------------')
             # 1.点击菜单栏
             self.handle.Kjlb_browseorgspace_menu_team_menu_click()  # 点击菜单栏
             self.log.info('点击菜单栏')
@@ -472,3 +498,6 @@ class team_AssignO(unittest.TestCase):
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_createProduct13 : %s" % err)
             raise err
+
+if __name__ == '__main__':
+    unittest.main()

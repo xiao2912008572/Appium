@@ -1,5 +1,7 @@
 __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
+import sys
+sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
 from YunluFramework.testcase.空间.机构空间.test5_1编辑 import *
 
 
@@ -270,3 +272,6 @@ class space_BusinessCardO(unittest.TestCase):
             self.tools.getScreenShot(self.screen_path, "ExceptionShot")
             self.log.error("test_businesscard06 : %s" % err)
             raise err
+
+if __name__ == '__main__':
+    unittest.main()

@@ -58,8 +58,7 @@ class CommonSpace:
         :visitor : 访客
         :return:
         '''
-        self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
-        self.log.info('点击菜单栏')
+       
         # 产品
         if menu == 'product':
             self.handle.Kjlb_browseorgspace_menu_product_click()  # 点击产品
@@ -102,26 +101,36 @@ class CommonSpace:
 
         # 编辑
         elif menu == 'edit':
+            self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_edit_click()  # 点击编辑
             self.log.info('点击编辑')
 
         # 设置
         elif menu == 'setup':
+            self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_setup_click()  # 点击设置
             self.log.info('点击设置')
 
         # 搜附近
         elif menu == 'near':
+            self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_near_click()  # 搜附近
             self.log.info('点击搜附近')
 
         # 关闭
         elif menu == 'close':
+            self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_close_click()  # 点击关闭
             self.log.info('点击关闭')
 
         # 退出团队
         elif menu == 'quitteam':
+            self.handle.Kjlb_browseorgspace_menu_click()  # 点击菜单栏
+            self.log.info('点击菜单栏')
             self.handle.Kjlb_browseorgspace_menu_quitteam_click()  # 点击退出团队
             self.log.info('点击退出团队')
 

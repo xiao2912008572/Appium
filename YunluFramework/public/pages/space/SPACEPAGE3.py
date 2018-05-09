@@ -60,16 +60,16 @@ class SPACEPAGE3(SPACEPAGE2):
     Kjlb_browseorgspace_menu_team_teamedit = ("id->com.yunlu6.yunlu:id/companyteam_btn_edit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮列表
-    Kjlb_browseorgspace_menu_team_teamedit_numeidt = ("id->com.yunlu6.yunlu:id/companyteam_item_edit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮列表")
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt = ("id->com.yunlu6.yunlu:id/newteam_edit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮列表")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-职位人数
-    Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit = ("id->com.yunlu6.yunlu:id/teamedit_jobs_editnum", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt_jobsnumedit = ("id->com.yunlu6.yunlu:id/newedit_jobcount", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-否
     Kjlb_browseorgspace_menu_team_teamedit_numeidt_cancel = ("id->com.yunlu6.yunlu:id/teamedit_cancleedit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数按钮-职位人数按钮-否")
 
     # 空间列表-浏览企业空间-菜单栏-团队-团队编辑按钮-编辑人数按钮-是
-    Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirm = ("id->com.yunlu6.yunlu:id/teamedit_commitedit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
+    Kjlb_browseorgspace_menu_team_teamedit_numeidt_confirm = ("id->com.yunlu6.yunlu:id/newedit_commit", "空间列表-浏览企业空间-菜单栏-团队-团队编辑-编辑人数-职位人数按钮-是")
 
     # ***************************************【PAGE2】资讯Kjlb_browseorgspace_menu_archivies***************************************
     # 空间列表-浏览企业空间-菜单栏-资讯-返回
