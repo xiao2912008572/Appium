@@ -125,8 +125,33 @@ class Login(Handle):
         except Exception as err:
             self.log.error("Function get_token error : %s" % err)
             raise err
+    
+    def get_token_list(self,env):
+        '''
+            从数据库中查询token列表
+            param: env 选择正式 测试 开发 环境
+            return : 列表
+        '''
+        try:
+            # 1. 查询语句
+            if env == 'pro':
+                sql = 'select * from pro_token'
+            elif env == 'test':
+                sql = 'select * from test_token'
+            elif env == 'dev':
+                sql = 'select * from dev_token'
+            else:
+                raise Exception
+
+            # 2. 执行
+            token = self.d.select(sql)
+            return token 
+
+        except Exception as err:
+            self.log.error("Function get_token error : %s" % err)
+            raise err
 
 # a = Login()
 # a.loginRequest(sql='select * from test1_1_login_01', d_index=0)
-# token = a.get_token1()
+# token = a.get_token_list()
 # print(token)

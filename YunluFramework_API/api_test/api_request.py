@@ -12,10 +12,30 @@ class API_REQUEST(Login):
         self.sheet_name = sheet_name
 
         # 2.token
-        self.token = self.get_token()
-        self.token1 = self.get_token1()
-        self.token88 = self.get_token88()
-        self.token89 = self.get_token89()
+        # self.token = self.get_token()
+        # self.token1 = self.get_token1()
+        # self.token88 = self.get_token88()
+        # self.token89 = self.get_token89()
+
+        # 正式环境token
+        '''
+            pro :正式环境token
+        '''
+        self.token_list = self.get_token_list(env='pro')
+        self.token = self.token_list[0][0]
+        self.token1 = self.token_list[0][1]
+        self.token88 = self.token_list[0][2]
+        self.token89 = self.token_list[0][3]
+        self.token90 = self.token_list[0][4]
+        self.token91 = self.token_list[0][5]
+        self.token92 = self.token_list[0][6]
+        self.token93 = self.token_list[0][7]
+        self.token94 = self.token_list[0][8]
+        self.token95 = self.token_list[0][9]
+        self.token96 = self.token_list[0][10]
+        self.token97 = self.token_list[0][11]
+        self.token98 = self.token_list[0][12]
+        self.token99 = self.token_list[0][13]
 
         # 3. 创建请求对象
         self.R = RequestForHttp()
@@ -27,7 +47,7 @@ class API_REQUEST(Login):
         # 5.关联字典
         # 关联字典
         self.correlationDict = {}
-        self.checkDict = {}
+        # self.checkDict = {}
 
         # 其中内置了四个参数，分别是：
         # ${token}（token令牌值）
@@ -36,11 +56,28 @@ class API_REQUEST(Login):
         # ${session}（session#id，默认为None）
         # ${hashPassword}（hash加密密码，明文123456）
 
-        self.correlationDict['${self.token}'] = self.token
-        self.correlationDict['${self.token1}'] = self.token1
-        self.correlationDict['${self.token88}'] = self.token88
-        self.correlationDict['${self.token89}'] = self.token89
-        self.correlationDict['${space_name}'] = 'api测试'
+        # self.correlationDict['${self.token}'] = self.token
+        # self.correlationDict['${self.token1}'] = self.token1
+        # self.correlationDict['${self.token88}'] = self.token88
+        # self.correlationDict['${self.token89}'] = self.token89
+        # self.correlationDict['${space_name}'] = 'api测试'
+        self.correlationDict = {
+            '${self.token}': self.token,
+            '${self.token1}': self.token1,
+            '${self.token88}': self.token88,
+            '${self.token89}': self.token89,
+            '${self.token90}': self.token90,
+            '${self.token91}': self.token91,
+            '${self.token92}': self.token92,
+            '${self.token93}': self.token93,
+            '${self.token94}': self.token94,
+            '${self.token95}': self.token95,
+            '${self.token96}': self.token96,
+            '${self.token97}': self.token97,
+            '${self.token98}': self.token98,
+            '${self.token99}': self.token99,
+            '${space_name}': 'api测试'
+        }
 
     def print_log(self, api_no, api_name, api_describe, api_url, api_function,
                   api_headers, api_data, api_check, api_status, api_hope,
@@ -367,7 +404,7 @@ class API_REQUEST(Login):
                         self.log.error(api_no + ' ' + api_name +
                                        ' 关联参数设置有误，请检查[Check]字段参数格式是否正确！！！')
                         continue
-        
+
                     # 4.返回结果赋值
                     value = response
                     # 5.继续处理api_check
