@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Author:Xiaojingyuan
-import sys
+import sys1
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
 
