@@ -4,8 +4,6 @@ __author__ = 'xiaoj'
 import time
 import sys
 sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
-sys.path.append("/root/.jenkins/workspace/AutoTest")
-sys.path.append("/root/.jenkins/workspace/dongxiangxiang_AutoTest")
 sys.path.append("/root/.jenkins/workspace/shuzhenglin_AutoTest")
 
 # sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\")
