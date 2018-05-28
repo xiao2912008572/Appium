@@ -5,6 +5,7 @@ import time
 import sys
 sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
 sys.path.append("/root/.jenkins/workspace/AutoTest")
+sys.path.append("/root/.jenkins/workspace/dongxiangxiang_AutoTest")
 
 # sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\")
 # sys.path.append("\\Users\\xiaojingyuan\.jenkins\workspace\stest\\")
@@ -55,10 +56,10 @@ if __name__ == '__main__':
         runner.run(suiteA)
         fp.close()  # 测试报告关闭
 
-        # 发送邮件
-        time.sleep(5)
-        sendMail = SendMail()
-        sendMail.send()
+        # 发送邮件 ： 注释发送邮件功能
+        # time.sleep(5)
+        # sendMail = SendMail()
+        # sendMail.send()
         logger.info(
             '{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{END:RUNCASSE1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}'
         )

@@ -1,0 +1,171 @@
+<<<<<<< HEAD
+=======
+2018-05-28 11:19:43,959 - ERROR - 1. 接口编号 : 1_9 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:43,959 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:45,142 - ERROR - 1. 接口编号 : 1_14 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:45,142 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:46,138 - ERROR - 1. 接口编号 : 1_16 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:46,139 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:46,289 - ERROR - 1. 接口编号 : 1_17 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:46,290 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:53,590 - ERROR - 1. 接口编号 : 6_3 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:53,590 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:53,736 - ERROR - 1. 接口编号 : 6_4 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:53,737 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:54,421 - ERROR - 1. 接口编号 : 6_7 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:54,422 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:54,580 - ERROR - 1. 接口编号 : 6_8 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:54,580 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:55,281 - ERROR - 1. 接口编号 : 6_11 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:55,282 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:55,960 - ERROR - 1. 接口编号 : 6_14 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:55,961 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:56,103 - ERROR - 1. 接口编号 : 6_15 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:56,103 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:56,802 - ERROR - 1. 接口编号 : 6_18 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:56,802 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:56,994 - ERROR - 1. 接口编号 : 6_19 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:56,994 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:57,949 - ERROR - 1. 接口编号 : 6_23 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:57,950 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:58,122 - ERROR - 1. 接口编号 : 6_24 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:58,122 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:58,852 - ERROR - 1. 接口编号 : 6_27 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:58,852 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:59,004 - ERROR - 1. 接口编号 : 6_28 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:59,004 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:19:59,723 - ERROR - 1. 接口编号 : 6_31 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:19:59,723 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:00,380 - ERROR - 1. 接口编号 : 6_34 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:00,380 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:00,531 - ERROR - 1. 接口编号 : 6_35 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:00,531 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:01,234 - ERROR - 1. 接口编号 : 6_38 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:01,235 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:01,392 - ERROR - 1. 接口编号 : 6_39 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:01,392 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:02,061 - ERROR - 1. 接口编号 : 6_42 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:02,061 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:02,223 - ERROR - 1. 接口编号 : 6_43 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:02,223 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:02,897 - ERROR - 1. 接口编号 : 6_46 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:02,898 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:03,057 - ERROR - 1. 接口编号 : 6_47 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:03,057 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:03,698 - ERROR - 1. 接口编号 : 6_50 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:03,698 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+2018-05-28 11:20:03,880 - ERROR - 1. 接口编号 : 6_51 | 接口名称 : Team_Construction - 模块权限 
+2018-05-28 11:20:03,880 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 198, in test01_api
+    assert False != api_check_result[0]
+AssertionError
+
+>>>>>>> 929889979d7d9dfca35037b0ecccd905d9139667
