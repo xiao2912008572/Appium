@@ -2,6 +2,7 @@
 # Author:Xiaojingyuan
 import sys
 import io
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
 
 sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
@@ -16,7 +17,6 @@ from YunluFramework_API.api_test.api_request import API_REQUEST
 
 @ddt.ddt
 class SpaceAPI_Private(unittest.TestCase):
-
     '''
     全局接口数据：持续更新
     '''
@@ -24,7 +24,7 @@ class SpaceAPI_Private(unittest.TestCase):
     # request = API_REQUEST(sheet_name='test2')
     # excel1 = Excel(xls='data_api.xls', sheet_name='test2')
     # data = excel1.get_row_data(sheet_name='test2')
-    
+
     '''
     20180417 - 订单退货退款流程接口测试
     '''
@@ -90,7 +90,7 @@ class SpaceAPI_Private(unittest.TestCase):
 
     # 4.测试用例
     @ddt.data(*data)
-    def test_api(self, list):
+    def test01_api(self, list):
         '''
         :param list: 参数化列表
         :return:
@@ -187,14 +187,14 @@ class SpaceAPI_Private(unittest.TestCase):
             # 如果api_check不为空：
             try:
                 if api_check != '':
-                    #3.1 存储检查结果
+                    # 3.1 存储检查结果
                     api_check_result = self.request.analysis_check(
                         api_no=api_no,
                         api_name=api_name,
                         api_check=api_check,
                         response=response)
 
-                    #3.2 断言判断，检查False是否不等于检查结果，如果等于就报错
+                    # 3.2 断言判断，检查False是否不等于检查结果，如果等于就报错
                     assert False != api_check_result[0]
                 else:
                     pass
@@ -240,5 +240,5 @@ class SpaceAPI_Private(unittest.TestCase):
             pass
 
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
