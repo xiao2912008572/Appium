@@ -42,9 +42,30 @@ class SpaceAPI_Private(unittest.TestCase):
     '''
     20180507 - 权限模块检查
     '''
-    request = API_REQUEST(sheet_name='cando')
-    excel1 = Excel(xls='data_api.xls', sheet_name='cando')
-    data = excel1.get_row_data(sheet_name='cando')
+    # request = API_REQUEST(sheet_name='cando')
+    # excel1 = Excel(xls='data_api.xls', sheet_name='cando')
+    # data = excel1.get_row_data(sheet_name='cando')
+
+    '''
+    20180628
+    '''
+    # request = API_REQUEST(sheet_name='test2')
+    # excel1 = Excel(xls='data_api.xls', sheet_name='test2')
+    # data = excel1.get_row_data(sheet_name='test2')
+
+    '''
+    20180708 - 帖子功能接口测试
+    '''
+    # request = API_REQUEST(sheet_name='topics')
+    # excel1 = Excel(xls='data_api.xls', sheet_name='topics')
+    # data = excel1.get_row_data(sheet_name='topics')
+
+    '''
+    20180712 - lin 
+    '''
+    request = API_REQUEST(sheet_name='team_construction')
+    excel1 = Excel(xls='data_api.xls', sheet_name='team_construction')
+    data = excel1.get_row_data(sheet_name='team_construction')
 
     # 1.类开始
     @classmethod

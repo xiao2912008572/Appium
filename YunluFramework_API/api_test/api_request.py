@@ -21,7 +21,17 @@ class API_REQUEST(Login):
         '''
             pro :正式环境token
         '''
-        self.token_list = self.get_token_list(env='pro')
+        # self.token_list = self.get_token_list(env='pro')
+
+        '''
+            获取EnvManage.py文件中的env变量，设定环境
+            test : 测试环境
+            pro  : 正式环境
+            dev  : 开发环境
+        '''
+        from YunluFramework_API.config import EnvManage
+        self.token_list = self.get_token_list(env=EnvManage.env)
+
         self.token = self.token_list[0][0]
         self.token1 = self.token_list[0][1]
         self.token88 = self.token_list[0][2]
@@ -111,7 +121,7 @@ class API_REQUEST(Login):
         else:
             self.log.info('11.接口返回 : {0}'.format(response[1]))
 
-    def api_method(self, method, api_url, data, api_headers):
+    def api_method(self, method, api_url, api_headers, data=None):
         '''
         请求方式选择器
         :param method       : 请求方式
@@ -335,7 +345,7 @@ class API_REQUEST(Login):
                 if len(param) == 2:
                     if param[1] == '' or not re.search(
                             r'^\[', param[1]) or not re.search(
-                                r'\]$', param[1]):
+                        r'\]$', param[1]):
                         self.log.error(
                             api_no + ' ' + api_name +
                             ' 关联参数设置有误，请检查[Correlation]字段参数格式是否正确！！！')
@@ -400,7 +410,7 @@ class API_REQUEST(Login):
                 if len(param) == 2:
                     if param[1] == '' or not re.search(
                             r'^\[', param[1]) or not re.search(
-                                r'\]$', param[1]):
+                        r'\]$', param[1]):
                         self.log.error(api_no + ' ' + api_name +
                                        ' 关联参数设置有误，请检查[Check]字段参数格式是否正确！！！')
                         continue
@@ -594,7 +604,7 @@ class API_REQUEST(Login):
         headers = {
             'X-LC-Id': "3BXiD9Fga5RtswdyrJSFQ3h3-gzGzoHsz",
             'X-LC-Sign':
-            "7396816f73bdbcf70281b09dc2c1b3b9,1517046641139,master",
+                "7396816f73bdbcf70281b09dc2c1b3b9,1517046641139,master",
         }
         # 1.发送请求
         with requests.Session() as s:
@@ -665,7 +675,7 @@ class API_REQUEST(Login):
                 if len(correlation) == 2:
                     if correlation[1] == '' or not re.search(
                             r'^\[', correlation[1]) or not re.search(
-                                r'\]$', correlation[1]):
+                        r'\]$', correlation[1]):
                         self.log.error(
                             api_no + ' ' + api_name +
                             ' 关联参数设置有误，请检查[Correlation]字段参数格式是否正确！！！')
@@ -693,7 +703,6 @@ class API_REQUEST(Login):
                         value = temp
                     self.correlationDict[correlation[0]] = value
         return self.correlationDict
-
 
 # request = API_REQUEST(sheet_name='test2')
 # col = '${mes_invite_id}=[_lcattrs][id]'

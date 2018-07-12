@@ -1,7 +1,9 @@
-
-{
-    'order_forms':{
-        'code':1234
-    }
-    }
-print([order_forms][code])
+a = {
+    'strangers': [
+        {
+            'id': 1
+        },
+        {
+            'id': 2}
+    ]
+}
