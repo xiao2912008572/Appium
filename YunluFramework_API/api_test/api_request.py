@@ -455,6 +455,10 @@ class API_REQUEST(Login):
                     if flag == '=':
                         self.log.debug('进入等于')
 
+                        # 1. 如果检查项中为空列表，读出来的是字符串，则将字符串转换成空列表
+                        if param[0] == '[]':
+                            param[0] = []
+
                         self.log.debug('进入等于阶段后的---->预期param[0] = {0}'.format(
                             param[0]))
 
