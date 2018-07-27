@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0e7e82-dcd9-48d2-adc5-bf57180fcfa3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/YunluFramework_API/data/data_api.xls" afterPath="$PROJECT_DIR$/YunluFramework_API/data/data_api.xls" />
-      <change beforePath="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py" afterPath="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py" />
+      <change beforePath="$PROJECT_DIR$/YunluFramework_API/report/log/log.log" afterPath="$PROJECT_DIR$/YunluFramework_API/report/log/log.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
     <SUITE FILE_PATH="coverage/Appium$.coverage" NAME="打印错误日志 Coverage Results" MODIFIED="1531212435984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Appium$py_test_in_TestSpaceApi_py.coverage" NAME="unittest.test in TestSpaceApi.py Coverage Results" MODIFIED="1523262541780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI" />
     <SUITE FILE_PATH="coverage/Appium$runcase1.coverage" NAME="runcase1 Coverage Results" MODIFIED="1531374181771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/YunluFramework_API/runcase" />
-    <SUITE FILE_PATH="coverage/Appium$Unittests_for_TestSpaceApi_SpaceAPI_Private.coverage" NAME="Unittests for TestSpaceApi.SpaceAPI_Private Coverage Results" MODIFIED="1532657946290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI" />
+    <SUITE FILE_PATH="coverage/Appium$Unittests_for_TestSpaceApi_SpaceAPI_Private.coverage" NAME="Unittests for TestSpaceApi.SpaceAPI_Private Coverage Results" MODIFIED="1532658721651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI" />
     <SUITE FILE_PATH="coverage/Appium$Unittests_for_TestSpaceApi_SpaceAPI_Private_test_api.coverage" NAME="Unittests for TestSpaceApi.SpaceAPI_Private.test_api Coverage Results" MODIFIED="1529647751681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI" />
   </component>
   <component name="FileEditorManager">
@@ -29,11 +27,21 @@
           <file leaf-file-name="TestSpaceApi.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+                <state relative-caret-position="-1398">
+                  <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
                   <folding>
                     <element signature="e#46#56#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="path_file.conf" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/YunluFramework_API/config/path_file.conf">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="107">
+                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -196,6 +204,12 @@
               <item name="Appium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium" type="462c0819:PsiDirectoryNode" />
               <item name="YunluFramework_API" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Appium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Appium" type="462c0819:PsiDirectoryNode" />
+              <item name="YunluFramework_API" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -348,9 +362,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_TestSpaceApi_SpaceAPI_Private - 2018.07.09 at 15h 05m 38s.xml">
-      <configuration name="Unittests for TestSpaceApi.SpaceAPI_Private" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_TestSpaceApi_SpaceAPI_Private - 2018.07.09 at 15h 05m 51s.xml">
       <configuration name="Unittests for TestSpaceApi.SpaceAPI_Private" configurationId="tests" />
     </history-entry>
@@ -375,6 +386,9 @@
     <history-entry file="Unittests_for_TestSpaceApi_SpaceAPI_Private - 2018.07.27 at 10h 19m 06s.xml">
       <configuration name="Unittests for TestSpaceApi.SpaceAPI_Private" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_TestSpaceApi_SpaceAPI_Private - 2018.07.27 at 10h 32m 03s.xml">
+      <configuration name="Unittests for TestSpaceApi.SpaceAPI_Private" configurationId="tests" />
+    </history-entry>
     <history-entry file="unittest_test_in_TestSpaceApi_py - 2018.06.22 at 14h 07m 36s.xml">
       <configuration name="unittest.test in TestSpaceApi.py" configurationId="tests" />
     </history-entry>
@@ -393,10 +407,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286991" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34340993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30592504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2394196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16809729" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -722,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunluFramework_API/config/path_file.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunluFramework_API/config/sqlserver.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -827,10 +834,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/YunluFramework_API/config/path_file.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="67" column="46" lean-forward="false" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state relative-caret-position="-1398">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#46#56#0" expanded="true" />
           </folding>
