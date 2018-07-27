@@ -63,9 +63,9 @@ class SpaceAPI_Private(unittest.TestCase):
     '''
     20180712 - lin 
     '''
-    # request = API_REQUEST(sheet_name='topics')
-    # excel1 = Excel(xls='data_api.xls', sheet_name='topics')
-    # data = excel1.get_row_data(sheet_name='topics')
+    request = API_REQUEST(sheet_name='topics')
+    excel1 = Excel(xls='data_api.xls', sheet_name='topics')
+    data = excel1.get_row_data(sheet_name='topics')
 
 
 
