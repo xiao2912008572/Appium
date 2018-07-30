@@ -63,11 +63,4 @@ if __name__ == '__main__':
         logger.info(
             '{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{END:RUNCASSE1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}'
         )
-        # 测试解决冲突
-        for i in range(1, 10):
-            print(i)
-            print(i)
-            print(i)
-            print(i)
-            print(i)
         break
