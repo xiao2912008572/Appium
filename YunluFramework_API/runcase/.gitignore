@@ -105,7 +105,3 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-.gitignore
-.idea/inspectionProfiles/
-.idea/workspace.xml
-YunluFramework/report/screenshot/
