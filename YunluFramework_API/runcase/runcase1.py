@@ -3,9 +3,9 @@
 __author__ = 'xiaoj'
 import time
 import sys
-sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
-sys.path.append("/root/.jenkins/workspace/AutoTest") # 添加sys
 
+sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
+sys.path.append("/root/.jenkins/workspace/AutoTest")  # 添加sys
 
 # sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\")
 # sys.path.append("\\Users\\xiaojingyuan\.jenkins\workspace\stest\\")
@@ -63,4 +63,7 @@ if __name__ == '__main__':
         logger.info(
             '{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{END:RUNCASSE1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}'
         )
+        # 测试解决冲突
+        for i in range(1, 10):
+            print(i)
         break
