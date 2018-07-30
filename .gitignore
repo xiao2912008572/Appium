@@ -1,0 +1,12 @@
+# Python:
+.project
+.settings/
+.prefs
+.pydevproject
+.idea/
+.idea
+.DS_Store
+.cache
+*.pyc
+*.xlm
+.vscode/
