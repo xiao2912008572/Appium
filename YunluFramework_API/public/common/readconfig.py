@@ -6,7 +6,10 @@ class Config:
 
     def get_PATH(self,path_Section,path_NO):
         cf = configparser.ConfigParser()
-        cf.read(self.configPath)
+        '''
+        与master不一样的地方，加入了encoding=utf-8
+        '''
+        cf.read(self.configPath,encoding='utf-8')
 
         # path_section填写"PATH_YUNKU"
         # 此处path_config = "path_001"以此类推
