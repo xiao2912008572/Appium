@@ -5,7 +5,7 @@ import time
 import sys
 
 sys.path.append("/Users/xiaojingyuan/PycharmProjects/Appium")
-sys.path.append("/root/.jenkins/workspace/AutoTest")  # 添加sys
+sys.path.append("/root/.jenkins/workspace/linfengjiao_AuTOTest")  # 添加sys
 
 # sys.path.append("C:\Program Files (x86)\Jenkins\workspace\jenkins_github_test1\\")
 # sys.path.append("\\Users\\xiaojingyuan\.jenkins\workspace\stest\\")
