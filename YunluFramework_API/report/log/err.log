@@ -1,0 +1,339 @@
+2018-08-07 14:41:43,969 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:41:43,971 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:42:15,157 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:42:15,158 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:42:38,595 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:42:38,596 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:43:39,762 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:43:39,763 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:47:21,540 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 161, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 178, in api_requests
+    self.data = self.analysis_data(api_data)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 318, in analysis_data
+    dic_api_data = eval(api_data)
+  File "<string>", line 5, in <module>
+NameError: name 'true' is not defined
+
+2018-08-07 14:47:21,542 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:47:21,543 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:58:24,319 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 161, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 178, in api_requests
+    self.data = self.analysis_data(api_data)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 318, in analysis_data
+    dic_api_data = eval(api_data)
+  File "<string>", line 3, in <module>
+NameError: name 'true' is not defined
+
+2018-08-07 14:58:24,322 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:58:24,323 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 14:59:04,559 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 161, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 178, in api_requests
+    self.data = self.analysis_data(api_data)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 318, in analysis_data
+    dic_api_data = eval(api_data)
+  File "<string>", line 3, in <module>
+NameError: name 'true' is not defined
+
+2018-08-07 14:59:04,562 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 14:59:04,563 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:00:20,113 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 15:00:20,114 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:17:24,781 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-07 15:17:24,782 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:38:11,017 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-07 15:38:11,018 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:43:05,550 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-07 15:43:05,551 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:43:19,932 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-07 15:43:19,933 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 15:44:26,361 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-07 15:44:26,362 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 176, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:11:41,104 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 220, in api_requests
+    api_hope, api_status, response)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 124, in print_log
+    self.log.info('11.接口返回 : {0}'.format(response[1]))
+TypeError: 'int' object is not subscriptable
+
+2018-08-07 16:11:41,106 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:11:41,107 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:15:29,568 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 223, in api_requests
+    api_hope, api_status, response)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 124, in print_log
+    self.log.info('11.接口返回 : {0}'.format(response[1]))
+TypeError: 'int' object is not subscriptable
+
+2018-08-07 16:15:29,570 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:15:29,571 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:23:08,574 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 249, in api_requests
+    api_data = json.loads(self.data)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+
+2018-08-07 16:23:08,576 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:23:08,577 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:23:59,720 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 250, in api_requests
+    api_data = json.loads(self.data)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 348, in loads
+    'not {!r}'.format(s.__class__.__name__))
+TypeError: the JSON object must be str, bytes or bytearray, not 'dict'
+
+2018-08-07 16:23:59,722 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:23:59,723 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:11,248 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 182, in api_requests
+    self.data = json.dumps(self.data,ensure_ascii=False,encoding='utf-8')  # json字符串
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'encoding'
+
+2018-08-07 16:34:11,252 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 16:34:11,254 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:11,316 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:34:11,317 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:41,850 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 182, in api_requests
+    self.data = json.dumps(self.data,ensure_ascii=False,encoding='gbk')  # json字符串
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'encoding'
+
+2018-08-07 16:34:41,855 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 16:34:41,856 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:41,930 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:34:41,931 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:57,434 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 212, in api_requests
+    api_headers=api_headers)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 138, in api_method
+    response = self.R.post_function(api_url, data, api_headers)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/public/common/RequestForHttp.py", line 105, in post_function
+    raise err
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/public/common/RequestForHttp.py", line 78, in post_function
+    r = s.post(url, data=r_data, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 555, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1284, in _send_request
+    body = _encode(body, 'body')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 161, in _encode
+    (name.title(), data[err.start:err.end], name)) from None
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 74-87: Body ('测试公司创建公司档和投票一起') is not valid Latin-1. Use body.encode('utf-8') if you want to send it encoded in UTF-8.
+
+2018-08-07 16:34:57,440 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 16:34:57,442 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:34:57,515 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:34:57,516 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:36:45,915 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 182, in api_requests
+    self.data = json.dumps(self.data,ensure_ascii=False,encoding='utf-8')  # json字符串
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+TypeError: __init__() got an unexpected keyword argument 'encoding'
+
+2018-08-07 16:36:45,918 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 16:36:45,920 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:36:46,000 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:36:46,001 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:37:45,852 - ERROR - Exception Information : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 160, in test01_api
+    api_messages=api_message)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 212, in api_requests
+    api_headers=api_headers)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/api_test/api_request.py", line 138, in api_method
+    response = self.R.post_function(api_url, data, api_headers)
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/public/common/RequestForHttp.py", line 105, in post_function
+    raise err
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/public/common/RequestForHttp.py", line 78, in post_function
+    r = s.post(url, data=r_data, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 555, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1284, in _send_request
+    body = _encode(body, 'body')
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 161, in _encode
+    (name.title(), data[err.start:err.end], name)) from None
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 74-87: Body ('测试公司创建公司档和投票一起') is not valid Latin-1. Use body.encode('utf-8') if you want to send it encoded in UTF-8.
+
+2018-08-07 16:37:45,859 - ERROR - 1. 接口编号 : 1_1 | 接口名称 : Document - 公司档-投票-创建
+ 
+2018-08-07 16:37:45,861 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-07 16:37:45,940 - ERROR - 1. 接口编号 : 1_2 | 接口名称 : Document - 公司档-删除
+ 
+2018-08-07 16:37:45,940 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+

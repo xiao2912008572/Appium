@@ -175,8 +175,8 @@ class API_REQUEST(Login):
             api_headers = eval(api_headers)
 
             # 2）直接将api_data转换成json格式
-            self.data = self.analysis_data(api_data)
-            self.data = json.dumps(self.data)
+            self.data = self.analysis_data(api_data)  # 字典格式
+            self.data = json.dumps(self.data)  # json字符串
 
             # 3）解析url
             api_url = self.analysis_url(api_url)
@@ -213,6 +213,9 @@ class API_REQUEST(Login):
         if api_status != 204:
 
             # 3. 打印日志
+            # 如果self.data是json字符串，就先把他转换成字典在打印出来
+            if isinstance(self.data, str):
+                self.data = json.loads(self.data)
             self.print_log(api_no, api_name, api_describe, api_url,
                            api_function, api_headers, self.data, api_check,
                            api_hope, api_status, response)
@@ -238,6 +241,9 @@ class API_REQUEST(Login):
             response = [status_code, response1]
 
             # 4. 打印日志
+            # 如果self.data是json字符串，就先把他转换成字典在打印出来
+            if isinstance(self.data, str):
+                self.data = json.loads(self.data)
             self.print_log(api_no, api_name, api_describe, api_url,
                            api_function, api_headers, self.data, api_check,
                            api_hope, api_status, response)
