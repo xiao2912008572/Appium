@@ -469,6 +469,10 @@ class API_REQUEST(Login):
                         if param[0] == 'None':
                             param[0] = None
 
+                        # 3. 如果检查项中为{}，读出来的是字符串，则将字符串转换成{}类型
+                        if param[0] == '{}':
+                            param[0] = {}  # 转换成字典
+
                         self.log.debug('进入等于阶段后的---->预期param[0] = {0}'.format(
                             param[0]))
 
@@ -532,6 +536,17 @@ class API_REQUEST(Login):
                     # '<>'关系断言
                     if flag == '<>':
                         self.log.debug('进入不等于')
+                        # 1. 如果检查项中为空列表，读出来的是字符串，则将字符串转换成空列表
+                        if param[0] == '[]':
+                            param[0] = []
+
+                        # 2. 如果检查项中为None，读出来的是字符串，则将字符串转换成None类型
+                        if param[0] == 'None':
+                            param[0] = None
+
+                        # 3. 如果检查项中为{}，读出来的是字符串，则将字符串转换成{}类型
+                        if param[0] == '{}':
+                            param[0] = {}  # 转换成字典
 
                         self.log.debug('进入不等于阶段后的---->预期param[0] = {0}'.format(
                             param[0]))
