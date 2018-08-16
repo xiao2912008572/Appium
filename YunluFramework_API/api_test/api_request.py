@@ -400,6 +400,7 @@ class API_REQUEST(Login):
 
                     # 如果 '#len#' 存在
                     if '#len#' in api_check[j]:
+                        param = api_check[j].split('=#len#')
                         flag = '#len#'
 
                     # 如果 '#len#'不存在
