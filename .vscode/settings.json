@@ -23,8 +23,8 @@
         "**/*.pyc": true,
         "**/.DS_Store": true
     },
-    // Whether to run code in Integrated Terminal.
-    "code-runner.runInTerminal": true,
     "python.unitTest.promptToConfigure": false,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "code-runner.runInTerminal": false,
 
 }

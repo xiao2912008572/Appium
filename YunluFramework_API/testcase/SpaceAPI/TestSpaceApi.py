@@ -70,9 +70,9 @@ class SpaceAPI_Private(unittest.TestCase):
     '''
     20180807 - 肖静远 测试资讯投票功能
     '''
-    # request = API_REQUEST(sheet_name='ballot')
-    # excel1 = Excel(xls='data_api.xls', sheet_name='ballot')
-    # data = excel1.get_row_data(sheet_name='ballot')
+    request = API_REQUEST(sheet_name='collection')
+    excel1 = Excel(xls='data_api.xls', sheet_name='collection')
+    data = excel1.get_row_data(sheet_name='collection')
 
     # 1.类开始
     @classmethod

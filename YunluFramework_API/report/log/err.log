@@ -1,0 +1,108 @@
+2018-08-27 15:30:05,581 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:30:05,581 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:30:05,631 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:30:05,631 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:30:30,477 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:30:30,478 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:30:30,529 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:30:30,530 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:31:49,099 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:31:49,100 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:31:49,151 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:31:49,151 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:32:58,271 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:32:58,272 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:32:58,322 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:32:58,323 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:33:18,384 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:33:18,385 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:33:18,441 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:33:18,441 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:33:27,047 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:33:27,047 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:33:27,097 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:33:27,097 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:34:01,415 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:34:01,415 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:34:01,469 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:34:01,469 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:35:41,236 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:35:41,236 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:35:41,288 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:35:41,288 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:36:19,147 - ERROR - 1. 接口编号 : 1_1_1 | 接口名称 : Document - 公司档-投票-创建 
+2018-08-27 15:36:19,147 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
+2018-08-27 15:36:19,200 - ERROR - 1. 接口编号 : 1_1_2 | 接口名称 : Document - 公司档-投票-获取 
+2018-08-27 15:36:19,200 - ERROR - 2. 错误信息 : Traceback (most recent call last):
+  File "/Users/xiaojingyuan/PycharmProjects/Appium/YunluFramework_API/testcase/SpaceAPI/TestSpaceApi.py", line 175, in test01_api
+    assert status_code == api_status
+AssertionError
+
